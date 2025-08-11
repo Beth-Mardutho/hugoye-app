@@ -140,7 +140,6 @@
     <xsl:template match="t:TEI">   
         <xsl:apply-templates select="//t:titleStmt" mode="huyoye-article"/>
         <xsl:apply-templates select="//t:text"/>
-        
     </xsl:template>
     <xsl:template match="t:titleStmt" mode="huyoye-article">
         <div class="article-header text-center">
@@ -508,7 +507,7 @@
     <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
      handle standard output of a listBibl element 
      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
-<xsl:template match="t:listBibl">
+    <xsl:template match="t:listBibl">
         <ul class="listBibl">
             <xsl:for-each select="t:bibl">
                 <li>
