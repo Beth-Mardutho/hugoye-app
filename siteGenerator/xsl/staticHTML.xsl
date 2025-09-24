@@ -956,7 +956,7 @@
             <meta name="DC.isPartOf" property="dc.ispartof" content="{$config/html:title[1]}"/>
             <link rel="shortcut icon" href="/resources/images/fav-icons/syriaca-favicon.ico"/>
             <!-- Bootstrap 3 -->
-            <link rel="stylesheet" type="text/css" href="/resources/bootstrap/css/bootstrap.min.css"/>
+            <link rel="stylesheet" type="text/css" href="/resources/css/bootstrap.min.css"/>
             <link rel="stylesheet" type="text/css" href="/resources/css/sm-core-css.css"/>
             <!-- Srophe styles -->
             <link rel="stylesheet" type="text/css" href="/resources/css/syr-icon-fonts.css"/>
@@ -976,7 +976,7 @@
             <script type="text/javascript" src="/resources/js/jquery.smartmenus.min.js"/>
             <script type="text/javascript" src="/resources/js/clipboard.min.js"/>
             <!-- Bootstrap -->
-            <script type="text/javascript" src="/resources/bootstrap/js/bootstrap.min.js"/>
+            <script type="text/javascript" src="/resources/js/bootstrap.min.js"/>
             <!-- ReCaptcha -->
             <script src="https://www.google.com/recaptcha/api.js" type="text/javascript" async="async" defer="defer"/>
             <!-- keyboard widget css & script -->
