@@ -970,9 +970,9 @@
             <link rel="stylesheet" href="/resources/leaflet/leaflet.awesome-markers.css"/>
             <script defer="defer" data-domain="syriaca.org" src="https://plausible.io/js/plausible.js"/>
             <!-- JQuery -->
-            <link href="/resources/jquery-ui/jquery-ui.min.css" rel="stylesheet"/>
+            <link href="/resources/js/jquery-ui.min.css" rel="stylesheet"/>
             <script type="text/javascript" src="/resources/js/jquery.min.js"/>
-            <script type="text/javascript" src="/resources/jquery-ui/jquery-ui.min.js"/>
+            <script type="text/javascript" src="/resources/js/jquery-ui.min.js"/>
             <script type="text/javascript" src="/resources/js/jquery.smartmenus.min.js"/>
             <script type="text/javascript" src="/resources/js/clipboard.min.js"/>
             <!-- Bootstrap -->
