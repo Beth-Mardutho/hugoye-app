@@ -30,7 +30,7 @@
     <xsl:output method="text" encoding="utf-8"/>
     
     <xsl:param name="applicationPath" select="'/Users/wsalesky/syriaca/Hugoye/hugoye-app/'"/>
-    <xsl:param name="staticSitePath" select="'/Users/wsalesky/syriaca/Hugoye/hugoye-app-temp/'"/>
+    <xsl:param name="staticSitePath" select="'/Users/wsalesky/syriaca/Hugoye/hugoye-app-temp/json/'"/>
     <xsl:param name="dataPath" select="'/Users/wsalesky/syriaca/Hugoye/hugoye-data/data/'"/>
     <xsl:param name="configPath" select="concat($applicationPath, '/siteGenerator/components/repo-config.xml')"/>
     <xsl:variable name="config">
@@ -113,6 +113,9 @@
     </xsl:function>
     
     <xsl:template match="/">
+        <xsl:variable name="documentURI" select="document-uri(.)"/>
+        <xsl:variable name="filename" select="tokenize($documentURI,'/')[last()]"/>
+        <xsl:variable name="path" select="concat($staticSitePath,'/',replace($filename,'.xml','.json'))"/>
         <xsl:variable name="doc">
             <xsl:sequence select="."/>
         </xsl:variable>
@@ -138,7 +141,9 @@
                 </xsl:for-each>
             </map>
         </xsl:variable>
-        <xsl:value-of select="xml-to-json($xml, map { 'indent' : true() })"/>
+        <xsl:result-document href="{$path}">
+            <xsl:value-of select="xml-to-json($xml, map { 'indent' : true() })"/>
+        </xsl:result-document>
     </xsl:template>
     
     <!-- Named functions, should match search fields in repo-config.xml -->
