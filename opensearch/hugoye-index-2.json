@@ -1,0 +1,70 @@
+PUT /hugoye-index-2
+{
+  "settings": {
+    "number_of_shards": 1,
+    "number_of_replicas": 0,
+    "analysis": {
+      "analyzer": {
+        "multilingual_analyzer": {
+          "tokenizer": "icu_tokenizer",
+          "filter": [
+            "icu_normalizer",
+            "icu_folding"
+          ]
+        },
+        "custom_case_diacritic_insensitive": {
+          "tokenizer": "standard",
+          "filter": [
+            "lowercase",
+            "asciifolding"
+          ]
+        }
+      },
+      "normalizer": {
+        "folding_lc": {
+          "type": "custom",
+          "filter": ["lowercase"]
+        }
+      }
+    }
+  },
+  "mappings": {
+    "properties": {
+      "author": {
+        "type": "text",
+        "analyzer": "custom_case_diacritic_insensitive",
+        "fields": {
+          "keyword": {
+            "type": "keyword",
+            "ignore_above": 256,
+            "normalizer": "folding_lc"
+          }
+        }
+      },
+      "idno": {
+        "type": "keyword"
+      },
+      "displayTitleEnglish": {
+        "type": "keyword",
+        "normalizer": "folding_lc"
+      },
+      "title": {
+        "type": "text",
+        "analyzer": "custom_case_diacritic_insensitive",
+        "fields": {
+          "sort": {
+            "type": "keyword",
+            "normalizer": "folding_lc"
+          }
+        }
+      },
+      "type": {
+        "type": "keyword",
+        "normalizer": "folding_lc"
+      }
+    }
+  }
+}
+
+
+// If you want the sorting to be diacritic and case insensitive, you need to add a normalizer to the sort field as well.
