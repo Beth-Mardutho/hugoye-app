@@ -70,9 +70,9 @@
     <!-- =================================================================== -->
     
     
-    <xsl:param name="applicationPath" select="'../hugoye-app/'"/>
-    <xsl:param name="staticSitePath" select="'../hugoye-app/'"/>
-    <xsl:param name="dataPath" select="'../hugoye-data/data/'"/>
+    <xsl:param name="applicationPath" select="'/Users/wsalesky/syriaca/Hugoye/hugoye-app/'"/>
+    <xsl:param name="staticSitePath" select="'/Users/wsalesky/syriaca/Hugoye/hugoye-app-temp/json/'"/>
+    <xsl:param name="dataPath" select="'/Users/wsalesky/syriaca/Hugoye/hugoye-data/data/'"/>
     <!--
     <xsl:param name="applicationPath" select="'../../../hugoye-app/'"/>
     <xsl:param name="staticSitePath" select="'../../../hugoye-app/'"/>
@@ -378,7 +378,7 @@
                             </xsl:when>
                             <xsl:otherwise>
                                 <xsl:message><xsl:value-of select="concat($applicationPath,'/siteGenerator/components/page.html')"/></xsl:message>
-                                <xsl:message>Error Can not find matching template for TEI page <xsl:value-of select="replace(concat($applicationPath,'/siteGenerator/components/',string($collectionValues/@template),'.html'),'//','/')"/></xsl:message></xsl:otherwise>
+                                <xsl:message>T1 Error Can not find matching template for TEI page <xsl:value-of select="replace(concat($applicationPath,'/siteGenerator/components/',string($collectionValues/@template),'.html'),'//','/')"/></xsl:message></xsl:otherwise>
                         </xsl:choose>
                     </xsl:when>
                     <xsl:when test="$pageType = 'RDF'">
@@ -465,9 +465,9 @@
                                 <div class="main-content-block">
                                     <div class="interior-content">
                                         <xsl:call-template name="otherDataFormats">
-                                            <xsl:with-param name="node" select="t:TEI"/>
+                                            <xsl:with-param name="node" select="$nodes"/>
                                             <xsl:with-param name="idno" select="$idno"/>
-                                            <xsl:with-param name="formats" select="'print,tei,rdf'"/>
+                                            <xsl:with-param name="formats" select="'pdf,tei'"/>
                                         </xsl:call-template>
                                         <div class="row" xmlns="http://www.w3.org/1999/xhtml">
                                             <xsl:choose>
@@ -489,21 +489,23 @@
                                                                 <xsl:with-param name="collection" select="$collection"/>
                                                                 <xsl:with-param name="idno" select="$idno"/>
                                                             </xsl:apply-templates>
-                                                            <div class="PDFviewer text-center" style="width:100%;">
-                                                                <xsl:variable name="url" select="$nodes/descendant::t:idno[@type='PDF'][1]"/>
-                                                                <xsl:variable name="pdfURL">
-                                                                    <xsl:choose>
-                                                                        <xsl:when test="starts-with($url,$base-uri)">
-                                                                            <xsl:value-of select="replace($url,$base-uri,'https://github.com/Beth-Mardutho/hugoye-data/raw/master/')"/>
-                                                                        </xsl:when>
-                                                                        <xsl:when test="starts-with($url,'https://github.com/')">
-                                                                            <xsl:value-of select="replace($url,'blob','raw')"/>
-                                                                        </xsl:when>
-                                                                        <xsl:otherwise><xsl:value-of select="$url"/></xsl:otherwise>
-                                                                    </xsl:choose>
-                                                                </xsl:variable>
-                                                                <embed src="https://drive.google.com/viewerng/viewer?embedded=true&amp;url={$pdfURL}" width="100%" height="800"/>
-                                                            </div>
+                                                            <xsl:if test="//t:body/t:p[normalize-space(.) = 'HTML Version of this article coming soon! You can download a PDF from the PDF icon.']">
+                                                                <div class="PDFviewer text-center" style="width:100%;">
+                                                                    <xsl:variable name="url" select="$nodes/descendant::t:idno[@type='PDF'][1]"/>
+                                                                    <xsl:variable name="pdfURL">
+                                                                        <xsl:choose>
+                                                                            <xsl:when test="starts-with($url,$base-uri)">
+                                                                                <xsl:value-of select="replace($url,$base-uri,'https://github.com/Beth-Mardutho/hugoye-data/raw/master/')"/>
+                                                                            </xsl:when>
+                                                                            <xsl:when test="starts-with($url,'https://github.com/')">
+                                                                                <xsl:value-of select="replace($url,'blob','raw')"/>
+                                                                            </xsl:when>
+                                                                            <xsl:otherwise><xsl:value-of select="$url"/></xsl:otherwise>
+                                                                        </xsl:choose>
+                                                                    </xsl:variable>
+                                                                    <embed src="https://drive.google.com/viewerng/viewer?embedded=true&amp;url={$pdfURL}" width="100%" height="800"/>
+                                                                </div> 
+                                                            </xsl:if>
                                                         </div>
                                                     </xsl:when>
                                                     <xsl:otherwise>
@@ -860,6 +862,12 @@
                         <xsl:when test=". = 'tei'">
                             <a href="{concat(tokenize($idno,'/')[last()],'.xml')}" class="btn btn-default btn-xs" id="teiBtn" data-toggle="tooltip" title="Click to view the TEI XML data for this record." >
                                 <span class="glyphicon glyphicon-download-alt" aria-hidden="true"></span> TEI/XML
+                            </a><xsl:text>&#160;</xsl:text>
+                        </xsl:when>
+                        <xsl:when test=". = 'pdf'">
+                            <xsl:variable name="uri" select="replace($node/descendant::t:idno[@type='PDF']//text(),$base-uri,'https://github.com/Beth-Mardutho/hugoye-data/raw/master')"/>
+                            <a href="{$uri}" class="btn btn-default btn-xs" id="pdfBtn" data-toggle="tooltip" title="Click to download the PDF version of this article." >
+                                <i class="fas fa-file-pdf"></i> PDF
                             </a><xsl:text>&#160;</xsl:text>
                         </xsl:when>
                         <!--
