@@ -107,29 +107,25 @@ expr $(wc -l < load/index.ndjson) / 2
 
 # Or locally
 
-Create your index **before** loading data. Use the mapping you finalized (example):
+Create your index **before** loading data. Use the mapping you finalized (see addendum for console instructions):
 
 ```bash
-curl -X PUT "https://YOUR_OS_DOMAIN/hugoye-index-2" \
+curl -X PUT "https://YOUR_OS_DOMAIN/hugoye-index" \
   -H "Content-Type: application/json" \
-  --data-binary @hugoye-index-2-mapping.json
+  --data-binary @hugoye-index-mapping.json
 ```
 
 > If you don’t have the JSON file yet, save your mapping payload into `hugoye-index.json` and run the command above.
 
 ---
 
-## 7 Load the NDJSON into OpenSearch
+## 7 Load the NDJSON into OpenSearch from bash if you have access or use console (see addendum)
 
 # Upload to S3 
 ```bash
 aws s3 sync ./ s3://bucket-name-x \       
   --metadata-directive REPLACE \
   --cache-control "xxxxx"  \  --content-type "text/html; charset=utf-8" || true \ --region xxxxx \ --profile xxxxx
-
-  aws s3 sync ./ s3://gaddel-hugoye-site \       
-  --metadata-directive REPLACE \
-  --cache-control "public,max-age=31536000,immutable"  \  --content-type "text/html; charset=utf-8" || true \ --region us-east-1 \ --profile cas-dhc
 ```
 # Or Locally:
 
@@ -172,3 +168,84 @@ deactivate   # exit the virtual environment
 ---
 
 **That’s it.** You now have a reproducible path to create `index.ndjson` and load it into `hugoye-index`.
+
+*Addendum*
+**Domain commands to set up index in OpenSearch dashboard dev tools: **
+```
+GET /hugoye-index-1/_mapping
+```
+
+```
+PUT /hugoye-index-1
+{
+  "settings": {
+    "number_of_shards": 1,
+    "number_of_replicas": 0,
+    "analysis": {
+      "analyzer": {
+        "custom_case_diacritic_insensitive": {
+          "tokenizer": "standard",
+          "filter": [
+            "lowercase",
+            "asciifolding"
+          ]
+        }
+      }
+    }
+  },
+  "mappings": {
+        "properties": {
+          "author": {
+            "type": "text",
+            "fields": {
+              "keyword": {
+                "type": "keyword",
+                "ignore_above": 256
+              }
+            },
+            "analyzer": "custom_case_diacritic_insensitive"
+          },
+
+          "idno": {
+            "type": "keyword"
+          },
+          "displayTitleEnglish": {
+            "type": "keyword"
+ 
+          },
+          "title": {
+            "type": "text",
+            "fields": {
+              "sort": {
+                "type": "keyword"
+              }
+            },
+            "analyzer": "custom_case_diacritic_insensitive"
+          },
+          "type": {
+            "type": "keyword"
+          }
+        }
+      }
+}
+```
+```
+PUT _plugins/_security/api/roles/lambda_hugoye_reader
+{
+  "cluster_permissions": [ "cluster_composite_ops_ro" ],
+  "index_permissions": [
+    {
+      "index_patterns": [ "hugoye-index-1" ],
+      "allowed_actions": [ "read", "search","data" ]
+    }
+  ]
+}
+```
+```
+PUT _plugins/_security/api/rolesmapping/lambda_hugoye_reader
+{
+  "backend_roles": [
+    "arn:aws:iam::ACCOUNT_NUMBER:role/LAMBDA_IAM_ROLE_NAME"
+  ]
+}
+```
