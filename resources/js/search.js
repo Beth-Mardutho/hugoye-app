@@ -68,19 +68,13 @@ function fetchAndRenderAdvancedSearchResults() {
         .catch(error => {
             handleError('search-results', 'Error fetching search results.');
             console.error(error);
+        })
+        .finally(() => {
+        state.isLoading = false; 
+        window.history.pushState({}, '', `?${queryParams}`);
         });
-
-    state.isLoading = false;
-    window.history.pushState({}, '', `?${queryParams.toString()}`);
 }
 
-// function displayResultsBasedOnSeries(data) {
-//     if (state.series === 'Comprehensive Bibliography on Syriac Studies') {
-//         displayCBSSAuthorResults(data);
-//     } else {
-//         displayResults(data);
-//     }
-// }
 
 
 // Display search results
@@ -129,7 +123,8 @@ function displayResults(data) {
                         <span class="tei-title title-analytic">${url}</span>
                     </a>
                     ${type && type.trim() !== '' && type !== type ? `<br/><span class="tei-title title-analytic">(${type})</span>` : ''}
-
+                    <br/>
+                    ${type}
                 `;
             
 
@@ -253,31 +248,19 @@ function handleError(containerId, message) {
 // }
 
 function displayResultsInfo(totalResults) {
-    const browseInfoContainer = document.getElementById('search-info');
+    const infoContainer = document.getElementById('search-info');
     // Clear previous browse info and pagination
-    browseInfoContainer.innerHTML = '';
-
-    // Display total results count for non-subject queries-- subject query results has bug
-    // if (state.query != 'cbssSubject') {
-    // browseInfoContainer.innerHTML = `
-    //     <br/>
-    //     <p>Total Results: ${totalResults}</p>
-    // `;
-    // }
-    
-    browseInfoContainer.innerHTML = `
+    infoContainer.innerHTML = '';
+    infoContainer.innerHTML = `
         <br/>
         <p>Total Results: ${totalResults}</p>
     `;
     
-    if (!state.letter && state.lang !== 'en' && state.lang !== 'rus') {
-    browseInfoContainer.innerHTML += `<p>Showing all ${state.lang.toUpperCase()} entries</p>`;
-    }
     const paginationContainers = document.getElementsByClassName('searchPagination');
     Array.from(paginationContainers).forEach(container => {
         container.innerHTML = ''; // Clear existing buttons
     });
-    if (totalResults > state.size && state.query === 'cbssAuthor' || (totalResults > state.size && state.query != 'cbssSubject')) {
+    if (totalResults > state.size ) {
         renderPagination(totalResults, state.size, state.currentPage, changePage);
     } 
 }
@@ -1048,13 +1031,7 @@ function runSearch() {
         fetchAndRenderAdvancedSearchResults();
     }
 }
-// Function set in browse.html files to get results on initial page load
-// function runBrowse(series) {
-//     // Initialize state from existing URL parameters
-//     initializeStateFromURL();
-//     // Fetch and render search results if URL search parameters are present
-//     getBrowse(series);
-// }
+
 
 // Helper function to get form data and update state
 function updateStateFromForm(form) {
@@ -1078,20 +1055,13 @@ function buildQueryParams() {
         from: state.from,
         size: state.size,
         sort: state.sortFactor,
-        q: state.query,
 
+        q: state.query || state.keyword || '',
         author: state.author,
-
         fullText: state.fullText,
-
         idno: state.idno,
-
         title: state.title,
         type: state.type.join(','), // Join array elements with commas for query string
-        
-
-        
-
         keyword: state.keyword,
  
     };
@@ -1190,11 +1160,8 @@ function changePage(page) {
     state.from = (page - 1) * state.size;
     document.getElementById('search-info')?.scrollIntoView({ behavior: 'smooth' });
 
-    if(state.searchType === 'browse' || state.query === 'cbssAuthor' || state.searchType === 'letter' || state.searchType === 'cbssSubject'){
-        getPaginatedBrowse();
-    } else {
-        fetchAndRenderAdvancedSearchResults();
-    }
+    fetchAndRenderAdvancedSearchResults();
+    
 }
 
 
@@ -1229,6 +1196,7 @@ function renderPagination(totalResults, resultsPerPage, currentPage, onPageChang
 // Create a pagination button
 function createPaginationButton(text, onClick) {
     const button = document.createElement('button');
+    button.type = 'button';  
     //btn btn-default
     button.classList.add('btn');
     button.classList.add('btn-default');
