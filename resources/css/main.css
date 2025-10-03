@@ -422,6 +422,7 @@ td {
 .relation .results-list-desc.uri{margin-left:0; }
 
 /* footnote styles */
+.footnote-inline {display:none;}
 .footnotes {display:block;border-top: 1px dotted gray; text-align:left;}
 .footnote-text {display:block;}
 .footnote-text .footnote-refs {font-size: .75em;}
@@ -849,6 +850,7 @@ pre {
 .tei-front .tei-author, .article-header .tei-author{display:block; font-size: 1em; margin-top:1em;}
 .tei-front .tei-date {display:block; font-size: 1em;}
 .tei-front .tei-preface h3 {display:block; text-align:center;  margin:1em; } 
+.tei-head {display:block; font-size:medium; font-weight:400; margin:1em; text-align:center;} 
 .tei-head.display {display:block; color:red;}
 .tei-section.display {display:block;}
 .tei-div {display:block; margin:1em 0;}

@@ -839,7 +839,7 @@
                         </xsl:choose>
                         <xsl:if test="$nodes/descendant::t:revisionDesc/@status = 'PDF'">PDF</xsl:if>
                      </span>
-                    &#160;<a href="/documentation/wiki.html?wiki-page=/Status-of-Contents-in-Hugoye&amp;wiki-uri=https://github.com/Beth-Mardutho/hugoye-data/wiki"><span class="glyphicon glyphicon-question-sign text-info moreInfo"></span></a>
+                    &#160;<a href="https://github.com/Beth-Mardutho/hugoye-data/wiki/Status-of-Contents-in-Hugoye"><span class="glyphicon glyphicon-question-sign text-info moreInfo"></span></a>
                 </div>
                 <div style="margin-top:1em;">
                     <span class="h5-inline">Publication Date: </span>
@@ -861,7 +861,7 @@
     </xsl:template>
     <xsl:template name="peerReview">
         <xsl:param name="nodes"/>
-        <span class="badge access-pills"><a href="/documentation/wiki.html?wiki-page=/Peer-Review-Policy&amp;wiki-uri=https://github.com/Beth-Mardutho/hugoye-data/wiki" style="color:#555">peer reviewed <i class="fas fa-check"></i></a></span>
+        <span class="badge access-pills"><a href="https://github.com/Beth-Mardutho/hugoye-data/wiki/Peer-Review-Policy" style="color:#555">peer reviewed <i class="fas fa-check"></i></a></span>
     </xsl:template>
     
     <!-- M -->
@@ -1009,7 +1009,7 @@
                 </div>
             </xsl:when>
             <xsl:otherwise>
-                <div class="tei-note">  
+                <div class="tei-note {if(@place='foot') then 'footnote-inline' else ()}">
                     <xsl:choose>
                         <xsl:when test="t:quote"><xsl:apply-templates/></xsl:when>
                         <xsl:otherwise><span><xsl:sequence select="local:attributes(.)"/><xsl:apply-templates/></span><xsl:sequence select="local:add-footnotes(@source,.)"/></xsl:otherwise>
