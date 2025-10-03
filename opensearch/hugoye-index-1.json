@@ -1,0 +1,53 @@
+PUT /hugoye-index-1
+{
+  "settings": {
+    "number_of_shards": 1,
+    "number_of_replicas": 0,
+    "analysis": {
+      "analyzer": {
+        "custom_case_diacritic_insensitive": {
+          "tokenizer": "standard",
+          "filter": [
+            "lowercase",
+            "asciifolding"
+          ]
+        }
+      }
+    }
+  },
+  "mappings": {
+        "properties": {
+          "author": {
+            "type": "text",
+            "fields": {
+              "keyword": {
+                "type": "keyword",
+                "ignore_above": 256
+              }
+            },
+            "analyzer": "custom_case_diacritic_insensitive"
+          },
+
+          "idno": {
+            "type": "keyword"
+          },
+          "displayTitleEnglish": {
+            "type": "keyword"
+ 
+          },
+          "title": {
+            "type": "text",
+            "fields": {
+              "sort": {
+                "type": "keyword"
+              }
+            },
+            "analyzer": "custom_case_diacritic_insensitive"
+          },
+          "type": {
+            "type": "keyword"
+          }
+        }
+      }
+}
+    
