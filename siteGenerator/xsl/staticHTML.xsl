@@ -469,9 +469,20 @@
                                             <xsl:with-param name="idno" select="$idno"/>
                                             <xsl:with-param name="formats" select="'pdf,tei'"/>
                                         </xsl:call-template>
+                                        <xsl:variable name="PDFViewer">
+                                            <xsl:choose>
+                                                <xsl:when test="$nodes/descendant::t:idno[@type='PDF']">
+                                                    <xsl:choose>
+                                                        <xsl:when test="count($nodes/descendant::t:body/descendant::t:p) &lt; 2">Yes</xsl:when>
+                                                        <xsl:otherwise>No</xsl:otherwise>
+                                                    </xsl:choose>
+                                                </xsl:when>
+                                                <xsl:otherwise>No</xsl:otherwise>
+                                            </xsl:choose>
+                                        </xsl:variable>
                                         <div class="row" xmlns="http://www.w3.org/1999/xhtml">
                                             <xsl:choose>
-                                                <xsl:when test="$nodes/descendant::t:idno[@type='PDF']"/>
+                                                <xsl:when test="$PDFViewer = 'Yes'"/>
                                                 <xsl:otherwise>
                                                     <div class="col-md-2 col-lg-2 noprint" >
                                                         <!-- Hugoye specific menu -->
@@ -483,13 +494,12 @@
                                             </xsl:choose>
                                                 <!-- if PDF display PDF -->
                                                 <xsl:choose>
-                                                    <xsl:when test="$nodes/descendant::t:idno[@type='PDF']">
+                                                    <xsl:when test="$PDFViewer = 'Yes'">
                                                         <div class="col-sm-9 col-md-9 col-lg-9 mssBody">
                                                             <xsl:apply-templates select="$nodes/ancestor-or-self::t:TEI">
                                                                 <xsl:with-param name="collection" select="$collection"/>
                                                                 <xsl:with-param name="idno" select="$idno"/>
                                                             </xsl:apply-templates>
-                                                            <xsl:if test="//t:body/t:p[normalize-space(.) = 'HTML Version of this article coming soon! You can download a PDF from the PDF icon.']">
                                                                 <div class="PDFviewer text-center" style="width:100%;">
                                                                     <xsl:variable name="url" select="$nodes/descendant::t:idno[@type='PDF'][1]"/>
                                                                     <xsl:variable name="pdfURL">
@@ -505,7 +515,6 @@
                                                                     </xsl:variable>
                                                                     <embed src="https://drive.google.com/viewerng/viewer?embedded=true&amp;url={$pdfURL}" width="100%" height="800"/>
                                                                 </div> 
-                                                            </xsl:if>
                                                         </div>
                                                     </xsl:when>
                                                     <xsl:otherwise>
@@ -964,7 +973,7 @@
             <meta name="DC.isPartOf" property="dc.ispartof" content="{$config/html:title[1]}"/>
             <link rel="shortcut icon" href="/resources/images/fav-icons/syriaca-favicon.ico"/>
             <!-- Bootstrap 3 -->
-            <link rel="stylesheet" type="text/css" href="/resources/css/bootstrap.min.css"/>
+            <link rel="stylesheet" type="text/css" href="/resources/bootstrap/css/bootstrap.min.css"/>
             <link rel="stylesheet" type="text/css" href="/resources/css/sm-core-css.css"/>
             <!-- Srophe styles -->
             <link rel="stylesheet" type="text/css" href="/resources/css/syr-icon-fonts.css"/>
@@ -984,7 +993,7 @@
             <script type="text/javascript" src="/resources/js/jquery.smartmenus.min.js"/>
             <script type="text/javascript" src="/resources/js/clipboard.min.js"/>
             <!-- Bootstrap -->
-            <script type="text/javascript" src="/resources/js/bootstrap.min.js"/>
+            <script type="text/javascript" src="/resources/bootstrap/js/bootstrap.min.js"/>
             <!-- ReCaptcha -->
             <script src="https://www.google.com/recaptcha/api.js" type="text/javascript" async="async" defer="defer"/>
             <!-- keyboard widget css & script -->
