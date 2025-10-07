@@ -1020,6 +1020,8 @@ div.toggle-buttons label:active:after {
 div.toggle-buttons .toggle-label {font-size: 1em; font-weight:600}
 .PDFviewer iframe {width:95%; min-height:600px; max-height:2100px}
 .otherFormats {float:right; margin-right:25px;}
+#teiBtn {display:none;}
+
 /* Small screens */
 @media screen and (max-width: 768px) {
     .left-menu { position: relative;}
