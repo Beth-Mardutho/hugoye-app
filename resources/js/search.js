@@ -130,10 +130,6 @@ function displayResults(data) {
                     <a href="${urlHtml}" target="_blank" style="text-decoration: none; color: #007bff;">
                         <span class="tei-title title-analytic">${title}</span> 
                     </a>
-                    <br/>URI: 
-                    <a href="${urlHtml}" target="_blank" style="text-decoration: none; color: #007bff;">
-                        <span class="tei-title title-analytic">${url}</span>
-                    </a>
             ${hasType ? `<br/><span class="tei-title title-analytic">(${type})</span>` : ''}
             ${hasAuthor ? `<br/><span class="tei-title title-analytic">by ${author}</span>` : ''}
          `;
