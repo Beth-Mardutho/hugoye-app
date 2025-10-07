@@ -30,51 +30,51 @@ jobs:
       - name: Configure AWS credentials from AWS account
         uses: aws-actions/configure-aws-credentials@v2
         with:
-          role-to-assume: ${{ secrets.AWS_HUGOYE_ROLE }}
+          role-to-assume: ${{ secrets.AWS_HUGOYE_ROLE_ARN }}
           aws-region: ${{ secrets.AWS_REGION }}
           role-session-name: GitHub-OIDC-frontend
           
       # Step 3: Files to S3
 
       # Option 1: Upload only changed files to S3
-      - name: Get list of changed files
-        id: changes
-        run: |
-          git fetch origin staticSite
-          git diff --name-only HEAD^ HEAD > changed_files.txt
-          cat changed_files.txt
-      # This will not delete files in S3 not in the repo, to preserve data files from data repo in s3
-      - name: Sync changed files in S3
-        if: success()
-        run: |
-          while read file; do
-            echo "Attempting to upload $file..."
-            if ! aws s3 cp "$file" "s3://gaddel-hugoye-site/$file" ; then
-              echo "File $file not found. Falling back to sync for deletion handling."
-              aws s3 sync ./ s3://gaddel-hugoye-site --exact-timestamps
-              break  # Stop further uploads and rely on sync
-            fi
-          done < changed_files.txt
-        env:
-          AWS_REGION: ${{ secrets.AWS_REGION }}
-          AWS_ACCOUNT_ID: ${{ secrets.AWS_ACCOUNT_ID }} 
+      # - name: Get list of changed files
+      #   id: changes
+      #   run: |
+      #     git fetch origin staticSite
+      #     git diff --name-only HEAD^ HEAD > changed_files.txt
+      #     cat changed_files.txt
+      # # This will not delete files in S3 not in the repo, to preserve data files from data repo in s3
+      # - name: Sync changed files in S3
+      #   if: success()
+      #   run: |
+      #     while read file; do
+      #       echo "Attempting to upload $file..."
+      #       if ! aws s3 cp "$file" "s3://gaddel-hugoye-site/$file" ; then
+      #         echo "File $file not found. Falling back to sync for deletion handling."
+      #         aws s3 sync ./ s3://gaddel-hugoye-site --exact-timestamps
+      #         break  # Stop further uploads and rely on sync
+      #       fi
+      #     done < changed_files.txt
+      #   env:
+      #     AWS_REGION: ${{ secrets.AWS_REGION }}
+      #     AWS_ACCOUNT_ID: ${{ secrets.AWS_ACCOUNT_ID }} 
 
-      - name: Invalidate CloudFront Cache
-        run: |
-          aws cloudfront create-invalidation \
-            --distribution-id ${{ secrets.HUGOYE_CLOUDFRONT_DISTRIBUTION_ID}} \
-            --paths "/*"
-        env:
-          AWS_REGION: ${{ secrets.AWS_REGION }}
-          AWS_ACCOUNT_ID: ${{ secrets.AWS_ACCOUNT_ID }} 
+      # - name: Invalidate CloudFront Cache
+      #   run: |
+      #     aws cloudfront create-invalidation \
+      #       --distribution-id ${{ secrets.HUGOYE_CLOUDFRONT_DISTRIBUTION_ID}} \
+      #       --paths "/*"
+      #   env:
+      #     AWS_REGION: ${{ secrets.AWS_REGION }}
+      #     AWS_ACCOUNT_ID: ${{ secrets.AWS_ACCOUNT_ID }} 
           
       # Option 2: Full redeployment
 
-      # - name: Debug
-      #   run: aws s3 sync ./ s3://gaddel-hugoye-site --delete --exact-timestamps --dryrun
-      # - name: Sync all files to S3
-      #   run: |
-      #     aws s3 sync ./ s3://gaddel-hugoye-site --delete --exact-timestamps --exclude "json-data/*" --exclude "testHtml/*" --exclude "person/*" --exclude "place/*" --exclude "keyword/*" --exclude "cbss/*" --exclude "subject/*" --exclude "work/*"
-      #   env:
-      #     AWS_REGION: ${{ secrets.AWS_REGION }}
-      #     AWS_ACCOUNT_ID: ${{ secrets.AWS_ACCOUNT_ID }}
+      - name: Debug
+        run: aws s3 sync ./ s3://gaddel-hugoye-site --delete --exact-timestamps --dryrun
+      - name: Sync all files to S3
+        run: |
+          aws s3 sync ./ s3://gaddel-hugoye-site --delete --exact-timestamps --exclude "json-data/*" --exclude "testHtml/*" --exclude "person/*" --exclude "place/*" --exclude "keyword/*" --exclude "cbss/*" --exclude "subject/*" --exclude "work/*"
+        env:
+          AWS_REGION: ${{ secrets.AWS_REGION }}
+          AWS_ACCOUNT_ID: ${{ secrets.AWS_ACCOUNT_ID }}
