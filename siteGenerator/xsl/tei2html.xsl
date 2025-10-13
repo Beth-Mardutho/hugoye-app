@@ -2384,6 +2384,12 @@
                     <xsl:when test="starts-with(@url,$base-uri)">
                         <xsl:value-of select="replace(@url, $base-uri, 'https://github.com/Beth-Mardutho/hugoye-data/raw/master')"/>
                     </xsl:when>
+                    <xsl:when test="starts-with(@url,'http')">
+                        <xsl:value-of select="@url"/>
+                    </xsl:when>
+                    <xsl:when test="not(starts-with(@url,'/'))">
+                        <xsl:value-of select="concat('https://github.com/Beth-Mardutho/hugoye-data/raw/master/resources/images/articles/',@url)"/>
+                    </xsl:when>
                     <xsl:otherwise>
                         <xsl:value-of select="@url"/>
                     </xsl:otherwise>
