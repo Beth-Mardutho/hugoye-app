@@ -476,7 +476,12 @@
                     <xsl:when test="@rend = 'italic'"><i><xsl:call-template name="ref"/></i></xsl:when>
                     <xsl:when test="@rend = ('superscript','sup')"><sup><xsl:call-template name="ref"/></sup></xsl:when>
                     <xsl:when test="@rend = ('subscript','sub')"><sub><xsl:call-template name="ref"/></sub></xsl:when>
-                    <xsl:otherwise><span class="tei-rend-{string(@rend)}"><xsl:call-template name="ref"/></span></xsl:otherwise>
+                    <xsl:otherwise>
+                        <span class="tei-rend-{string(@rend)}">
+                            <xsl:if test="@style"><xsl:attribute name="style"><xsl:value-of select="@style"/></xsl:attribute></xsl:if>
+                        <xsl:call-template name="ref"/>
+                        </span>
+                    </xsl:otherwise>
                 </xsl:choose>
             </xsl:when>
             <xsl:otherwise><xsl:call-template name="ref"/></xsl:otherwise>

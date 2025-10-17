@@ -11,12 +11,12 @@
       <meta name="DC.isPartOf" property="dc.ispartof" content="Syriaca.org" />
       <link data-template="app:metadata" />
       <link rel="shortcut icon" href="/resources/img/favicon.ico" />
-      <link rel="stylesheet" type="text/css" href="/resources/bootstrap/css/bootstrap.min.css" />
+      <link rel="stylesheet" type="text/css" href="/resources/css/bootstrap.min.css" />
       <link rel="stylesheet" type="text/css" href="/resources/css/sm-core-css.css" />
       <link rel="stylesheet" href="/resources/css/syr-icon-fonts.css" />
       <link rel="stylesheet" type="text/css" href="/resources/css/main.css" />
       <link rel="stylesheet" type="text/css" media="print" href="/resources/css/print.css" />
-      <link href="/resources/jquery-ui/jquery-ui.min.css" rel="stylesheet" /><script type="text/javascript" src="/resources/js/jquery.min.js"></script><script type="text/javascript" src="/resources/jquery-ui/jquery-ui.min.js"></script><script type="text/javascript" src="/resources/js/jquery.smartmenus.min.js"></script><script type="text/javascript" src="/resources/js/clipboard.min.js"></script><script type="text/javascript" src="/resources/bootstrap/js/bootstrap.min.js"></script><script src="https://www.google.com/recaptcha/api.js"></script><link href="/resources/keyboard/css/keyboard.min.css" rel="stylesheet" />
+      <link href="/resources/jquery-ui/jquery-ui.min.css" rel="stylesheet" /><script type="text/javascript" src="/resources/js/jquery.min.js"></script><script type="text/javascript" src="/resources/jquery-ui/jquery-ui.min.js"></script><script type="text/javascript" src="/resources/js/jquery.smartmenus.min.js"></script><script type="text/javascript" src="/resources/js/clipboard.min.js"></script><script type="text/javascript" src="/resources/js/bootstrap.min.js"></script><script src="https://www.google.com/recaptcha/api.js"></script><link href="/resources/keyboard/css/keyboard.min.css" rel="stylesheet" />
       <link href="/resources/keyboard/css/keyboard-previewkeyset.min.css" rel="stylesheet" />
       <link href="/resources/keyboard/syr/syr.css" rel="stylesheet" /><script type="text/javascript" src="/resources/keyboard/syr/jquery.keyboard.js"></script><script type="text/javascript" src="/resources/keyboard/js/jquery.keyboard.extension-mobile.min.js"></script><script type="text/javascript" src="/resources/keyboard/js/jquery.keyboard.extension-navigation.min.js"></script><script type="text/javascript" src="/resources/keyboard/syr/jquery.keyboard.extension-autocomplete.js"></script><script type="text/javascript" src="/resources/keyboard/syr/keyboardSupport.js"></script><script type="text/javascript" src="/resources/keyboard/syr/syr.js"></script><script type="text/javascript" src="/resources/js/keyboard.js"></script></head>
    <body id="body">
@@ -270,15 +270,15 @@
                            
                            <div class="tei-div " id="Head-id.hv22n1chesley.1" lang="en">
                               
-                              <h3 class="tei-head ">1. INTRODUCTION</h3>
-                              <div class="tei-note footnote-inline"><span id="ftn1"><span class="tei-attr-n">1</span><p class="tei-p text-display" id="id." xml:lang="en" lang="en" dir="ltr">
-                                       This research was conducted under digital humanities fellowships offered
-                                       in 2018 at Beth Mardutho: The Syriac Institute. The authors wish to
-                                       thank Dr. George A. Kiraz for his guidance, refining thought, and
-                                       bestowal of the research opportunity. They also wish to thank the three
-                                       reviewers for their incisive feedback on a previous
-                                       draft.
-                                    </p></span></div>
+                              <h3 class="tei-head ">1. INTRODUCTION</h3><span class="footnote-refs"><a href="#note1">1</a></span><span class="tei-note footnote-inline">
+                                 <p class="tei-p text-display" id="id." xml:lang="en" lang="en" dir="ltr">
+                                    This research was conducted under digital humanities fellowships offered
+                                    in 2018 at Beth Mardutho: The Syriac Institute. The authors wish to
+                                    thank Dr. George A. Kiraz for his guidance, refining thought, and
+                                    bestowal of the research opportunity. They also wish to thank the three
+                                    reviewers for their incisive feedback on a previous
+                                    draft.
+                                 </p></span>
                               
                               <p class="tei-p text-display" id="id.hv22n1chesley.1." xml:lang="en" lang="en" dir="ltr">Digital humanities scholars are constantly searching for
                                  automatable processes that will free up time for deeper analysis. One such
@@ -295,20 +295,7 @@
                               <p class="tei-p text-display" id="id.hv22n1chesley.1." xml:lang="en" lang="en" dir="ltr"> This project evaluated three popular print types (S14, W64, and
                                  E22) representing the Syriac type styles Estrangela, Serto, and East Syriac and
                                  tested a representative sample of each type style against both modes available
-                                 for Syriac in Tesseract, Syriac Language and Syriac Script.
-                                 <div class="tei-note footnote-inline"><span id="ftn2"><span class="tei-attr-n">2</span><p class="tei-p text-display" id="id." xml:lang="en" lang="en" dir="ltr"> A brief note on terminology
-                                          used throughout the paper is in order: the term “font” denotes a
-                                          computer font such as the Meltho fonts. The term “print type” is used to
-                                          denote the physical type that corresponds to its code in J. F. Coakley’s
-                                          <i>Typography of Syriac</i>. For instance, the
-                                          Meltho font Serto Jerusalem is based on the print type W11B.
-                                       </p>
-                                       <p class="tei-p text-display" id="id." lang="en">When the Tesseract OCR engine is invoked, it takes
-                                          the “-l” (for language) command-line argument. The language value
-                                          typically matches the ISO 639-2 3-letter code (e.g., “syr” for Syriac)
-                                          but is in reality the name given to the trained data in Tesseract’s
-                                          “tessdata” subfolder.
-                                       </p></span></div> After briefly summarizing the history
+                                 for Syriac in Tesseract, Syriac Language and Syriac Script.<span class="footnote-refs"><a href="#note2">2</a></span><span class="tei-note footnote-inline"></span> After briefly summarizing the history
                                  of Syriac OCR ventures, this paper details the testing methodology, presents the
                                  detailed data results, and finally highlights the most significant errors and
                                  trends across type styles. The analysts also briefly tested six handwritten
@@ -323,11 +310,7 @@
                                  Serto, and around 89% for East Syriac. When diacritics, punctuation, and
                                  non-Syriac characters are taken into consideration, accuracy rates drop
                                  dramatically: around 95% for Estrangela, approximately 86% for Serto, and around
-                                 77% for East Syriac.
-                                 <div class="tei-note footnote-inline"><span id="ftn3"><span class="tei-attr-n">3</span><p class="tei-p text-display" id="id." lang="en"> As will later be explained, every type style was
-                                          OCRed with two modes, hence the results averaged here. Precise
-                                          calculations follow.
-                                       </p></span></div> Scholars may use Tesseract to OCR
+                                 77% for East Syriac.<span class="footnote-refs"><a href="#note3">3</a></span><span class="tei-note footnote-inline"></span> Scholars may use Tesseract to OCR
                                  Estrangela texts with a high degree of confidence, but further training of the
                                  engine will be required before Serto and East Syriac texts may be easily OCRed.
                                  In the latter two type styles, Tesseract may still be helpful for the first step
@@ -347,10 +330,7 @@
                                  German, or French, for example. The latter is script wide (e.g., the Latin
                                  script) and is not sensitive to a specific language. Having said that, according
                                  to the Tesseract user documentation, when one invokes it in Script mode, English
-                                 is always added to the mix.
-                                 <div class="tei-note footnote-inline"><span id="ftn4"><span class="tei-attr-n">4</span><p class="tei-p text-display" id="id." lang="en"> “TESSERACT (1) Manual Page,” GitHub, last updated
-                                          July 2, 2018, <a href="https://github.com/tesseract-ocr/tesseract/blob/master/doc/tesseract.1.asc#languages">https://github.com/tesseract-ocr/tesseract/blob/master/doc/tesseract.1.asc#languages</a>.
-                                       </p></span></div>
+                                 is always added to the mix.<span class="footnote-refs"><a href="#note4">4</a></span><span class="tei-note footnote-inline"><a href="https://github.com/tesseract-ocr/tesseract/blob/master/doc/tesseract.1.asc#languages">https://github.com/tesseract-ocr/tesseract/blob/master/doc/tesseract.1.asc#languages</a></span>
                                  While the Tesseract engine remains the same, its two modes OCR with slightly
                                  different tools and thus produce differing results. The tests accounted for the
                                  mode variable, and results will be reported in both modes. Since the term
@@ -392,50 +372,38 @@
                                  
                                  <p class="tei-p text-display" id="id.hv22n1chesley.1." xml:lang="en" lang="en" dir="ltr"> The primary hindrance to creating an OCR engine for Syriac has
                                     always been its cursive nature of writing, since the script prevents precise
-                                    letter differentiation.
-                                    <div class="tei-note footnote-inline"><span id="ftn5"><span class="tei-attr-n">5</span><p class="tei-p text-display" id="id." lang="en"> This same concern has applied to Arabic
-                                             OCR.
-                                          </p></span></div> Previous approaches have centered on resolving the
-                                    character connectivity problem.
-                                    <div class="tei-note footnote-inline"><span id="ftn6"><span class="tei-attr-n">6</span><p class="tei-p text-display" id="id." lang="en"> Maxim Romanov, Matthew Thomas Miller, Sarah
-                                             Bowen Savant, and Benjamin Kiessling, “Important New Developments in
-                                             Arabographic Optical Character Recognition (OCR),” March 2017. <a href="https://arxiv.org/abs/1703.09550">https://arxiv.org/abs/1703.09550</a></p></span></div> Syriac OCR
+                                    letter differentiation.<span class="footnote-refs"><a href="#note5">5</a></span><span class="tei-note footnote-inline"></span> Previous approaches have centered on resolving the
+                                    character connectivity problem.<span class="footnote-refs"><a href="#note6">6</a></span><span class="tei-note footnote-inline"><a href="https://arxiv.org/abs/1703.09550">https://arxiv.org/abs/1703.09550</a></span> Syriac OCR
                                     was first tackled, to the best of the team’s knowledge, by William Clocksin
                                     in the early 1990s, then a faculty member at the Computer Lab of the
                                     University of Cambridge. In collaboration with students, Clocksin developed
                                     an OCR system for hand-written Estrangela and reported high success rates of
-                                    up to 100% accuracy.
-                                    <div class="tei-note footnote-inline"><span id="ftn7"><span class="tei-attr-n">7</span><p class="tei-p text-display" id="id." lang="en"> William F. Clocksin and Prem Fernando,
-                                             “Towards Automatic Transcription of Estrangelo Script,” <i>Hugoye: Journal of Syriac Studies</i> 6, no. 2
-                                             (2003): 249–68. Clocksin has returned to the Syriac OCR problem in
-                                             recent months, and his new OCR software which is in development
-                                             should be evaluated in the future.
-                                          </p></span></div> Separately, Elizabeth
+                                    up to 100% accuracy.<span class="footnote-refs"><a href="#note7">7</a></span><span class="tei-note footnote-inline"><i>Hugoye: Journal of Syriac Studies</i></span> Separately, Elizabeth
                                     Tse and Josef Bigun from Halmstad University in Sweden developed a different
-                                    system for Serto and reported around 90% accuracy.
-                                    <div class="tei-note footnote-inline"><span id="ftn8"><span class="tei-attr-n">8</span><p class="tei-p text-display" id="id." xml:lang="en" lang="en" dir="ltr"> Elizabeth Tse and Josef
-                                             Bigun, “A base-line character recognition for Syriac-Aramaic,” <i>2007 IEEE International Conference on Systems, Man
-                                                and Cybernetics</i> (Montreal, Quebec: IEEE, 2007), 1048-1055.
-                                             doi: 10.1109/ICSMC.2007.4414012. <a href="https://ieeexplore.ieee.org/document/4414012/authors">https://ieeexplore.ieee.org/document/4414012/authors</a>
-                                             
-                                          </p></span></div> However, both systems remained in trial state, and neither
+                                    system for Serto and reported around 90% accuracy.<span class="footnote-refs"><a href="#note8">8</a></span><span class="tei-note footnote-inline">
+                                       <p class="tei-p text-display" id="id." xml:lang="en" lang="en" dir="ltr"> Elizabeth Tse and Josef
+                                          Bigun, “A base-line character recognition for Syriac-Aramaic,” <i>2007 IEEE International Conference on Systems, Man
+                                             and Cybernetics</i> (Montreal, Quebec: IEEE, 2007), 1048-1055.
+                                          doi: 10.1109/ICSMC.2007.4414012. <a href="https://ieeexplore.ieee.org/document/4414012/authors">https://ieeexplore.ieee.org/document/4414012/authors</a>
+                                          
+                                       </p></span> However, both systems remained in trial state, and neither
                                     gained widespread use.
                                  </p>
                                  
                                  <p class="tei-p text-display" id="id.hv22n1chesley.1." xml:lang="en" lang="en" dir="ltr"> In 2017, Grigory Kessel noticed that Syriac PDFs uploaded to
                                     Google Drive became searchable files. Kessel correctly assumed that there
                                     must be an OCR engine running in the background and notified the Syriac
-                                    studies community through a Syriac studies listserv.
-                                    <div class="tei-note footnote-inline"><span id="ftn9"><span class="tei-attr-n">9</span><p class="tei-p text-display" id="id." xml:lang="en" lang="en" dir="ltr"> Grigory Kessel, April 21,
-                                             2017, message to hugoye-list, <a href="https://groups.yahoo.com/neo/groups/hugoye-list/conversations/messages/8069">https://groups.yahoo.com/neo/groups/hugoye-list/conversations/messages/8069</a>.
-                                             
-                                          </p></span></div> Indeed, Google currently manages an open-source OCR engine
-                                    named Tesseract that was originally developed by Hewlett-Packard.
-                                    <div class="tei-note footnote-inline"><span id="ftn10"><span class="tei-attr-n">10</span><p class="tei-p text-display" id="id." xml:lang="en" lang="en" dir="ltr"> For more
-                                             information, see “Tesseract OCR,” <i>Google Open
-                                                Source</i>, <a href="https://opensource.google.com/projects/tesseract">https://opensource.google.com/projects/tesseract</a>,
-                                             accessed 30 July, 2018.
-                                          </p></span></div> Tesseract can be trained to OCR a
+                                    studies community through a Syriac studies listserv.<span class="footnote-refs"><a href="#note9">9</a></span><span class="tei-note footnote-inline">
+                                       <p class="tei-p text-display" id="id." xml:lang="en" lang="en" dir="ltr"> Grigory Kessel, April 21,
+                                          2017, message to hugoye-list, <a href="https://groups.yahoo.com/neo/groups/hugoye-list/conversations/messages/8069">https://groups.yahoo.com/neo/groups/hugoye-list/conversations/messages/8069</a>.
+                                          
+                                       </p></span> Indeed, Google currently manages an open-source OCR engine
+                                    named Tesseract that was originally developed by Hewlett-Packard.<span class="footnote-refs"><a href="#note10">10</a></span><span class="tei-note footnote-inline">
+                                       <p class="tei-p text-display" id="id." xml:lang="en" lang="en" dir="ltr"> For more
+                                          information, see “Tesseract OCR,” <i>Google Open
+                                             Source</i>, <a href="https://opensource.google.com/projects/tesseract">https://opensource.google.com/projects/tesseract</a>,
+                                          accessed 30 July, 2018.
+                                       </p></span> Tesseract can be trained to OCR a
                                     particular language by feeding it images of that language and their
                                     corresponding transcriptions. With this training method, it learns how to
                                     recognize letters from this training data and then becomes able to recognize
@@ -449,11 +417,11 @@
                                     absence of any documentation from Tesseract’s programmers, the team
                                     considered two options: either a large set of texts was transcribed and fed
                                     into Tesseract with its associated text images or an automated method was
-                                    used to produce text images and their corresponding texts.
-                                    <div class="tei-note footnote-inline"><span id="ftn11"><span class="tei-attr-n">11</span><p class="tei-p text-display" id="id." xml:lang="en" lang="en" dir="ltr"> “TrainingTesseract 4.00,”
-                                             GitHub, last revised 15 July 2018, <a href="https://github.com/tesseract-ocr/tesseract/wiki/TrainingTesseract-4.00">https://github.com/tesseract-ocr/tesseract/wiki/TrainingTesseract-4.00</a>,
-                                             accessed 30 July, 2018. 
-                                          </p></span></div> The former option seemed
+                                    used to produce text images and their corresponding texts.<span class="footnote-refs"><a href="#note11">11</a></span><span class="tei-note footnote-inline">
+                                       <p class="tei-p text-display" id="id." xml:lang="en" lang="en" dir="ltr"> “TrainingTesseract 4.00,”
+                                          GitHub, last revised 15 July 2018, <a href="https://github.com/tesseract-ocr/tesseract/wiki/TrainingTesseract-4.00">https://github.com/tesseract-ocr/tesseract/wiki/TrainingTesseract-4.00</a>,
+                                          accessed 30 July, 2018. 
+                                       </p></span> The former option seemed
                                     unlikely since the Syriac world is a small one; if the hundreds of thousands
                                     of lines that are required for thorough training had been transcribed from
                                     books by a Syriac scholar, the Syriac community would presumably have heard
@@ -465,12 +433,12 @@
                                     data can be used to train Tesseract on which shapes represent which
                                     characters. Searching internet archives unearthed web pages which indicated
                                     that Beth Mardutho’s Meltho fonts may have been used for just such a
-                                    task.
-                                    <div class="tei-note footnote-inline"><span id="ftn12"><span class="tei-attr-n">12</span><p class="tei-p text-display" id="id." xml:lang="en" lang="en" dir="ltr">
-                                             Tesseract language-specific training guide, GitHub, last revised 19
-                                             July 2018, <a href="https://github.com/tesseract-ocr/tesseract/blob/master/src/training/language-specific.sh">https://github.com/tesseract-ocr/tesseract/blob/master/src/training/language-specific.sh</a>.
-                                             
-                                          </p></span></div> To verify this assumption, the analysts produced a PDF from
+                                    task.<span class="footnote-refs"><a href="#note12">12</a></span><span class="tei-note footnote-inline">
+                                       <p class="tei-p text-display" id="id." xml:lang="en" lang="en" dir="ltr">
+                                          Tesseract language-specific training guide, GitHub, last revised 19
+                                          July 2018, <a href="https://github.com/tesseract-ocr/tesseract/blob/master/src/training/language-specific.sh">https://github.com/tesseract-ocr/tesseract/blob/master/src/training/language-specific.sh</a>.
+                                          
+                                       </p></span> To verify this assumption, the analysts produced a PDF from
                                     the non-standard, calligraphic Meltho font Estrangelo TurAbdin, which was
                                     based on the calligraphy of Isa Benjamin and does not appear in any print
                                     edition. Estrangelo TurAbdin is an elaborately swirled and decorated font,
@@ -484,12 +452,8 @@
                                     </span>
                                  
                                  <p class="tei-p text-display" id="id.hv22n1chesley.1." xml:lang="en" lang="en" dir="ltr"><b>Figure 1: Example of Estrangelo TurAbdin
-                                       Font</b><div class="tei-note footnote-inline"><span id="ftn13"><span class="tei-attr-n">13</span><p class="tei-p text-display" id="id." lang="en">
-                                             <i>The Patriarchal Journal of the Syrian Orthodox
-                                                Patriarchate of Antioch and All the East</i> 40, nos.
-                                             211-212-213 (2002), 94.
-                                          </p></span></div>
-                                 </p>
+                                       Font</b><span class="footnote-refs"><a href="#note13">13</a></span><span class="tei-note footnote-inline"><i>The Patriarchal Journal of the Syrian Orthodox
+                                          Patriarchate of Antioch and All the East</i></span></p>
                                  
                                  <p class="tei-p text-display" id="id.hv22n1chesley.1." xml:lang="en" lang="en" dir="ltr">Fortunately, the standard non-calligraphic Meltho fonts are
                                     based on actual print types that were used in the vast majority of Syriac
@@ -506,22 +470,20 @@
                                        1855, based on a 7th century manuscript from the British Library, <i>Add. 14640</i>. It was used by the University of
                                        Cambridge Press, among other presses. Books published in this type
                                        include Burkitt’s <i>Evangelion Da-Mepharreshe</i>
-                                       (Cambridge, 1904). This corresponds to print type Coakley S14.
-                                       <div class="tei-note footnote-inline"><span id="ftn14"><span class="tei-attr-n">14</span><p class="tei-p text-display" id="id." xml:lang="en" lang="en" dir="ltr"> J. F.
-                                                Coakley, <i>The Typography of Syriac: A
-                                                   historical catalogue of printing types, 1537-1958</i> (New
-                                                Castle, DE, and London: Oak Knoll Press and The British Library,
-                                                2006), 172–76.
-                                             </p></span></div>
-                                    </li>
+                                       (Cambridge, 1904). This corresponds to print type Coakley S14.<span class="footnote-refs"><a href="#note14">14</a></span><span class="tei-note footnote-inline">
+                                          <p class="tei-p text-display" id="id." xml:lang="en" lang="en" dir="ltr"> J. F.
+                                             Coakley, <i>The Typography of Syriac: A
+                                                historical catalogue of printing types, 1537-1958</i> (New
+                                             Castle, DE, and London: Oak Knoll Press and The British Library,
+                                             2006), 172–76.
+                                          </p></span></li>
                                     
                                     <li><b>Estrangelo Nisibin</b>. The type was designed in
                                        1886, probably by Yūsuf Dīyār Bakrī, and was used in the Dominican Press
-                                       in Mosul. This corresponds to Coakley S17.
-                                       <div class="tei-note footnote-inline"><span id="ftn15"><span class="tei-attr-n">15</span><p class="tei-p text-display" id="id." xml:lang="en" lang="en" dir="ltr"> Coakley, <i>Typography of Syriac</i>,
-                                                178–79.
-                                             </p></span></div>
-                                    </li>
+                                       in Mosul. This corresponds to Coakley S17.<span class="footnote-refs"><a href="#note15">15</a></span><span class="tei-note footnote-inline">
+                                          <p class="tei-p text-display" id="id." xml:lang="en" lang="en" dir="ltr"> Coakley, <i>Typography of Syriac</i>,
+                                             178–79.
+                                          </p></span></li>
                                     
                                     <li><b>Estrangelo Edessa</b>. The font is based on types
                                        provided by an Ohioan press and was probably designed after the 1954
@@ -538,67 +500,53 @@
                                        Nationale in Paris sometime in the second half of the 19th century. It
                                        was also acquired by the Syriac Orthodox press at St. Mark’s Monastery
                                        in Jerusalem, from which the font was designed. This corresponds to
-                                       Coakley W11B.
-                                       <div class="tei-note footnote-inline"><span id="ftn16"><span class="tei-attr-n">16</span><p class="tei-p text-display" id="id." lang="en"> Coakley, <i>Typography of
-                                                   Syriac</i>, 50–56.
-                                             </p></span></div>
-                                    </li>
+                                       Coakley W11B.<span class="footnote-refs"><a href="#note16">16</a></span><span class="tei-note footnote-inline"><i>Typography of
+                                             Syriac</i></span></li>
                                     
                                     <li><b>Serto Kharput</b>. The type was originally designed
                                        by the Swedish designer O. Tullberg and G. H. Bernstein for the Teubner
                                        type foundry and was first seen in 1853. Bernstein’s edition of the
                                        Harklean version of St. John’s Gospel was published with this type
                                        (Leipzig, 1854). This was one of the first Serto types to contain a
-                                       sizeable amount of ligatures. This corresponds to Coakley W49.
-                                       <div class="tei-note footnote-inline"><span id="ftn17"><span class="tei-attr-n">17</span><p class="tei-p text-display" id="id." xml:lang="en" lang="en" dir="ltr"> Coakley,
-                                                <i>Typography of Syriac</i>,
-                                                125–28.
-                                             </p></span></div>
-                                    </li>
+                                       sizeable amount of ligatures. This corresponds to Coakley W49.<span class="footnote-refs"><a href="#note17">17</a></span><span class="tei-note footnote-inline">
+                                          <p class="tei-p text-display" id="id." xml:lang="en" lang="en" dir="ltr"> Coakley,
+                                             <i>Typography of Syriac</i>,
+                                             125–28.
+                                          </p></span></li>
                                     
                                     <li><b>Serto Batnan</b>. This type was designed by the
                                        London-based typefoundery of William Watts for Oxford University Press
                                        around 1864. It was used in printing Payne Smith’s <i>Thesaurus Syriacus</i> (Oxford, 1866) and P. E. Pusey and G. H.
                                        Gwilliam’s edition of the Syriac New Testament (Oxford, 1901) which is
                                        still reproduced by the United Bible Society. This corresponds to
-                                       Coakley W52.
-                                       <div class="tei-note footnote-inline"><span id="ftn18"><span class="tei-attr-n">18</span><p class="tei-p text-display" id="id." lang="en"> Coakley, <i>Typography of
-                                                   Syriac</i>, 132–135.
-                                             </p></span></div>
-                                    </li>
+                                       Coakley W52.<span class="footnote-refs"><a href="#note18">18</a></span><span class="tei-note footnote-inline"><i>Typography of
+                                             Syriac</i></span></li>
                                     
                                     <li><b>Serto Malankara</b>. The original type goes back to
                                        1870 and was designed by Saint Thomas Press at Cochin. Lee’s edition of
                                        the Old Testament is still reprinted from this type by the United Bible
                                        Society. Until recently, the print type was still used by the Syriac
                                        Orthodox and the Syro-Malabar presses of India. This corresponds to
-                                       Coakley W54, which itself was derived from W36.
-                                       <div class="tei-note footnote-inline"><span id="ftn19"><span class="tei-attr-n">19</span><p class="tei-p text-display" id="id." xml:lang="en" lang="en" dir="ltr"> Coakley, <i>Typography of Syriac</i>, 104-106,
-                                                136-137.
-                                             </p></span></div>
-                                    </li>
+                                       Coakley W54, which itself was derived from W36.<span class="footnote-refs"><a href="#note19">19</a></span><span class="tei-note footnote-inline">
+                                          <p class="tei-p text-display" id="id." xml:lang="en" lang="en" dir="ltr"> Coakley, <i>Typography of Syriac</i>, 104-106,
+                                             136-137.
+                                          </p></span></li>
                                     
                                     <li><b>Serto Mardin</b>. The original type design was made
                                        in 1888 by W. Drugulin of Leipzig and overseen by Paul de Lagarde. A
                                        number of books were printed in this type including Bar Ebroyo’s <i>Ṣ</i><i>em</i><i>ḥe</i> (1922). This corresponds to Coakley
-                                       W61.
-                                       <div class="tei-note footnote-inline"><span id="ftn20"><span class="tei-attr-n">20</span><p class="tei-p text-display" id="id." xml:lang="en" lang="en" dir="ltr"> Coakley, <i>Typography of Syriac</i>, 144–46;
-                                                Bar Hebraeus, <i>Le Livre des Splendeurs de
-                                                   Grégoire Barhebraeus</i>, ed. Alex Moberg (London: Humphrey
-                                                Milford, 1922).
-                                             </p></span></div>
-                                    </li>
+                                       W61.<span class="footnote-refs"><a href="#note20">20</a></span><span class="tei-note footnote-inline">
+                                          <p class="tei-p text-display" id="id." xml:lang="en" lang="en" dir="ltr"> Coakley, <i>Typography of Syriac</i>, 144–46;
+                                             Bar Hebraeus, <i>Le Livre des Splendeurs de
+                                                Grégoire Barhebraeus</i>, ed. Alex Moberg (London: Humphrey
+                                             Milford, 1922).
+                                          </p></span></li>
                                     
                                     <li><b>East Syriac Adiabene</b>. This type was used in the
                                        Dominican Press in Mosul and by Cambridge University Press. Its design
                                        is derived from a type designed by W. Drugulin in 1883. This corresponds
-                                       to Coakley E22.
-                                       <div class="tei-note footnote-inline"><span id="ftn21"><span class="tei-attr-n">21</span><p class="tei-p text-display" id="id." lang="en"> Coakley, <i>Typography of
-                                                   Syriac</i>, 225–28. For the history of this East Syriac
-                                                type, see J. F. Coakley, “Edward Breath and the Typography of
-                                                Syriac,” <i>Harvard Library Bulletin</i>, New
-                                                Series, vol. 6, no. 4 (1995): 4–64.
-                                             </p></span></div>
+                                       to Coakley E22.<span class="footnote-refs"><a href="#note21">21</a></span><span class="tei-note footnote-inline"><i>Typography of
+                                             Syriac</i><i>Harvard Library Bulletin</i></span>
                                        
                                     </li>
                                     
@@ -630,30 +578,27 @@
                                     and East Syriac: 
                                  </p>
                                  
-                                 <p class="tei-p text-display" id="id.hv22n1chesley.3." xml:lang="en" lang="en" dir="ltr">Estrangela: print type S14 
-                                    <div class="tei-note footnote-inline"><span id="ftn22"><span class="tei-attr-n">22</span><p class="tei-p text-display" id="id." xml:lang="en" lang="en" dir="ltr"> Išo‘dad de Merv, <i>Commentaire d’Išo‘dad de Merv Sur l’Ancien Testament I.
-                                                Genèse</i>, ed. J.-M. Vosté and C. Van den Eynde, CSCO 126,
-                                             Scriptores Syri 67 (Louvain: Imprimerie Orientaliste L. Durbecq,
-                                             1950).
-                                          </p></span></div>
-                                 </p>
+                                 <p class="tei-p text-display" id="id.hv22n1chesley.3." xml:lang="en" lang="en" dir="ltr">Estrangela: print type S14 <span class="footnote-refs"><a href="#note22">22</a></span><span class="tei-note footnote-inline">
+                                       <p class="tei-p text-display" id="id." xml:lang="en" lang="en" dir="ltr"> Išo‘dad de Merv, <i>Commentaire d’Išo‘dad de Merv Sur l’Ancien Testament I.
+                                             Genèse</i>, ed. J.-M. Vosté and C. Van den Eynde, CSCO 126,
+                                          Scriptores Syri 67 (Louvain: Imprimerie Orientaliste L. Durbecq,
+                                          1950).
+                                       </p></span></p>
                                  
-                                 <p class="tei-p text-display" id="id.hv22n1chesley.3." xml:lang="en" lang="en" dir="ltr">Serto: print type W64
-                                    <div class="tei-note footnote-inline"><span id="ftn23"><span class="tei-attr-n">23</span><p class="tei-p text-display" id="id." xml:lang="en" lang="en" dir="ltr"> Severus of Antioch, <i>Les
-                                                Homiliae Cathedrales de Sévère d’Antioche: traduction Syriaque
-                                                de Jacques d’Édesse</i> (Homélies LII–LVII), ed. and trans. R.
-                                             Duval, Patrologia Orientalis 4 (Paris: Librarie de Paris,
-                                             1908).
-                                          </p></span></div>
-                                 </p>
+                                 <p class="tei-p text-display" id="id.hv22n1chesley.3." xml:lang="en" lang="en" dir="ltr">Serto: print type W64<span class="footnote-refs"><a href="#note23">23</a></span><span class="tei-note footnote-inline">
+                                       <p class="tei-p text-display" id="id." xml:lang="en" lang="en" dir="ltr"> Severus of Antioch, <i>Les
+                                             Homiliae Cathedrales de Sévère d’Antioche: traduction Syriaque
+                                             de Jacques d’Édesse</i> (Homélies LII–LVII), ed. and trans. R.
+                                          Duval, Patrologia Orientalis 4 (Paris: Librarie de Paris,
+                                          1908).
+                                       </p></span></p>
                                  
-                                 <p class="tei-p text-display" id="id.hv22n1chesley.3." xml:lang="en" lang="en" dir="ltr">East Syriac: print type E22
-                                    <div class="tei-note footnote-inline"><span id="ftn24"><span class="tei-attr-n">24</span><p class="tei-p text-display" id="id." xml:lang="en" lang="en" dir="ltr">
-                                             <i>Acta Martyrum et Sanctorum Syriace</i>, vol. 1,
-                                             ed. Paul Bedjan (Hildesheim: Georg Olms Verlagsbuchhandlung,
-                                             1968).
-                                          </p></span></div>
-                                 </p>
+                                 <p class="tei-p text-display" id="id.hv22n1chesley.3." xml:lang="en" lang="en" dir="ltr">East Syriac: print type E22<span class="footnote-refs"><a href="#note24">24</a></span><span class="tei-note footnote-inline">
+                                       <p class="tei-p text-display" id="id." xml:lang="en" lang="en" dir="ltr">
+                                          <i>Acta Martyrum et Sanctorum Syriace</i>, vol. 1,
+                                          ed. Paul Bedjan (Hildesheim: Georg Olms Verlagsbuchhandlung,
+                                          1968).
+                                       </p></span></p>
                                  
                                  <p class="tei-p text-display" id="id.hv22n1chesley.3." xml:lang="en" lang="en" dir="ltr"> Syriac texts that were printed in these frequently-used print
                                     types were chosen for OCRing. The Estrangela and Serto texts are unvocalized
@@ -662,21 +607,17 @@
                                     vocalized in many text editions. Several pages from each text were scanned
                                     at 300 dpi in black and white and cropped in order to generate images that
                                     only included the main body of the text, thus excluding marginal notes and
-                                    footnotes.
-                                    <div class="tei-note footnote-inline"><span id="ftn25"><span class="tei-attr-n">25</span><p class="tei-p text-display" id="id." lang="en"> In prior OCR tests, footnotes, headings, and
-                                             marginal notes had caused difficulties with line segmentation and
-                                             made the OCR results less accurate.
-                                          </p></span></div> Images were rotated
+                                    footnotes.<span class="footnote-refs"><a href="#note25">25</a></span><span class="tei-note footnote-inline"></span> Images were rotated
                                     as necessary to gain even, horizontal lines. Each page was then saved
                                     individually as an image file (.jpg or .tif), and three pages from each text
-                                    were chosen for the current evaluation.
-                                    <div class="tei-note footnote-inline"><span id="ftn26"><span class="tei-attr-n">26</span><p class="tei-p text-display" id="id." xml:lang="en" lang="en" dir="ltr"> In choosing a page to test, the clarity
-                                             of the image and the amount of text were both considered. Pages that
-                                             only included full lines of text were prioritized, as were images
-                                             with the most even lines. The pages were also not pre-segmented in
-                                             this OCR process; they were OCRed as they appear in Figure
-                                             2.
-                                          </p></span></div>
+                                    were chosen for the current evaluation.<span class="footnote-refs"><a href="#note26">26</a></span><span class="tei-note footnote-inline">
+                                       <p class="tei-p text-display" id="id." xml:lang="en" lang="en" dir="ltr"> In choosing a page to test, the clarity
+                                          of the image and the amount of text were both considered. Pages that
+                                          only included full lines of text were prioritized, as were images
+                                          with the most even lines. The pages were also not pre-segmented in
+                                          this OCR process; they were OCRed as they appear in Figure
+                                          2.
+                                       </p></span>
                                     
                                  </p>
                                  <span class="tei-figure"><span class="tei-graphic"><img src="https://github.com/Beth-Mardutho/hugoye-data/raw/master/resources/images/articles/HV22N1Chesley2.jpg" class="center" width="80%" /></span></span>
@@ -686,15 +627,15 @@
                                  <p class="tei-p text-display" id="id.hv22n1chesley.3." xml:lang="en" lang="en" dir="ltr"><b>Figure 2: Samples of the
                                        Original Images Shown to Scale</b></p>
                                  
-                                 <p class="tei-p text-display" id="id.hv22n1chesley.3." xml:lang="en" lang="en" dir="ltr"> Tesseract was downloaded onto two Windows laptops.
-                                    <div class="tei-note footnote-inline"><span id="ftn27"><span class="tei-attr-n">27</span><p class="tei-p text-display" id="id." xml:lang="en" lang="en" dir="ltr"> The team
-                                             decided to run Tesseract only on Windows computers as a point of
-                                             consistency across the outputs, but it used more than one machine in
-                                             order to check the outputs against each other. Tesseract 4.0 was
-                                             downloaded from the GitHub page maintained by the Mannheim
-                                             University Library (UB Mannheim): <a href="https://github.com/UB-Mannheim/tesseract/wiki"><span class="tei-rend-underline">https://github.com/UB-Mannheim/tesseract/wiki</span></a>,
-                                             accessed 30 July, 2018. 
-                                          </p></span></div> The analysts tested three
+                                 <p class="tei-p text-display" id="id.hv22n1chesley.3." xml:lang="en" lang="en" dir="ltr"> Tesseract was downloaded onto two Windows laptops.<span class="footnote-refs"><a href="#note27">27</a></span><span class="tei-note footnote-inline">
+                                       <p class="tei-p text-display" id="id." xml:lang="en" lang="en" dir="ltr"> The team
+                                          decided to run Tesseract only on Windows computers as a point of
+                                          consistency across the outputs, but it used more than one machine in
+                                          order to check the outputs against each other. Tesseract 4.0 was
+                                          downloaded from the GitHub page maintained by the Mannheim
+                                          University Library (UB Mannheim): <a href="https://github.com/UB-Mannheim/tesseract/wiki"><span class="tei-rend-underline">https://github.com/UB-Mannheim/tesseract/wiki</span></a>,
+                                          accessed 30 July, 2018. 
+                                       </p></span> The analysts tested three
                                     images, each one page of the text, for Estrangela (S14), Serto (W64), and
                                     East Syriac (E22). Each image, in turn, was OCRed using both Syriac language
                                     modes for Tesseract (command-line arguments “-l Syr” and “-l script/Syriac”
@@ -719,31 +660,27 @@
                                     first is Tesseract’s language code command-line arguments (which run
                                     Tesseract using Syriac Language and Syriac Script modes). A second variable
                                     is the output file kind. Tesseract can be invoked to output text (.txt
-                                    files), PDF, or hOCR files,
-                                    <div class="tei-note footnote-inline"><span id="ftn28"><span class="tei-attr-n">28</span><p class="tei-p text-display" id="id." lang="en"> The hOCR file type is built upon HTML. FAQ,
-                                             GitHub, <a href="https://github.com/tesseract-ocr/tesseract/wiki/FAQ"><span class="tei-rend-underline">https://github.com/tesseract-ocr/tesseract/wiki/FAQ</span></a>,
-                                             accessed 30 July, 2018. 
-                                          </p></span></div> among others.
-                                    <div class="tei-note footnote-inline"><span id="ftn29"><span class="tei-attr-n">29</span><p class="tei-p text-display" id="id." xml:lang="en" lang="en" dir="ltr"> One option for
-                                             command-line arguments that occasionally interfered with accuracy
-                                             was selecting multiple output file types at once. When executing the
-                                             Tesseract command-line arguments, one must choose a file kind for
-                                             output; selecting “txt” generates the OCR as a .txt file, and so
-                                             forth. However, one can choose to generate multiple file kinds at
-                                             once by entering all codes into the same command-line argument. For
-                                             the most part, the OCR text that results from multi-output functions
-                                             is identical to those generated by single-output functions. However,
-                                             sometimes a multi-output function generated gibberish. For example,
-                                             a page in Serto was run through Tesseract with the Script
-                                             command-line argument and with an output of “txt pdf hocr,” and one
-                                             of the resultant lines was: “bs avwnE vrtwAUM oa airog + <span lang="syr" dir="rtl">ܙܝܐ</span> ‎ eTB NA Kota)
-                                             CApeTtoLG ®.” This was by no means a common occurrence, and the team
-                                             did not find the same problem repeated with other Serto images or in
-                                             other type styles, which suggests that researchers need not
-                                             anticipate an error like this happening frequently. That being said,
-                                             running one output file kind at a time ensures the most accurate OCR
-                                             of one’s image.
-                                          </p></span></div> Timing and particular computer used were
+                                    files), PDF, or hOCR files,<span class="footnote-refs"><a href="#note28">28</a></span><span class="tei-note footnote-inline"><a href="https://github.com/tesseract-ocr/tesseract/wiki/FAQ"><span class="tei-rend-underline">https://github.com/tesseract-ocr/tesseract/wiki/FAQ</span></a></span> among others.<span class="footnote-refs"><a href="#note29">29</a></span><span class="tei-note footnote-inline">
+                                       <p class="tei-p text-display" id="id." xml:lang="en" lang="en" dir="ltr"> One option for
+                                          command-line arguments that occasionally interfered with accuracy
+                                          was selecting multiple output file types at once. When executing the
+                                          Tesseract command-line arguments, one must choose a file kind for
+                                          output; selecting “txt” generates the OCR as a .txt file, and so
+                                          forth. However, one can choose to generate multiple file kinds at
+                                          once by entering all codes into the same command-line argument. For
+                                          the most part, the OCR text that results from multi-output functions
+                                          is identical to those generated by single-output functions. However,
+                                          sometimes a multi-output function generated gibberish. For example,
+                                          a page in Serto was run through Tesseract with the Script
+                                          command-line argument and with an output of “txt pdf hocr,” and one
+                                          of the resultant lines was: “bs avwnE vrtwAUM oa airog + <span lang="syr" dir="rtl">ܙܝܐ</span> ‎ eTB NA Kota)
+                                          CApeTtoLG ®.” This was by no means a common occurrence, and the team
+                                          did not find the same problem repeated with other Serto images or in
+                                          other type styles, which suggests that researchers need not
+                                          anticipate an error like this happening frequently. That being said,
+                                          running one output file kind at a time ensures the most accurate OCR
+                                          of one’s image.
+                                       </p></span> Timing and particular computer used were
                                     additional variables, the impact of which the analysts did not initially
                                     know. In order to confirm the consistency of Tesseract, every OCRed image
                                     was later re-OCRed by the same analyst and with the same set of command
@@ -770,45 +707,32 @@
                                     diacritics, and non-Syriac characters (including numerals, brackets, and
                                     asterisks). To determine these numbers, several lines of each page were
                                     counted and averaged, and that average was then used to estimate character
-                                    counts for the whole page.
-                                    <div class="tei-note footnote-inline"><span id="ftn30"><span class="tei-attr-n">30</span><p class="tei-p text-display" id="id." lang="en"> One analyst counted the exact number of
-                                             characters for her pages without using averages and found her counts
-                                             to be similar to that of her colleagues.
-                                          </p></span></div> The character
+                                    counts for the whole page.<span class="footnote-refs"><a href="#note30">30</a></span><span class="tei-note footnote-inline"></span> The character
                                     count without spaces given within the OCRed Word document was collected as
                                     well. This allowed for an overall comparison between character counts in the
-                                    original image and in the resulting document.
-                                    <div class="tei-note footnote-inline"><span id="ftn31"><span class="tei-attr-n">31</span><p class="tei-p text-display" id="id." xml:lang="en" lang="en" dir="ltr"> This information is given
-                                             in <span class="tei-rend-Hyperlink">Appendix 2</span>. 
-                                          </p></span></div> Additionally,
+                                    original image and in the resulting document.<span class="footnote-refs"><a href="#note31">31</a></span><span class="tei-note footnote-inline">
+                                       <p class="tei-p text-display" id="id." xml:lang="en" lang="en" dir="ltr"> This information is given
+                                          in <span class="tei-rend-Hyperlink">Appendix 2</span>. 
+                                       </p></span> Additionally,
                                     numbers for individual consonants were counted amongst all of the original
                                     pages in order to calculate and discuss OCR error rates for specific
-                                    consonants.
-                                    <div class="tei-note footnote-inline"><span id="ftn32"><span class="tei-attr-n">32</span><p class="tei-p text-display" id="id." lang="en"> In other words, the team estimated <i>total </i>character counts for consonants,
-                                             diacritics, punctuation, and non-Syriac characters, but it counted
-                                             exact numbers of individual consonants.
-                                          </p></span></div>
+                                    consonants.<span class="footnote-refs"><a href="#note32">32</a></span><span class="tei-note footnote-inline"><i>total </i></span>
                                     
                                  </p>
                                  
                                  <p class="tei-p text-display" id="id.hv22n1chesley.3." xml:lang="en" lang="en" dir="ltr"> Next, the analysts began to identify and record the errors
                                     that appeared in the 18 OCRed documents, comparing each one to its original
-                                    image.
-                                    <div class="tei-note footnote-inline"><span id="ftn33"><span class="tei-attr-n">33</span><p class="tei-p text-display" id="id." xml:lang="en" lang="en" dir="ltr">
-                                             Despite the type style of the original image, the Word documents
-                                             used by the analysts for comparison generally presented the text in
-                                             each computer’s default Syriac font, generally an Estrangela font.
-                                             Analysts could leave the Estrangela font or change fonts to match
-                                             the original image. Two analysts choose the former method, one the
-                                             latter. 
-                                          </p></span></div> Any consonant, diacritic, punctuation mark, or
+                                    image.<span class="footnote-refs"><a href="#note33">33</a></span><span class="tei-note footnote-inline">
+                                       <p class="tei-p text-display" id="id." xml:lang="en" lang="en" dir="ltr">
+                                          Despite the type style of the original image, the Word documents
+                                          used by the analysts for comparison generally presented the text in
+                                          each computer’s default Syriac font, generally an Estrangela font.
+                                          Analysts could leave the Estrangela font or change fonts to match
+                                          the original image. Two analysts choose the former method, one the
+                                          latter. 
+                                       </p></span> Any consonant, diacritic, punctuation mark, or
                                     other character that did not exactly match those in the original image were
-                                    considered errors.
-                                    <div class="tei-note footnote-inline"><span id="ftn34"><span class="tei-attr-n">34</span><p class="tei-p text-display" id="id." lang="en"> Smudges or dust that appeared on the original
-                                             image as if it were a character was not considered an error, per se,
-                                             as the OCR correctly identified the character even though the
-                                             character was not intended in the original image. 
-                                          </p></span></div> These
+                                    considered errors.<span class="footnote-refs"><a href="#note34">34</a></span><span class="tei-note footnote-inline"></span> These
                                     were recorded as precisely as possible. For example, if a <i>nun</i> was incorrectly recognized as a <i>yud</i> in
                                     one word and as an <i>olaph</i> in another word, these
                                     occurrences were recorded as distinct errors. This allowed more precision in
@@ -822,14 +746,14 @@
                                     as to develop basic understandings of why these particular errors might have
                                     occurred. Having a record of all errors produced also provided a wider
                                     picture of the breadth of issues that can appear when OCRing Syriac
-                                    texts.
-                                    <div class="tei-note footnote-inline"><span id="ftn35"><span class="tei-attr-n">35</span><p class="tei-p text-display" id="id." xml:lang="en" lang="en" dir="ltr">
-                                             Further on, there will be a discussion of <span class="tei-rend-Hyperlink">truly
-                                                odd occurrences</span> found within these pages. Of course, this
-                                             does not present an exhaustive account of what could appear in
-                                             Syriac OCR pages, but it does give a basic understanding of what
-                                             sorts of errors can occur.
-                                          </p></span></div> After data collection was
+                                    texts.<span class="footnote-refs"><a href="#note35">35</a></span><span class="tei-note footnote-inline">
+                                       <p class="tei-p text-display" id="id." xml:lang="en" lang="en" dir="ltr">
+                                          Further on, there will be a discussion of <span class="tei-rend-Hyperlink">truly
+                                             odd occurrences</span> found within these pages. Of course, this
+                                          does not present an exhaustive account of what could appear in
+                                          Syriac OCR pages, but it does give a basic understanding of what
+                                          sorts of errors can occur.
+                                       </p></span> After data collection was
                                     completed, analysis of accuracy and error trends began. 
                                  </p>
                                  <span class="tei-figure">
@@ -847,21 +771,13 @@
                                  <p class="tei-p text-display" id="id.hv22n1chesley.3." xml:lang="en" lang="en" dir="ltr">The key data point to determine was the rate of recognition
                                     accuracy. Accuracy, simply stated, is the inverse of error rate; accuracy
                                     was calculated by subtracting the error rate from one. For most data points,
-                                    the error rate is understood as the total errors
-                                    <div class="tei-note footnote-inline"><span id="ftn36"><span class="tei-attr-n">36</span><p class="tei-p text-display" id="id." xml:lang="en" lang="en" dir="ltr"> This includes any
-                                             truncated characters, which may be considered an OCR segmentation
-                                             issue rather than an OCR recognition issue. 
-                                          </p></span></div> (in the
+                                    the error rate is understood as the total errors<span class="footnote-refs"><a href="#note36">36</a></span><span class="tei-note footnote-inline">
+                                       <p class="tei-p text-display" id="id." xml:lang="en" lang="en" dir="ltr"> This includes any
+                                          truncated characters, which may be considered an OCR segmentation
+                                          issue rather than an OCR recognition issue. 
+                                       </p></span> (in the
                                     considered category) divided by the total characters in the original image
-                                    (in the considered category).
-                                    <div class="tei-note footnote-inline"><span id="ftn37"><span class="tei-attr-n">37</span><p class="tei-p text-display" id="id." lang="en"> Because accuracy was defined as total errors
-                                             (including added characters) divided by characters in the original
-                                             image, the accuracy rates can be negative if there are more
-                                             resulting errors than characters in the original image. The
-                                             characters that were added cause this problem. Some accuracy rates
-                                             could not be calculated due to the lack of certain characters (e.g.,
-                                             non-Syriac characters) in the original. 
-                                          </p></span></div> Accuracy was
+                                    (in the considered category).<span class="footnote-refs"><a href="#note37">37</a></span><span class="tei-note footnote-inline"></span> Accuracy was
                                     computed for consonants, diacritic marks, punctuation marks, and other
                                     characters, as well as total accuracy across characters. Rates were
                                     calculated for each individual page, for each Tesseract mode of operation
@@ -869,14 +785,14 @@
                                     Syriac), and each Syriac type style as a whole (averaging results for both
                                     modes). Additionally, errors and their respective accuracy rates involving
                                     certain letters were considered, specifically when a letter in the original
-                                    became a different character or disappeared in the resulting document.
-                                    <div class="tei-note footnote-inline"><span id="ftn38"><span class="tei-attr-n">38</span><p class="tei-p text-display" id="id." xml:lang="en" lang="en" dir="ltr"> These
-                                             consonant accuracy rates do not include truncated characters, as
-                                             that is typically a segmentation issue and not a problem of
-                                             recognition. They also do not include added consonants since added
-                                             characters do not reflect Tesseract’s ability to recognize the
-                                             specific character.
-                                          </p></span></div> The relative frequency of individual
+                                    became a different character or disappeared in the resulting document.<span class="footnote-refs"><a href="#note38">38</a></span><span class="tei-note footnote-inline">
+                                       <p class="tei-p text-display" id="id." xml:lang="en" lang="en" dir="ltr"> These
+                                          consonant accuracy rates do not include truncated characters, as
+                                          that is typically a segmentation issue and not a problem of
+                                          recognition. They also do not include added consonants since added
+                                          characters do not reflect Tesseract’s ability to recognize the
+                                          specific character.
+                                       </p></span> The relative frequency of individual
                                     letters and their average accuracy within each combination of type style and
                                     Tesseract mode factored into the analysis. Comparisons were then made, and
                                     observations collected. 
@@ -985,18 +901,17 @@
                                           
                                           <td>Diacritics</td>
                                           
-                                          <td>Non-Syriac
-                                             <div class="tei-note footnote-inline"><span id="ftn39"><span class="tei-attr-n">39</span><p class="tei-p text-display" id="id." xml:lang="en" lang="en" dir="ltr"> Because accuracy was defined
-                                                      as total errors (including added characters) divided by
-                                                      characters in the original image, the accuracy rates can
-                                                      be negative if there are more resulting errors than
-                                                      characters in the original image. The characters that
-                                                      were added cause this problem. Some accuracy rates could
-                                                      not be calculated due to the lack of certain characters
-                                                      (e.g., non-Syriac characters) in the original.
-                                                      
-                                                   </p></span></div>
-                                          </td>
+                                          <td>Non-Syriac<span class="footnote-refs"><a href="#note39">39</a></span><span class="tei-note footnote-inline">
+                                                <p class="tei-p text-display" id="id." xml:lang="en" lang="en" dir="ltr"> Because accuracy was defined
+                                                   as total errors (including added characters) divided by
+                                                   characters in the original image, the accuracy rates can
+                                                   be negative if there are more resulting errors than
+                                                   characters in the original image. The characters that
+                                                   were added cause this problem. Some accuracy rates could
+                                                   not be calculated due to the lack of certain characters
+                                                   (e.g., non-Syriac characters) in the original.
+                                                   
+                                                </p></span></td>
                                           
                                           <td>Total</td>
                                           
@@ -1117,26 +1032,26 @@
                                           Accuracy Rates</b></p>
                                     
                                     <p class="tei-p text-display" id="id.hv22n1chesley.4." xml:lang="en" lang="en" dir="ltr">The analysts, each of whom examined different pages,
-                                       naturally recorded different OCR errors.
-                                       <div class="tei-note footnote-inline"><span id="ftn40"><span class="tei-attr-n">40</span><p class="tei-p text-display" id="id." xml:lang="en" lang="en" dir="ltr"> Individual results
-                                                can be found within <span class="tei-rend-Hyperlink">Appendix 2</span>.
-                                                
-                                             </p></span></div> The tested pages generated various kinds of errors, some
+                                       naturally recorded different OCR errors.<span class="footnote-refs"><a href="#note40">40</a></span><span class="tei-note footnote-inline">
+                                          <p class="tei-p text-display" id="id." xml:lang="en" lang="en" dir="ltr"> Individual results
+                                             can be found within <span class="tei-rend-Hyperlink">Appendix 2</span>.
+                                             
+                                          </p></span> The tested pages generated various kinds of errors, some
                                        of which were repeated across other pages and some of which were unique
                                        to one page—and sometimes unique to one instance. Though the analysts
                                        made great effort to be diligent and consistent in their individual work
                                        and as a team, human error must be acknowledged as a reality in any
                                        project that relies on human eyes. That being said, the pages studied
                                        and the resulting data were discussed and reexamined multiple times to
-                                       give the team confidence in the data presented here.
-                                       <div class="tei-note footnote-inline"><span id="ftn41"><span class="tei-attr-n">41</span><p class="tei-p text-display" id="id." xml:lang="en" lang="en" dir="ltr"> Within the data
-                                                tables of individual data, it was observed that there was no
-                                                consistent pattern that would indicate a strong distinction
-                                                between the analyst’s data. For example, no one analyst
-                                                consistently had the lowest or highest accuracy rates. The lack
-                                                of pattern speaks to the consistent method of data collection
-                                                across each of the three analysts.
-                                             </p></span></div> The analysts were
+                                       give the team confidence in the data presented here.<span class="footnote-refs"><a href="#note41">41</a></span><span class="tei-note footnote-inline">
+                                          <p class="tei-p text-display" id="id." xml:lang="en" lang="en" dir="ltr"> Within the data
+                                             tables of individual data, it was observed that there was no
+                                             consistent pattern that would indicate a strong distinction
+                                             between the analyst’s data. For example, no one analyst
+                                             consistently had the lowest or highest accuracy rates. The lack
+                                             of pattern speaks to the consistent method of data collection
+                                             across each of the three analysts.
+                                          </p></span> The analysts were
                                        also randomly assigned to review different variables from the other
                                        analysts’ data.
                                     </p>
@@ -1153,12 +1068,11 @@
                                        of total accuracy rates do not reach six percent. Diacritic accuracy
                                        rates, on the other hand, vary greatly between individual pages. For
                                        example, the ranges within the data for the Estrangela and Serto texts
-                                       in Script mode hovered around 55%.
-                                       <div class="tei-note footnote-inline"><span id="ftn42"><span class="tei-attr-n">42</span><p class="tei-p text-display" id="id." xml:lang="en" lang="en" dir="ltr"> Interestingly enough, East
-                                                Syriac-Script had the most consistent diacritic rates among the
-                                                analysts with a range of 1.65%. 
-                                             </p></span></div>
-                                    </p>
+                                       in Script mode hovered around 55%.<span class="footnote-refs"><a href="#note42">42</a></span><span class="tei-note footnote-inline">
+                                          <p class="tei-p text-display" id="id." xml:lang="en" lang="en" dir="ltr"> Interestingly enough, East
+                                             Syriac-Script had the most consistent diacritic rates among the
+                                             analysts with a range of 1.65%. 
+                                          </p></span></p>
                                     
                                     <p class="tei-p text-display" id="id.hv22n1chesley.4." xml:lang="en" lang="en" dir="ltr"> This section gives a general numerical summary of the test
                                        results. Tables and graphs, rather than prose, dominate this section in
@@ -1190,18 +1104,17 @@
                                           
                                           <td>Punctuation</td>
                                           
-                                          <td>Non-Syriac
-                                             <div class="tei-note footnote-inline"><span id="ftn43"><span class="tei-attr-n">43</span><p class="tei-p text-display" id="id." xml:lang="en" lang="en" dir="ltr"> Because accuracy was defined
-                                                      as total errors (including added characters) divided by
-                                                      characters in the original image, the accuracy rates can
-                                                      be negative if there are more resulting errors than
-                                                      characters in the original image. The characters that
-                                                      were added cause this problem. Some accuracy rates could
-                                                      not be calculated due to the lack of certain characters
-                                                      (e.g., non-Syriac characters) in the original.
-                                                      
-                                                   </p></span></div>
-                                          </td>
+                                          <td>Non-Syriac<span class="footnote-refs"><a href="#note43">43</a></span><span class="tei-note footnote-inline">
+                                                <p class="tei-p text-display" id="id." xml:lang="en" lang="en" dir="ltr"> Because accuracy was defined
+                                                   as total errors (including added characters) divided by
+                                                   characters in the original image, the accuracy rates can
+                                                   be negative if there are more resulting errors than
+                                                   characters in the original image. The characters that
+                                                   were added cause this problem. Some accuracy rates could
+                                                   not be calculated due to the lack of certain characters
+                                                   (e.g., non-Syriac characters) in the original.
+                                                   
+                                                </p></span></td>
                                           
                                           <td>Total</td>
                                           
@@ -1282,11 +1195,12 @@
                                  </div>
                                  
                                  <div class="tei-div " id="Head-id.hv22n1chesley.4" lang="en">
-                                    <span class="tei-div  tei-head">Table 4: Most Frequent Consonant Errors in Estrangela</span><div class="tei-note footnote-inline"><span id="ftn44"><span class="tei-attr-n">44</span><p class="tei-p text-display" id="id." xml:lang="en" lang="en" dir="ltr"> These
-                                             most frequent errors include those which occurred three or more
-                                             times in total across both Language and Script
-                                             modes.
-                                          </p></span></div>
+                                    <span class="tei-div  tei-head">Table 4: Most Frequent Consonant Errors in Estrangela</span><span class="footnote-refs"><a href="#note44">44</a></span><span class="tei-note footnote-inline">
+                                       <p class="tei-p text-display" id="id." xml:lang="en" lang="en" dir="ltr"> These
+                                          most frequent errors include those which occurred three or more
+                                          times in total across both Language and Script
+                                          modes.
+                                       </p></span>
                                     
                                     <table>
                                        
@@ -1376,13 +1290,14 @@
                                  </div>
                                  
                                  <div class="tei-div " id="Head-id.hv22n1chesley.4" lang="en">
-                                    <span class="tei-div  tei-head">Table 5: Consonantal Accuracy Rates in Estrangela</span><div class="tei-note footnote-inline"><span id="ftn45"><span class="tei-attr-n">45</span><p class="tei-p text-display" id="id." xml:lang="en" lang="en" dir="ltr"> Colors have been
-                                             added to the table as a visual aid to help with comparison. The
-                                             colors green and red were set on a gradient, with every number
-                                             from 1 to 100 spaced evenly across it. The shade of each box on
-                                             the table visually indicates that consonant’s
-                                             accuracy.
-                                          </p></span></div>
+                                    <span class="tei-div  tei-head">Table 5: Consonantal Accuracy Rates in Estrangela</span><span class="footnote-refs"><a href="#note45">45</a></span><span class="tei-note footnote-inline">
+                                       <p class="tei-p text-display" id="id." xml:lang="en" lang="en" dir="ltr"> Colors have been
+                                          added to the table as a visual aid to help with comparison. The
+                                          colors green and red were set on a gradient, with every number
+                                          from 1 to 100 spaced evenly across it. The shade of each box on
+                                          the table visually indicates that consonant’s
+                                          accuracy.
+                                       </p></span>
                                     
                                     <table>
                                        
@@ -1770,12 +1685,12 @@
                                        addition or omission of punctuation, which happened 12 times in Language
                                        and 11 times in Script. There were also three occurrences where a Syriac
                                        punctuation mark was recognized as an Arabic diacritic—for example, the
-                                       <i>pāsūqā</i> was recognized as a <i>sukun</i>—and this error was exclusive to Script.
-                                       <div class="tei-note footnote-inline"><span id="ftn46"><span class="tei-attr-n">46</span><p class="tei-p text-display" id="id." xml:lang="en" lang="en" dir="ltr"> See,
-                                                George Anton Kiraz, <i>Tūrrāṣ Mamllā: A Grammar
-                                                   of the Syriac Language</i>, vol 1: Orthography (Piscataway,
-                                                NJ: Gorgias Press, 2012), 149–50.
-                                             </p></span></div> Syriac punctuation
+                                       <i>pāsūqā</i> was recognized as a <i>sukun</i>—and this error was exclusive to Script.<span class="footnote-refs"><a href="#note46">46</a></span><span class="tei-note footnote-inline">
+                                          <p class="tei-p text-display" id="id." xml:lang="en" lang="en" dir="ltr"> See,
+                                             George Anton Kiraz, <i>Tūrrāṣ Mamllā: A Grammar
+                                                of the Syriac Language</i>, vol 1: Orthography (Piscataway,
+                                             NJ: Gorgias Press, 2012), 149–50.
+                                          </p></span> Syriac punctuation
                                        was only substituted with Arabic characters in Script mode, but
                                        diacritics were recognized as Arabic characters in both Language and
                                        Script modes.
@@ -1832,16 +1747,11 @@
                                        characters was recognized accurately by Tesseract, and the errors
                                        involving these non-Syriac characters were very inconsistent. For
                                        example, on one page there were ten superscripted Arabic digits (i.e.,
-                                       1, 2, 3) identifying footnotes.
-                                       <div class="tei-note footnote-inline"><span id="ftn47"><span class="tei-attr-n">47</span><p class="tei-p text-display" id="id." xml:lang="en" lang="en" dir="ltr"> Estrangela Page 1.</p></span></div> Nine of
+                                       1, 2, 3) identifying footnotes.<span class="footnote-refs"><a href="#note47">47</a></span><span class="tei-note footnote-inline">
+                                          <p class="tei-p text-display" id="id." xml:lang="en" lang="en" dir="ltr"> Estrangela Page 1.</p></span> Nine of
                                        these numbers were rendered as other characters—one as an asterisk,
                                        three as double quotation marks, four as single apostrophes, and one as
-                                       an exclamation point.
-                                       <div class="tei-note footnote-inline"><span id="ftn48"><span class="tei-attr-n">48</span><p class="tei-p text-display" id="id." lang="en"> Intriguingly, the number that was
-                                                recognized as an exclamation point was the digit 8, not a 7 or a
-                                                1 as one might assume based on similarity of character
-                                                shapes.
-                                             </p></span></div> Only one numeral was recognized correctly,
+                                       an exclamation point.<span class="footnote-refs"><a href="#note48">48</a></span><span class="tei-note footnote-inline"></span> Only one numeral was recognized correctly,
                                        but Tesseract did not recognize that it was superscripted and instead
                                        placed it on the main line of text. Interestingly, two asterisks were
                                        rendered as double quotation marks, despite Tesseract evidently having
@@ -1881,18 +1791,17 @@
                                           
                                           <td>Punctuation</td>
                                           
-                                          <td>Non-Syriac
-                                             <div class="tei-note footnote-inline"><span id="ftn49"><span class="tei-attr-n">49</span><p class="tei-p text-display" id="id." xml:lang="en" lang="en" dir="ltr"> Because accuracy was defined
-                                                      as total errors (including added characters) divided by
-                                                      characters in the original image, the accuracy rates can
-                                                      be negative if there are more resulting errors than
-                                                      characters in the original image. The characters that
-                                                      were added cause this problem. Some accuracy rates could
-                                                      not be calculated due to the lack of specific characters
-                                                      (e.g., non-Syriac characters) in the original.
-                                                      
-                                                   </p></span></div>
-                                          </td>
+                                          <td>Non-Syriac<span class="footnote-refs"><a href="#note49">49</a></span><span class="tei-note footnote-inline">
+                                                <p class="tei-p text-display" id="id." xml:lang="en" lang="en" dir="ltr"> Because accuracy was defined
+                                                   as total errors (including added characters) divided by
+                                                   characters in the original image, the accuracy rates can
+                                                   be negative if there are more resulting errors than
+                                                   characters in the original image. The characters that
+                                                   were added cause this problem. Some accuracy rates could
+                                                   not be calculated due to the lack of specific characters
+                                                   (e.g., non-Syriac characters) in the original.
+                                                   
+                                                </p></span></td>
                                           
                                           <td>Total</td>
                                           
@@ -2800,18 +2709,17 @@
                                           
                                           <td>Punctuation</td>
                                           
-                                          <td>Non-Syriac
-                                             <div class="tei-note footnote-inline"><span id="ftn50"><span class="tei-attr-n">50</span><p class="tei-p text-display" id="id." xml:lang="en" lang="en" dir="ltr"> Because accuracy was defined
-                                                      as total errors (including added characters) divided by
-                                                      characters in the original image, the accuracy rates can
-                                                      be negative if there are more resulting errors than
-                                                      characters in the original image. The characters that
-                                                      were added cause this problem. Some accuracy rates could
-                                                      not be calculated due to the lack of certain characters
-                                                      (e.g., non-Syriac characters) in the original.
-                                                      
-                                                   </p></span></div>
-                                          </td>
+                                          <td>Non-Syriac<span class="footnote-refs"><a href="#note50">50</a></span><span class="tei-note footnote-inline">
+                                                <p class="tei-p text-display" id="id." xml:lang="en" lang="en" dir="ltr"> Because accuracy was defined
+                                                   as total errors (including added characters) divided by
+                                                   characters in the original image, the accuracy rates can
+                                                   be negative if there are more resulting errors than
+                                                   characters in the original image. The characters that
+                                                   were added cause this problem. Some accuracy rates could
+                                                   not be calculated due to the lack of certain characters
+                                                   (e.g., non-Syriac characters) in the original.
+                                                   
+                                                </p></span></td>
                                           
                                           <td>Total</td>
                                           
@@ -3500,14 +3408,14 @@
                                        pointings in East Syriac to begin with. The three pages tested had a
                                        total of 1,239 original diacritics. The more diacritics there are and
                                        the more <i>kinds </i>of diacritics there are, the more
-                                       opportunities Tesseract has to misread the image.
-                                       <div class="tei-note footnote-inline"><span id="ftn51"><span class="tei-attr-n">51</span><p class="tei-p text-display" id="id." xml:lang="en" lang="en" dir="ltr"> In addition, as will
-                                                be discussed further in the section on <a href="#5.4_Segmentation">Segmentation Issues</a>, East
-                                                Syriac’s many diacritical marks invade the white space between
-                                                lines and thus create difficulties in distinguishing words.
-                                                Besides affecting Tesseract’s segmentation, this may also
-                                                contribute to misidentified diacritics.
-                                             </p></span></div> By the same
+                                       opportunities Tesseract has to misread the image.<span class="footnote-refs"><a href="#note51">51</a></span><span class="tei-note footnote-inline">
+                                          <p class="tei-p text-display" id="id." xml:lang="en" lang="en" dir="ltr"> In addition, as will
+                                             be discussed further in the section on <a href="#5.4_Segmentation">Segmentation Issues</a>, East
+                                             Syriac’s many diacritical marks invade the white space between
+                                             lines and thus create difficulties in distinguishing words.
+                                             Besides affecting Tesseract’s segmentation, this may also
+                                             contribute to misidentified diacritics.
+                                          </p></span> By the same
                                        token, because East Syriac has so many more diacritics than the other
                                        type styles, Tesseract has far more chances to read them correctly.
                                        Tesseract can have 487 errors and 579 diacritical errors in East
@@ -3655,21 +3563,21 @@
                                        vowels (e.g., <span lang="syr" dir="rtl">ܰ</span> and <span lang="syr" dir="rtl">ܶ</span>). When this switch from
                                        dotted vowel to Greek vowel occurred, the dotted vowels were usually
                                        rendered as the equivalent Greek vowel and were rendered as a
-                                       non-equivalent Greek vowel roughly half as many times.
-                                       <div class="tei-note footnote-inline"><span id="ftn52"><span class="tei-attr-n">52</span><p class="tei-p text-display" id="id." xml:lang="en" lang="en" dir="ltr"> There were 1,239
-                                                original diacritics in the pages tested. Dotted vowels were
-                                                rendered as their equivalent Greek vowel 51 times in Language
-                                                and 81 times in Script, and dotted vowels were rendered as a
-                                                non-equivalent Greek vowel 23 times in Language and 43 times in
-                                                Script. These two vowel shifts account for 15.20% and 21.42% of
-                                                diacritic errors in Language and Script, respectively. The shift
-                                                from dotted vowel to its equivalent Greek vowel is considered an
-                                                error because Tesseract is not representing the original image,
-                                                and especially so given that Tesseract was able to correctly
-                                                recognize the dotted vowels in some cases confirming that the
-                                                engine is capable of exact recognition and
-                                                reproduction.
-                                             </p></span></div> This was true for both modes. This
+                                       non-equivalent Greek vowel roughly half as many times.<span class="footnote-refs"><a href="#note52">52</a></span><span class="tei-note footnote-inline">
+                                          <p class="tei-p text-display" id="id." xml:lang="en" lang="en" dir="ltr"> There were 1,239
+                                             original diacritics in the pages tested. Dotted vowels were
+                                             rendered as their equivalent Greek vowel 51 times in Language
+                                             and 81 times in Script, and dotted vowels were rendered as a
+                                             non-equivalent Greek vowel 23 times in Language and 43 times in
+                                             Script. These two vowel shifts account for 15.20% and 21.42% of
+                                             diacritic errors in Language and Script, respectively. The shift
+                                             from dotted vowel to its equivalent Greek vowel is considered an
+                                             error because Tesseract is not representing the original image,
+                                             and especially so given that Tesseract was able to correctly
+                                             recognize the dotted vowels in some cases confirming that the
+                                             engine is capable of exact recognition and
+                                             reproduction.
+                                          </p></span> This was true for both modes. This
                                        indicates that Tesseract has at least some training in recognizing that
                                        East Syriac dotted vowels are, in fact, vowels and in distinguishing
                                        them from punctuation marks or homograph dots. This also implies that
@@ -3826,9 +3734,7 @@
                                     
                                     <td>Substitutions</td>
                                     
-                                    <td>Truncations
-                                       <div class="tei-note footnote-inline"><span id="ftn53"><span class="tei-attr-n">53</span><p class="tei-p text-display" id="id." lang="en"> In number of characters.</p></span></div>
-                                    </td>
+                                    <td>Truncations<span class="footnote-refs"><a href="#note53">53</a></span><span class="tei-note footnote-inline"></span></td>
                                     
                                  </tr>
                                  
@@ -3937,13 +3843,13 @@
                               <p class="tei-p text-display" id="id.hv22n1chesley.5." xml:lang="en" lang="en" dir="ltr">Serto tended to have results at odds with the other two type
                                  styles, and this was mirrored at the underlying level of page layout. The
                                  Estrangela type style had an average of 32.2 consonants per line, and an average
-                                 of 28 lines per page on the three images tested.
-                                 <div class="tei-note footnote-inline"><span id="ftn54"><span class="tei-attr-n">54</span><p class="tei-p text-display" id="id." xml:lang="en" lang="en" dir="ltr"> For all three type styles,
-                                          average consonants per line was calculated by choosing 5 full lines at
-                                          random from the three pages (2 from one, 2 from a second, and one from a
-                                          third), counting all the consonants on those lines, and taking the
-                                          mean.
-                                       </p></span></div> East Syriac had a similar average of 33 consonants per
+                                 of 28 lines per page on the three images tested.<span class="footnote-refs"><a href="#note54">54</a></span><span class="tei-note footnote-inline">
+                                    <p class="tei-p text-display" id="id." xml:lang="en" lang="en" dir="ltr"> For all three type styles,
+                                       average consonants per line was calculated by choosing 5 full lines at
+                                       random from the three pages (2 from one, 2 from a second, and one from a
+                                       third), counting all the consonants on those lines, and taking the
+                                       mean.
+                                    </p></span> East Syriac had a similar average of 33 consonants per
                                  line, and 22 lines per page on the three images tested. Serto, on the other
                                  hand, had an average of 47.6 consonants per line—a more than 40% increase from
                                  the other type styles. Estrangela had an average of 28 lines per page on the
@@ -3961,15 +3867,15 @@
                                  
                                  <p class="tei-p text-display" id="id.hv22n1chesley.5." xml:lang="en" lang="en" dir="ltr">Humorously referred to as “tooth letters” by Syriac
                                     instructors, <i>ḥéth</i>, <i>yudh</i>, <i>ayn</i>, and <i>nun </i>exhibit strong
-                                    similarities in all Syriac type styles.
-                                    <div class="tei-note footnote-inline"><span id="ftn55"><span class="tei-attr-n">55</span><p class="tei-p text-display" id="id." xml:lang="en" lang="en" dir="ltr">
-                                             <i>Lomadh </i>is not considered a tooth letter
-                                             despite its similarities to <i>ayn </i>because its
-                                             “leg” extends higher up the page, making it more recognizable to
-                                             Tesseract. Similarly, <i>zayn </i>is not counted as
-                                             a tooth letter because it does not connect to the letters on either
-                                             side, making it uniquely distinguishable.
-                                          </p></span></div> All four
+                                    similarities in all Syriac type styles.<span class="footnote-refs"><a href="#note55">55</a></span><span class="tei-note footnote-inline">
+                                       <p class="tei-p text-display" id="id." xml:lang="en" lang="en" dir="ltr">
+                                          <i>Lomadh </i>is not considered a tooth letter
+                                          despite its similarities to <i>ayn </i>because its
+                                          “leg” extends higher up the page, making it more recognizable to
+                                          Tesseract. Similarly, <i>zayn </i>is not counted as
+                                          a tooth letter because it does not connect to the letters on either
+                                          side, making it uniquely distinguishable.
+                                       </p></span> All four
                                     letters are written connected to letters on either side, and they rise
                                     slightly above the line of text. Hence, they are easily confused—by human
                                     readers and by computer programs! One of the more frequent error trends in
@@ -3993,15 +3899,14 @@
                                           
                                           <td></td>
                                           
-                                          <td>Tooth Letter Errors
-                                             <div class="tei-note footnote-inline"><span id="ftn56"><span class="tei-attr-n">56</span><p class="tei-p text-display" id="id." xml:lang="en" lang="en" dir="ltr"> “Total Tooth
-                                                      Letter Errors” is defined as tooth letters being
-                                                      substituted with other tooth letters, tooth letters
-                                                      being added or deleted, and tooth letters being
-                                                      substituted with other non-tooth
-                                                      letters.
-                                                   </p></span></div>
-                                          </td>
+                                          <td>Tooth Letter Errors<span class="footnote-refs"><a href="#note56">56</a></span><span class="tei-note footnote-inline">
+                                                <p class="tei-p text-display" id="id." xml:lang="en" lang="en" dir="ltr"> “Total Tooth
+                                                   Letter Errors” is defined as tooth letters being
+                                                   substituted with other tooth letters, tooth letters
+                                                   being added or deleted, and tooth letters being
+                                                   substituted with other non-tooth
+                                                   letters.
+                                                </p></span></td>
                                           
                                           <td>Consonant Errors</td>
                                           
@@ -4124,14 +4029,13 @@
                                           
                                           <td></td>
                                           
-                                          <td>Total Tooth Letter Errors
-                                             <div class="tei-note footnote-inline"><span id="ftn57"><span class="tei-attr-n">57</span><p class="tei-p text-display" id="id." xml:lang="en" lang="en" dir="ltr"> Defined as
-                                                      tooth letters being misidentified as other tooth letters
-                                                      or as other non-tooth letters (substitution), tooth
-                                                      letters being removed (deletion), and tooth letters
-                                                      being added from nothing (addition).
-                                                   </p></span></div>
-                                          </td>
+                                          <td>Total Tooth Letter Errors<span class="footnote-refs"><a href="#note57">57</a></span><span class="tei-note footnote-inline">
+                                                <p class="tei-p text-display" id="id." xml:lang="en" lang="en" dir="ltr"> Defined as
+                                                   tooth letters being misidentified as other tooth letters
+                                                   or as other non-tooth letters (substitution), tooth
+                                                   letters being removed (deletion), and tooth letters
+                                                   being added from nothing (addition).
+                                                </p></span></td>
                                           
                                           <td>Total Tooth Letters in Original Image</td>
                                           
@@ -4364,8 +4268,7 @@
                                     
                                     <p class="tei-p text-display" id="id.hv22n1chesley.5." xml:lang="en" lang="en" dir="ltr"> Another unique error within Serto came when one line in
                                        both Serto-Language and Serto-Script added multiple <i>ḥ</i><i>éths</i> that could not be accounted for
-                                       with stray marks.
-                                       <div class="tei-note footnote-inline"><span id="ftn58"><span class="tei-attr-n">58</span><p class="tei-p text-display" id="id." lang="en"> Serto Page 3.</p></span></div> This error only
+                                       with stray marks.<span class="footnote-refs"><a href="#note58">58</a></span><span class="tei-note footnote-inline"></span> This error only
                                        occurred one time elsewhere on the page. The <i>ḥéths</i> were added when there was a longer
                                        connecting line between two letters, such as a <i>yudh</i> and a <i>taw</i>. The rest of the page
                                        did not see such a wide expanse between letters, and it is possible that
@@ -4678,17 +4581,17 @@
                                        (different) letters. In Serto-Language, <i>mims</i> were
                                        recognized as a <i>lomadh</i> (1), a <i>waw-béth</i> (1), and a <i>koph-lomadh</i> (1);
                                        and in Serto-Script, <i>mims</i> were recognized as a
-                                       <i>koph</i>-combination (3),
-                                       <div class="tei-note footnote-inline"><span id="ftn59"><span class="tei-attr-n">59</span><p class="tei-p text-display" id="id." xml:lang="en" lang="en" dir="ltr"> Mims were recognized
-                                                variously as: <i>koph</i>, <i>koph-lomadh</i>, and <i>koph-ayn</i>.
-                                             </p></span></div> a <i>béth</i> (2), a <i>waw</i> (1), a <i>lomadh</i> (1), a
+                                       <i>koph</i>-combination (3),<span class="footnote-refs"><a href="#note59">59</a></span><span class="tei-note footnote-inline">
+                                          <p class="tei-p text-display" id="id." xml:lang="en" lang="en" dir="ltr"> Mims were recognized
+                                             variously as: <i>koph</i>, <i>koph-lomadh</i>, and <i>koph-ayn</i>.
+                                          </p></span> a <i>béth</i> (2), a <i>waw</i> (1), a <i>lomadh</i> (1), a
                                        <i>waw-lomadh</i> (1), a <i>ḥéth</i> (1), and an <i>ayn</i>
-                                       (1).
-                                       <div class="tei-note footnote-inline"><span id="ftn60"><span class="tei-attr-n">60</span><p class="tei-p text-display" id="id." xml:lang="en" lang="en" dir="ltr"> Tesseract exhibited no <i>mim </i>substitution
-                                                errors in Estrangela. In fact, its only <i>mim
-                                                   </i>error at all was one deleted <i>mim </i>in
-                                                Estrangela-Script.
-                                             </p></span></div> A <i>mim’</i>s
+                                       (1).<span class="footnote-refs"><a href="#note60">60</a></span><span class="tei-note footnote-inline">
+                                          <p class="tei-p text-display" id="id." xml:lang="en" lang="en" dir="ltr"> Tesseract exhibited no <i>mim </i>substitution
+                                             errors in Estrangela. In fact, its only <i>mim
+                                                </i>error at all was one deleted <i>mim </i>in
+                                             Estrangela-Script.
+                                          </p></span> A <i>mim’</i>s
                                        shape in Serto is similar to greater variety of letters than in the
                                        other type styles; particularly in the font W64, <i>mims</i> can look like a rounded letter followed by a tooth
                                        letter. Given that even human readers might mistake the <i>mim</i> as a different set of letters, it is perhaps
@@ -4700,7 +4603,7 @@
                                     
                                     <p class="tei-p text-display" id="id.hv22n1chesley.5." xml:lang="en" lang="en" dir="ltr"><b>Figure 11: W64
                                           Serto</b>
-                                       <span class="tei-rend-italic bold">mim</span></p>
+                                       <span class="tei-rend-italic bold" style="font-size:10pt">mim</span></p>
                                     
                                     <p class="tei-p text-display" id="id.hv22n1chesley.5." xml:lang="en" lang="en" dir="ltr"> A second issue arises when considering the great disparity
                                        between Serto-Script and the five other Tesseract permutations. A nearly
@@ -4885,12 +4788,8 @@
                                        type and look very similar to <i>kophs</i>, <i>béths</i>, <i>waws</i>, <i>hés</i>, <i>phés</i>, and <i>qophs</i>. Errors with <i>dolath</i>
                                        and <i>rish</i> makeup 25.99% and 20.78% of consonantal
                                        errors in East Syriac-Language and East Syriac-Script,
-                                       respectively.
-                                       <div class="tei-note footnote-inline"><span id="ftn61"><span class="tei-attr-n">61</span><p class="tei-p text-display" id="id." lang="en"> By comparison, <i>dolath
-                                                   </i>and <i>rish </i>errors make up 16.67% of
-                                                errors in Estrangela-Language, 10.81% in Estrangela-Script,
-                                                11.11% in Serto-Language, and 4.26% in Serto-Script. 
-                                             </p></span></div>
+                                       respectively.<span class="footnote-refs"><a href="#note61">61</a></span><span class="tei-note footnote-inline"><i>dolath
+                                             </i><i>rish </i></span>
                                        Because more letters look far more alike in East Syriac than in the
                                        other type styles, it is more difficult for Tesseract to distinguish
                                        between them.
@@ -4910,25 +4809,24 @@
                                     given below, do not seem to follow any specific trend in formation. While
                                     smudges or marks contributed to some errors throughout the texts and modes,
                                     those errors are not included here. The following errors have been deemed to
-                                    lack a clear or obvious explanation.
-                                    <div class="tei-note footnote-inline"><span id="ftn62"><span class="tei-attr-n">62</span><p class="tei-p text-display" id="id." xml:lang="en" lang="en" dir="ltr"> This list is not exhaustive. Other unusual
-                                             errors have been given throughout this report, and even more
-                                             happened without a specific mention here. 
-                                          </p></span></div>
-                                 </p>
+                                    lack a clear or obvious explanation.<span class="footnote-refs"><a href="#note62">62</a></span><span class="tei-note footnote-inline">
+                                       <p class="tei-p text-display" id="id." xml:lang="en" lang="en" dir="ltr"> This list is not exhaustive. Other unusual
+                                          errors have been given throughout this report, and even more
+                                          happened without a specific mention here. 
+                                       </p></span></p>
                                  
                                  <ul>
                                     
-                                    <li>In Estrangela-Script, the word <span lang="syr" dir="rtl">ܘܐܢ</span> became <span lang="syr" dir="rtl">ܘܐܓܨܢ</span>.
-                                       <div class="tei-note footnote-inline"><span id="ftn63"><span class="tei-attr-n">63</span><p class="tei-p text-display" id="id." xml:lang="en" lang="en" dir="ltr"> Estrangela-Script
-                                                Page 3.
-                                             </p></span></div> The addition of these two letters, absent in
+                                    <li>In Estrangela-Script, the word <span lang="syr" dir="rtl">ܘܐܢ</span> became <span lang="syr" dir="rtl">ܘܐܓܨܢ</span>.<span class="footnote-refs"><a href="#note63">63</a></span><span class="tei-note footnote-inline">
+                                          <p class="tei-p text-display" id="id." xml:lang="en" lang="en" dir="ltr"> Estrangela-Script
+                                             Page 3.
+                                          </p></span> The addition of these two letters, absent in
                                        this same page when run in Language mode, appeared at the end of a line
                                        and made the word twice as long as it appeared in the original. 
                                     </li>
                                     
-                                    <li>In Serto-Script, a ܗܐ became Jo.
-                                       <div class="tei-note footnote-inline"><span id="ftn64"><span class="tei-attr-n">64</span><p class="tei-p text-display" id="id." xml:lang="en" lang="en" dir="ltr"> Serto-Script Page 2</p></span></div>
+                                    <li>In Serto-Script, a ܗܐ became Jo.<span class="footnote-refs"><a href="#note64">64</a></span><span class="tei-note footnote-inline">
+                                          <p class="tei-p text-display" id="id." xml:lang="en" lang="en" dir="ltr"> Serto-Script Page 2</p></span>
                                        Interestingly, this change happened within a word (<span lang="syr" dir="rtl">ܠܐܠܗܐ</span> to Jo<span lang="syr" dir="rtl">ܠܐܠ</span>).
                                        Though these Serto letters mirror the given Latin letters in shape,
                                        there is no indication as to why Tesseract decided to shift from Syriac
@@ -4937,18 +4835,17 @@
                                     </li>
                                     
                                     <li>Also in Serto-Script, the word ܗܘܐ dropped its final letter and became
-                                       OO.
-                                       <div class="tei-note footnote-inline"><span id="ftn65"><span class="tei-attr-n">65</span><p class="tei-p text-display" id="id." xml:lang="en" lang="en" dir="ltr">
-                                                Serto-Script Page 3.
-                                             </p></span></div> As in the preceding example,
+                                       OO.<span class="footnote-refs"><a href="#note65">65</a></span><span class="tei-note footnote-inline">
+                                          <p class="tei-p text-display" id="id." xml:lang="en" lang="en" dir="ltr">
+                                             Serto-Script Page 3.
+                                          </p></span> As in the preceding example,
                                        there is no obvious reason to read the Syriac characters as Latin
                                        letters here, and even if there were, the last letter could be easily
                                        understood as a Latin letter as well and yet was not. 
                                     </li>
                                     
                                     <li>In East Syriac-Script, a similar occurrence took place when <span lang="syr" dir="rtl">ܒܨܝܪ</span>
-                                       became eS.
-                                       <div class="tei-note footnote-inline"><span id="ftn66"><span class="tei-attr-n">66</span><p class="tei-p text-display" id="id." lang="en"> East Syriac-Script Page 1.</p></span></div>
+                                       became eS.<span class="footnote-refs"><a href="#note66">66</a></span><span class="tei-note footnote-inline"></span>
                                        These Latin letters do not map as easily onto the Syriac letters, and
                                        the analyst even ran the page through Tesseract again to confirm this
                                        result. 
@@ -4956,10 +4853,7 @@
                                     
                                     <li>In both East Syriac-Language and East Syriac-Script an Arabic <i>shadda</i> was added by Tesseract in various places,
                                        seemingly at random. Examples include one placed above a <i>waw</i> that had no diacritic and one set alongside
-                                       the lower dot of a colon.
-                                       <div class="tei-note footnote-inline"><span id="ftn67"><span class="tei-attr-n">67</span><p class="tei-p text-display" id="id." lang="en"> East Syriac-Language Page 1, East
-                                                Syriac-Script Page 3.
-                                             </p></span></div> While both of these examples
+                                       the lower dot of a colon.<span class="footnote-refs"><a href="#note67">67</a></span><span class="tei-note footnote-inline"></span> While both of these examples
                                        include a colon since the <i>waw</i> was originally
                                        followed by one, the connection between an additional <i>shadda</i> and an existing colon cannot be fully
                                        determined.
@@ -5004,8 +4898,7 @@
                                  <p class="tei-p text-display" id="id.hv22n1chesley.5." xml:lang="en" lang="en" dir="ltr"> Tesseract performed similarly well with Estrangela, truncating
                                     only 11 characters total across all six pages of Script and Language modes.
                                     Six of those characters were a <span lang="syr" dir="rtl">ܡܠܟ</span> cluster at the end of the first line of the page that dropped
-                                    off in both Language and Script.
-                                    <div class="tei-note footnote-inline"><span id="ftn68"><span class="tei-attr-n">68</span><p class="tei-p text-display" id="id." lang="en"> Estrangela Page 1.</p></span></div> The remaining
+                                    off in both Language and Script.<span class="footnote-refs"><a href="#note68">68</a></span><span class="tei-note footnote-inline"></span> The remaining
                                     five were truncated from the first word in the 18th line of the same page in
                                     Script. Given the 5,541 total characters in all six pages, this produces a
                                     segmentation accuracy rate of 99.80%. This segmentation accuracy likely
@@ -5038,11 +4931,11 @@
                                  
                                  <p class="tei-p text-display" id="id.hv22n1chesley.5." xml:lang="en" lang="en" dir="ltr"> Some spacing issues, however, do impact the reading of the
                                     text. Found in several documents, there were cases of added spaces in the
-                                    middle of words and deleted spaces between words.
-                                    <div class="tei-note footnote-inline"><span id="ftn69"><span class="tei-attr-n">69</span><p class="tei-p text-display" id="id." xml:lang="en" lang="en" dir="ltr"> Among these cases were
-                                             East Syriac-Language Page 3 (additions and deletions) and
-                                             Serto-Script Page 3 (deletion).
-                                          </p></span></div> The chief example of this
+                                    middle of words and deleted spaces between words.<span class="footnote-refs"><a href="#note69">69</a></span><span class="tei-note footnote-inline">
+                                       <p class="tei-p text-display" id="id." xml:lang="en" lang="en" dir="ltr"> Among these cases were
+                                          East Syriac-Language Page 3 (additions and deletions) and
+                                          Serto-Script Page 3 (deletion).
+                                       </p></span> The chief example of this
                                     comes from a line in the East Syriac text (Figure 12). A line with few
                                     pixels between words, it was first recognized in Language mode as one word
                                     with no spaces, even before and after the colon. The consonant and diacritic
@@ -5053,8 +4946,7 @@
                                     pixels between words cannot be the sole cause of the problem at hand; other
                                     type styles exhibited spacing problems on a smaller scale. The wide spacing
                                     between words in the Serto document did not prevent two words combining into
-                                    one for no discernible reason.
-                                    <div class="tei-note footnote-inline"><span id="ftn70"><span class="tei-attr-n">70</span><p class="tei-p text-display" id="id." lang="en"> Serto-Script Page 3.</p></span></div> The Estrangela
+                                    one for no discernible reason.<span class="footnote-refs"><a href="#note70">70</a></span><span class="tei-note footnote-inline"></span> The Estrangela
                                     text, also with wide spacing, did not encounter this particular problem in
                                     the pages studied. 
                                  </p>
@@ -5134,17 +5026,14 @@
                                  provide a point of comparison, three additional pages of Estrangela text from
                                  three different manuscripts were selected from <i>Hatch’s Album
                                     of Dated Syriac Manuscripts </i>to be run through Tesseract and analyzed
-                                 for errors using the same method.
-                                 <div class="tei-note footnote-inline"><span id="ftn71"><span class="tei-attr-n">71</span><p class="tei-p text-display" id="id." lang="en"> W. H. P. Hatch, <i>An Album of
-                                             Dated Syriac Manuscripts, </i>(Boston, MA: The American Academy of
-                                          Arts and Sciences, 1946).
-                                       </p></span></div> The pages selected were plates 29,
-                                 34, and 35.
-                                 <div class="tei-note footnote-inline"><span id="ftn72"><span class="tei-attr-n">72</span><p class="tei-p text-display" id="id." xml:lang="en" lang="en" dir="ltr">
-                                          Plate 29 is London British Museum Add. Ms. 14599 fol.32; Plate 34 is
-                                          Florence Biblioteca Laurenziana Plut. 1 Cod. 56 fol. 99; Plate 35 is
-                                          London British Museum Add. Ms. 17152 fol. 30v.
-                                       </p></span></div> Again, these
+                                 for errors using the same method.<span class="footnote-refs"><a href="#note71">71</a></span><span class="tei-note footnote-inline"><i>An Album of
+                                       Dated Syriac Manuscripts, </i></span> The pages selected were plates 29,
+                                 34, and 35.<span class="footnote-refs"><a href="#note72">72</a></span><span class="tei-note footnote-inline">
+                                    <p class="tei-p text-display" id="id." xml:lang="en" lang="en" dir="ltr">
+                                       Plate 29 is London British Museum Add. Ms. 14599 fol.32; Plate 34 is
+                                       Florence Biblioteca Laurenziana Plut. 1 Cod. 56 fol. 99; Plate 35 is
+                                       London British Museum Add. Ms. 17152 fol. 30v.
+                                    </p></span> Again, these
                                  were chosen for their relatively straight and well-spaced lines.
                               </p>
                               
@@ -5181,10 +5070,10 @@
                                     <span class="tei-graphic"><img src="https://github.com/Beth-Mardutho/hugoye-data/raw/master/resources/images/articles/HV22N1Chesley17.jpg" class="center" width="80%" /></span>
                                     </span>
                                  
-                                 <p class="tei-p text-display" id="id.hv22n1chesley.6." lang="en"><b>Figure 13: Sample Image of </b><span class="tei-rend-italic bold">Damascus 12/21</span><b> 159r</b><div class="tei-note footnote-inline"><span id="ftn73"><span class="tei-attr-n">73</span><p class="tei-p text-display" id="id." xml:lang="en" lang="en" dir="ltr"> Image courtesy of the
-                                             Syriac Orthodox Patriarchate.
-                                          </p></span></div>
-                                 </p>
+                                 <p class="tei-p text-display" id="id.hv22n1chesley.6." lang="en"><b>Figure 13: Sample Image of </b><span class="tei-rend-italic bold" style="font-size:10pt">Damascus 12/21</span><b> 159r</b><span class="footnote-refs"><a href="#note73">73</a></span><span class="tei-note footnote-inline">
+                                       <p class="tei-p text-display" id="id." xml:lang="en" lang="en" dir="ltr"> Image courtesy of the
+                                          Syriac Orthodox Patriarchate.
+                                       </p></span></p>
                                  
                                  <p class="tei-p text-display" id="id.hv22n1chesley.6." xml:lang="en" lang="en" dir="ltr">At the next stage of editing, line spacing was exaggerated so
                                     that no letters overlapped onto other lines. These images were tested again
@@ -5510,16 +5399,15 @@
                                     transcribing manuscripts. If in the future Tesseract can be trained to
                                     recognize text in narrow columns, and if a method of minimizing line
                                     truncation is found, Tesseract could become a useful and accurate tool for
-                                    the optical character recognition of manuscripts.
-                                    <div class="tei-note footnote-inline"><span id="ftn74"><span class="tei-attr-n">74</span><p class="tei-p text-display" id="id." xml:lang="en" lang="en" dir="ltr"> Since completion of this
-                                             study, the analysts have become aware of Transkribus—a software
-                                             specifically designed for the automatic recognition of handwritten
-                                             texts. Transkribus has shown good results with a variety of
-                                             handwriting styles in different languages. Once trained, it may have
-                                             the potential to work well on handwritten Syriac
-                                             manuscripts.
-                                          </p></span></div>
-                                 </p>
+                                    the optical character recognition of manuscripts.<span class="footnote-refs"><a href="#note74">74</a></span><span class="tei-note footnote-inline">
+                                       <p class="tei-p text-display" id="id." xml:lang="en" lang="en" dir="ltr"> Since completion of this
+                                          study, the analysts have become aware of Transkribus—a software
+                                          specifically designed for the automatic recognition of handwritten
+                                          texts. Transkribus has shown good results with a variety of
+                                          handwriting styles in different languages. Once trained, it may have
+                                          the potential to work well on handwritten Syriac
+                                          manuscripts.
+                                       </p></span></p>
                                  
                               </div>
                               
@@ -5568,12 +5456,12 @@
                                     errors upon the first run’s errors. Nor is it worthwhile to OCR the same
                                     page in both modes and then attempt to map the two onto one another to
                                     identify separate errors. Almost without exception, all of the consonantal
-                                    errors present in Language mode were also created in Script mode.
-                                    <div class="tei-note footnote-inline"><span id="ftn75"><span class="tei-attr-n">75</span><p class="tei-p text-display" id="id." xml:lang="en" lang="en" dir="ltr"> The one
-                                             exception being added <i>simkaths</i> in
-                                             Estrangela-Language, which did not occur in
-                                             Estrangela-Script.
-                                          </p></span></div> And Script mode typically introduced
+                                    errors present in Language mode were also created in Script mode.<span class="footnote-refs"><a href="#note75">75</a></span><span class="tei-note footnote-inline">
+                                       <p class="tei-p text-display" id="id." xml:lang="en" lang="en" dir="ltr"> The one
+                                          exception being added <i>simkaths</i> in
+                                          Estrangela-Language, which did not occur in
+                                          Estrangela-Script.
+                                       </p></span> And Script mode typically introduced
                                     additional errors beyond those of the Language mode. Thus, users can
                                     responsibly focus their OCR projects on Language mode alone. 
                                  </li>
@@ -5593,13 +5481,7 @@
                                  
                                  <li>If the goal is to conduct a word study, it would be best to consult <a href="#Individual_Letter_Accuracy">Tables 39–41 in Appendix 2</a>
                                     and verify whether the letters within the word are likely to be OCRed
-                                    correctly.
-                                    <div class="tei-note footnote-inline"><span id="ftn76"><span class="tei-attr-n">76</span><p class="tei-p text-display" id="id." lang="en"> The program Voyant Tools has been brought to
-                                             the analysts’ attention as software that can assist with word
-                                             studies by analyzing word frequency. Some researchers might find it
-                                             useful after they have confirmed the accuracy of their OCRed text
-                                             corpus. 
-                                          </p></span></div> Researchers might also check the sections of
+                                    correctly.<span class="footnote-refs"><a href="#note76">76</a></span><span class="tei-note footnote-inline"></span> Researchers might also check the sections of
                                     this paper that cover errors common to those particular letters (See
                                     Analysis). 
                                     <ul>
@@ -5660,20 +5542,17 @@
                                  this testing process confirmed Tesseract’s reliability for OCRing printed
                                  Estrangela texts. When consonants are the reader’s only concern, Tesseract 4.0
                                  will perform at close to 99% accuracy using either mode. Since most printed
-                                 Syriac texts use Estrangela, this is encouraging news for Syriac studies.
-                                 <div class="tei-note footnote-inline"><span id="ftn77"><span class="tei-attr-n">77</span><p class="tei-p text-display" id="id." xml:lang="en" lang="en" dir="ltr"> Estrangela’s
-                                          consonantal accuracy cannot likely be improved. According to the
-                                          Tesseract programming community on GitHub, “unless you're using a very
-                                          unusual font or a new language retraining Tesseract is unlikely to
-                                          help.” [ImproveQuality, GitHub, last updated April 21, 2018, <a href="https://github.com/tesseract-ocr/tesseract/wiki/ImproveQuality"><span class="tei-rend-underline">https://github.com/tesseract-ocr/tesseract/wiki/ImproveQuality</span></a><span class="tei-rend-background(white)">]</span>, accessed 30 July, 2018. Fortunately
-                                          for scholars, Tesseract already generates useable OCR results for
-                                          Estrangela. 
-                                       </p></span></div> An electronic database of Syriac texts has been
+                                 Syriac texts use Estrangela, this is encouraging news for Syriac studies.<span class="footnote-refs"><a href="#note77">77</a></span><span class="tei-note footnote-inline">
+                                    <p class="tei-p text-display" id="id." xml:lang="en" lang="en" dir="ltr"> Estrangela’s
+                                       consonantal accuracy cannot likely be improved. According to the
+                                       Tesseract programming community on GitHub, “unless you're using a very
+                                       unusual font or a new language retraining Tesseract is unlikely to
+                                       help.” [ImproveQuality, GitHub, last updated April 21, 2018, <a href="https://github.com/tesseract-ocr/tesseract/wiki/ImproveQuality"><span class="tei-rend-underline">https://github.com/tesseract-ocr/tesseract/wiki/ImproveQuality</span></a><span class="tei-rend-background(white)">]</span>, accessed 30 July, 2018. Fortunately
+                                       for scholars, Tesseract already generates useable OCR results for
+                                       Estrangela. 
+                                    </p></span> An electronic database of Syriac texts has been
                                  in development since the early 2000s, but the project has been hampered by the
-                                 slow pace of manual transcription.
-                                 <div class="tei-note footnote-inline"><span id="ftn78"><span class="tei-attr-n">78</span><p class="tei-p text-display" id="id." lang="en"> Digital Syriac Corpus, at <a href="http://syriaccorpus.org/">syriaccorpus.org</a>, accessed
-                                          30 July, 2018.
-                                       </p></span></div> Using Tesseract to OCR these printed Syriac
+                                 slow pace of manual transcription.<span class="footnote-refs"><a href="#note78">78</a></span><span class="tei-note footnote-inline"><a href="http://syriaccorpus.org/">syriaccorpus.org</a></span> Using Tesseract to OCR these printed Syriac
                                  texts would dramatically speed up the process. Such OCRing should begin with
                                  Estrangela type styles. Of course, these accuracy rates are based on cropped
                                  scans in which marginalia and footnotes have been removed, so some background
@@ -5749,28 +5628,7 @@
                               <h3 class="tei-head ">APPENDIX 1: Diacritics</h3>
                               
                               <div class="tei-div ">
-                                 <span class="tei-div  tei-head">Table 28: Diacritics</span><div class="tei-note footnote-inline"><span id="ftn79"><span class="tei-attr-n">79</span><p class="tei-p text-display" id="id."> Tesseract occasionally inserted or swapped in
-                                          three Arabic characters (the <i>fatḥah</i>, <i>shadda</i>, and <i>sukun</i>) for
-                                          Syriac characters. Why Tesseract pulled Arabic characters into the
-                                          data set, let alone these particular characters and not others, is
-                                          not fully clear at this point and is difficult to determine due to
-                                          the inconsistency with which these errors occurred. At first
-                                          analysis it would seem that Tesseract preferences Syriac characters
-                                          over Arabic characters when OCRing in Syriac modes—typically
-                                          identifying a printed mark as a Syriac character if there is a
-                                          similar-looking one in the Unicode set and only secondarily
-                                          inserting Arabic characters if a Syriac one cannot be found.
-                                          However, this trend does not play out consistently. For instance,
-                                          whilst the Arabic <i>fatḥah</i> (U+064E) sometimes
-                                          appeared in place of the Syriac oblique line (U+0747), the Syriac
-                                          <i>zqapha</i> (U+0733) was never misidentified
-                                          for the similarly shaped Arabic <i>ḍ</i><i>ammah</i> (U+064F). One possible explanation is
-                                          that that when Tesseract was trained, certain Arabic diacritics were
-                                          incorrectly incorporated into the Syriac data set—muddying the
-                                          waters, so to speak. Without further information about the Tesseract
-                                          training process, the analysts cannot ascertain all of the engine’s
-                                          resultant OCR peculiarities.
-                                       </p></span></div>
+                                 <span class="tei-div  tei-head">Table 28: Diacritics</span><span class="footnote-refs"><a href="#note79">79</a></span><span class="tei-note footnote-inline"><i>fatḥah</i><i>shadda</i><i>sukun</i><i>fatḥah</i><i>zqapha</i><i>ḍ</i><i>ammah</i></span>
                                  
                                  <table>
                                     
@@ -5852,11 +5710,12 @@
                               <h3 class="tei-head ">APPENDIX 2: Detailed Results</h3>
                               
                               <div class="tei-div ">
-                                 <span class="tei-div  tei-head">Individual Page Information</span><div class="tei-note footnote-inline"><span id="ftn80"><span class="tei-attr-n">80</span><p class="tei-p text-display" id="id." xml:lang="en" lang="en" dir="ltr"> The page numbers listed
-                                          here do not reflect the page numbers in the printed books from which
-                                          the images were scanned; rather they were the analysts’ testing
-                                          designation.
-                                       </p></span></div>
+                                 <span class="tei-div  tei-head">Individual Page Information</span><span class="footnote-refs"><a href="#note80">80</a></span><span class="tei-note footnote-inline">
+                                    <p class="tei-p text-display" id="id." xml:lang="en" lang="en" dir="ltr"> The page numbers listed
+                                       here do not reflect the page numbers in the printed books from which
+                                       the images were scanned; rather they were the analysts’ testing
+                                       designation.
+                                    </p></span>
                                  
                                  <div class="tei-div ">
                                     <span class="tei-div  tei-head">Table 29: Resolution and Size of Chosen Texts</span>
@@ -5906,10 +5765,10 @@
                                           </td>
                                           
                                           <td>
-                                             <p class="tei-p text-display" id="id." xml:lang="en" lang="en" dir="ltr">299.5 dpi
-                                                <div class="tei-note footnote-inline"><span id="ftn81"><span class="tei-attr-n">81</span><p class="tei-p text-display" id="id." xml:lang="en" lang="en" dir="ltr"> 299 dpi
-                                                         (horizontal) and 300 dpi (vertical).
-                                                      </p></span></div>
+                                             <p class="tei-p text-display" id="id." xml:lang="en" lang="en" dir="ltr">299.5 dpi<span class="footnote-refs"><a href="#note81">81</a></span><span class="tei-note footnote-inline">
+                                                   <p class="tei-p text-display" id="id." xml:lang="en" lang="en" dir="ltr"> 299 dpi
+                                                      (horizontal) and 300 dpi (vertical).
+                                                   </p></span>
                                                 
                                              </p>
                                              <p class="tei-p text-display" id="id." xml:lang="en" lang="en" dir="ltr">(1665 x 1408)</p>
@@ -7306,14 +7165,7 @@
                                  
                                  <div class="tei-div ">
                                     <span class="tei-div  tei-head">Table 40: Consonantal Accuracy Rates, Arranged in Order of Letter
-                                       Frequency in Syriac</span><div class="tei-note footnote-inline"><span id="ftn82"><span class="tei-attr-n">82</span><p class="tei-p text-display" id="id."> The most common letters in Syriac, in
-                                             decreasing order of frequency, are: <i>olaph</i>
-                                             (13.9%), <i>waw</i> (10.1%), <i>nun</i> (9.6%), <i>yudh</i> (9.0%), <i>lomadh</i> (7.4%), <i>dolath</i> and <i>mim</i> (6.4%), <i>hé</i> (5.5%), <i>taw</i>
-                                             (5.3%), <i>rish</i> (4.4%), <i>béth</i> (4.3%), <i>koph</i> (3.0%), <i>shin</i> (2.8%), <i>ayn</i>
-                                             (2.6%), <i>ḥéth</i> (2.3%), <i>phé</i> (1.5%), <i>qoph</i> (1.4%), <i>simkath</i> (1.3%), <i>gomal</i> (0.9%), <i>ṭéth</i> (0.8%), <i>zayn</i> (0.6%), and ṣ<i>odhé</i> (0.3%). [George Anton Kiraz, <i>Tūrrāṣ Mamllā: A Grammar of The Syriac Language, </i>vol.
-                                             1: Orthography (Piscataway, NJ: Gorgias Press, 2012),
-                                             53–54.]
-                                          </p></span></div>
+                                       Frequency in Syriac</span><span class="footnote-refs"><a href="#note82">82</a></span><span class="tei-note footnote-inline"><i>olaph</i><i>waw</i><i>nun</i><i>yudh</i><i>lomadh</i><i>dolath</i><i>mim</i><i>hé</i><i>taw</i><i>rish</i><i>béth</i><i>koph</i><i>shin</i><i>ayn</i><i>ḥéth</i><i>phé</i><i>qoph</i><i>simkath</i><i>gomal</i><i>ṭéth</i><i>zayn</i><i>odhé</i><i>Tūrrāṣ Mamllā: A Grammar of The Syriac Language, </i></span>
                                     
                                     <table>
                                        
@@ -8338,16 +8190,17 @@
                                  </div>
                                  
                                  <div class="tei-div ">
-                                    <span class="tei-div  tei-head">Table 42: Range of Letter Accuracy Results</span><div class="tei-note footnote-inline"><span id="ftn83"><span class="tei-attr-n">83</span><p class="tei-p text-display" id="id." xml:lang="en" lang="en" dir="ltr"> This table aims to
-                                             show the overall distribution of consonantal accuracy in each
-                                             type style and mode. The percentage values here do not
-                                             necessarily represent actual accuracy rates but rather give a
-                                             clearer understanding of the results through statistical
-                                             analysis (specifically the mean and standard deviation). The
-                                             counts are the number of consonants that have accuracy rates
-                                             that are equal to or higher than the statistical value.
-                                             
-                                          </p></span></div>
+                                    <span class="tei-div  tei-head">Table 42: Range of Letter Accuracy Results</span><span class="footnote-refs"><a href="#note83">83</a></span><span class="tei-note footnote-inline">
+                                       <p class="tei-p text-display" id="id." xml:lang="en" lang="en" dir="ltr"> This table aims to
+                                          show the overall distribution of consonantal accuracy in each
+                                          type style and mode. The percentage values here do not
+                                          necessarily represent actual accuracy rates but rather give a
+                                          clearer understanding of the results through statistical
+                                          analysis (specifically the mean and standard deviation). The
+                                          counts are the number of consonants that have accuracy rates
+                                          that are equal to or higher than the statistical value.
+                                          
+                                       </p></span>
                                     
                                     <table>
                                        

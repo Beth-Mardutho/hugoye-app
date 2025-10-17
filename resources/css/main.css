@@ -62,7 +62,11 @@
 body {font-family: arial, sans-serif;}
 #content {background-color:white; padding-top: 50px;}
 footer{background-color:#444;}
-/*#toc {position: fixed; top:125px;}*/
+/* Formatting issues, not contained to its column */
+#toc {
+  position: sticky;
+  top: 0;
+  }
 
 /* Removed extra padding introduced by Bootstrap for rows. Was causing issues with background images */
 .row { margin-left: 0px; margin-right: 0px;}
@@ -427,7 +431,7 @@ td {
 .footnote-text {display:block;}
 .footnote-text .footnote-refs {font-size: .75em;}
 .footnote-refs, .footnote-tgt {
-    font-size: .5em;
+    font-size: .75em;
     line-height: 0.5em;
     vertical-align: baseline;
     position: relative;
@@ -1019,12 +1023,16 @@ div.toggle-buttons label:active:after {
 }
 div.toggle-buttons .toggle-label {font-size: 1em; font-weight:600}
 .PDFviewer iframe {width:95%; min-height:600px; max-height:2100px}
-.otherFormats {float:right; margin-right:25px;}
+.otherFormats {float: right;
+  margin-right: 25px;
+  width: 100%;
+  text-align: right;
+  margin-bottom: 1em;}
 #teiBtn {display:none;}
 
 /* Small screens */
 @media screen and (max-width: 768px) {
-    .left-menu { position: relative;}
+    .left-menu { position: absolute;}
     .navbar-collapse, .dropdown-menu {float:none; width:100% !important;}
     .navbar-nav li {width:100% !important; float:none;}
     .mobile-submenu {

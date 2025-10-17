@@ -1009,12 +1009,35 @@
                 </div>
             </xsl:when>
             <xsl:otherwise>
-                <div class="tei-note {if(@place='foot') then 'footnote-inline' else ()}">
-                    <xsl:choose>
-                        <xsl:when test="t:quote"><xsl:apply-templates/></xsl:when>
-                        <xsl:otherwise><span><xsl:sequence select="local:attributes(.)"/><xsl:apply-templates/></span><xsl:sequence select="local:add-footnotes(@source,.)"/></xsl:otherwise>
-                    </xsl:choose>
-                </div>
+                <xsl:choose>
+                    <xsl:when test="@place='foot'">
+                        <span class="footnote-refs">
+                            <a href="#note{@n}"><xsl:value-of select="@n"/></a>
+                        </span>
+                        <span class="tei-note footnote-inline" >
+                            <xsl:choose>
+                                <xsl:when test="t:quote"><xsl:apply-templates/></xsl:when>
+                                <xsl:otherwise>
+                                    <xsl:choose>
+                                        <xsl:when test="descendant-or-self::t:p[contains(@rend,'footnote')]">
+                                            <xsl:apply-templates select="descendant-or-self::t:p[contains(@rend,'footnote')]/child::*"/>
+                                        </xsl:when>
+                                        <xsl:otherwise><xsl:apply-templates/></xsl:otherwise>
+                                    </xsl:choose>
+                                </xsl:otherwise>
+                            </xsl:choose>
+                        </span>
+                    </xsl:when>
+                    <xsl:otherwise>
+                        <div class="tei-note">
+                            <xsl:choose>
+                                <xsl:when test="t:quote"><xsl:apply-templates/></xsl:when>
+                                <xsl:otherwise><span><xsl:sequence select="local:attributes(.)"/><xsl:apply-templates/></span><xsl:sequence select="local:add-footnotes(@source,.)"/></xsl:otherwise>
+                            </xsl:choose>
+                        </div>
+                    </xsl:otherwise>
+                </xsl:choose>
+                
             </xsl:otherwise>
         </xsl:choose>
     </xsl:template>
@@ -2360,6 +2383,12 @@
                 <xsl:choose>
                     <xsl:when test="starts-with(@url,$base-uri)">
                         <xsl:value-of select="replace(@url, $base-uri, 'https://github.com/Beth-Mardutho/hugoye-data/raw/master')"/>
+                    </xsl:when>
+                    <xsl:when test="starts-with(@url,'http')">
+                        <xsl:value-of select="@url"/>
+                    </xsl:when>
+                    <xsl:when test="not(starts-with(@url,'/'))">
+                        <xsl:value-of select="concat('https://github.com/Beth-Mardutho/hugoye-data/raw/master/resources/images/articles/',@url)"/>
                     </xsl:when>
                     <xsl:otherwise>
                         <xsl:value-of select="@url"/>
