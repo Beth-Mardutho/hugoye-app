@@ -134,23 +134,6 @@ function displayResults(data) {
             ${hasAuthor ? `<br/><span class="tei-title title-analytic">by ${author}</span>` : ''}
          `;
 
-
-            // resultItem.innerHTML = `
-            //         <a href="${urlHtml}" target="_blank" style="text-decoration: none; color: #007bff;">
-            //             <span class="tei-title title-analytic">${title}</span> ${typeString}
-            //         </a>
-            //         <br/>URI: 
-            //         <a href="${urlHtml}" target="_blank" style="text-decoration: none; color: #007bff;">
-            //             <span class="tei-title title-analytic">${url}</span>
-            //         </a>
-            //         ${type && type.trim() !== '' && type !== type ? `<br/><span class="tei-title title-analytic">(${type})</span>` : ''}
-            //         <br/>
-            //         ${author?.trim() && `<span>by ${author}</span>`}
-            //         <br/>
-            //         ${type}
-            //     `;
-            
-
             resultsContainer.appendChild(resultItem);
         });
     } else {
