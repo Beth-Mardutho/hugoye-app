@@ -127,7 +127,7 @@ function displayResults(data) {
             const hasType  = typeof type === 'string' && type.trim().length > 0;
 
             resultItem.innerHTML = `
-                    <a href="${urlHtml}" target="_blank" style="text-decoration: none; color: #007bff;">
+                    <a href="${urlHtml}" style="text-decoration: none; color: #007bff;">
                         <span class="tei-title title-analytic">${title}</span> 
                     </a>
             ${hasAuthor ? `<br/><span class="tei-title title-analytic">by ${author}</span>` : ''}
