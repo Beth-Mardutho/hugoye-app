@@ -16,60 +16,132 @@ def _extract_with_pdfminer(pdf_path: Path) -> str:
         print(f"[pdf] pdfminer failed/not available: {e}", file=sys.stderr)
         return ""
 
-def _extract_with_pypdf2(pdf_path: Path) -> str:
-    try:
-        from PyPDF2 import PdfReader
-        reader = PdfReader(str(pdf_path))
-        parts = []
-        for page in reader.pages:
-            t = (page.extract_text() or "").strip()
-            if t:
-                parts.append(t)
-        text = "\n\n".join(parts)
-        if text.strip():
-            print(f"[pdf] PyPDF2 extracted {len(text)} chars", file=sys.stderr)
-        return text
-    except Exception as e:
-        print(f"[pdf] PyPDF2 failed/not available: {e}", file=sys.stderr)
-        return ""
 
 def extract_pdf_html(pdf_path: Path) -> str:
     """
-    Convert a PDF into a simple <div class="pdf-transcript"><p>...</p></div>.
-    Try pdfminer first, then PyPDF2.
+    Layout-aware PDF->HTML paragraphs.
+    Tries pdfminer.six with LAParams, then PyPDF2 as fallback.
     """
     if not pdf_path or not pdf_path.exists():
         print("[pdf] No local PDF found to extract", file=sys.stderr)
         return ""
 
-    text = _extract_with_pdfminer(pdf_path)
+    # ---- try pdfminer with layout params ----
+    text = ""
+    try:
+        from pdfminer.high_level import extract_text
+        from pdfminer.layout import LAParams
+        # tune as needed: smaller margins -> keep lines together, detect paragraphs better
+        laparams = LAParams(char_margin=2.0, line_margin=0.4, word_margin=0.1, boxes_flow=None)
+        text = extract_text(str(pdf_path), laparams=laparams) or ""
+        if text.strip():
+            print(f"[pdf] pdfminer (LAParams) extracted {len(text)} chars", file=sys.stderr)
+    except Exception as e:
+        print(f"[pdf] pdfminer failed/not available: {e}", file=sys.stderr)
+
+    # ---- fallback to PyPDF2 ----
     if not text.strip():
-        text = _extract_with_pypdf2(pdf_path)
+        try:
+            from PyPDF2 import PdfReader
+            reader = PdfReader(str(pdf_path))
+            parts = []
+            for page in reader.pages:
+                t = (page.extract_text() or "").strip()
+                if t:
+                    parts.append(t)
+            text = "\n\n".join(parts)
+            if text.strip():
+                print(f"[pdf] PyPDF2 extracted {len(text)} chars", file=sys.stderr)
+        except Exception as e:
+            print(f"[pdf] PyPDF2 failed/not available: {e}", file=sys.stderr)
+
     if not text.strip():
-        print("[pdf] Extraction produced empty text (scanned PDF?)", file=sys.stderr)
+        print("[pdf] Extraction produced empty text (likely a scanned PDF; use OCR)", file=sys.stderr)
         return ""
 
+    # --- normalize: dehyphenate line breaks like "word-\nnext" -> "wordnext"
+    text = text.replace("-\n", "")
+    # collapse very long runs of spaces
+    text = "\n".join(" ".join(line.split()) for line in text.splitlines())
+
     # paragraphize by blank lines
-    lines = [ln.strip() for ln in text.splitlines()]
     paras, buf = [], []
-    for ln in lines:
-        if ln == "":
+    for ln in text.splitlines():
+        if ln.strip() == "":
             if buf:
                 paras.append(" ".join(buf).strip())
                 buf = []
         else:
-            buf.append(ln)
+            buf.append(ln.strip())
     if buf:
         paras.append(" ".join(buf).strip())
 
     if not paras:
         return ""
 
-    parts = ['<div class="pdf-transcript">', '<h3 class="h4">Full text (from PDF)</h3>']
+    out = ['<div class="pdf-transcript">', '<h3 class="h4">Full text (from PDF)</h3>']
     for p in paras:
-        parts.append(f"<p>{html.escape(p)}</p>")
-    parts.append("</div>")
-    return "\n".join(parts)
+        out.append(f"<p>{html.escape(p)}</p>")
+    out.append("</div>")
+    return "\n".join(out)
+  
+def build_pdf_embed(pdf_url: str, local_pdf: Path | None) -> str:
+    """
+    Returns an <embed>/<object> block that works for local files and remote URLs.
+    Google Viewer only works for remote http(s) URLs; for local use <object>.
+    """
+    # Prefer local file for local testing
+    if local_pdf and local_pdf.exists():
+        src = html.escape(local_pdf.name)  # relative path next to the HTML
+        return f"""
+<div class="PDFviewer text-center" style="width:100%; margin-top:1rem;">
+  <object data="{src}" type="application/pdf" width="100%" height="800">
+    <a href="{src}">Open the PDF</a>
+  </object>
+</div>"""
+
+    # Else, use remote URL if present
+    if pdf_url and (pdf_url.startswith("http://") or pdf_url.startswith("https://")):
+        quoted = pdf_url.replace("&", "&amp;")
+        viewer = f"https://drive.google.com/viewerng/viewer?embedded=true&amp;url={quoted}"
+        return f"""
+<div class="PDFviewer text-center" style="width:100%; margin-top:1rem;">
+  <embed src="{viewer}" width="100%" height="800" />
+</div>"""
+
+    return ""  # nothing to embed
+  
+def build_toc_links(root: ET.Element) -> str:
+    """
+    Create left-panel TOC from TEI structure:
+    - Any element with a <head> becomes an anchor.
+    - Bibliography div gets a link (if present).
+    - If nothing else, add 'PDF' when a pdf_url exists.
+    """
+    items = []
+
+    # 1) heads inside the text body
+    for head in root.findall(".//tei:text//tei:head", TEI_NS):
+        label = "".join(head.itertext()).strip()
+        if not label:
+            continue
+        # anchor id: use parent @xml:id if present, else slugify label
+        parent = head.getparent() if hasattr(head, "getparent") else None  # ElementTree lacks getparent; ignore
+        # fallback: derive an id from the text
+        slug = "-".join(label.lower().split())
+        items.append(f'<a href="#{html.escape(slug)}" class="toc-item">{html.escape(label)}</a>')
+
+    # 2) bibliography
+    bibl_div = root.find(".//tei:text/tei:body/tei:div[@type='bibliography']", TEI_NS)
+    if bibl_div is not None:
+        items.append('<a href="#Head-id.bibliography" class="toc-item">Bibliography</a>')
+
+    # 3) fallback
+    if not items:
+        items.append('<span class="toc-item text-muted">No sections</span>')
+
+    return "".join(items)
+  
 
 def try_get_pdf_locally_or_download(infile: Path, pdf_url: str, pdf_override: str | None) -> Path | None:
     """
@@ -389,6 +461,7 @@ def main(infile: str, outfile: str | None, pdf_override: str | None):
     # find or fetch PDF
     pdf_path = try_get_pdf_locally_or_download(Path(infile), pdf_url, pdf_override)
     print(f"[pdf] placeholder_hit={placeholder_hit}, pdf_url={'yes' if pdf_url else 'no'}, pdf_path={pdf_path}", file=sys.stderr)
+    pdf_embed_html = build_pdf_embed(pdf_url, pdf_path)
 
     pdf_text_block = extract_pdf_html(pdf_path) if pdf_path else ""
 
@@ -421,14 +494,16 @@ def main(infile: str, outfile: str | None, pdf_override: str | None):
         "vol_display": vol_display,
         "year_paren": year_paren,
         "download_links": download_links,
-        "toc_links": "",  # keep simple
+        "toc_links": build_toc_links(root),
         "review_title": review_title,
         "body_paragraphs": "\n".join(body_list),
         "bibliography_html": bibliography_html,
         "pub_date_display": t(pub_year),
         "author_full": author_full,
         "lang_attr": lang_attr or "",
+        "pdf_embed_html": pdf_embed_html,
         "pdf_text_block": "",  # already appended inside body_paragraphs
+        
     }
 
     html_out = render_html(data)
