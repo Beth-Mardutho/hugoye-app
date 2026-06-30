@@ -1,0 +1,531 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:srophe="https://srophe.app">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>John of Ephesus and the &quot;Tritheists&quot;:</title>
+    <link rel="schema.DC" href="http://purl.org/dc/elements/1.1/" />
+    <link rel="schema.DCTERMS" href="http://purl.org/dc/terms/" />
+    <meta name="DC.type" property="dc.type" content="Text" />
+    <meta name="DC.isPartOf" property="dc.ispartof" content="Syriaca.org" />
+    <link data-template="app:metadata" />
+    <link rel="shortcut icon" href="/resources/img/favicon.ico" />
+    <link rel="stylesheet" type="text/css" href="/resources/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="/resources/css/sm-core-css.css" />
+    <link rel="stylesheet" href="/resources/css/syr-icon-fonts.css" />
+    <link rel="stylesheet" type="text/css" href="/resources/css/main.css" />
+    <link rel="stylesheet" type="text/css" media="print" href="/resources/css/print.css" />
+    <link href="/resources/jquery-ui/jquery-ui.min.css" rel="stylesheet" /><script type="text/javascript" src="/resources/js/jquery.min.js"></script><script type="text/javascript" src="/resources/jquery-ui/jquery-ui.min.js"></script><script type="text/javascript" src="/resources/js/jquery.smartmenus.min.js"></script><script type="text/javascript" src="/resources/js/clipboard.min.js"></script><script type="text/javascript" src="/resources/js/bootstrap.min.js"></script><script src="https://www.google.com/recaptcha/api.js"></script><link href="/resources/keyboard/css/keyboard.min.css" rel="stylesheet" />
+    <link href="/resources/keyboard/css/keyboard-previewkeyset.min.css" rel="stylesheet" />
+    <link href="/resources/keyboard/syr/syr.css" rel="stylesheet" /><script type="text/javascript" src="/resources/keyboard/syr/jquery.keyboard.js"></script><script type="text/javascript" src="/resources/keyboard/js/jquery.keyboard.extension-mobile.min.js"></script><script type="text/javascript" src="/resources/keyboard/js/jquery.keyboard.extension-navigation.min.js"></script><script type="text/javascript" src="/resources/keyboard/syr/jquery.keyboard.extension-autocomplete.js"></script><script type="text/javascript" src="/resources/keyboard/syr/keyboardSupport.js"></script><script type="text/javascript" src="/resources/keyboard/syr/syr.js"></script><script type="text/javascript" src="/resources/js/keyboard.js"></script>
+  </head>
+  <body id="body">
+    <div class="navbar navbar-default navbar-fixed-top" role="navigation" data-template="app:fix-links">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand banner-container" href="/index.html">
+            <!--<img property="logo" class="img-responsive" alt="Syriac.org" src="/resources/img/syriaca-logo.png"/> Draft-->
+            <span class="banner-icon"></span>
+            <span class="banner-text">Hugoye: Journal of Syriac Studies</span>
+          </a>
+        </div>
+
+        <div class="navbar-collapse collapse pull-right">
+          <ul class="nav navbar-nav sm sm-vertical" id="main-menu">
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                About Hugoye  <b class="caret"></b>
+              </a>
+              <ul class="dropdown-menu">
+                <li><a href="/editorial-board.html">Editorial Board</a></li>
+                <li><a href="/submissions.html">Submissions</a></li>
+                <li><a href="/open-access.html">Open Access</a></li>
+                <li><a href="https://www.gorgiaspress.com/hugoye-journal-of-syriac-studies" target="_blank">Printed Edition Subscription</a></li>
+              </ul>
+            </li>
+
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                Indexes  <b class="caret"></b>
+              </a>
+              <ul class="dropdown-menu">
+                <li><a href="/current-issue.html">Current Issue</a></li>
+                <li><a href="/volumes.html">Volume Index</a></li>
+                <li><a href="/authors.html">Author Index</a></li>
+              </ul>
+            </li>
+          </ul>
+
+          <ul class="nav navbar-nav navbar-right keboard-btn">
+            <li>
+              <div class="btn-nav">
+                <a class="btn btn-default navbar-btn dropdown-toggle" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" title="Select Keyboard">
+                  <span class="syriaca-icon syriaca-keyboard"></span>
+                  <span class="caret"></span>
+                </a>
+                <ul data-template="app:keyboard-select-menu" data-template-input-id="q"></ul>
+              </div>
+            </li>
+
+            <li>
+              <div class="btn-nav">
+                <a href="#" class="btn btn-default navbar-btn dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" title="Search Tools">
+                  <span class="glyphicon glyphicon-search"></span> <span class="caret"></span>
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a href="/search.html">Advanced Search</a></li>
+                </ul>
+              </div>
+            </li>
+
+            <li>
+              <div class="btn-nav">
+                <a href="#" class="btn btn-default navbar-btn dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" title="Select Font">
+                  Font <span class="caret"></span>
+                </a>
+                <ul class="dropdown-menu" id="swap-font">
+                  <li><a href="#" class="swap-font" id="DefaultSelect" data-font-id="EstrangeloEdessa">Default</a></li>
+                  <li><a href="#" class="swap-font" id="EstrangeloEdessaSelect" data-font-id="EstrangeloEdessa">Estrangelo Edessa</a></li>
+                  <li><a href="#" class="swap-font" id="EastSyriacAdiabeneSelect" data-font-id="EastSyriacAdiabene">East Syriac Adiabene</a></li>
+                  <li><a href="#" class="swap-font" id="SertoJerusalemSelect" data-font-id="SertoJerusalem">Serto Jerusalem</a></li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+
+          <form class="navbar-form navbar-right navbar-input-group" role="search" action="/search.html" method="get">
+            <div class="input-group">
+              <input type="text" class="form-control keyboard" placeholder="search" name="q" id="q" />
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <div class="main-content-block">
+      <div class="interior-content">
+        <div class="container otherFormats">
+          <a href="HV29N1Kiel.xml" class="btn btn-default btn-xs" id="teiBtn" data-toggle="tooltip" title="Click to view the TEI XML data for this record."><span class="glyphicon glyphicon-download-alt" aria-hidden="true"></span> TEI/XML</a>
+        </div>
+
+        <div class="row">
+          <!-- MAIN CONTENT (use 9/3 split like your example) -->
+          <div class="col-sm-9 col-md-9 col-lg-9 mssBody">
+            <div class="article-header text-center">
+              <h1>John of Ephesus and the &quot;Tritheists&quot;:</h1>
+              <h2></h2>
+              <span class="tei-author">
+                <span class="tei-name">Nikolai <span class="tei-surname">Kiel</span></span>
+                <span class="tei-affiliation"><span class="tei-orgName">DFG-Projekt &quot;Kommentar zur Kirchengeschichte des Johannes von Ephesus&quot; Goethe University of Frankfurt am Main</span></span>
+              </span>
+            </div>
+
+            <div class="section tei-text">
+              <div class="body">
+                <div class="section" style="display:block;">
+                  <div class="tei-div tei-title" lang="en">
+                    <span class="tei-ab tei-review-title"></span>
+                  </div>
+
+                  <div class="tei-div tei-body" lang="en">
+                    <div class="pdf-transcript">
+<h3 class="h4">Full text (from PDF)</h3>
+<p>Hugoye: Journal of Syriac Studies, Vol. 29.1, 171-198 © 2026 by Beth Mardutho: The Syriac Institute and Gorgias Press</p>
+<p>JOHN OF EPHESUS AND THE “TRITHEISTS”</p>
+<p>What was the belief of “Tritheism”?</p>
+<p>NIKOLAI KIEL</p>
+<p>DFG-PROJEKT “KOMMENTAR ZUR KIRCHENGESCHICHTE DES JOHANNES VON EPHESUS” GOETHE UNIVERSITY OF FRANKFURT AM MAIN</p>
+<p>ABSTRACT</p>
+<p>study examines</p>
+<p>“Tritheism”</p>
+<p>This in Miaphysite Christianity as portrayed in the Syriac Ecclesiastical History (EH) of John of Ephesus. Drawing on EH 3.5.1–12, where trinitarian discourse is central, this paper offers a glimpse into the turbulent sixth-century Christian context. After outlining the movement’s historical emergence and key figures – above all Conon of Tarsus, Eugenius of Seleucia, and their intellectual predecessor John Philoponus – the study scrutinizes John’s portrayal of the Cononite position and assesses whether the charge of “Tritheism” reflects genuine theological disagreement or polemical distortion. Special attention is given to the philosophical underpinnings of Philoponus’s trinitarian thought and its reception among the Cononites, whose to appropriation of Aristotelian</p>
+<p>categories</p>
+<p>led</p>
+<p>171</p>
+<p>172</p>
+<p>Hugoye 29.1</p>
+<p>accusations of introducing a plurality of divine essences and natures into Christian theology. The paper argues that Philoponus was likely misunderstood by his critics and that the label “Tritheism” obscures rather than intentions. In clarifies the movement’s theological conclusion, alternative designations – “Cononites,” “Athanasians,” or “Philoponians” – are proposed as historically more adequate terms for describing the followers of this trinitarian tradition. 1. Introduction</p>
+<p>from</p>
+<p>A phenomenon known as “Tritheism” arose in the sixth century after the Council of Chalcedon.1 In his Ecclesiastical History, John of Ephesus extensively addresses the emergence of the the Miaphysite “Tritheists,” who had originated movement (EH 3.5.1–12).2 The main figure</p>
+<p>intellectual</p>
+<p>1 Cf. Peter Gemeinhardt, Geschichte des Christentums in der Spätantike (Tübingen: Mohr Siebeck, 2022), 369: “Dass unter den Miaphysiten theologische Debatten geführt wurden, schwächte ihre Position gegenüber den Kaisern: So war vor allem der ‘Tritheismus’ umstritten, den manche lauern sahen, wenn man Kyrills Rede von einer Natur und einer Hypostase vom christologischen in den trinitarischen Bereich übertrug – dann würde sich analog zu den göttlichen Hypostasen die Natur Gottes verdreifachen. Im Fokus standen besonders die Schriften des alexandrinischen Neuplatonikers und Theologen Johannes Philoponus.” Cf. also Wolf-Dieter Hauschild and Volker Henning Drecoll, Lehrbuch der Kirchen- und Dogmengeschichte Bd. 1. Alte Kirche und Mittelalter (6. Aufl.; Gütersloh: Gütersloher Verlagshaus, 2019), 362.</p>
+<p>2 Concerning the overarching objective of John of Ephesus’ Ecclesiastical History, refer to the analysis of William Bunce, “Flawed Forensics: Miaphysites on Trial in the Courts of Justin II” (Hugoye 26:1 [2023]), 55: “He (sc. John of Ephesus) thereby sought to justify in his work the refusal of miaphysite clergy to accept the council of Chalcedon and its enforcement by rendering the legal practices of its proponents suspect.” Because of the many Greek loan words in Syriac Ecclesiastical History, John certainly knew Greek well. Still, he chose to write his work in Syriac in order to write for his Miaphysite community. Cf. Muriel Debié, L’écriture de l’histoire en syriaque: transmissions interculturelles et constructions identitaires entre</p>
+<p>Grigory Kessel</p>
+<p>173</p>
+<p>associated with them is John Philoponus († ca. 575).3 As inheritors of Philoponus’ philosophical work, Conon (Κόνων) of Tarsus4 and his associate Eugenius (Εὐγένιος) of Seleucia5 took his ideas and built their foundation upon it. The question arises: What did these so-called “Tritheists” believe? They were accused of insinuating and hinting at a belief in “three gods” within Christian theology.</p>
+<p>2. ACCUSATION OF TRITHEISM</p>
+<p>The accusation of Tritheism is regularly directed at certain representatives of the Miaphysite movement. John of Ephesus identifies Conon (Κόνων) of Tarsus and his associate Eugenius (Εὐγένιος) of Seleucia in Isauria as “Tritheistic” leaders.6 Both</p>
+<p>hellénisme et islam, Late Antique History and Religion 12 (Leuven: Peeters, 2015), 440–441. Hartmut Leppin has described the Syriac Ecclesiastical History of John as “a variant of Greek Christian historiography as it developed in the late antique Roman Empire.” Hartmut Leppin, “The Roman Empire in John of Ephesus’s Church History: Being Roman, Writing Syriac,” in Historiography and Space in Late Antiquity, ed. Peter van Nuffelen (Cambridge: Cambridge University Press, 2019), 131.</p>
+<p>3 Cf. Alois Grillmeier, Jesus der Christus im Glauben der Kirche. Band 2/4: Die Kirche von Alexandrien mit Nubien und Äthiopien nach 451 (Freiburg: Herder, 1990), 134–138.</p>
+<p>4 Cf. Beate Regina Suchla, “Conon von Tarsus,” in Lexikon der antiken christlichen Literatur, ed. Siegmar Döpp and Wilhelm Geerlings (Freiburg: Herder, 2002), 163; For Conon und Eugenius, see Ernest Honigmann, Évêques et évêchés monophysites d’Asie antérieure au VIE siècle, CSCO 127, Subsidia 2 (Louvain: Durbecq, 1951), 179–188.</p>
+<p>5 Cf. Alois Grillmeier, Jesus der Christus im Glauben der Kirche. Band 2/3: Die Kirchen von Jerusalem und Antiochen nach 451 bis 600 (Freiburg: Herder, 2002), 284–286.</p>
+<p>6 Additionally, John Philoponus is regarded as the intellectual promoter of the “Tritheistic” view through his writings. On the “tritheistic” view, cf. Silvio Roggo, The Conflict over the Patriarchate of Constantinople under Eutychios and John Scholastikos (552–582) and Its Impact on Imperial Religious Policy (Cambridge: University of Cambridge, 2022), 98–100;</p>
+<p>174</p>
+<p>Hugoye 29.1</p>
+<p>were the first Severian bishops consecrated by Jacob Baradaeus († 578).7 Around 600 AD, Timothy of Constantinople,8 presumably a presbyter at Hagia Sophia, wrote a treatise titled De receptione haereticorum, in which he addresses the beliefs of the Cononites (Κονωνίται) regarding the doctrines of the Trinity and the Resurrection. The followers of Conon of Tarsus “profess that the holy and consubstantial Trinity is one essence or nature, one divinity or God, not in number, but in the undifferentiated identity of divinity.”9 A number cannot determine the unity of divinity but is completely equal (ἀπαράλλακτος) within itself.</p>
+<p>Furthermore, Timothy cites the confession of the Cononites, stating that “in truth, according to essence and nature, each one is God, namely Father, Son, and Holy Spirit; the Holy Trinity consists of three hypostases and three persons.”10 However,</p>
+<p>Albert Van Roey and Pauline Allen, Monophysite Texts of the Sixth Century, Orientalia Lovaniensia analecta 56 (Leuven: Peeters, 1994), 122–143.</p>
+<p>7 John of Ephesus was also consecrated bishop of Ephesus by Jacob Baradaeus in 558. Cf. Alexander Petrovich Dyakonov, John of Ephesus and His Ecclesiastical-Historical Works (Saint Petersburg: V. F. Kirschbaum, 1908), 5. For more historical background on John of Ephesus, see JeanneNicole Mellon Saint-Laurent, Missionary Stories and the Formation of the Syriac Churches, Transformation of the Classical Heritage 55 (Oakland, California: University of California Press, 2015), 72–79; Christine Shepardson, A Memory of Violence. Syriac Christianity and the Radicalization of Religious Difference in Late Antiquity (Oakland, California: University of California Press, 2025), 207–245.</p>
+<p>8 Cf. Christiane Schmidt, “Timotheus von Konstantinopel,” in Lexikon der antiken christlichen Literatur, ed. Siegmar Döpp and Wilhelm Geerlings (Freiburg: Herder, 2002), 696.</p>
+<p>9 Timothy of Constantinople, De receptione haereticorum (PG 86/1, 61A7–10): Μίαν δὲ οὐσίαν, ἤγουν φύσιν, καὶ μίαν θεότητα, ἤγουν Θεὸν τὴν ἁγίαν καὶ ὁμοούσιον Τριάδα ὁμολογοῦσιν, οὐκ ἀριθμῷ, ἀλλὰ τῇ ἀπαραλλάκτῳ τῆς θεότητος ταυτότητι.</p>
+<p>10 Timothy of Constantinople, De receptione haereticorum (PG 86/1, 61A1–5): οἴτινες καὶ αὐτοὶ ὁμολογοῦσι Θεὸν εἶναι κατὰ ἀλήθειαν, καὶ οὐσίαν καὶ φύσιν</p>
+<p>Grigory Kessel</p>
+<p>175</p>
+<p>as undifferentiated</p>
+<p>and perfectly</p>
+<p>according to Timothy, what distinguishes the Cononite doctrine is that “they also speak of three substances and natures numerically, which are equal without any distinction within the divinity.”11 The three οὐσίαι and φύσεις are therefore to be understood equal (ἀπαραλλάκτως) within the divine unity. As the Cononites speak of three substances and natures within the divine Trinity, they go beyond what was established as the binding confession of μία οὐσία or φύσις – τρεῖς ὑποστάσεις in the Godhead at the Council of Constantinople (381 AD). The terminological determination of the divine Trinity by the Cononites leads to the accusation of “Tritheism” in their conception of God.</p>
+<p>Photius (ca. 810–893/894) also confirms in his work Bibliotheca that Conon and Eugenius initially make pious statements about theology by defining the Trinity as of the same essence and nature (Τριάδα ὁμοούσιον καὶ ὁμοφυῆ) and believing in one God and one divinity.12 However, according to Photius, they commit blasphemy when they speak of “separate essences, distinct divinities, and unique natures” (μερικὰς οὐσίας καὶ ἰδικὰς θεότητας καὶ ἰδικὰς φύσεις) of the Father, the Son, and the Holy Spirit.13 Here, Photius seems to employ a polemical exaggeration when attributing the notion of “specific divinities” to the Cononites in their doctrine of the Trinity.</p>
+<p>ἕκαστον· τὸν Πατέρα λέγω, καὶ τὸν Υἱὸν, καὶ τὸ ἅγιον Πνεῦμα τρεῖς ὑποστάσεις τὴν ἁγίαν Τριάδα καὶ τρία πρόσωπα.</p>
+<p>11 Timothy of Constantinople, De receptione haereticorum (PG 86/1, 61A5–7): ἔτι μὴν καὶ τρεῖς τινας τῷ ἀριθμῷ οὐσίας καὶ φύσεις ἴσας ἀπαραλλάκτως κατὰ τὴν θεότητα λέγοντες.</p>
+<p>12 Photius, bibl. 24, 5b (Henry I, 15,14–16): Οὗτοι δὲ τὰς μὲν ἄλλας περὶ τὴν θεολογίαν λέγουσι φωνὰς εὐσεβεῖς, Τριάδα ὁμοούσιον καὶ ὁμοφυῆ, καὶ θεὸν ἕνα καὶ μίαν θεότητα.</p>
+<p>13 Photius, bibl. 24, 5b (Henry I, 15,16–20): βλασφημοῦσι δὲ λέγοντες μερικὰς οὐσίας καὶ ἰδικὰς θεότητας καὶ ἰδικὰς φύσεις τὸν πατέρα καὶ τὸν υἱὸν καὶ τὸ ἅγιον πνεῦμα ἑαυτοῖς τε καὶ τῇ ἀληθείᾳ μαχόμενοι· καὶ ἄλλα ἄττα ληροῦσι παραπλήσια ταύτης τῆς ματαιότητος.</p>
+<p>176</p>
+<p>Hugoye 29.1</p>
+<p>οὐσία</p>
+<p>and</p>
+<p>ὑπόστασις.15</p>
+<p>This</p>
+<p>Timothy reports in his account that the Cononites explicitly deny the notion of “three gods” within the divine Trinity: “However, they avoid saying three gods or divinities.”14 They do not go so far, but they equate ὑπόστασις (hypostasis) with φύσις (nature) and then transfer the synonymous meaning to οὐσία (essence), allowing them to speak of three essences and natures within the Godhead. Theodoret of Cyrus had already emphasized in his Eranistes that “according to external wisdom” (i.e., Greek philosophy), “there is no difference” between synonymous understanding appears to be present in the Cononite doctrine of the Trinity, so they do not have any difficulty speaking of three essences and three natures in the sense of the three hypostases. However, they would certainly reject the notion of “three divinities,” which is more of a polemical accusation against their Trinitarian doctrine.16</p>
+<p>Timothy accuses the so-called “Tritheists” (Τριθεΐται) of blasphemy against the Holy Trinity in his work De receptione haereticorum due to their use of the terms οὐσίαι (essences) and φύσεις (natures) to describe multiple aspects within the Trinity.17 Similarly, John of Ephesus, a somewhat younger</p>
+<p>14 Timothy of Constantinople, De receptione haereticorum (PG 86/1, 61A10f.):</p>
+<p>Τρεῖς δὲ θεοὺς ἢ θεότητας λέγειν παραιτοῦνται.</p>
+<p>15 Theodoret of Cyrus, Eranistes dial. 1 (Ettlinger 64,9–10): ΕΡΑΝ. Ἔχει τινὰ διαφορὰν ἡ οὐσία πρὸς τὴν ὑπόστασιν; ΟΡΘ. Κατὰ μὲν τὴν θύραθεν σοφίαν οὐκ ἔχει. Cf. Christophe Erismann, “The Trinity, Universals, and Particular Substances: Philoponus and Roscelin” (Traditio 63 [2008]), 279.</p>
+<p>16 Cf. Joseph M. Schönfelder, Die Kirchengeschichte des Johannes von Ephesus. Aus dem Syrischen übersetzt. Mit einer Abhandlung über die Tritheiten (München: J. J. Lentner, 1862), 282: “Wohl ist es wahr, die sg. Tritheiten lehrten ‘drei Usien und drei Naturen der Zahl nach ohne Verschiedenheit gleich’, aber nicht drei Gottheiten und Götter.”</p>
+<p>17 Timothy of Constantinople, De receptione haereticorum (PG 86/1, 44A5– 8/Beneševič, Syntagma, 730,7–10): Τριθεΐται· οἱ δεχόμενοι τὸν γραμματικὸν τὸν λεγόμενον Φιλόπονον, μᾶλλον δὲ Ματαιόπονον· καὶ οὐσίας καὶ φύσεις ἐπὶ τῆς ἁγίας Τριάδος βλασφημοῦντες.</p>
+<p>Grigory Kessel</p>
+<p>177</p>
+<p>!&quot;#ܢ</p>
+<p>contemporary, also criticizes the Cononites. In his Ecclesiastical History, he reports that Conon ( /Κόνων) and his followers “dare to enumerate natures, essences, divinities, and gods in the holy and consubstantial Trinity.”18 John thus condenses the Cononite position into this concise description. He accuses them of believing in multiple divinities within the Trinity. He attempts to discredit them as “heretics” without genuinely grasping the theological intentions behind their Trinitarian doctrine or providing a detailed account.</p>
+<p>In the fifth book, John of Ephesus reports that the Cononites in Constantinople attempted to reconcile with the Miaphysite Christians, whom he calls the Church of the Orthodox. These Cononites had originally come from the Miaphysite Church, aiming to present a united front against the Chalcedonians and seek reconciliation. From the outset, John characterizes them as those who proclaim “essences, natures, and divinities” and have thus distanced themselves from the Orthodox Miaphysite Church.19 However, John reveals that they did not affirm “three gods or divinities” in their Trinitarian doctrine, as evidenced by the demand from the Orthodox Miaphysites addressed to the Cononites. They were required to cease speaking of “essences and natures within the Trinity” to prevent the introduction of a plurality of gods and divinities into Christianity, which would be akin to paganism.20</p>
+<p>18 John of Ephesus, EH 3.1.31 (f. 19rb Kiel):</p>
+<p>!&quot; ܗ$%&amp; !’!() ܐܬ,-. ܗܘ0 ܐܦ 2(3ܢ ܪ67&quot;̇ ܕܗܪ:%;܇ ܕܗ,%= ܕ&gt;?@A%= ܕB?(3ܢ $%()̈ ܘܐܘ̈:%; ܘܐ,&quot;̈ܘܬ0 ܘ0̈,&quot;0 !D,%D63ܬ0 2EFD0 ܘF3̣6D !Hܘ:%) .</p>
+<p>19 John of Ephesus, EH 3.5.8 (f. 120ra Kiel):</p>
+<p>$Hܪ6= ܗܘܘ:</p>
+<p>ܘܬ0 ܘ$K̈B) ܘ0̈,&quot;ܘܬ0 &gt;= $L(M &gt;D</p>
+<p>!N@6= ܗܘܘ܆</p>
+<p>$E ܗ$%&amp; ܗ,%= ܕ&gt;I@ܙ6= ܐ̣6D ܘܐܦ &gt;=</p>
+<p>,-&quot;ܘܢ &gt;D</p>
+<p>20 John of Ephesus, EH 3.5.8 (f. 120ra–120rb Kiel): ܬ!P%= ܗܘܘ ܕBḌQ(3ܢ ܘBR3F3ܢ &gt;= ܗܝ̇ ܕ,) B&quot;ܘܘܢ</p>
+<p>ܘ&gt;) ܕܐܬ̣ܘ ܕB?LL3ܢ: ܘ&gt;D ܐ&gt;@6= ܐܘ̈:%; ܘ$%()̈ !D,%D63ܬ0: ܕ,) &gt;= ܗ,%= :T%)̇ܘܬ ܐ̈,&quot;0 ܘ0̈,&quot;ܘܬ0 ܐ6. A(R)̈ ܬU3ܠ U&amp; $@:W%(3ܬ0܆</p>
+<p>̈ ̇ ̇</p>
+<p>̇</p>
+<p>178</p>
+<p>Hugoye 29.1</p>
+<p>John indicates that they did not advocate “three gods or divinities” in their Trinitarian doctrine; this accusation appears to be a polemical consequence of using the terms “three natures” and “three essences” in their theology. The presbyter Timothy aligns with John of Ephesus in his account (τρεῖς δὲ θεοὺς ἢ θεότητας λέγειν παραιτοῦνται).21 The concern of both critics of “Tritheism” is the potential introduction of polytheism into Christian theology, which they are determined to prevent. However, the Cononites refuse to comply with the demand made upon them and respond: “We are unable to deny the existence of essences and natures in numbers.”22 For them, the οὐσίαι and φύσεις are understood as the three hypostases of the Father, the Son, and the Holy Spirit, and they see no reason to abandon this terminology.</p>
+<p>Following the</p>
+<p>failure of the attempts at union</p>
+<p>in Constantinople, the Cononites traveled to Alexandria and Antioch to convince the church leaders there of their Trinitarian theology (EH 3.5.9). They composed a libellus %&amp;’(#ܢ ( ) for the Miaphysite Patriarch Damian of Alexandria (ca. 578–606/607)23 to win him over to their understanding of God and establish church communion with him.24 In this document, they articulated their creed. In response, Damian demanded that they renounce the idea of a “multiplicity of natures and essences” and additionally anathematize the two</p>
+<p>21 Timothy of Constantinople, De receptione haereticorum (PG 86/1, 61A10–</p>
+<p>11).</p>
+<p>22 John of Ephesus, EH 3.5.8 (f. 120rb Kiel):</p>
+<p>ܘܬ0 ܘ$%()̈</p>
+<p>̣ ,) &gt;7IX%(=.</p>
+<p>ܕܕ,) B)̣&gt;@ &gt;(%()̈ ܕܐ6D 23 Cf. Bettina Windau, “Damian von Alexandrien,” in Lexikon der antiken christlichen Literatur, ed. Siegmar Döpp and Wilhelm Geerlings (Freiburg: Herder, 2002), 185–186.</p>
+<p>24 John of Ephesus, EH 3.5.9 (f. 120va Kiel):</p>
+<p>$E Y%@ ܗB%= $E ܗB%=</p>
+<p>ܙ̈!(%= :T%)̈ܢ ܘ!)̣,IN(Eܪ6) ܘ!N3ܪ6) &gt;(&quot;ܘܢ</p>
+<p>UZܢ ܗ̈ܘܝ: $E A’ܘ ܕ,) ܐܬ&gt;[63 ܕ!&quot;,%= ܕ!?E6(D &gt;LI3ܬ0 ,?-’A3܆</p>
+<p>&gt;ND ܐܙ̣,3ܢ UL3ܢ ,H,IN(Eܪ6)܆ ܘU-Eܘܢ ,%-L3ܢ . $E ܐܘ&gt;(H6D ܬܘܕ6Dܗܘܢ :?3ܢ !&quot;܆</p>
+<p>ܘ2@!3 ,E&gt;%() ܗ̇ܘ ܕ!Dܪ QW@\ ܗ̣ܘ0 ܬ&gt;=.</p>
+<p>̈</p>
+<p>̇</p>
+<p>Grigory Kessel</p>
+<p>179</p>
+<p>writings of John Philoponus, whom they invoked as a source.25 Cononites did not reject one of Philoponus’s writings on the Trinity; however, they abandoned Philoponus’s concept of the resurrection, but they could not part with Philoponus’s doctrine of the Trinity. In the treatise on the resurrection, John Grammaticus teaches: “There is no resurrection for these bodies, but other bodies arise, and they attain to the resurrection from the dead.”26 Since the Cononites continued to adhere to their Trinitarian theology, Damian, a staunch opponent of Tritheism, anathematized them and refused them communion in the church.27</p>
+<p>A similar situation occurred in Antioch, as confirmed by the presbyter Timothy. After their failed attempts to form a union with the Patriarchs of Constantinople, Alexandria, and Antioch, the Cononites composed another document. In this text, they presented a collection of excerpts (florilegia) as evidence for their Trinitarian doctrine, citing quotes from various recognized Church Fathers who also spoke of a “multiplicity of many natures and substances.”28 They used these citations to support the Cononite doctrine, asserting that their belief was consistent with the teachings of these respected Church Fathers. According to John of Ephesus, they sought to</p>
+<p>25 John of Ephesus, EH 3.5.9 (f. 120va–120vb Kiel): ܘܬ0: !3ܗܝ: ܗ,%= ܕܗ̣B3ܢ ܐ̇bP%3</p>
+<p>ܘ$E ܐܦ ܗ̣ܘ ܬ!] &gt;(&quot;ܘܢ ܕB7D0̣,3ܢ &gt;= &gt;(%() ܕ:T%Hܘܬ $%()̈ ܘ0̣6D Y@&gt;W%_3ܣ ܘ,Da6&quot;ܘܢ $D ܘܬܘܒ ܕBX@&gt;3ܢ ,%3A(= ܐB3ܢ܆ ,&quot;̇ܘ AE ܐA@6) ܕ&gt;W&amp; ܕ,) 2%?%= QTZܐ܆ &gt;X36= ܗܘܘ ܕ&gt;X@&gt;%=܆ ,&quot;̇ܘ ܕ6= 2E&gt;%) ܕ&gt;W&amp; :T%Hܘܬ ܐ̈,&quot;0܆ ,) 2-L3ܢ ܕBNL3ܢ ܐ̇ܘ BX@&gt;3ܢ.</p>
+<p>26 John of Ephesus, EH 3.5.5 (f. 118va–118vb Kiel): 6= ,_%?D0</p>
+<p>ܕ,%D 2%?D0 ,&quot;,%= QTZܐ: ܐ,) QTZܐ ܐAZB) ܗ̇ܘ6=: ܘܗ̣B3ܢ ܐܬ ܕ&gt;= !%D &gt;%D</p>
+<p>ܐ܆</p>
+<p>27 John of Ephesus, EH 3.5.9 (f. 120va–120vb Kiel). 28 John of Ephesus, EH 3.5.10 (f. 121ra Kiel):</p>
+<p>ܐ ܕ&gt;= ܬA3̈6D0</p>
+<p>ܐ!&quot;̈ܬ0܇</p>
+<p>ܗ,%= ܕ!&quot;̇ !E&gt;3ܬ0܆ ܐܦ ܗ̣B3ܢ BDF3ܢ ܗ̈ܕ&gt;) &gt;%D ܕܐ!&quot;̈ܬ0 2Ë67)܆ ܐ̣6I() ܕܐ6. ܕ:-@6=܆ ܕBX3ܘܢ ܐB3ܢ ,IL&quot;ܘܢ ܕܐܦ ܗ̣B3ܢ !E&gt;3ܬܗܘܢ &gt;(%() ܕ$%()̈ :T%)̈ܐ ܘܕ\̣ܘ̈:%;܇</p>
+<p>̈ ̈</p>
+<p>̇ ̈</p>
+<p>̈</p>
+<p>180</p>
+<p>Hugoye 29.1</p>
+<p>substantiate their claims of multiple gods in this manner, attempting to discredit the orthodox Fathers as authorities.29</p>
+<p>3. HISTORICAL CLASSIFICATION OF THE SOCALLED “TRITHEISTS” IN JOHN OF EPHESUS</p>
+<p>The so-called “Tritheistic” movement has its origins in John Askotzanges (Ἀσκοζαγγής), a Miaphysite from Apamea in Syria.30 Michael the Syrian asserts that he was the originator of Tritheism, thereby attributing to him the responsibility for the theological crisis within Miaphysitism in the second half of the sixth century.31 Consequently, John Askotzanges is regarded as a foundational figure in the genesis of Tritheism, signifying the onset of its “archaic phase” (557–567) in Constantinople.32</p>
+<p>Following this initial phase, the so-called “Tritheistic” movement expanded beyond Constantinople, spreading among the Miaphysites from Antioch to Alexandria.33 In John of Ephesus’s Ecclesiastical History, the primary figures associated with the so-called “Tritheism” are identified as Conon,</p>
+<p>29 John of Ephesus, EH 3.5.10 (f. 121ra Kiel):</p>
+<p>ܘܬ0 :T%)̈ܬ0 &gt;PL%= ܘ&gt;LR%=܆ ܕ&gt;= ܗܕ\ ܐQ= ,) :-@ܘ</p>
+<p>A(R)̈ &gt;LR%=</p>
+<p>$NN%=܇ ܕܐܦ &gt;(%() ܕ\̈,&quot;ܘܬ0 ܘ0̈,&quot;0 :T%)̈ܐ ܐ6.</p>
+<p>ܗ̇B3 ܕ6= ܕ\̣6D &gt;D ܘ&gt;I@ܙ6= . 30 Cf. Johannes Zachhuber, The Rise of Christian Theology and the End of Ancient Metaphysics. Patristic Philosophy from the Cappadocian Fathers to John of Damascus (Oxford: Oxford University Press, 2020), 156–161.</p>
+<p>31 Michael the Syrian, Chronique IX 30 (V) (Chabot II, 251–255); see also the shorter report in Gregory Bar Hebraeus, Chronicon ecclesiasticum I (Abeloos/Lamy I, 223–225).</p>
+<p>32 Cf. Carlo dell’Osso, “Il triteismo nel VI secolo: la fase arcaica (557–567)” (Augustinianum 60:1 [2020]), 189–207. Carlo dell’Osso shows that the first phase of “Tritheism” (557–567) remained confined to Constantinople: “In tal senso, la questione triteista, almeno nella sua prima fase, va considerata come un fenomeno costantinopolitano, dovuto molto probabilmente alla presenza e all’arrivo nella capitale di elementi egiziani e siriaci, che, benché fossero tutti di estrazione severiana, erano tuttavia concettualmente e dottrinalmente distanti fra loro.” Ibid. 207.</p>
+<p>33 Cf. Grillmeier, Jesus der Christus im Glauben der Kirche. Band 2/3, 279–291.</p>
+<p>̈ ̇</p>
+<p>Grigory Kessel</p>
+<p>181</p>
+<p>Eugenius, and their adherents.34 A second significant group consists of the Athanasians, who trace their theological lineage to Athanasius, the grandson of Empress Theodora. A notable point of convergence between these two groups is their shared reliance on John Philoponus, who served as a foundational figure for the development of their respective theological positions.</p>
+<p>At the beginning of the fifth book, John of Ephesus reports that he engaged extensively with the representatives of “Tritheism.” Their leaders, Conon and Eugenius, attempted to convince John himself of their Trinitarian doctrine and win him over to their viewpoint.35 However, John resisted and endeavored to refute their theological position.36 According to his testimony, John wrote several treatises against their Trinitarian doctrine, none of which have been preserved.37 He refers to these writings in the fifth chapter of the fifth book of his Ecclesiastical History, where he discusses “those who</p>
+<p>34 Cf. ibid. 285: “Um 568 stellen wir eine deutliche Spaltung der severianischjakobitischen Kirche in zwei Parteien fest, und zwar in Konstantinopel, in Syrien und Ägypten. Die Bischöfe Conon und Eugen treten nun mit ihren tritheistischen Ansichten deutlich hervor. Als Mundhir, der Fürst der Ghassaniden und Anhänger des Jakob Baradai, im Jahre 569 in Konstantinopel weilte, versammelte er orthodoxe Bischöfe in seinem Haus und legte den Bischöfen Conon und Eugenius eine Encyclica vor, unterzeichnet von orthodoxen Bischöfen Syriens und Konstantinopels, worin die rechte Trinitätslehre im Sinn des verstorbenen Patriarchen Theodosius verteidigt wurde. Beide verweigerten aber, selbst nach Gewährung einer Bedenkzeit von 5 Tagen, die Unterschrift. So wurde ihre Absetzung ausgesprochen und der ganzen jakobitisch-severianischen Kirche bekannt gemacht.”</p>
+<p>35 Cf. Albert Van Roey, “La controverse trithéite jusqu’à l’excommunication</p>
+<p>de Conon et d’Eugène (557–569)” (OLP 16 [1985]), 141–165.</p>
+<p>36 John of Ephesus, EH 3.5.1 (f. 117ra–117va Kiel). For the condemnation of Conon and Eugenius, see the chapter “On Not Three Gods” by Phil Booth, “John of Ephesus: Historian on the Edge.” Millennium 22 (2025): 203–256, esp. 228–233.</p>
+<p>37 John of Ephesus, EH 3.5.3 (f. 118ra Kiel).</p>
+<p>182</p>
+<p>Hugoye 29.1</p>
+<p>ܕ*+,ܙܝ ܐ̈%12</p>
+<p>) in detail.38 John examines proclaim gods” ( their theological reasons and the historical development of their emergence, which he witnessed firsthand as a contemporary.</p>
+<p>to achieve</p>
+<p>their approach</p>
+<p>Conon of Tarsus is depicted as the primary leader of the “Tritheistic” movement during John of Ephesus’s time. He lived in the latter half of the sixth century and served as the Bishop of Tarsus. He worked alongside his associate Eugenius of Seleucia. Both leaders hailed from the province of Cilicia, which appears to have been the center and missionary territory of the Cononites. According to John’s account, Conon often resided in the capital city and sought the emperor’s support for his Trinitarian standpoint. Another prominent figure in the “Tritheistic” movement mentioned by John is Athanasius, the grandson of the Miaphysite-leaning Empress. Together with Conon and Eugenius, they formed a triumvirate that attempted to sway John of Ephesus through generous gifts and offerings. They sought ecclesiastical authority, enabling them to consecrate other bishops and send them to church provinces. Failing in success with Constantinople, which John attributes to his intervention against Conon and Eugenius, they managed to win over a certain Theonas, who had been consecrated as a bishop on the orders of Patriarch Theodosius.39 Together with Theonas, they subsequently consecrated many bishops. They dispatched them, like-minded individuals, to the church provinces.40</p>
+<p>Athanasius, as the grandson of Theodora, appears to have played a mediating role in this context. He leveraged his familial connections at the imperial court to facilitate Conon and</p>
+<p>38 John of Ephesus, EH 3.5.5 (f. 118va Kiel):</p>
+<p>ܐ ܕ&gt;(&quot;6= ,&quot;,%=</p>
+<p>U&amp; Y%@ bP%3ܬܗܘܢ ܘQL%TDܗܘܢ ܕ&gt;IZܙܝ ܐ̈,&quot;0: ܘU&amp; ULLD ܐܬ̣ܘ܆ !’U3a6D0̣ &gt;3ܕܥ ܗܘ ,=܇ !NRZܐ ܕ2Eܡ ܗ,%=.</p>
+<p>39 Cf. Honigmann, Évêques et évêchés monophysites, 184. 40 John of Ephesus, EH 3.5.1 (f. 117va Kiel).</p>
+<p>̈</p>
+<p>Grigory Kessel</p>
+<p>183</p>
+<p>Eugenius’ access to key figures in church politics. According to John’s account, Athanasius was quite wealthy. He devoted his entire fortune and, during his lifetime, designated the emperor and empress as his heirs. He also generously included his comrade Conon in his will, specifying that Conon should receive ten pounds from the inheritance immediately upon his passing.</p>
+<p>Furthermore, Athanasius stipulated that Conon should continue to receive an annual allowance of two pounds to support his livelihood and missionary activities.41 However, a rift emerged between Athanasius and Conon following the sealing of the will. The disagreement centered on John Philoponus’s doctrine of the resurrection, which caused dissension among the allies.</p>
+<p>While Conon and Eugenius</p>
+<p>adhered</p>
+<p>rejected Philoponus’s conception of resurrection, Athanasius, a loyal follower of Grammaticus, to Philoponus’s doctrine of resurrection. Consequently, a rift developed between Conon and Athanasius, each anathematizing the other and composing polemical writings for public consumption. When this conflict arose, Athanasius intended to disinherit his former ally Conon. However, Athanasius passed away suddenly, preventing him from amending his will during his lifetime. As a result, Conon was able to benefit fully from Athanasius’s financial support and maintain his livelihood.42 Throughout his life, Conon</p>
+<p>41 John of Ephesus, EH 3.5.7 (f. 119rb–119va Kiel):</p>
+<p>ܬQLe ܗܪ:%; ܕ6L&quot;ܘܢ ܕbZ6D6W) ,Daܬ6=: ܗ̇B3 ܕ6= ܕ!%D</p>
+<p>QLe $L&quot;. ,(R7&quot; ܕ6= F-f ,%WZܐ̣ UN@܇ ܕ&gt;= AE\̣ B&quot;ܘ0 F_&amp; &gt;= ܐܘ:%)</p>
+<p>2Eܡ ܗ$%&amp; ܕܬ ܐ̇ܬBN%3ܣ &gt;= ܕ!%D 2(3ܢ܆ ܕ6D2) ܐ̇ܬBN%3ܣ U-E ܗܘ0 ܕܐܘ:%) ܕ6L&quot;. ܘ0̇ܘ̣ܪܬ ,?LI)̣ ܘ,?LID0. ܘ$E A@ܪ U-Ëܘܗܝ܆ F-f ,)̣YW3ܢ ,ILXE &gt;(&quot;ܘܢ̣ ܘ,HAZB) :T%)̈ܐ. $E ܐܦ ,&quot; ,_(3ܢ F-f ܕܗ!)̣ ܕ,) ܙU3ܪ܇ ܕ!)̣6Ëܘܗܝ BD ܕ6L&quot;. ܘ:W@ &gt;= ܗ,%= $?) ܕAK܆ ܬaܬ6= ,%WZܐ $3ܠ F(D0 B&quot;ܘ0 F_&amp;</p>
+<p>.</p>
+<p>̈A%D0 !X@ܬ0 U&amp; AËܕ\</p>
+<p>!) ܕܨܘ̣</p>
+<p>42 John of Ephesus, EH 3.5.7 (f. 119va Kiel): ܘ,&quot;ܕ\ ܕ6D2)܆ b-] ܘBW@ܗ̇ ܗ̣ܘ ܐ̇ܬBN%3ܣ܆ 2Eܡ ܕܬܗܘ0 QL%T3ܬ0 !%(Dܗܘܢ. ܐ̣6I() ܕ$E ܗܘ̣ܬ ܘ0̇A@&gt;3ܢ ,XËܕ\: ܘܐܦ $D !E&gt;3:%) ܐ̇Q_3 ܗܘܘ: $E ܐ̇ܬBN%3ܣ &gt;D</p>
+<p>A7h ܗܘ0 ܕBXLR%&quot;̇ ,E6D2):</p>
+<p>̇ ̇</p>
+<p>̈ ̇</p>
+<p>184</p>
+<p>Hugoye 29.1</p>
+<p>remained a beneficiary of his former ally and strategically used the financial resources for his missionary work and to disseminate his Trinitarian theological views.</p>
+<p>4. JOHN PHILOPONUS AS THE INTELLECTUAL THINKER OF THE SO-CALLED “TRITHEISM”</p>
+<p>In EH 3.5.5, John of Ephesus primarily attributes the intellectual inspiration for the so-called “Tritheism” to the writings of John Philoponus, also known as Grammaticus. John of Ephesus states:</p>
+<p>ܐ&quot;# ܕ%&amp;ܘ()*+,ܢ</p>
+<p>Concerning the error and the division of those who proclaim gods and concerning the reasons by which they came to this, we have briefly reported in the preceding books, as well as regarding the destructive writings of the error of John Grammaticus of Alexandria, one of which43, the first, only further strengthened them in all their error. They all held on to this (writing) unanimously, carried it ), and were very proud like a gospel ( of it.44</p>
+<p>43 Brooks adds the phrase</p>
+<p>after</p>
+<p>&gt;(&quot;ܘܢ</p>
+<p>ܗ,%= ܕAE</p>
+<p>&gt;(&quot;ܘܢ</p>
+<p>ܘB-@63ܗܝ ,_(3ܢ܆ &gt;= FLḲ &gt;%D. ܘ$E ܐܬQḌAD ܕ6D2)܆ ܐFḌ$i F_&amp; ܐ6. ܕ$Ḍ6h ܗܘ0 !&quot;̇܆ to clarify the connection between the one writing and the “destructive writings” indicated by the demonstrative pronoun ܗ,%= . The singular writing among the “destructive writings” served to reinforce the adherents of John Philoponus in their comprehension of an alternative conception of the Trinity of God. This likely refers to the treatise De Trinitate by Philoponus, preserved in Syriac fragments (CPG 7268). The integration of by Brooks serves to establish a clear connection between the singular writing and the corpus of writings attributed to John Philoponus, thereby validating its inclusion as a reasonable and acceptable emendation.</p>
+<p>44 John of Ephesus, EH 3.5.5 (f. 118va Kiel):</p>
+<p>ܐ ܕ&gt;(&quot;6= ,&quot;,%= !) ܕA-L)</p>
+<p>!&quot;ܪ6= !&quot;.</p>
+<p>U&amp; Y%@ bP%3ܬܗܘܢ ܘQL%TDܗܘܢ ܕ&gt;IZܙܝ ܐ̈,&quot;0: ܘU&amp; ULLD ܐܬ̣ܘ܆ !’U3a6D0̣ &gt;3ܕܥ ܗܘ ,=܇ !NRZܐ ܕ2Eܡ ܗ,%=. ܘU&amp; $D ܕbP%3ܬܗ ܕ63A(= Y@&gt;W%_3ܣ ܕܐ,IN(Eܪ6). ܗ,%= ܕAE &gt;(&quot;ܘܢ ܗܘ̣ 2E&gt;%)̣ ,IL&quot;ܘܢ ܐ̇bPK ܘb-]. ܗ̇ܘ ܕ\̇A%E6= ܗܘܘ ,&quot; $L&quot;ܘܢ ܐ6. AE\܆ ܘ&gt;I@$%= ,&quot; ܐ6. ܕ,HܘBTL%3ܢ̣ ܘ&gt;7D</p>
+<p>̈ ̈ ̇</p>
+<p>Grigory Kessel</p>
+<p>185</p>
+<p>John of Ephesus does not explicitly specify which of John Philoponus’s works he refers to. He briefly alludes to its content as the cause for the theological foundation of the Cononite Trinitarian doctrine. He is likely referring to Philoponus’s De Trinitate, as preserved in Syriac fragments (CPG 7268).45 In this work, Philoponus articulates his Trinitarian theological perspective, which convinced his readers and earned him a high reputation.</p>
+<p>John Philoponus’s Trinitarian theological position can be understood primarily through his major Christological work, the Diaetetes (Διαιτητής), composed in 553. This text is fully preserved in two Syriac manuscripts, and there are also Greek fragments from Chapters 4 and 7, which John of Damascus accurately reproduces in his work De haeresibus. Philoponus uses precise terminology in Trinitarian theology, attempting to explore it through Aristotelian principles.46 The discussions in the Diaetetes preserved in Greek should take precedence in understanding his Trinitarian theological considerations.</p>
+<p>45 Cf. Albert Van Roey, “Les fragments trithéites de Jean Philopon” (OLP 11 (1980]), 135–163, esp. 148–152 (textus), 158–160 (translatio latina). This writing was very probably written by Philoponus in 567 AD. Cf. Uwe Michael Lang, “Patristic argument and the use of philosophy in the Tritheist controversy of the sixth century,” in The Mystery of the Holy Trinity in the Fathers of the Church. The Proceedings of the Fourth Patristic Conference, Maynooth, 1999, Irish Theological Quarterly Monograph Series 3, ed. D. Vincent Twomey and Lewis Ayres (Dublin: Four Courts Press, 2007), 79–99, 95. See the new edition and English translation of John Philoponus’ De Trinitate by David Vasquez, “The Syriac Fragments of John Philoponus’ De Trinitate: A New Edition and English Translation,” in Die Bibel zum Sprechen bringen. Festschrift zu Ehren von Holger Strutwolf, ANTF 61, ed. Marie-Luise Lakmann, Gregory S. Paulson, and Jan Graefe (Berlin and Boston: Walter de Gruyter, 2025), 425–437.</p>
+<p>46 In Diaetetes 7 = John of Damaskus, Haer. 83 addit. (PTS 22, 51,34–39 Kotter), Philoponus explicitly refers to the Peripatetics when he comments on the definition of ὑπόστασις as distinct from φύσις.</p>
+<p>186</p>
+<p>Hugoye 29.1</p>
+<p>Since the Philoponic perspective has been constantly accused of transferring the concept of nature in the sense of the three hypostases into the divine unity, it is crucial first to establish how the Alexandrian Grammaticus understands and makes use of the term φύσις in the context of theology:47 “Regarding the common and universal existing principle of human nature, even though it is in itself only one, it is still multiplied insofar as it exists in many subjects, being complete and not partial in each subject, just as the concept of a ship in the shipbuilder is only one, which is multiplied in many ships and thus exists.”48</p>
+<p>With further examples, Philoponus illustrates the general concept of a thing, which can only be realized in plurality and thus becomes specific: the one idea (θεώρημα) in the mind of the teacher, which becomes a reality in the students; the one pattern (τύπος) of a signet ring, which is multiplied in many impressions; even the numerous ships and humans constitute the common nature of a ship and a human.49 From these examples, he concludes:</p>
+<p>47 Concerning John Philoponus’ understanding of the divine Trinity cf. Dirk Krausmüller, “Divine Genus – Divine Species: John Philoponus’ Impact on Contemporary Chalcedonian Theology,” in The Mystery of Christ in the Fathers of the Church: Essays in Honour of D. Vincent Twomey SVD, ed. Janet Rutherford and David Woods (Dublin: Four Courts Press, 2012), 94–105; Dirk Krausmüller, “Under the Spell of John Philoponus: How Chalcedonian Theologians of the Late Patristic Period Attempted to Safeguard the Oneness of God” (JThS 68 (2017]), 625–649.</p>
+<p>48 John Philoponus, Diaetetes 4 = John of Damaskus, Haer. 83 addit. (PTS 22, 50,5–8 Kotter): Ὁ γὰρ κοινὸς καὶ καθόλου τῆς τοῦ ἀνθρώπου φύσεως λόγος, εἰ καὶ αὐτὸς καθ’ ἑαυτὸν εἷς ἐστιν, ἀλλ’ οὖν ἐν πολλοῖς ὑποκειμένοις γινόμενος πολλὰ γίνεται, ὁλόκληρος ἐν ἑκάστῳ καὶ οὐκ ἀπὸ μέρους ὑπάρχων, ὥσπερ καὶ ὁ ἐν τῷ ναυπηγῷ τοῦ πλοίου λόγος εἷς ὢν πληθύνεται ἐν πολλοῖς ὑποκειμένοις γινόμενος.</p>
+<p>49 John Philoponus, Diaetetes 4 = John of Damaskus, Haer. 83 addit. (PTS 22, 50,8–12 Kotter): Οὕτω δὲ καὶ τὸ ἐν τῷ διδασκάλῳ θεώρημα ἓν ὂν τῷ ἰδίῳ λόγῳ, ὅταν ἐν τοῖς διδασκομένοις γίνηται, συμπληθύνεται αὐτοῖς ὅλον ἐν ἑκάστῳ</p>
+<p>Grigory Kessel</p>
+<p>187</p>
+<p>Just as there are many ships, many humans, many impressions, and numerous thoughts in terms of number in individual things, which are separated and not united in this way, in the common genus (τῷ κοινῷ δὲ εἴδει), the many humans are a unity, the many ships are a unity, likewise, thoughts and impressions, in the concordance of their representation, possess a unity. So, in one respect, these things are many and separated from each other, but in another respect, they are united and form a unity.50</p>
+<p>In this understanding, Philoponus presents a dual concept of nature. On the one hand, the general and shared type and genus are expressed in each φύσις, and on the other hand, this φύσις becomes visible and perceptible only in each individual entity.51 Therefore, the many humans, as a common human nature, form a unity, which becomes a reality in each person. Philoponus applies this dual concept of the term φύσις to the Godhead and can thus reconcile his understanding of the Trinity with church tradition:</p>
+<p>γινόμενον. Προσέτι δὲ καὶ ὁ ἐν τῷ δακτυλίῳ τύπος εἷς ὢν ἐν πλείοσιν ἐκμαγείοις ὅλος ἐν ἑκάστῳ γινόμενος πολλὰ λοιπὸν ἔστι τε καὶ λέγεται.</p>
+<p>50 John Philoponus, Diaetetes 4 = John of Damaskus, Haer. 83 addit. (PTS 22, 50,12–51,18 Kotter): Ὥστε τὰ πολλὰ πλοῖα καὶ οἱ πολλοὶ ἄνθρωποι καὶ τὰ ἐκμαγεῖα τὰ πολλὰ καὶ τὰ ἐν τοῖς πλείοσι μαθηταῖς νοήματα τοῖς μὲν ἀτόμοις πλείονα τυγχάνει κατὰ τὸν ἀριθμὸν καὶ ταύτῃ διῃρημένα ἐστὶ καὶ οὐχ ἡνωμένα, τῷ κοινῷ δὲ εἴδει οἱ πολλοὶ ἄνθρωποι εἷς τυγχάνουσι καὶ τὰ πολλὰ πλοῖα ἓν καὶ τὰ νοήματα δὲ ὡσαύτως καὶ τὰ ἐκμαγεῖα τῇ ταυτότητι τοῦ ἐκτυπώματος τὸ ἓν ἔχουσιν. Ὥστε ταῦτα κατ’ ἄλλο μὲν πολλά ἐστι καὶ διῃρημένα, κατ’ ἄλλο δὲ ἡνωμένα καὶ ἕν.</p>
+<p>51 Cf. Schönfelder, Abhandlung über die Tritheiten, 288: “Ph.(iloponus) lehrt die Unterscheidung von ‘Natur’ in abstracto und concreto; unter ersterer versteht er den ‘allgemeinen Begriff, die allgemeine Beschaffenheit – κοινὸς λόγος, communis ratio – εἶδος – Gattung’ – und sie kann nach seiner philosophischen Argumentation nur in den Individuen existieren oder real sein (γίνεσθαι).”</p>
+<p>188</p>
+<p>Hugoye 29.1</p>
+<p>However, that the teaching of the Church holds these same considerations about natures and hypostases is evident from the fact that we confess one nature of the Father, the Son, and the Holy Spirit; we also teach of them three hypostases or persons, each of whom is distinguished from the others by a particular property (ἰδιότητί τινι). What, indeed, could the one nature of the Godhead (μία φύσις θεότητος) or the common principle of the divine nature be, considered by itself and viewed separately individual from the peculiarity of the hypostasis?52</p>
+<p>The one nature of God cannot be separated from the individual hypostases of the Godhead; rather, it is realized in them, namely, in the Father, the Son, and the Holy Spirit. In this sense, Philoponus applies the concept of φύσις to the idea of the divine Trinity, so that the one nature of God manifests itself in each divine hypostasis.53 However, the Alexandrian Grammaticus avoids the complete identification of the divine φύσις with the ὑπόστασις, which his opponents consistently attributed to him: “Therefore, nature and hypostasis would almost be the same according to this meaning of nature, except</p>
+<p>52 John Philoponus, Diaetetes 7 = John of Damaskus, Haer. 83 addit. (PTS 22, 52,68–73 Kotter): Ὅτι δὲ ταύτας τὰς ἐννοίας περί τε φύσεων ἔχει καὶ ὑποστάσεων ἡ τῆς ἐκκλησίας διδασκαλία, δῆλον ἐξ ὧν μίαν μὲν φύσιν πατρός τε καὶ υἱοῦ καὶ ἁγίου πνεύματος ὁμολογοῦμεν, τρεῖς δὲ τὰς τούτων ὑποστάσεις ἤγουν τὰ πρόσωπα δογματίζομεν, καθ’ ἃς ἕκαστον ἰδιότητί τινι ἐκ τῶν λοιπῶν διακρίνεται. Τί γὰρ ἂν εἴη μία φύσις θεότητος ἢ ὁ κοινὸς τῆς θείας φύσεως λόγος αὐτὸς καθ’ ἑαυτὸν θεωρούμενος καὶ τῇ ἐπινοίᾳ τῆς ἑκάστης ὑποστάσεως ἰδιότητος κεχωρισμένος;</p>
+<p>53 Cf. Richard Sorabji, “John Philoponus,” in Philoponus and the Rejection of Aristotelian Science, Second Edition, ed. Richard Sorabji (London: Institute of Classical Studies, 2010), 71: “Philoponus had to develop his own interpretation of, and arguments for, the monophysite position. Among other things, he argues that his opponents themselves allow that Christ is only one hypostasis, distinct from the other two in the Trinity. But if there is only one hypostasis, there should be only one nature.”</p>
+<p>Grigory Kessel</p>
+<p>189</p>
+<p>that the name of the hypostasis contains the attributes that are thought and added alongside the common nature in each individual, according to which they are distinct from one another.”54 Each hypostasis should not be completely identified with the one nature of God; instead, the one common nature of God is individually and distinctly perceptible in each of the divine hypostases, namely, in the Father, the Son, and the Holy Spirit.55</p>
+<p>From the Incarnation of God, Philoponus derives the consistency of his concept of nature. Since he posits a nature of God-Logos incarnate in the flesh, the general φύσις of God manifests itself in Christ as a hypostatic individual. From his Miaphysite Christology, the Aristotelian Grammaticus concludes the inner divine Trinitarian relationship:</p>
+<p>in the Holy Trinity became</p>
+<p>We certainly do not say that the common divinity contemplated flesh. Otherwise, we would assert the incarnation of the Father and the Holy Spirit. But we also do not proclaim that the</p>
+<p>54 John Philoponus, Diaetetes 7 = John of Damaskus, Haer. 83 addit. (PTS 22, 53,92–95 Kotter): Ὥστε σχεδὸν κατὰ τοῦτο τῆς φύσεως τὸ σημαινόμενον ταυτὸν ἂν εἴη φύσις καὶ ὑπόστασις, πλὴν ὅτι τὸ τῆς ὑποστάσεως ὄνομα συνεπινοουμένας ἔχει καὶ τὰς ἐπιγινομένας παρὰ τὴν κοινὴν φύσιν ἑκάστῳ τῶν ἀτόμων ἰδιότητας, καθ’ ἃς ἀλλήλων κεχώρισται.</p>
+<p>55 Cf. however Grillmeier, Jesus der Christus im Glauben der Kirche. Band 2/3, 290: “‘Hypostase’ fällt zusammen mit ‘Einzelnatur’. Er betont ausdrücklich, daß im Blick auf die konkrete Einzelnatur mit ihrer singularissima exsistentia (μερικωτάτη ὕπαρξις) oder bei dieser Bedeutung von Natur, Natur und Hypostase fast dasselbe seien. Daraus ergibt sich für die Trinität, daß Vater, Sohn und Geist drei Hypostasen in der Form von drei konkreten Einzelnaturen sind. Philoponus findet darin den Vorteil, daß die Inkarnation nicht der gemeinsam göttlichen Wesenheit, sondern der ganz konkreten Person oder Hypostase des Sohnes, zugeschrieben werden kann. Daß aber die eine Gottheit nur durch Abstraktion von den Proprietäten der Einzelhypostasen in Gedanken existiert, nimmt er in Kauf. Er erwägt überhaupt nicht die Idee der numerisch einen göttlichen Natur in den drei Hypostasen.”</p>
+<p>190</p>
+<p>Hugoye 29.1</p>
+<p>common principle of human nature has been united with the God-Logos. For otherwise, it would be rightly said again that the God-Logos had united with all humans born before the arrival of the Logos and those who exist thereafter. However, it is clear that here, by ‘nature,’ we mean the one that was peculiar in the hypostasis of the Logos of the common divinity. Therefore, we also confess one nature of the incarnate God-Logos (μίαν φύσιν τοῦ θεοῦ λόγου σεσαρκωμένην)56, which we distinguish from that of the Father and the Holy Spirit by the addition of the God-Logos.57</p>
+<p>and Alexey Morozov</p>
+<p>56 This formulation (μίαν φύσιν τοῦ θεοῦ λόγου σεσαρκωμένην) comes from Apollinaris of Laodicea: Ad Iovianum 1 (Lietzmann 250,6–251,3): καὶ εἶναι τὸν αὐτὸν υἱὸν θεοῦ καὶ θεὸν κατὰ πνεῦμα, υἱὸν δὲ ἀνθρώπου κατὰ σάρκα, οὐ δύο φύσεις τὸν ἕνα υἱόν, μίαν προσκυνητὴν καὶ μίαν ἀπροσκύνητον, ἀλλὰ μίαν φύσιν τοῦ θεοῦ λόγου σεσαρκωμένην καὶ προσκυνουμένην μετὰ τῆς σαρκὸς αὐτοῦ μιᾷ προσκυνήσει. See further Nikolai Kiel, “The Reception of the Nicene Creed in the Christology of Apollinaris of Laodicea,” in Nicaea 325 – 2025. Forscher aus dem Osten und Westen Europas an den Quellen des gemeinsamen Glaubens. Studientagung Kalamata, 20. – 23. September 2023, Pro Oriente XLV, ed. Theresia Hainthaler, Franz Mali, Gregor Emmenegger, (Münster: Aschendorff, 2026) (forthcoming); Nikolai Kiel, “Apollinaris von Laodizea als Initiator des Miaphysitismus. Die Christologie des Apollinaris in seiner Apodeixis in Auseinandersetzung mit Diodor von Tarsus,” in Die Bibel zum Sprechen bringen. Festschrift zu Ehren von Holger Strutwolf, ANTF 61, ed. Marie-Luise Lakmann, Gregory S. Paulson, and Jan Graefe (Berlin and Boston: Walter de Gruyter, 2025), 449–460.</p>
+<p>57 John Philoponus, Diaetetes 7 = John of Damaskus, Haer. 83 addit. (PTS 22, 52,79–53,88 Kotter): Οὐ γὰρ δὴ τὴν κοινὴν ἐπὶ τῆς ἁγίας τριάδος νοουμένην τῆς θεότητος σεσαρκῶσθαί φαμεν· οὕτω γὰρ ἂν τοῦ πατρὸς καὶ τοῦ ἁγίου πνεύματος κατηγοροῦμεν τὴν ἐνανθρώπησιν. Ἀλλ’ οὐδὲ τὸν κοινὸν τῆς ἀνθρωπίνης φύσεως λόγον ἡνῶσθαι τῷ θεῷ λόγῳ πρεσβεύομεν· οὕτω γὰρ πάλιν καὶ τοῖς πρὸ τῆς τοῦ λόγου ἐπιδημίας γενομένοις ἀνθρώποις καὶ τοῖς μετ’ αὐτὴν ἐσομένοις ἅπασιν ἡνῶσθαι ἂν ὁ τοῦ θεοῦ λόγος δικαίως ἐλέγετο. Ἀλλὰ δῆλον, ὅτι φύσιν θεότητος ἐνταῦθά φαμεν τὴν ἐν τῇ ὑποστάσει τοῦ λόγου τῆς κοινῆς θεότητος ἐξιδιασθεῖσαν φύσιν. Ὅθεν καὶ μίαν φύσιν τοῦ θεοῦ λόγου σεσαρκωμένην</p>
+<p>Grigory Kessel</p>
+<p>191</p>
+<p>in the</p>
+<p>In essence, Philoponus is explaining that although the common divinity of the Holy Trinity did not become incarnate, the unique nature of the incarnate God-Logos is distinct from the nature of the Father and the Holy Spirit. This nature of the incarnate God-Logos is the one that became manifest in Christ as a hypostatic individual through the Incarnation, and it differs from the divine nature shared by the Father and the Holy Spirit. The Incarnation of God is thus the key to understanding Philoponus’ trinitarian speculations. The divine hypostasis is manifested incarnate nature of the God-Logos. Philoponus derives insights about the Trinity of God from this Miaphysite Christology and seeks to understand and rethink the general nature of God through the hypostasis of God.58 The misunderstanding of this trinitarian perspective, where Philoponus is presumed to have posited three natures in the sense of three essences and divinities, is evident upon superficial reading of Philoponus’ writings.59</p>
+<p>John of Ephesus certainly understands it this way, as he accuses the Cononites, who rely on Philoponus’ trinitarian explanations, of believing in three natures and essences and</p>
+<p>ὁμολογοῦμεν, αὐτῷ τῷ προσθεῖναι τοῦ θεοῦ λόγου ἀποκρίναντες αὐτὴν τοῦ τε πατρὸς καὶ τοῦ ἁγίου πνεύματος.</p>
+<p>58 Cf. Uwe Michael Lang, “Notes on John Philoponus and the Tritheist</p>
+<p>Controversy in the Sixth Century” (OrChr 85 (2001]), 23–40.</p>
+<p>59 Johannes Zachhuber recently argues that in a fragment of Philoponus, there is an alleged mention of “three gods.” Cf. Zachhuber, The Rise of Christian Theology, 163–164: “At the same time, Philoponus maintained that God can be understood as one albeit not ‘in one thing’ but ‘only in mind and reason’. When seen in his hypostases, however, there are ‘three substances and three gods’.” However, the fragment speaks of “three substances and three natures,” not three divinities: “Three substances, though, are from God and the natures, as they are distinguished in three ܬ,D ܕ6= ܐܘ̣:%)̈ܣ ܐ6D6&quot;6= ܕܐ,&quot;0. ܘ$%()̈ $E &gt;DQLT%= hypostases ( !_(3̈&gt;) ).” Philoponus, fr. 29 (157,7–9 Van Roey). The term “three gods” is not present in this fragment, only the reference to “three substances and three natures.”</p>
+<p>192</p>
+<p>Hugoye 29.1</p>
+<p>consequently, in three divinities.60 He counters them with his understanding of orthodox theology and proclaims a creed: “The faith of the Church confesses one God recognized in three persons, the Father, the Son, and the Holy Spirit. Three persons, three names, one divinity, one essence, one nature, one dominion, power, will, kingdom, authority, and might in heaven and on earth; one – three and three – one, without division and mixture.”61</p>
+<p>5. CONCLUSION</p>
+<p>John Philoponus – the intellectual leader of the Cononites and the Athanasians during the time of John of Ephesus – almost certainly did not hold a belief in three gods. Philoponus seems to have been misunderstood by his opponents and wrongly vilified as an inspiration for “Tritheism.” The specific way in which the Cononites conceived the doctrine of the Trinity cannot be determined from their writings, since they explicitly referred to John Philoponus and studied his works. Therefore, the reconstruction of the Cononite Trinitarian doctrine can only be based on Philoponus’s explanations.</p>
+<p>60 Cf. Jan van Ginkel, John of Ephesus: A Monophysite Historian in SixthCentury Byzantium (Groningen: Rijksuniversiteit Groningen, 1995), 181: “John has no intention of presenting a detailed and complete account of his opponents’ beliefs, but gives a short and negative interpretation of those elements in their theological opinion which distinguish the opponents from Monophysitism. While describing the doctrinal dispute between Tritheites and Monophysites the former are said to have become like pagans, since they believe in a number of gods. This is John’s interpretation of their insistence that all hypostases within the Trinity must have their own nature and essence.”</p>
+<p>61 John of Ephesus, EH 3.5.8 (f. 120rb Kiel):</p>
+<p>ܕܗ6?(3ܬ0 ܕUEܬ0̣ AE ܐ,&quot;0 &gt;3ܕ6)܇ ܕ&gt;Ḍ6Eܥ !D,D0 2(3̈&gt;%= ܕܐ!) ܘܕ!@\ ܘܕܪܘA) 2E67). 2(3̈&gt;)̣ ܬ,D0. F?&quot;̈ܐ̣ ܬ,D0. ܐ,&quot;ܘܬ0̣ AE\. ܘ0̣6Dܘܬ0̣ AE\. $%()̣ AE. &gt;@ܘܬ0̣ AE\. ܘA%L) ܘܨ̣!%() ܘ&gt;LI3ܬ0̣ ܘF3̣,W() ܘܐܘ̣AEB) ܕ!7?%)̣ ܘ!HܪU). AE ܬ,D0܆ ܘܬ,D0 AẸ ܕ,) Q3,T)̣ ܘܕ,) !3,-L).</p>
+<p>Grigory Kessel</p>
+<p>193</p>
+<p>Referring to the “Tritheists” by the names of their leaders might be more fitting, since such designations, while also externally imposed, do not immediately accuse them of heresy. The terms “Cononites” and “Athanasians” (according to Athanasius, the grandson of Empress Theodora) would therefore be more appropriate for describing the followers of John Philoponus’ Trinitarian doctrine. A broader reference to these groups as “Philoponians” also makes sense, given that they consciously understood themselves as recipients of Philoponus’ Trinitarian views.</p>
+<p>BIBLIOGRAPHY</p>
+<p>Primary Sources</p>
+<p>Apollinaris of Laodicea: Ad Iovianum</p>
+<p>Lietzmann, Hans. Apollinaris von Laodicea und seine Schule. Texte und Untersuchungen. Tübingen: Mohr Siebeck, 1904, 250–253.</p>
+<p>Documenta Monophysitica</p>
+<p>Jean-Baptiste,</p>
+<p>Documenta</p>
+<p>illustrandas,</p>
+<p>2</p>
+<p>ad Volumes.</p>
+<p>origines Paris:</p>
+<p>Chabot, monophysitarum Typographeo Reipublicae, 1907/1933.</p>
+<p>Gregory Bar Hebraeus, Chronicon ecclesiasticum</p>
+<p>Abbeloos, Jean-Baptiste and Thomas Joseph Lamy, Gregorii Barhebraei Chronicon Ecclesiasticum, 3. Volumes. Leuven: Peeters, 1872/1877.</p>
+<p>John of Ephesus: Ecclesiastical History (EH)</p>
+<p>Kiel, Nikolai. John of Ephesus: Ecclesiastical History. Patristic Text Archive. Berlin: Berlin-Brandenburgische Akademie der Wissenschaften, 2024 (https://pta.bbaw.de/text/urn:cts:pta:pta0200.pta001.ptasyc1).</p>
+<p>194</p>
+<p>Hugoye 29.1</p>
+<p>John Philoponus: Diaetetes (= John of Damaskus, Haer. 83</p>
+<p>addit.)</p>
+<p>Kotter, Bonifatius. Die Schriften des Johannes von Damaskos IV: Liber de haeresibus. Opera polemica, PTS 22. Berlin and New York: Walter de Gruyter, 1981, 50–55.</p>
+<p>John Philoponus: De Trinitate (CPG 7268):</p>
+<p>Van Roey, Albert. “Les fragments trithéites de Jean Philopon.” OLP 11 (1980): 135–163.</p>
+<p>Vasquez, David. “The Syriac Fragments of John Philoponus’ De Trinitate: A New Edition and English Translation.” In Die Bibel zum Sprechen bringen. Festschrift zu Ehren von Holger Strutwolf, ANTF 61, ed. Marie-Luise Lakmann, Gregory S. Paulson, and Jan Graefe. Berlin and Boston: Walter de Gruyter, 2025, 425–437.</p>
+<p>Michael the Syrian: Chronique</p>
+<p>Chabot, Jean-Baptiste. Chronique de Michel le Syrien, 4. Volumes. Paris: Ernest Leroux, 1899/1910.</p>
+<p>Photius: Bibliotheca (bibl.)</p>
+<p>Henry, René. Photius. Bibliothèque, Tom. I–VIII. Texte établi et traduit. Collection byzantine. Paris: Société d’édition «Les Belles-Lettres», 1959–1977.</p>
+<p>Theodoret of Cyrus, Eranistes</p>
+<p>Ettlinger, Gerard H. Theodoret of Cyrus. Eranistes: Critical Text and Prolegomena. New York and Oxford: Clarendon Press, 1975.</p>
+<p>Timothy of Constantinople, De receptione haereticorum (CPG</p>
+<p>7016)</p>
+<p>Patrologia Graeca (PG) 86/1, 12–74.</p>
+<p>Beneševič, Vladimir N. Syntagma XIV titulorum sine scholiis secundum versionem palaeo-slovenicam, adjecto textu graeco e vetustissimis codicibus manuscriptis exarato. Petropoli:</p>
+<p>Grigory Kessel</p>
+<p>195</p>
+<p>Akademiae Scientiarum Imperialis Petropolitanae,1906, 707–738.</p>
+<p>Secondary Sources</p>
+<p>Booth, Phil. “John of Ephesus: Historian on the Edge.”</p>
+<p>Millennium 22 (2025): 203–256.</p>
+<p>Bunce, William. “Flawed Forensics: Miaphysites on Trial in the</p>
+<p>Courts of Justin II.” Hugoye 26:1 (2023): 47–95.</p>
+<p>Debié, Muriel. L’écriture de l’histoire en syriaque: transmissions interculturelles et constructions identitaires entre hellénisme et islam, Late Antique History and Religion 12. Leuven: Peeters, 2015.</p>
+<p>Dell’Osso, Carlo. “Il triteismo nel VI secolo: la fase arcaica (557–</p>
+<p>567).” Augustinianum 60:1 (2020): 189–207.</p>
+<p>Dyakonov, Alexander Petrovich. John of Ephesus and His Ecclesiastical-Historical Works. Saint Petersburg: V. F. Kirschbaum, 1908.</p>
+<p>Erismann, Christophe. “The Trinity, Universals, and Particular Substances: Philoponus and Roscelin.” Traditio 63 (2008): 277–305.</p>
+<p>Gemeinhardt, Peter. Geschichte des Christentums</p>
+<p>in der</p>
+<p>Spätantike. Tübingen: Mohr Siebeck, 2022.</p>
+<p>Grillmeier, Alois. Jesus der Christus im Glauben der Kirche. Band 2/4: Die Kirche von Alexandrien mit Nubien und Äthiopien nach 451. Freiburg: Herder, 1990.</p>
+<p>Grillmeier, Alois. Jesus der Christus im Glauben der Kirche. Band 2/3: Die Kirchen von Jerusalem und Antiochen nach 451 bis 600. Freiburg: Herder, 2002.</p>
+<p>Hauschild, Wolf-Dieter and Volker Henning Drecoll. Lehrbuch der Kirchen- und Dogmengeschichte Bd. 1. Alte Kirche und Mittelalter. 6. Aufl. Gütersloh: Gütersloher Verlagshaus, 2019.</p>
+<p>196</p>
+<p>Hugoye 29.1</p>
+<p>Honigmann, Ernest. Évêques et évêchés monophysites d’Asie antérieure au VIE siècle, CSCO 127, Subsidia 2. Louvain: Durbecq, 1951.</p>
+<p>Kiel, Nikolai. “The Reception of the Nicene Creed in the Christology of Apollinaris of Laodicea.” In Nicaea 325 – 2025. Forscher aus dem Osten und Westen Europas an den Quellen des gemeinsamen Glaubens. Studientagung Kalamata, 20. – 23. September 2023, Pro Oriente XLV, ed. Theresia Hainthaler, Franz Mali, Gregor Emmenegger, and Alexey Morozov. Münster: Aschendorff, 2026 (forthcoming).</p>
+<p>Kiel, Nikolai. “Apollinaris von Laodizea als Initiator des Miaphysitismus. Die Christologie des Apollinaris in seiner Apodeixis in Auseinandersetzung mit Diodor von Tarsus.” In Die Bibel zum Sprechen bringen. Festschrift zu Ehren von Holger Strutwolf, ANTF 61, ed. Marie-Luise Lakmann, Gregory S. Paulson, and Jan Graefe. Berlin and Boston: Walter de Gruyter, 2025, 449–460.</p>
+<p>Krausmüller, Dirk. “Divine Genus – Divine Species: John Philoponus’ Impact on Contemporary Chalcedonian Theology.” In The Mystery of Christ in the Fathers of the Church: Essays in Honour of D. Vincent Twomey SVD, ed. Janet Rutherford and David Woods. Dublin: Four Courts Press, 2012, 94–105.</p>
+<p>Krausmüller, Dirk. “Under the Spell of John Philoponus: How Chalcedonian Theologians of the Late Patristic Period Attempted to Safeguard the Oneness of God.” JThS 68 (2017): 625–649.</p>
+<p>Lang, Uwe Michael. “Notes on John Philoponus and the Tritheist Controversy in the Sixth Century.” OrChr 85 (2001): 23–40.</p>
+<p>Lang, Uwe Michael. “Patristic argument and the use of philosophy in the Tritheist controversy of the sixth century.” In The Mystery of the Holy Trinity in the Fathers of the Church.</p>
+<p>Grigory Kessel</p>
+<p>197</p>
+<p>The Proceedings of the Fourth Patristic Conference, Maynooth, 1999, Irish Theological Quarterly Monograph Series 3, ed. D. Vincent Twomey and Lewis Ayres. Dublin: Four Courts Press, 2007, 79–99.</p>
+<p>Leppin, Hartmut. “The Roman Empire in John of Ephesus’s Church History: Being Roman, Writing Syriac.” In Historiography and Space in Late Antiquity, ed. Peter van Nuffelen. Cambridge: Cambridge University Press, 2019, 113– 135.</p>
+<p>Roggo, Silvio. The Conflict over</p>
+<p>the Patriarchate of Constantinople under Eutychios and John Scholastikos (552– 582) and Its Impact on Imperial Religious Policy. Cambridge: University of Cambridge, 2022.</p>
+<p>Saint-Laurent, Jeanne-Nicole Mellon. Missionary Stories and the Formation of the Syriac Churches, Transformation of the Classical Heritage 55. Oakland, California: University of California Press, 2015.</p>
+<p>Schmidt, Christiane. “Timotheus von Konstantinopel.” In Lexikon der antiken christlichen Literatur, ed. Siegmar Döpp and Wilhelm Geerlings. Freiburg: Herder, 2002, 696.</p>
+<p>Schönfelder, Joseph M. Die Kirchengeschichte des Johannes von Ephesus. Aus dem Syrischen übersetzt. Mit einer Abhandlung über die Tritheiten. München: J. J. Lentner, 1862.</p>
+<p>Shepardson, Christine. A Memory of Violence. Syriac Christianity and the Radicalization of Religious Difference in Late Antiquity. Oakland, California: University of California Press, 2025.</p>
+<p>Sorabji, Richard. “John Philoponus.” In Philoponus and the Rejection of Aristotelian Science, Second Edition, ed. Richard Sorabji. London: Institute of Classical Studies, 2010, 41–81.</p>
+<p>Suchla, Beate Regina. “Conon von Tarsus.” In Lexikon der antiken christlichen Literatur, ed. Siegmar Döpp and Wilhelm Geerlings. Freiburg: Herder, 2002, 163.</p>
+<p>198</p>
+<p>Hugoye 29.1</p>
+<p>Van Ginkel, Jan. John of Ephesus: A Monophysite Historian in Sixth-Century Byzantium. Groningen: Rijksuniversiteit Groningen, 1995.</p>
+<p>Van Roey, Albert.</p>
+<p>trithéite</p>
+<p>jusqu’à “La controverse l’excommunication de Conon et d’Eugène (557–569).” OLP 16 (1985): 141–165.</p>
+<p>Van Roey Albert and Pauline Allen, Monophysite Texts of the Sixth Century, Orientalia Lovaniensia analecta 56. Leuven: Peeters, 1994.</p>
+<p>Windau, Bettina. “Damian von Alexandrien.” In Lexikon der antiken christlichen Literatur, ed. Siegmar Döpp and Wilhelm Geerlings. Freiburg: Herder, 2002, 185–186.</p>
+<p>Zachhuber, Johannes. The Rise of Christian Theology and the End from the of Ancient Metaphysics. Patristic Philosophy Cappadocian Fathers to John of Damascus. Oxford: Oxford University Press, 2020.</p>
+</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            
+<div class="PDFviewer text-center" style="width:100%; margin-top:1rem;">
+  <object data="HV29N1Kiel.pdf" type="application/pdf" width="100%" height="800">
+    <a href="HV29N1Kiel.pdf">Open the PDF</a>
+  </object>
+</div>
+          </div>
+
+          <!-- RIGHT MENU (as in your example) -->
+          <div class="col-md-3 col-lg-3 right-menu">
+            <div id="rightCol" class="noprint">
+              <div id="sedraDisplay" class="sedra panel panel-default">
+                <div class="panel-body">
+                  <span style="display:block;text-align:center;margin:.5em;"><a href=" http://sedra.bethmardutho.org" title="SEDRA IV">SEDRA IV</a></span>
+                  <img src="/resources/img/sedra-logo.png" title="Sedra logo" width="100%" />
+                  <h3>Syriac Lexeme</h3>
+                  <div id="sedraContent"><div class="content"></div></div>
+                </div>
+              </div>
+            </div>
+
+            <div class="panel panel-default">
+              <div class="panel-heading"><a href="#" data-toggle="collapse" data-target="#aboutDigitalText">About This Digital Text</a></div>
+              <div class="panel-body collapse in" id="aboutDigitalText">
+                <div><h5>Record ID:</h5><span>https://hugoye.bethmardutho.org/article/hv29n1kiel</span></div>
+                <div style="margin-top:1em;"><span class="h5-inline">Status: </span><span>PDF</span>
+                  &nbsp;<a href="https://github.com/Beth-Mardutho/hugoye-data/wiki/Status-of-Contents-in-Hugoye"><span class="glyphicon glyphicon-question-sign text-info moreInfo"></span></a>
+                </div>
+                <div style="margin-top:1em;"><span class="h5-inline">Publication Date: </span>2026</div>
+              </div>
+            </div>
+
+            <div class="panel panel-default">
+              <div class="panel-heading"><a href="#" data-toggle="collapse" data-target="#citationText">How to Cite this Article</a></div>
+              <div class="panel-body collapse in" id="citationText">
+                <div>
+                  <span class="tei-sourceDesc">
+                    <span class="section indent">
+                      Nikolai Kiel,  "<span class="title-analytic">John of Ephesus and the &quot;Tritheists&quot;:</span>."
+                      <span class="title-journal">Hugoye: Journal of Syriac Studies</span> (<span class="publisher">Beth Mardutho: The Syriac Institute</span>,  <span class="date">2026</span>).
+                    </span>
+                  </span>
+                </div>
+              </div>
+            </div>
+
+            <span class="badge access-pills"><a href="/open-access.html" style="color:#555">open access <i class="fas fa-unlock-alt"></i></a></span>
+            <span class="badge access-pills"><a href="https://github.com/Beth-Mardutho/hugoye-data/wiki/Peer-Review-Policy" style="color:#555">peer reviewed <i class="fas fa-check"></i></a></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
