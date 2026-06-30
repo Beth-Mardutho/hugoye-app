@@ -53,29 +53,33 @@ jobs:
         working-directory: hugoye-app
         run: |
           echo "Converting TEI XML → HTML..."
+          converted=0
+          failed=0
           for xml in ../hugoye-data/data/tei/*.xml; do
             stem=$(basename "$xml" .xml)
             slug=$(echo "$stem" | tr '[:upper:]' '[:lower:]')
-            # Find matching PDF (check volume dirs)
+            # Find matching PDF (case-insensitive search across volume dirs)
             pdf_flag=""
-            for voldir in ../hugoye-data/pdf/vol*/; do
-              if [ -f "${voldir}${stem}.pdf" ]; then
-                pdf_flag="--pdf ${voldir}${stem}.pdf"
-                break
-              fi
-            done
-            python3 xml_to_html.py "$xml" "article/${slug}.html" $pdf_flag || echo "[WARN] Failed: $xml"
+            pdf_match=$(find ../hugoye-data/pdf -iname "${stem}.pdf" -print -quit 2>/dev/null)
+            if [ -n "$pdf_match" ]; then
+              pdf_flag="--pdf $pdf_match"
+            fi
+            if python3 xml_to_html.py "$xml" "article/${slug}.html" $pdf_flag 2>/dev/null; then
+              converted=$((converted + 1))
+            else
+              echo "[WARN] Failed: $xml"
+              failed=$((failed + 1))
+            fi
           done
-          echo "HTML conversion complete. Files in article/:"
-          ls article/ | wc -l
+          echo "HTML conversion complete: $converted succeeded, $failed failed"
+          echo "Article files: $(ls article/ | wc -l)"
 
       - name: Convert TEI XML to JSON for OpenSearch
         working-directory: hugoye-app
         run: |
           echo "Converting TEI XML → JSON..."
-          python3 xml_to_json.py --output-dir ./json ../hugoye-data/data/tei/*.xml
-          echo "JSON conversion complete. Files in json/:"
-          ls json/ | wc -l
+          python3 xml_to_json.py --output-dir ./json ../hugoye-data/data/tei/*.xml 2>&1 | tail -3
+          echo "JSON files: $(ls json/ | wc -l)"
 
       - name: Generate NDJSON bulk file for OpenSearch
         working-directory: hugoye-app
@@ -87,6 +91,11 @@ jobs:
             --out load/index.ndjson
           echo "NDJSON lines:"
           wc -l load/index.ndjson
+
+      - name: Build client-side search index (Fuse.js fallback)
+        working-directory: hugoye-app
+        run: |
+          python3 build_search_index.py --input-dir ./json --out search-index.json
 
       # ─── Configure AWS ────────────────────────────────────────────────
       - name: Configure AWS credentials
