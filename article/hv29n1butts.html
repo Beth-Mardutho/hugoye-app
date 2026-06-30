@@ -1,0 +1,614 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:srophe="https://srophe.app">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Syriac-Script Inscriptions and Graffiti at the Monastery of St. Antony (Egypt)</title>
+    <link rel="schema.DC" href="http://purl.org/dc/elements/1.1/" />
+    <link rel="schema.DCTERMS" href="http://purl.org/dc/terms/" />
+    <meta name="DC.type" property="dc.type" content="Text" />
+    <meta name="DC.isPartOf" property="dc.ispartof" content="Syriaca.org" />
+    <link data-template="app:metadata" />
+    <link rel="shortcut icon" href="/resources/img/favicon.ico" />
+    <link rel="stylesheet" type="text/css" href="/resources/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="/resources/css/sm-core-css.css" />
+    <link rel="stylesheet" href="/resources/css/syr-icon-fonts.css" />
+    <link rel="stylesheet" type="text/css" href="/resources/css/main.css" />
+    <link rel="stylesheet" type="text/css" media="print" href="/resources/css/print.css" />
+    <link href="/resources/jquery-ui/jquery-ui.min.css" rel="stylesheet" /><script type="text/javascript" src="/resources/js/jquery.min.js"></script><script type="text/javascript" src="/resources/jquery-ui/jquery-ui.min.js"></script><script type="text/javascript" src="/resources/js/jquery.smartmenus.min.js"></script><script type="text/javascript" src="/resources/js/clipboard.min.js"></script><script type="text/javascript" src="/resources/js/bootstrap.min.js"></script><script src="https://www.google.com/recaptcha/api.js"></script><link href="/resources/keyboard/css/keyboard.min.css" rel="stylesheet" />
+    <link href="/resources/keyboard/css/keyboard-previewkeyset.min.css" rel="stylesheet" />
+    <link href="/resources/keyboard/syr/syr.css" rel="stylesheet" /><script type="text/javascript" src="/resources/keyboard/syr/jquery.keyboard.js"></script><script type="text/javascript" src="/resources/keyboard/js/jquery.keyboard.extension-mobile.min.js"></script><script type="text/javascript" src="/resources/keyboard/js/jquery.keyboard.extension-navigation.min.js"></script><script type="text/javascript" src="/resources/keyboard/syr/jquery.keyboard.extension-autocomplete.js"></script><script type="text/javascript" src="/resources/keyboard/syr/keyboardSupport.js"></script><script type="text/javascript" src="/resources/keyboard/syr/syr.js"></script><script type="text/javascript" src="/resources/js/keyboard.js"></script>
+  </head>
+  <body id="body">
+    <div class="navbar navbar-default navbar-fixed-top" role="navigation" data-template="app:fix-links">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand banner-container" href="/index.html">
+            <!--<img property="logo" class="img-responsive" alt="Syriac.org" src="/resources/img/syriaca-logo.png"/> Draft-->
+            <span class="banner-icon"></span>
+            <span class="banner-text">Hugoye: Journal of Syriac Studies</span>
+          </a>
+        </div>
+
+        <div class="navbar-collapse collapse pull-right">
+          <ul class="nav navbar-nav sm sm-vertical" id="main-menu">
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                About Hugoye  <b class="caret"></b>
+              </a>
+              <ul class="dropdown-menu">
+                <li><a href="/editorial-board.html">Editorial Board</a></li>
+                <li><a href="/submissions.html">Submissions</a></li>
+                <li><a href="/open-access.html">Open Access</a></li>
+                <li><a href="https://www.gorgiaspress.com/hugoye-journal-of-syriac-studies" target="_blank">Printed Edition Subscription</a></li>
+              </ul>
+            </li>
+
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                Indexes  <b class="caret"></b>
+              </a>
+              <ul class="dropdown-menu">
+                <li><a href="/current-issue.html">Current Issue</a></li>
+                <li><a href="/volumes.html">Volume Index</a></li>
+                <li><a href="/authors.html">Author Index</a></li>
+              </ul>
+            </li>
+          </ul>
+
+          <ul class="nav navbar-nav navbar-right keboard-btn">
+            <li>
+              <div class="btn-nav">
+                <a class="btn btn-default navbar-btn dropdown-toggle" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" title="Select Keyboard">
+                  <span class="syriaca-icon syriaca-keyboard"></span>
+                  <span class="caret"></span>
+                </a>
+                <ul data-template="app:keyboard-select-menu" data-template-input-id="q"></ul>
+              </div>
+            </li>
+
+            <li>
+              <div class="btn-nav">
+                <a href="#" class="btn btn-default navbar-btn dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" title="Search Tools">
+                  <span class="glyphicon glyphicon-search"></span> <span class="caret"></span>
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a href="/search.html">Advanced Search</a></li>
+                </ul>
+              </div>
+            </li>
+
+            <li>
+              <div class="btn-nav">
+                <a href="#" class="btn btn-default navbar-btn dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" title="Select Font">
+                  Font <span class="caret"></span>
+                </a>
+                <ul class="dropdown-menu" id="swap-font">
+                  <li><a href="#" class="swap-font" id="DefaultSelect" data-font-id="EstrangeloEdessa">Default</a></li>
+                  <li><a href="#" class="swap-font" id="EstrangeloEdessaSelect" data-font-id="EstrangeloEdessa">Estrangelo Edessa</a></li>
+                  <li><a href="#" class="swap-font" id="EastSyriacAdiabeneSelect" data-font-id="EastSyriacAdiabene">East Syriac Adiabene</a></li>
+                  <li><a href="#" class="swap-font" id="SertoJerusalemSelect" data-font-id="SertoJerusalem">Serto Jerusalem</a></li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+
+          <form class="navbar-form navbar-right navbar-input-group" role="search" action="/search.html" method="get">
+            <div class="input-group">
+              <input type="text" class="form-control keyboard" placeholder="search" name="q" id="q" />
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <div class="main-content-block">
+      <div class="interior-content">
+        <div class="container otherFormats">
+          <a href="HV29N1Butts.xml" class="btn btn-default btn-xs" id="teiBtn" data-toggle="tooltip" title="Click to view the TEI XML data for this record."><span class="glyphicon glyphicon-download-alt" aria-hidden="true"></span> TEI/XML</a>
+        </div>
+
+        <div class="row">
+          <!-- MAIN CONTENT (use 9/3 split like your example) -->
+          <div class="col-sm-9 col-md-9 col-lg-9 mssBody">
+            <div class="article-header text-center">
+              <h1>Syriac-Script Inscriptions and Graffiti at the Monastery of St. Antony (Egypt)</h1>
+              <h2></h2>
+              <span class="tei-author">
+                <span class="tei-name">Aaron Michael <span class="tei-surname">Butts</span></span>
+                <span class="tei-affiliation"><span class="tei-orgName">University of Hamburg</span></span>
+              </span>
+            </div>
+
+            <div class="section tei-text">
+              <div class="body">
+                <div class="section" style="display:block;">
+                  <div class="tei-div tei-title" lang="en">
+                    <span class="tei-ab tei-review-title"></span>
+                  </div>
+
+                  <div class="tei-div tei-body" lang="en">
+                    <div class="pdf-transcript">
+<h3 class="h4">Full text (from PDF)</h3>
+<p>Hugoye: Journal of Syriac Studies, Vol. 29.1, 3-44 © 2026 by Beth Mardutho: The Syriac Institute and Gorgias Press</p>
+<p>SYRIAC-SCRIPT INSCRIPTIONS AND GRAFFITI AT THE MONASTERY OF ST. ANTONY (EGYPT)</p>
+<p>AARON MICHAEL BUTTS</p>
+<p>UNIVERSITY OF HAMBURG</p>
+<p>ABSTRACT</p>
+<p>In this article, I present Syriac and Garshuni inscriptions and graffiti from the Monastery of St. Antony in the Egyptian desert along the Red Sea. These Syriac-script writings serve as evidence for Syriac Christians at this monastery, establishing their presence in the late sixteenth century and thereby supplementing what was previously known about earlier centuries from several notes found in Syriac and Garshuni manuscripts.</p>
+<p>INTRODUCTION</p>
+<p>Currently housed in the British Library in London is a Syriac manuscript, MS British Library, Add. 14,632, that once belonged to the Monastery of the Syrians in the Wādī al-Naṭrūn.1 The</p>
+<p>1 For an overview of Syriac manuscripts that have at some point in their histories belonged to the Monastery of the Syrians, see Sebastian P. Brock and Lucas Van Rompay, Catalogue of the Syriac Manuscripts and Fragments in the Library of Deir Al-Surian, Wadi al-Natrun (Egypt), Orientalia Lovaniensia Analecta 227 (Louvain: Peeters, 2014), xiv–xix. For</p>
+<p>3</p>
+<p>Hugoye 29.1</p>
+<p>4</p>
+<p>manuscript contains a number of works by Isaac of Nineveh, but what interests us here is a note that is appended on an initial folio of the manuscript.2 This note tells about a certain Rabban Mattai, of Ṭur ʿAbdin, who copied the first two quires of the manuscript at the Monastery of the Syrians sometime in the mid-thirteenth century, perhaps between 1235–1245, and it continues as follows:</p>
+<p>... when this one was fed up with the leadership, that is with the dangers and injustices of the monks who were of an evil spirit, he departed and fled to the Monastery of St. Anthony, and he took the book of Mar Isaac with him, so that he might read and delight in it, and then return it to this monastery (viz. the Monastery of the Syrians). But, it so happened that he became sick there at the Monastery of the glorious Antony, and he died there. The book—the counterpart to the present one—remains there until today. Also, he took with him a silver cross from this monastery, and it remains there until today. May God forgive him, because he did not take them as a thief, but rather so that he might read and use them for a time and then return them or bring them back here. In any case, fate befell him, and he died and left them in that monastery. Our Syriac brothers who go to this monastery after us should know that the Monastery of St. Paul, which is near to the Monastery of St. Antony, used to belong to us, the Syriacs, just as this one (viz. the Monastery of the Syrians), and there are many Syriac</p>
+<p>a useful list of the dated manuscripts, see Sebastian P. Brock, “Dated Syriac Manuscripts Copied at Deir Al-Surian,” in Between the Cross and the Crescent: Studies in Honor of Samir Khalil Samir, S.J. on the Occasion of His Eightieth Birthday, ed. Željko Paša, Orientalia Christiana Analecta 304 (Rome: Pontificio Istituto Orientale, 2018), 355–371.</p>
+<p>2 For the manuscript, see William Wright, Catalogue of Syriac Manuscripts in the British Museum, Acquired since the Year 1838 (London: Trustees of the British Museum, 1870–1872), 576–81.</p>
+<p>Aaron Michael Butts</p>
+<p>5</p>
+<p>books there to this day, but because time advanced and the Syriacs faded out from there, the Egyptians seized it but [...] there was no one to examine the case with them and deliver it from their hands ...”3</p>
+<p>The Monastery of St. Antony and the neighboring Monastery of St. Paul mentioned here are located in the Egyptian desert along the Red Sea.4 The presence of Syriac Christians at the latter can be established already by the turn of the tenth century, thanks to a colophon in MS London, British Library, Or. 5021.5 Thanks to the note about Rabban Mattai in MS Brit. Lib.</p>
+<p>3 For the Syriac text, see Wright, Catalogue of Syriac Manuscripts in the British Museum, Acquired since the Year 1838, 580. A previous English translation (by A. S. Tritton) is available in Hugh G. Evelyn White, The Monasteries of the Wâdi ’n Natrûn, ed. Walter Hauser, Publications of the Metropolitan Museum of Art. Egyptian Expedition (New York, NY: Metropolitan Museum of Art, 1926–1933), vol. 2: 389–390. See also the comments in Sebastian P. Brock, “Notulae Syriacae: Some Miscellaneous Identifications,” Le Muséon 108:1-2 (1995): 75–76 fn. 11. I would like to thank Grigory Kessel for providing me with an image of the folio in question. 4 For the Monastery of St. Antony, see Elizabeth S. Bolman, ed., Monastic Visions: Wall Paintings in the Monastery of St. Antony at the Red Sea (New Haven, CT: Yale University Press, 2002). An extremely useful virtual 3D tour of the lower zone of the Old Church, where the Syriac-script texts edited here are located, is available at &lt;https://arce.org/monastery-stanthony&gt;. Similar works do not yet exist for the Monastery of St. Paul, but for now see Otto Meinardus et al., “Dayr Anbā Būlā,” in The Coptic Encyclopedia, ed. Aziz S. Atiya (New York, NY: Macmillan Publishing Company, 1991), vol. III: 741a–744b. Note should also be made of the important on-going project, directed by Lisa Agaiby, to digitize and catalogue the manuscript collection of the Monastery of St. Paul.</p>
+<p>5 The relevant text reads as follows: “This book was written in the year onethousand two-hundred and fourteen according to (the reckoning) of the Greeks (= 902/3 CE) in the interior dessert of Abbā Paul, the solitary and saint, in the days of Dionysius, patriarch of the apostolic see of the city of Antioch, and in the days of Michael, head of the bishops of Alexandria.</p>
+<p>Hugoye 29.1</p>
+<p>6</p>
+<p>Add. 14,632, we know that Syriac Christians were still present at the Monasteries of St. Antony and of St. Paul in the midthirteenth century. Yet a further note may push that date even later. This one is found in MS Paris, Bibliothèque nationale de France, Syr. 191, which was written in 1670 and contains, inter alia, a number of texts related to Gregory of Nazianzus in Garshuni.6 At the end of the manuscript (f. 287v), the scribe, a certain Gregory, copies a note that he found in his exemplar. This note says that the exemplar was copied in 1393 CE (1109 year of the martyrs) by a monk named Zacharias in the Monastery of St. Paul from a manuscript in the Monastery of St. Antony.7 Since the note mentions that Zacharias brought the original exemplar from which he copied from Greater Syria (alShām), and since again the Paris manuscript is in Garshuni (though that is not strictly probative for its Vorlage), it seems</p>
+<p>Elishaʿ of Zuqnin wrote it for his beloved brother in our Lord Jesus Christ, Mar Shlemun, monk and priest, who is from the jurisdiction of Marʿash, the city of Germanikia ...” For the Syriac text, see Brock, “Notulae Syriacae: Some Miscellaneous Identifications,” 74–76. For the manuscript, see earlier George Margoliouth, Descriptive List of Syriac and Karshuni Mss. in the British Museum Acquired since 1873 (London: British Museum, 1899), 48–49.</p>
+<p>6 For the manuscript, see Hermann Zotenberg, Catalogues des manuscrits syriaques et sabéens (mandaïtes) de la Bibliothèque nationale, Manuscrits orientaux (Paris: Imprimerie nationale, 1874), 132–34. Images of the manuscript are available online at &lt;https://gallica.bnf.fr/ark:/12148/ btv1b10088718j&gt;. For Gregory of Nazianzus in Arabic, see Georg Graf, Geschichte der christlichen arabischen LiteraturStudi e Testi 118, 133, 146, 147, 172 (Città del Vaticaono: Biblioteca Apostolica Vaticana, 1944–1953), vol. I: 330–333. 7 The precise</p>
+<p>folio</p>
+<p>is available at &lt;https://gallica.bnf.fr/ark:/12148/ btv1b10088718j/f295.item.zoom&gt;. For a summary of the note, see Zotenberg, Catalogues des manuscrits syriaques et sabéens (mandaïtes) de la Bibliothèque nationale, 133.</p>
+<p>Aaron Michael Butts</p>
+<p>7</p>
+<p>likely that this Zacharias was a Syriac Christian.8 If so, the note would establish the presence of a Syriac Christian at the Monastery of St. Paul, and perhaps also at the neighboring Monastery of St. Antony, in the late fourteenth century. Taken together, these notes show that Syriac Christians were present at the Monasteries of St. Antony and of St. Paul at least by the turn of the tenth century and continuing for the next several centuries, at least until the mid-thirteenth century and perhaps until the end of the fourteenth century.</p>
+<p>Syriac-script</p>
+<p>inscriptions and graffiti provide</p>
+<p>further evidence for the presence of Syriac Christians at the Monastery of St. Antony, and at a later date: the sixteenth century. In 2002, Sidney H. Griffith published a Syriac graffito along with several in Garshuni from the Monastery of St. Antony.9 In the spring of 2024 and again in the fall of 2025, I was able to visit this monastery, where I re-examined the texts in situ as well as took new photographs, some of which are provided below.10 In this</p>
+<p>8 So also René-Georges Coquin and Maurice Martin, “Dayr Anbā Anṭūniyūs, Chronology,” in The Coptic Encyclopedia, ed. Aziz S. Atiya (New York, NY: Macmillan Publishing Company, 1991), vol. III: 721b–723b: “a Syrian monk”. The relevant portion of the note reads as follows: ܗ ܼܟܣܢ ܢܡ ܠܘܩܢܡ . . . ܠܓܪ .ܗܒܪܓ� ̈ܗܝܪܒܒ ܣܘܝܢܘܛܢܐ ܡܝܜܥ� ܐܢܝܒܐ ܪܝܕܒ ܢܐܒܗܪ� ܕܚܐ ܛ ܼܟܒ ܐܗܢܡ ܠܘܩܢܡ� ܠܨ�ܐ ̈ܗ ܼܟܣܢ ܦܠܐܓ ܗܢܐ ܐܗܝܦ ܪ ܿܟܕܝ .ܐܝܪ ܿܟܙ ܝܡܣܝ ܡܠܐܥ ܠܜܐܦ ܐܗܐܘܣ ܡܐܫ� ܝܦ ܢܟܝ ܡܠ ܗܕܝܪܦ ܗ ܼܟܣܢ ܢܡ ܗܝܪܨܡ� ܪܐܝܕ� ܝ� ܡܐܫ� ܢܡ “... it was copied from an exemplar by the hand of one of the monks of the monastery of our great father Anthony in the desert of exile, a pious and knowledgeable man, whose name is Zachariah. He mentions in it that he brought the original exemplar, from which he copied, from Greater Syria to Egypt, from a unique exemplar—it was the only one in Syria”.</p>
+<p>9 Sidney H. Griffith, “The Handwriting on the Wall: Graffiti in the Church of</p>
+<p>St. Antony,” in Bolman, ed., Monastic Visions, 189.</p>
+<p>10 My visits—the first together with Martina Ambu and Sophia Dege-Müller and the second with Perrine Pilette—to the Monastery of St. Antony, as well as to the Monastery of St. Paul, were part of fieldwork for the project</p>
+<p>Hugoye 29.1</p>
+<p>8</p>
+<p>article, I present all the Syriac-script graffiti and inscriptions found at the site. I begin with a group of Garshuni graffiti that seem to be related to one another, then turn to a Syriac inscription incorporated into the thirteenth-century painting program, and finally conclude with a Syriac graffito found outside the door of the old Church.</p>
+<p>Figure 1: Plan of the lower zone of the old Church of St. Antony11</p>
+<p>“BeInf—Beyond Influence: The Connected Histories of Ethiopic and Syriac Christianity,” which is based at the University of Hamburg; see &lt;https://www.aai.uni-hamburg.de/beinf.html&gt;. One part of the BeInf project looks to Egypt as a place where Ethiopic and Syriac Christians came into contact.</p>
+<p>11 This plan derives from Elizabeth Bolman, “Introduction,” in Bolman, ed.,</p>
+<p>Monastic Visions, xxiv.</p>
+<p>Aaron Michael Butts</p>
+<p>9</p>
+<p>A CONSTELLATION OF GARSHUNI GRAFFITI: OVERVIEW OF TEXTS 1–4 (MAYBE ALSO 5)</p>
+<p>On the east wall of the central nave of the old Church are portraits of St. Antony (N1), to whom the monastery is dedicated, and of St. Paul (N2), to whom the neighboring monastery is dedicated (see Figure 2).12 These portraits are part of an extensive painting program created in 1232/3 by a team of Coptic artists led by the master artist Theodore.13 Underneath these portraits is a section of plaster, dating from the sixteenth century, on which a number of inscriptions and graffiti are written (see Figure 3). On the right half of the plaster is a long Arabic inscription commemorating the death and burial of the Coptic Patriarch Gabriel VII (1525–1568), who oversaw the monastery’s restoration in the sixteenth century.14 Written vertically to the right of this inscription is a Garshuni graffito,</p>
+<p>12 The references in parentheses refer to the plan in Figure 1. 13 See Elizabeth Bolman, “Theodore, ‘The Writer of Life’, and the Program of</p>
+<p>1232/1233,” in Bolman, ed., Monastic Visions, 37–76.</p>
+<p>14 An updated, new edition of this important inscription is currently in progress by Perrine Pilette and the present author. For now, the Arabic text, with French translation and notes, are available in René-Georges Coquin and Pierre-Henry Laferrière, “Les inscriptions pariétales de l’ancienne église du monastère de Saint Antoine, dans le désert oriental,” Le Bulletin de l’Institut français d’archéologie orientale 78 (1978): 275–279 (no. 13). An English translation is available in Griffith, “Graffiti in the Church of St. Antony,” 186–87. Interestingly the same text is copied at the end of MS Vatican City, Biblioteca Apostolica Vaticana, Vat. copt. 7, f. 337r, and the end of the inscription also appears in MS Vatican City, Biblioteca Apostolica Vaticana, Vat. copt. 9, f. 1v; see Coquin and Laferrière, “Les inscriptions,” 277–278. Images of both manuscripts are available online at &lt;https://digi.vatlib.it/view/MSS_Vat.copt.7&gt; and &lt;https://digi.vatlib.it/ view/MSS_Vat.copt.9&gt;, respectively. For Patriarch Gabriel VII, see Samir Khalil Samir, “Gabriel VII,” in The Coptic Encyclopedia, ed. Aziz S. Atiya (New York, NY: Macmillan Publishing Company, 1991), vol. IV: 1133b–1135a.</p>
+<p>Hugoye 29.1</p>
+<p>10</p>
+<p>which is labelled here as Text 1, and under it is another, labelled here as Text 2, written at a slight angle.15 On the other side of the section of plaster, surrounded by many Arabic script graffiti, is yet another Garshuni graffito, labelled here as Text 3. As will become clear in the discussion below, these three graffiti—along with Text 4 and possibly also Text 5, both on the other side of the opening—likely form a constellation, involving some of the same people and likely all written at the same time.16</p>
+<p>15 On the vertical writing of Syriac (and so by extension also Garshuni), see Alain Desreumaux, “Comment peut-on écrire en syriaque? Ou des problèmes du scribe devant sa page blanche,” in Manières de penser dans l’Antiquité méditerranéenne et orientale. Mélanges offerts à Francis Schmidt par ses élèves, ses collègues et ses amis, ed. Christophe Batsch and Mădălina Vârtejanu-Joubert, Supplements to the Journal for the Study of Judaism 134 (Leiden: Brill, 2009), 105–26. The images in Figure 4–6 below have been, correspondingly, rotated ninety degrees clockwise.</p>
+<p>16 Griffith also considers them to be related: “All three of these texts were presumably penned by the same group of pilgrims” (Griffith, “Graffiti in the Church of St. Antony,” 189).</p>
+<p>Aaron Michael Butts</p>
+<p>11</p>
+<p>Figure 2: Paintings of St. Antony (N1) and of St. Paul (N2), with graffiti-covered plaster underneath (© Aaron Butts, 2025)</p>
+<p>Hugoye 29.1</p>
+<p>12</p>
+<p>Text 1</p>
+<p>Text 3</p>
+<p>Text 2</p>
+<p>Figure 3: Texts 1–3 in Context (© Aaron Butts, 2025)</p>
+<p>TEXT 1</p>
+<p>Figure 4: Text 1 (© Aaron Butts, 2024)</p>
+<p>Aaron Michael Butts</p>
+<p>13</p>
+<p>Text17</p>
+<p>ܚ</p>
+<p>ܐܘܣ� ܝܦ ܡܝܛܥ</p>
+<p>�ܘܒ ܐܒܢܐ ̈ܗ�ܨܒ ܗܐܛܟ� ܟܕܝܒܥ ܡܚܪܐ ܝܬܡ ܟܕܝܒܥ � ܗܩܪܐܫܡ ܢܐܝܪܣ ܣܘܣܩ ܝܣܕܩܡܘ . ܢ ܣ ܝܦ ܣܪܦ� ܢܡ</p>
+<p>ܙܨܦܐ ̈ܗ</p>
+<p>ܕ�ܒ</p>
+<p>1 2 3 4</p>
+<p>Translation</p>
+<p>1 Have mercy on your sinful servants, by the prayer of</p>
+<p>2</p>
+<p>Anbā Paul, the great one among the anchorites, your servants, Mattai</p>
+<p>3 and Muqaddasi, Syriac priests, easterners, 4</p>
+<p>from the region of Fars, in the year 1897 (= 1585/6 CE)</p>
+<p>Commentary18 ln. 1 ܗܐܛܟ� Griffith reads ܗܐܛܥ�, which is, however, nonsensical. The reading ܗܐܛܟ� is all but assured by context (note that Griffith also translates “the sinners”), even if the kāp̄ is</p>
+<p>17 To aid accessibility for Arabists not familiar with the Syriac script, I</p>
+<p>provide here the text in Arabic script:</p>
+<p>ﻻﻮﺑ ﺎﺒﻧا ةﻼﺼﺑ ﻩﺎﻄﳋا كﺪﯿﺒﻋ ﰘرا 1 ﱵﻣ كﺪﯿﺒﻋ حاﻮﺴﻟا ﰲ ﲓﻄﻌﻟا 2 ﻪﻗرﺎﺸﻣ ن�ﴎ سﻮﺴﻗ ﳼﺪﻘﻣو 3 .�ﻓا ﺔﻨ�ﺳ ﰲ سﺮﻔﻟا دﻼﺑ ﻦﻣ 4 I stress that this transcription is not intended to be of scientific value but only to make the text accessible to a greater readership, including in Egypt where the graffito is located.</p>
+<p>18 The text of this graffito, along with an English translation, is given in Griffith, “Graffiti in the Church of St. Antony,” 189. The graffito also appears as no. 12 in Coquin and Laferrière, “Les inscriptions,” 275, though only the first couple of words could be read at that time.</p>
+<p>Hugoye 29.1</p>
+<p>14</p>
+<p>slightly misformed (taking a shape similar to ʿē, and so Griffith’s reading). It is tempting to read the traces of ink above hē as</p>
+<p>syāmē, i.e., ̈ܗܐܛܟ� = ةﺎﻄﳋا, plural of ﺊﻃﺎ�. But see the comments on 3 ܗܩܪܐܫܡ below for another case of missing syāmē.</p>
+<p>ln. 1 ̈ܗ�ܨܒ Griffith has ܗ�ܨܒ without syāmē. ln. 3 Between ܝܣܕܩܡ and ܣܘܣܩ, Griffith has ellipses, but nothing seems to be missing in the text, and the space seems normal, even if on the larger side.</p>
+<p>ln. 3 ܗܩܪܐܫܡ should be ̈ܗܩܪܐܫܡ with syāmē, for ﺔﻗرﺎﺸﻣ, plural of ﰶﴩﻣ. Note that the rēsh seems to have two dots. For the connotation of this adjective “Easterners”, see the conclusion below.</p>
+<p>ln. 4 ܕ�ܒ With a caveat that his reading is “very uncertain,” Griffith proposes [ܕܬܡ] ‘[Methed]’, both text and translation thus within square brackets. Presumably, Griffith understands this as a place name, but the location remains unidentified. Moreover, the syntax of such a reading, ostensibly a city in construct with the broader region, is not expected in Arabic. Finally, the traces of ink do not necessarily support such a reading. The proposed reading ܕ�ܒ ‘region’ fits the context much better, and the traces of ink fit this reading, though with a slanted lāmaḏ (not vertical).</p>
+<p>. ln. 4 ܙܨܦܐ</p>
+<p>Griffith reads ܨܦܐ&quot;</p>
+<p>. It is not clear what he intends by the latter sign(s), but the mark(s) seem to be written on the line contiguous with what came before. I propose to read a final punctuation mark (like a period). Regardless of the ultimate solution to the problem of this final mark, the text is explicitly dated to 1585/6 CE (1897 year of the Greeks). For reasons unknown, Griffith did not include the date in his English</p>
+<p>Aaron Michael Butts</p>
+<p>15</p>
+<p>translation (only “in the year ...”), leaving this crucial piece of information unknown to those who do not read Syriac script.</p>
+<p>TEXT 2</p>
+<p>Figure 5: Text 2 (© Aaron Butts, 2025)</p>
+<p>Text19</p>
+<p>] ܣ [</p>
+<p>ܛ</p>
+<p>ܟ ܒܪ ܐܝ ܪܦܓ</p>
+<p>ܬܐܘ�ܨܒ ܐܒܢ</p>
+<p>ܪ ܐܝܒ [ ]ܐ[</p>
+<p>ܓܪܓ ܣ ܩ ܬܝ ]ܐ[ ] ܡܚܪܐܘ ܗܕ�ܘܐܘ ܗܬܓܘܙܘ ܬܟ ܘܣܝܕܩ ܘ �ܘܒ ܐܒܢܐ ]ܝ[ ܟ ܕ�ܘ ܢܝܡܝܛܥ� ܣܘܝܢܘܛܢܐ</p>
+<p>1 2 3 4</p>
+<p>ﺲ ﺟﺮﺟ]س[ تاوﻼﺼﺑ [ ]بر � ]ا[ﺎﺒﻧ و ﻻﻮﺑ ﺎﺒﻧا ﻚ</p>
+<p>19 Again, to make the text accessible for those who do not read the Syriac script, I provide here the text in Arabic script (for caveats, see fn. 17 above): ﻗ ﺖﯿﻄﺧ بر � ﺮﻔ ]ا[ ﻏ 1 و ﻪتﺟوزو 2 ﰘراو ﻩدﻻو ا ﺴ�ﺪﻗو ﻚﺗ�او 3 ]ﯿ[ ﲔﳰﻄﻌﻟا سﻮﯿﻧﻮﻄﻧا 4</p>
+<p>Hugoye 29.1</p>
+<p>16</p>
+<p>Translation</p>
+<p>1 2</p>
+<p>Forgive, o Lord, the sin(s) of (the) priest Girgis and his wife and his children. Have mercy,</p>
+<p>[o Lord,] through the prayers of</p>
+<p>3 4</p>
+<p>your Mother and of your saints, Anbā Paul and Anbā Antony, the great ones.</p>
+<p>Commentary20</p>
+<p>ln. 1</p>
+<p>ܩܣ The reading is not entirely certain, especially the second letter. Also note that one would expect the definite article on the noun, ܣܩ�.</p>
+<p>ܓܪܓ] ܣ[</p>
+<p>ln. 2</p>
+<p>Again, the reading is uncertain, though the</p>
+<p>name is common, including in graffiti from St. Antony’s.</p>
+<p>ܒ[</p>
+<p>ln. 2</p>
+<p>] ܪ ܐܝ The reconstruction is very tentative, including</p>
+<p>the fact that it is far from clear that there is enough space.</p>
+<p>ln. 2 ܬܐܘ�ܨܒ The reading seems assured by context, and the</p>
+<p>traces of ink can more or less be made to fit the word.</p>
+<p>20 This graffito is mentioned briefly in Griffith, “Graffiti in the Church of St.</p>
+<p>Antony,” 189, but neither text nor translation is given.</p>
+<p>Aaron Michael Butts</p>
+<p>17</p>
+<p>TEXT 3</p>
+<p>Figure 6: Text 3 (© Aaron Butts, 2025)</p>
+<p>Text21</p>
+<p>ܝܣܕܩܡ</p>
+<p>�]ܩ[ܣ]ܝ[ܢ</p>
+<p>1</p>
+<p>ܢܘܛ]ܣܘܝ</p>
+<p>ܡܚܪܐ ܢܝܡܐ</p>
+<p>[ ܘ ܕܩܘܝܣܟܝ</p>
+<p>ܐ]ܢ[ ܟܬܟܝ�ܡ</p>
+<p>ܠܡ ܝܦ ܒܪ ܐܝ ܪܟܕܐ ܟܕܝܒܥ ܟܬܘ ܟ ܝܬܡܘ ܐܢܘܒܐ ܬܐܘ�ܨܒ ܡܗܬܝܛܟ ܪܦܓܐܘ ̈ܘ�ܨܒ ܐ]ܟ[</p>
+<p>] ܕ[ ܟܬ ܘ</p>
+<p>�ܘ</p>
+<p>ܡܗܬܐܘ</p>
+<p>2 3</p>
+<p>Translation</p>
+<p>1 Remember, o Lord, in your kingdom your servants, the</p>
+<p>priests, Muqaddasi and Mattai,</p>
+<p>2 and forgive their sins through the prayers of our father</p>
+<p>Antony. Have mercy</p>
+<p>3 on their brothers (?) through the prayer of your</p>
+<p>Mother, your angels, and your saints. Amen.</p>
+<p>ﱵﻣو ﳼ</p>
+<p>ﻘﻣ ﻦ ﺪ [ﰘراو</p>
+<p>21 Again, to make the text accessible for those who do not read the Syriac script, I provide here the text in Arabic script (for caveats, see fn. 17 above): 1 2 3</p>
+<p>]ﻘ[ﺴ]ﯿ[ ﻧﻮﻄ]سﻮﯿ ﲔﻣا ﻚﯿ�ﺴ�ﺪﻗو ﻚتﻜ�ﻼﻣو ﻚﺗ</p>
+<p>ﻟا كﺪﯿﺒﻋ ﻚﺗﻮﻜﻠﻣ ﰲ بر � ﺮ�دا ا �ﻮﺑا تاوﻼﺼﺑ ﻢﳤﯿﻄﺧ ﺮﻔﻏاو ]ﻧ[ ا]ﺧ[</p>
+<p>]ﺪ[</p>
+<p>ﻟاو ةﻼﺼﺑ ﻢﲥاﻮ</p>
+<p>Hugoye 29.1</p>
+<p>18</p>
+<p>Commentary22</p>
+<p>is uncertain; note also that this</p>
+<p>2F</p>
+<p>�]ܩ[ܣ]ܝ[ܢ ln. 1 The reading putative plural form is not recorded in the lexica.2</p>
+<p>23</p>
+<p>ܡܗܬܐܘ</p>
+<p>ln. 3 The reading of</p>
+<p>ܐ]ܟ[ is very uncertain, especially the first letters, but the general structure is clear: This word is a plural noun, possesses a third masculine plural pronominal suffix ‘their’, and serves as the direct object of the imperative verb in the previous line.</p>
+<p>TEXT 4</p>
+<p>The previous three graffiti were all located on the same section of plaster, and two of them (nos. 1 and 3) mentioned two “Eastern” priests, Mattai and Muqaddasi, from Fars. These two persons appear in a very fragmentary text found across the opening on the north side of the east wall of the central nave, under the painting of the Virgin Mary with Christ Child (N36) (see Figure 7). This text, only a few words of which are preserved in two lines but which will have originally been longer, is vertically oriented with a slight counter-clockwise slant (see Figure 8). It does not seem to have been mentioned in previous scholarship.</p>
+<p>22 This graffito is mentioned briefly in Griffith, “Graffiti in the Church of St.</p>
+<p>Antony,” 189, but neither text nor translation is given.</p>
+<p>23 That includes Georg Graf, Verzeichnis arabischer kirchlicher Termini, 2nd</p>
+<p>ed., CSCO 147 (Louvain: L. Durbecq, 1954), 90.</p>
+<p>Aaron Michael Butts</p>
+<p>19</p>
+<p>Text 4</p>
+<p>Figure 7: Virgin Mary with Christ Child (N36), with graffiti covered</p>
+<p>plaster underneath (© Aaron Butts, 2025)</p>
+<p>Hugoye 29.1</p>
+<p>20</p>
+<p>Figure 8: Text 4 (© Aaron Butts, 2025)</p>
+<p>Text24</p>
+<p>] ܒܪ ܐܝ ]ܐ[ܓ]ܦ[ ܪ ܝܣܕܩ ] ܡܘ ܝܬܡ ܟܕܝܒܥ</p>
+<p>1 2</p>
+<p>Translation</p>
+<p>1 Forgive, o Lord, [ 2 your servants Mattai and Mu[qaddasi</p>
+<p>24 Again, to make the text accessible for those who do not read the Syriac script, I provide here the text in Arabic script (for caveats, see fn. 17 above): 1</p>
+<p>2</p>
+<p>] ]ﳼﺪﻘ</p>
+<p>]ا[ ﻏ]ﻓ[ﺮ بر � ﻣو ﱵﻣ كﺪﯿﺒﻋ</p>
+<p>Aaron Michael Butts</p>
+<p>21</p>
+<p>TEXT 5</p>
+<p>Also under the painting of the Virgin Mary with Christ Child (N36), lower on the wall than Text 4, is another, longer Garshuni text, here labelled as Text 5 (see Figure 9).25 Unfortunately, this text is highly damaged, and only a few words can be made out, such as ܡܝܪܡ ‘Mary’ at the end of the third line from the end. The text, however, seems to be in Garshuni and not Syriac. Given how little can be deciphered, it is unclear whether this text should be included in the constellation of Garshuni discussed previously (at least Texts 1– 4), though it is possible, if not likely, given its proximity to the others.</p>
+<p>25 Mentioned in Griffith, “Graffiti in the Church of St. Antony,” 189.</p>
+<p>Hugoye 29.1</p>
+<p>22</p>
+<p>Figure 9: Text 5 (© Aaron Butts, 2024)</p>
+<p>TEXT 6</p>
+<p>In the southwest corner of the central nave of the old Church there is a painting of the Syriac monastic figure Barṣawma (N11)</p>
+<p>Aaron Michael Butts</p>
+<p>23</p>
+<p>(see Figure 10).26 The painting is part of the broader program of Theodore and his team of Coptic artists and so dates to 1232/3. In his hand, Barṣawma holds a scroll, the top of which is inscribed in Syriac and the bottom in Coptic (see Figure 11). To date, the Syriac inscription has defied interpretation.27 As a potential way forward, we might entertain the possibility that the Coptic painter did not know Syriac and so was merely trying to re-create some writing that he had before him. In such a case, we would be dealing with imitation and so should have a higher tolerance for miswritten words. Working from this assumption, I propose that the first word, which appears as the non-sensical</p>
+<p>26 For Barṣawma, see Lucas Van Rompay, “Barṣawmo,” in Gorgias Encyclopedic Dictionary of the Syriac Heritage, ed. Sebastian P. Brock, Aaron M. Butts, George A. Kiraz, and Lucas Van Rompay (Piscataway, NJ: Gorgias Press, 2011), 59, where additional references can be found, to which can now be added several publications by Andrew Palmer, including “The West-Syrian Monastic Founder Barṣawmo: A Historical Review of the Scholarly Literature,” in Orientalia Christiana: Festschrift für Hubert Kaufhold zum 70. Geburtstag, ed. Peter Bruns and Heinz Otto Luthe (Wiesbaden: Harrassowitz Verlag, 2013), 399–413; “Editing a Syriac Hagiography: The Life of Barṣawmo the Northerner,” in Syrische Studien: Beiträge zum 8. Deutschen Syrologie-Symposium in Salzburg 2014, ed. Dietmar W. Winkler, Orientalia ‒ Patristica ‒ Oecumenica 10 (Wien: LIT Verlag, 2016), 89–108; The Life of the Syrian Saint Barsauma: Eulogy of a Hero of the Resistance to the Council of Chalcedon, Transformation of the Classical Heritage 61 (Oakland, CA: University of California Press, 2020), along with the following edited volume: Johannes Hahn and VolkerLorenz Menze, The Wandering Holy Man: The Life of Barsauma, Christian Asceticism, and Religious Conflict in Late Antique Palestine, Transformation of the Classical Heritage 60 (Oakland, CA: University of California Press, 2020).</p>
+<p>27 See the earlier attempt in Coquin and Laferrière, “Les inscriptions,” 272– 273 (no. 5), along with the tentative translation of V. Gold and M. Guinan, apud Birger A. Pearson, “The Coptic Inscriptions in the Church of St. Antony,” in Bolman, ed., Monastic Visions, 222.</p>
+<p>Hugoye 29.1</p>
+<p>24</p>
+<p>“combatant”, paralleling</p>
+<p>ܐܡܝܥ, should be understood as ܐܢܘܓܐ “combat”, probably for ܐܛܣܢܘܓܐ the Coptic agonda “combatant”. What looks like ʿē-yoḏ (ܝܥ) could be a misformed gāmal (ܓ), and similarly what looks like mim ( ܡ) could be waw-nun ( ܢܘ). In such a case, only the missing initial ʾālap̄ would need paleographic explanation. It is, however, also difficult to understand why ܐܢܘܓܐ “combat” would have been for ܐܛܣܢܘܓܐ “combatant”. Nevertheless, reading written ܢܘܓ&gt; ܛܣ&lt; ܐ &gt;ܐ&lt; paralleling Coptic agonda “combatant” would</p>
+<p>ܐܗ�ܕ</p>
+<p>ܢܘܓ&gt; ܛܣ&lt; ܐ</p>
+<p>“of God”, giving</p>
+<p>total</p>
+<p>make some sense of the beginning of the inscription, which has so far defied interpretation. The second word of the first line is ܐܗ�ܕ &gt;ܐ&lt; in “combat&lt;ant&gt; of God”, a close parallel to the Coptic.28 The second line of the Syriac is more difficult to explain. The last word of the second line seems to be ܐܫܝܕܩ “holy”, probably an adjective modifying Barṣawma (alternatively it could modify God). Before that is what appears to be ḥēṯ-yoḏ-yoḏ-ʾālap̄ (ܐܝܝܚ) or ḥēṯ-ḥēṯ-ʾālap̄ (ܐܚܚ), neither of which is understandable, but could potentially stand for ܐܝܚ “living” or maybe ܐ̈ܝܚ “life”. Unfortunately, nothing in the parallel Coptic text helps to clarify. Before this is an ʾālap̄ that likely concludes the previous word (perhaps another adjective?), which has otherwise been lost due to damage. The third line of the Syriac text reads ܐܡܨܪܒ “Barṣawma”, paralleling parcwma in ln. 2 of the Coptic. Note</p>
+<p>that the spelling of the saint’s name is not the Syriac form ܐܡܘܨܪܒ but rather seemingly a transcription of the Coptic/Greek</p>
+<p>28 Gold and Guinan translate “In the name of God” (apud Pearson, “The Coptic Inscriptions in the Church of St. Antony,” 222), which could equally be read if one accepts a higher tolerance for miswritten letters, but it would mark a sharp departure from the Coptic parallel.</p>
+<p>Aaron Michael Butts</p>
+<p>25</p>
+<p>, ܘܠܥ</p>
+<p>lectionis representing w).29 The form (without a mater beginning and end of ln. 4 are both lost, and only three letters remain in the middle of the line. Gold and Guinan translate “accompany”, presumably understanding these letters as ܝܘܠ.30 Such a reading is possible but far from certain. In particular, a command “accompany the nations” is not particularly compelling in the context. Moreover, the traces of writing could be read in other ways, including ܘܠ ܢ , ܘܠܠ , and probably also ܠ ܡ –to which I will come shortly. Some direction can be found in the parallel Coptic inscription, the relevant portion of which reads as follows: [..]bo nnie;noc tyrou “[VERB] all</p>
+<p>0F</p>
+<p>thvo “to accompany”.3</p>
+<p>the nations”. In his edition of the Coptic, Pearson reconstructs the verb as [th]bo, which he proposes is a variant form of 31 This reconstruction is, however,</p>
+<p>1F</p>
+<p>unconvincing: A variant with b is not recorded in the Coptic 32 In addition, and even more problematically, Pearson’s lexica.3 reconstruction seems to be motivated by the Syriac text, the reading of which is highly uncertain. If the Syriac is set aside for a moment, the Coptic is better reconstructed as [tcA]bo</p>
+<p>29 On the representation of Greek (and by extension Coptic) vowels in Syriac, see Aaron Michael Butts, Language Change in the Wake of Empire: Syriac in Its Greco-Roman Context, Linguistic Studies in Ancient West Semitic 11 (Winona Lake, IN: Eisenbrauns, 2016), 90–94.</p>
+<p>30 Gold and Guinan, apud Pearson, “Graffiti in the Church of St. Antony,” 222. 31 Pearson, “Graffiti in the Church of St. Antony,” 222. 32 See W. E. Crum, A Coptic Dictionary (Oxford: Clarendon Press, 1939), 461. The second letter of the reconstruction is actually written as ⲹ instead of ϩ in the publication, but this is presumably a mistake since the former grapheme seems to be restricted to the early dialect of Proto-Theban (where it represents the sound /k/). I would like to thank Grzegorz Ochała for helping with this problem.</p>
+<p>Hugoye 29.1</p>
+<p>26</p>
+<p>nnie;noc tyrou “teach all the nations”, echoing Matthew 28:19.33 If this proposed reconstruction of [tcA]bo is accepted,</p>
+<p>the Syriac could perhaps tentatively be reconstructed in turn as [ܕ]ܡܠ[ܬ].34 Regardless, reconstructing the Coptic text here, as Pearson seems to have done, based on the Syriac borders on explaning ignotum per ignotius and so should be avoided. The beginning of ln. 5 of the Syriac text is lost, but the end reads</p>
+<p>ܐܡ ̈ܡܥ “nations”, paralleling nnie;noc “the nations” in ln. 3 of</p>
+<p>the Coptic. Thus, with a little creativity, some sense can be made of the Syriac text, especially given the parallel Coptic, even if much remains uncertain and unknown.</p>
+<p>Text</p>
+<p>ܐܗ�ܕ ܐܫܝܕܩ (؟) ܐܝ</p>
+<p>ܢܘܓ&gt; ܛܣ&lt; ܐ ܚ ܐ</p>
+<p>[.]</p>
+<p>ܐܡ ̈ܡܥ</p>
+<p>}ܝ{ ܐܡܨܪܒ ܬ[ܡܠ] ܕ [ [</p>
+<p>&gt;ܐ&lt; [..] [...] ...] ܢܘܗܠܟ ]</p>
+<p>1 2 3 4 5</p>
+<p>Translation</p>
+<p>1 2 3</p>
+<p>Combat&lt;ant&gt; of God [...] living (?) holy [...] Barṣawma [...]</p>
+<p>33 I thank Michael Hensley for this suggestion. For the biblical text, see George William Horner, The Coptic Version of the New Testament in the Southern Dialect, Otherwise Called Sahidic and Thebaic, Vol. 1: The Gospels of S. Matthew and S. Mark (Oxford: Clarendon Press, 1911), 350: bwk {e =ntet=n}cbw =n=nhe;noc tyrou. Unlike Pearson’s proposed variant, tcAbo is well established for }cbw; see Crum, A Coptic Dictionary, 320. 34 For the shape of ܡ, compare the suggestion of ܐ&lt; ܛܣ&gt; ܢܘܓ&lt;ܐ&gt; above</p>
+<p>with ܢܘ and ܡ being similar.</p>
+<p>Aaron Michael Butts</p>
+<p>27</p>
+<p>4 5</p>
+<p>[...] teach [all] the nations</p>
+<p>Figure 10: Barṣawma (N11) holding scroll with Syriac and Coptic</p>
+<p>inscriptions (© Aaron Butts, 2024)</p>
+<p>Hugoye 29.1</p>
+<p>28</p>
+<p>Figure 11: Text 6 (© Aaron Butts, 2025)</p>
+<p>TEXT 7</p>
+<p>A Syriac text is found on the exterior wall to the right of the door at the northwest corner of the nave of the old Church (see Figure 12).35 In his study, Griffith provides the Syriac text along with an English translation.36 He did not, however, note that this same text is often employed at the doors of Syriac churches. Harrak’s inventory of Syriac and Garshuni inscriptions from Iraq, for instance, includes examples of the identical text, for instance, at the Chaldean Church of Mār Ēshaʿyā in Mosul</p>
+<p>35 The door in question is located between N23 and N24 in Figure 1 above. 36 Griffith, “Graffiti in the Church of St. Antony,” 189.</p>
+<p>Aaron Michael Butts</p>
+<p>29</p>
+<p>(AA.01.01) and at the Syriac Orthodox Church of Sergius and Bacchus in Qaraqosh (AD.03.01).37 The text is also found outside of the Syriac homeland, for instance, at the Syriac Orthodox Church of Saint Thomas in Vettikkal, India.38 The graffito under discussion at the Monastery of St. Antony, however, represents the only attestation of the text, to my knowledge, in Egypt. It is worth noting further that the text is transmitted under Ephrem’s name in at least one printed version of the Ṭeḵso.39</p>
+<p>37 See Amir Harrak, Syriac and Garshuni Inscriptions of Iraq, 2 vols., Recueil des inscriptions syriaques 2 (Paris: De Boccard, 2010), 36. Similar formulae are also found throughout the volume.</p>
+<p>38 See pl. VIII in Françoise Briquel-Chatonnet et al., Les inscriptions syriaques, Études syriaques 1 (Paris: Geuthner, 2004). For additional information, see Françoise Briquel-Chatonnet et al., Recueil des inscriptions syriaques, vol. 1: Kérala (Paris: De Boccard, 2008).</p>
+<p>39 So Sebastian Brock, apud Harrak, Syriac and Garshuni Inscriptions of Iraq, 63–64. I would like to thank an anonymous reviewer for drawing my attention to the fact that text is also attested several times in Simtho: The Syriac Thesaurus (&lt;http://simtho.bethmardutho.org&gt;).</p>
+<p>Hugoye 29.1</p>
+<p>30</p>
+<p>Figure 12: Text 7, in context (© Aaron Butts, 2024)</p>
+<p>Figure 13: Text 7, close-up (© Aaron Butts, 2024)</p>
+<p>Aaron Michael Butts</p>
+<p>31</p>
+<p>Text</p>
+<p>}ܒ؟{</p>
+<p>ܕ ܟܪܡ ܢܡ</p>
+<p>ܸ�ܡ</p>
+<p>ܐܡܚܪ̈ ܸ�ܡ ܐܥܪܬ ܘܢܗ ܐܡܚܪ̈ ܬܝܐ ܗܢܡ ܘܓܠܘ ܝܥܒ ܐܝܛܚ ܠܘܥ ܡܚܪ̈ ܐ ܐܡܚܪ̈</p>
+<p>1 2 3 4 5</p>
+<p>Translation</p>
+<p>1 2 3 4 5</p>
+<p>This is the door full of mercy, and within it there is mercy. Enter, sinner, and ask for mercy from your Lord, who is full of mercy.</p>
+<p>Commentary</p>
+<p>General: It is difficult to say much definitively about the dating, apart from the fact that paleographically it must stem from after the twelfth century.40</p>
+<p>ln. 1 ܸ�ܡ. Griffith has �ܡ without the vowel.</p>
+<p>ln. 1 ܐܡܚܪ̈ Griffith has ܐܡܚܪ without syāmē.</p>
+<p>ln. 2 ܐܡܚܪ̈ Griffith has ܐܡܚܪ without syāmē.</p>
+<p>ln. 3 { ܒ؟ } Griffith has [ܝܓܣ], thus in square brackets. Given the attestations of this text in other graffiti, where such a word does not occur, it seems more likely that we are dealing with a false start of the scribe, who wrote first ܒ and then made a</p>
+<p>40 The script is that which Brock and Van Rompay call “Developed, or Later Serto”; see Brock and Van Rompay, Catalogue of the Syriac Manuscripts and Fragments in the Library of Deir Al-Surian, Wadi al-Natrun (Egypt), xxii.</p>
+<p>Hugoye 29.1</p>
+<p>32</p>
+<p>mistake with the second letter (perhaps ܦ), erased both, and started again.</p>
+<p>ln. 4 ܐܡܚܪ̈ Griffith has ܐܡܚܪ without syāmē.</p>
+<p>ln. 4 ܸ�ܡ. Griffith has �ܡ without the vowel.</p>
+<p>ln. 5 ܐܡܚܪ̈ Griffith has ܐܡܚܪ without syāmē. Also, note that the scribe ran out of space on the previous line and so had to continue on a new line.</p>
+<p>CONCLUSION</p>
+<p>Whether on shorter pilgrimages or extended stays, Syriac Christians spent time in Egypt.41 The presence of Syriac Christians in Egypt is well known in the Wādī al-Naṭrūn, and above all at the Monastery of the Syrians, which, of course, derives its name from their presence there.42 But, the Monastery of the Syrians is far from the only place where Syriac</p>
+<p>41 See the overviews in Lucas Van Rompay, “Syriac and Related Scripts in Egypt,” in Journey of Writing in Egypt, ed. Khaled Azab and Ahmed Mansour (Alexandria: Bibliotheca Alexandrina, 2008), 104–153 and Lucas Van Rompay, “Syriac Contacts with Coptic Christianity,” in Brock et al., ed., Gorgias Encyclopedic Dictionary of the Syriac Heritage, 103–106, both with additional references.</p>
+<p>42 For overviews of the Monastery of the Syrians, see Lucas Van Rompay, “AlSuryān, Dayr,” in Brock et al., ed., Gorgias Encyclopedic Dictionary of the Syriac Heritage, 386–387; Karel C. Innemée, “Dayr Al-Suryan: New Discoveries,” in Claremont Coptic Encyclopedia, ed. Karen Torjesen and Gawdat Gabra (Claremont Graduate University, 2016); Karel C. Innemée et al., “The Church of the Virgin in Dayr Al-Suryān (Wadi al-Natrun): Architecture, Art, and History between Coptic and Syriac Christianity,” in Worlds of Byzantium: Religion, Culture, and Empire in the Medieval Near East, ed. Elizabeth Bolman et al. (Cambridge: Cambridge University Press, 2024), 281–322, all with additional references. After many years of work, under the direction of Karel Innemée, a multi-volume publication is currently being prepared on the Monastery of the Syrians.</p>
+<p>Aaron Michael Butts</p>
+<p>33</p>
+<p>Christians visited or stayed in Egypt. Still in the Wādī al-Naṭrūn, Syriac Christians were also, for instance, present at the Monastery of St. Macarius, and in fact the visit of a (future) Syriac Orthodox Patriarch, Yuḥanon bar Shayullah (1484–1493), is not only mentioned in his Vita but also seems to be commemorated in a graffito still partially preserved on a wall there.43 Syriac Christians also had a presence in Egypt outside of the Wādī al-Naṭrūn. Along the Nile, for instance, Syriac graffiti are found at the Monastery of Abū Ḥinnis (now in ruins), just south of Antinoopolis.44 A bit further south, moving</p>
+<p>43 For the passage in his Vita, see Iskandar Bcheiry, The Account of the Syriac Orthodox Patriarch Yūḥanun Bar Šay Allah (1483–1492): The Syriac Manuscript of Cambridge: DD.3.8(1), Gorgias Eastern Christianity Studies 34 (Piscataway, NJ: Gorgias Press, 2013), 52 (ET) with a facsimile of the relevant page of the manuscript on p. 69. For full discussion of the matter, including an edition, translation, and commentary of the Syriac graffito, see Aaron Michael Butts, Martina Ambu, and Perrine Pilette, “Syriac and Garshuni Graffiti at the Monastery of St. Macarius (Wādī al-Naṭrūn, Egypt),” Journal of Eastern Christian Studies 77 (2025): 86–108.</p>
+<p>44 See Jacques Jarry, “Les inscriptions syriaques de Deir Abu Hennes en Moyenne Égypte,” Bulletin de l’Institut Français d’Archéologie Orientale 68 (1969): 121–131; Jacques Jarry, “Nouvelles inscriptions coptes, grecques, arabes et syriaque de Deir Abou Hennes,” Bulletin de la Société d’Archéologie Copte 21 (1973 1971): 55–81; A. Gasse, “Rapport préliminaire d’une mission épigraphique à Deir Abou Hennes,” Annales du Service des Antiquités de l’Égypte 69 (1983): 95–102; Gertrud J. M. van Loon and Alain Delattre, “Patterns of Monastic Habitation on the East Bank of the Nile in Middle Egypt: Dayr al-Dik, Dayr Abū Ḥinnis, and al-Shaykh Sa’īd,” Journal of Coptic Studies 16 (2014): 235–78; Alain Delattre et al., “Christian Inscription from Egypt and Nubia 2 (2014),” Bulletin of the American Society of Papyrologists 52 (2015): 297–314; Alain Delattre, “Les rapports entre la ville d’Antinoé et le monastère du Deir Abou Hennis en Moyenne-Égypte,” in Itinerari mediterranei fra IV e IX secolo. Città-capitale e Desertomonastico : Atti del convegno (Genova, 11-12-13 novembre 2010), by Beatrice Astrua, Collana di studi del Centro Interdipartimentale di Scienze</p>
+<p>Hugoye 29.1</p>
+<p>34</p>
+<p>up the Nile, Syriac writing has long been known from Thebes, including a Syriac inscription of the Lord’s Prayer from the Monastery of St. Epiphanius.45 More recently, it has come to light, thanks to a lone graffito, that a Syriac Christian visited the Red Monastery.46 And, as we have seen in this article, Syriac Christians had a presence at the Monastery of St. Antony, as well as at the neighboring Monastery of St. Paul, in the Egyptian desert along the Red Sea.</p>
+<p>As discussed in the introduction to this article, notes in several manuscripts establish the presence of Syriac Christians at the Monasteries of St. Antony and of St. Paul by at least the turn of the tenth century and continuing for the next several centuries, at least until the mid-thirteenth century and perhaps until the end of the fourteenth century. It is in this context that we should understand the incorporation of the Syriac figure Barṣawma into the painting program of Theodore and his fellow Coptic artists.47 The painting of Barṣawma is placed to the right of a prominent composition on the south wall of the nave that depicts four famous Egyptian monastic figures, Pishoi the Great (N7), John the Little (N8), Sisoes (N9), and Arsenius (N10) (see Figure 14). Barṣawma thereby joins these Egyptians</p>
+<p>Religiose - Università di Torino (Torino: Accademia University Press, 2016), 39–54.</p>
+<p>45 For this text, see W. E. Crum and Hugh G. Evelyn White, The Monastery of Epiphanius at Thebes, vol. II: Coptic Ostraca and Papyri; Greek Ostraca and Papyri (New York, NY: Metropolitan Museum of Art, 1926), 152, 343, pl. xvii. For the early date of discovery of Syriac materials in the Thebaid, see William M. Brashear, “Syriaca,” Archiv für Papyrusforschung 44 (1998): 88– 89.</p>
+<p>46 For the conservation work, under the direction of Nicholas Warner, see &lt;https://arce.org/project/red-monastery-architectural-conservation&gt;. The present author is currently editing the Syriac graffito.</p>
+<p>47 See the reflections in Bolman, “Theodore, ‘The Writer of Life’, and the</p>
+<p>Program of 1232/1233,” 53.</p>
+<p>Aaron Michael Butts</p>
+<p>35</p>
+<p>in his role as a foundational figure of Syriac monasticism. In the context of this article, it should be stressed that Barṣawma is visibly identified as a Syriac monastic by the presence of Syriac writing on the scroll. That such attention was paid to Barṣawma’s identity as Syriac bespeaks contacts between Coptic and Syriac Christians at the Monastery of St. Antony’s in 1232/3 when the painting program was created—basically the same time, it will be recalled, as when Mattai left the Monastery of the Syrians and came to St. Antony’s with a Syriac manuscript and silver cross in hand. In fact, it is likely that a Syriac Christian—not unlike Mattai, though of course not necessarily him—wrote the Syriac exemplar which the Coptic artist (imperfectly) imitated when realizing the painting itself. In any case, this Syriac inscription provides yet another datum of evidence for interactions between Coptic and Syriac Christians at the Monastery of St. Antony in the thirteenth century.</p>
+<p>Hugoye 29.1</p>
+<p>36</p>
+<p>Figure 14: Pishoi the Great (N7), John the Little (N8), Sisoes (N9), and</p>
+<p>Arsenius (N10), with Barṣawma (N11) to the upper right (© Aaron Butts,</p>
+<p>2025)</p>
+<p>The Monastery of St. Antony was pillaged sometime around 1484.48 Thanks to the Garshuni graffiti (re-)edited here, we know that Syriac Christians were again present at the monastery after that destruction. Text 1 is explicitly dated to 1585/6 CE, and Texts 3 and 4 will have been written around the same time, since they record the same names. The dating of Text 2 is less certain, given the difference in onomastics, but its proximity to Text 1 should be stressed, as well as its general similarity (paleography, phrasing, etc.). More uncertain is Text 5, given its lamentable state of preservation, but again its physical proximity should be noted. Adding to what was</p>
+<p>48 See Coquin and Laferrière, “Les inscriptions,” 278–79.</p>
+<p>Aaron Michael Butts</p>
+<p>37</p>
+<p>0F</p>
+<p>previously known from notes in manuscripts about an earlier period, this constellation of Garshuni graffiti establish the presence of Syriac Christians at the Monastery of St. Antony in the late sixteenth century. Several of the Syriac Christians in these Garshuni graffiti are identified by name, and two, Mattai and Muqaddasi, are said to be “Easterners” who travelled from the region of Fars. “Easterners” here could potentially be understood as East-Syriac Christians, including especially the Church of the East,49 but that is not the only possible interpretation, or even the most likely. In Syriac manuscripts from the Monastery of the Syrians, one encounters the Syriac adjective madnḥāyā (ܐܝܚܢܕܡ), literally “Easterner”, referring to Syriac Orthodox Christians.50 So also here, in Text 1, the (ܗܩܪܐܫܡ) are probably Syriac Orthodox “Easterners” 51 These Syriac Orthodox Christians will have Christians.5 journeyed all the way from Fars, on the Persian Gulf in what is</p>
+<p>49 This seems to be how Griffith understands the phrase: “among eastern Christians, even beyond the bounds of the denomination of the Copts” (Griffith, “Graffiti in the Church of St. Antony,” 189). On the appellation Church of the East, instead of the problematic Nestorians, see Sebastian P. Brock, “The ‘Nestorian’ Church: A Lamentable Misnomer,” Bulletin of the John Rylands University Library of Manchester 78:3 (1996): 23–35.</p>
+<p>50 See, e.g., a note on f. 230r of MS Dayr al-Suryān Syriac 30 by one Zokhe “the Easterner” (ܐܝܚܢܕܡ) who is associated with the Syriac Orthodox Monastery of Mar Barṣawma (near Melitene) and who refers to the Syriac Orthodox Patriarch Michael (1166–1199). Or, to give another example, a certain Abraham “the Easterner” (ܐܝܚܢܕܡ), from Beth Sbirino in Ṭur ʿAbdin, left a reader note in Serto—and so presumably is Syriac Orthodox—in MS Dayr al-Suryān Syriac 3, f. 25r and perhaps also in MS Dayr al-Suryān Syriac 9, f. 30v (though note the hand is different). See Brock and Van Rompay, Catalogue of the Syriac Manuscripts and Fragments in the Library of Deir Al-Surian, Wadi al-Natrun (Egypt), 228, 15, and 44.</p>
+<p>51 In this regard, the use of the Serto script should be stressed.</p>
+<p>Hugoye 29.1</p>
+<p>38</p>
+<p>now south-western Iran, to the Egyptian desert along the Red Sea.52 Their presence at the Monastery of St. Antony reflects the importance of this monastery as a pilgrimage site for Christians along the Eastern Mediterranean and beyond as well as the entanglements, contacts, and exchanges that took place there over the centuries.53</p>
+<p>ACKNOWLEDGEMENTS</p>
+<p>I would like to thank the following people who helped in various ways with this article: Lisa Agaiby, Martina Ambu, Sophia Dege-Müller, Michael Hensley, Karel Innemée, Jonas Karlsson, Grigory Kessel, Leah Mascia, Grzegorz Ochała, Perrine Pilette, Saeed al-Radawi, and Lucas Van Rompay. Above all, I extend my heartful thanks to the monks of the Monastery of St. Antony for supporting and encouraging this work. The research for this article was funded by the European Union (ERC, consolidator grant agreement no. 101044300, project ‘BeInf—Beyond Influence: The Connected Histories of Ethiopic and Syriac Christianity’, at the University of Hamburg [2022–2027]).</p>
+<p>BIBLIOGRAPHY</p>
+<p>Bcheiry, Iskandar. The Account of the Syriac Orthodox Patriarch Yūḥanun Bar Šay Allah (1483–1492): The Syriac Manuscript of Cambridge: DD.3.8(1). Gorgias Eastern Christianity Studies 34. Piscataway, NJ: Gorgias Press, 2013.</p>
+<p>52 For Fars, see Joel Walker, “Fars,” in Brock et al., ed., Gorgias Encyclopedic Dictionary of the Syriac Heritage, 163–164 with additional references there, along with the map on p. 477.</p>
+<p>53 In line with the aims of the BeInf project (see fn. 10 above), I am particularly interested in the Monastery of St. Antony as a meeting point for Syriac and Ethiopic Christians—a topic that I will explore in a future publication.</p>
+<p>Aaron Michael Butts</p>
+<p>39</p>
+<p>Bolman, Elizabeth. “Introduction.” In Monastic Visions: Wall Paintings in the Monastery of St. Antony at the Red Sea, edited by Elizabeth S. Bolman, 185–194. New Haven, CT: Yale University Press, 2002.</p>
+<p>_______. “Theodore, ‘The Writer of Life’, and the Program of 1232/1233.” In Monastic Visions: Wall Paintings in the Monastery of St. Antony at the Red Sea, edited by Elizabeth S. Bolman, 37–76. New Haven, CT: Yale University Press, 2002.</p>
+<p>_______, ed. Monastic Visions: Wall Paintings in the Monastery of St. Antony at the Red Sea. New Haven, CT: Yale University Press, 2002.</p>
+<p>Brashear, William M. “Syriaca.” Archiv für Papyrusforschung 44</p>
+<p>(1998): 86–127.</p>
+<p>Briquel-Chatonnet, Françoise, Muriel Debié, and Alain Desreumaux. Les inscriptions syriaques. Études syriaques 1. Paris: Geuthner, 2004.</p>
+<p>Briquel-Chatonnet, Françoise, Alain Desreumaux, and Jacob Thekeparampil. Recueil des inscriptions syriaques, vol. 1: Kérala. Paris: De Boccard, 2008.</p>
+<p>Brock, Sebastian P. “Dated Syriac Manuscripts Copied at Deir Al-Surian.” In Between the Cross and the Crescent: Studies in Honor of Samir Khalil Samir, S.J. on the Occasion of His Eightieth Birthday, edited by Željko Paša, 355–371. Orientalia Christiana Analecta 304. Rome: Pontificio Istituto Orientale, 2018.</p>
+<p>_______.</p>
+<p>“Notulae</p>
+<p>Syriacae:</p>
+<p>Some Miscellaneous</p>
+<p>Identifications.” Le Muséon 108:1-2 (1995): 69–78.</p>
+<p>_______. “The ‘Nestorian’ Church: A Lamentable Misnomer.” Bulletin of the John Rylands University Library of Manchester 78:3 (1996): 23–35.</p>
+<p>Brock, Sebastian P., and Lucas Van Rompay. Catalogue of the Syriac Manuscripts and Fragments in the Library of Deir Al</p>
+<p>Hugoye 29.1</p>
+<p>40</p>
+<p>Surian, Wadi al-Natrun (Egypt). Orientalia Lovaniensia Analecta 227. Louvain: Peeters, 2014.</p>
+<p>Butts, Aaron Michael. Language Change in the Wake of Empire: Syriac in Its Greco-Roman Context. Linguistic Studies in Ancient West Semitic 11. Winona Lake, IN: Eisenbrauns, 2016.</p>
+<p>Butts, Aaron Michael, Martina Ambu, and Perrine Pilette. “Syriac and Garshuni Graffiti at the Monastery of St. Macarius (Wādī al-Naṭrūn, Egypt).” Journal of Eastern Christian Studies 77 (2025): 86–108.</p>
+<p>Coquin, René-Georges, and Pierre-Henry Laferrière. “Les inscriptions pariétales de l’ancienne église du monastère de Saint Antoine, dans le désert oriental.” Le Bulletin de l’Institut français d’archéologie orientale 78 (1978): 267–321.</p>
+<p>Coquin, René-Georges, and Maurice Martin. “Dayr Anbā Anṭūniyūs, Chronology.” In The Coptic Encyclopedia, edited by Aziz S. Atiya, vol. III: 721b–723b. New York, NY: Macmillan Publishing Company, 1991.</p>
+<p>Crum, W. E. A Coptic Dictionary. Oxford: Clarendon Press, 1939.</p>
+<p>Crum, W. E., and Hugh G. Evelyn White. The Monastery of Epiphanius at Thebes, vol. II: Coptic Ostraca and Papyri; Greek Ostraca and Papyri. New York, NY: Metropolitan Museum of Art, 1926.</p>
+<p>Delattre, Alain. “Les rapports entre la ville d’Antinoé et le monastère du Deir Abou Hennis en Moyenne-Égypte.” In Itinerari mediterranei fra IV e IX secolo. Città-capitale e Deserto-monastico : Atti del convegno (Genova, 11-12-13 novembre 2010), by Beatrice Astrua, 39–54. Collana di studi del Centro Interdipartimentale di Scienze Religiose - Università di Torino. Torino: Accademia University Press, 2016.</p>
+<p>Delattre, Alain, Jitse H. F. Dijkstra, and Jacques Van der Vliet. “Christian Inscription from Egypt and Nubia 2 (2014).”</p>
+<p>Aaron Michael Butts</p>
+<p>41</p>
+<p>Bulletin of the American Society of Papyrologists 52 (2015): 297–314.</p>
+<p>Evelyn White, Hugh G. The Monasteries of the Wâdi ’n Natrûn. Edited by Walter Hauser. Publications of the Metropolitan Museum of Art. Egyptian Expedition. New York, NY: Metropolitan Museum of Art, 1926–1933.</p>
+<p>Gasse, A. “Rapport préliminaire d’une mission épigraphique à Deir Abou Hennes.” Annales du Service des Antiquités de l’Égypte 69 (1983): 95–102.</p>
+<p>Graf, Georg. Geschichte der christlichen arabischen Literatur. 5 vols. Studi e Testi 118, 133, 146, 147, 172. Città del Vaticano: Biblioteca Apostolica Vaticana, 1944–1953.</p>
+<p>_______. Verzeichnis arabischer kirchlicher Termini. 2nd ed.</p>
+<p>CSCO 147. Louvain: L. Durbecq, 1954.</p>
+<p>Griffith, Sidney H. “The Handwriting on the Wall: Graffiti in the Church of St. Antony.” In Monastic Visions: Wall Paintings in the Monastery of St. Antony at the Red Sea, edited by Elizabeth S. Bolman, 185–194. New Haven, CT: Yale University Press, 2002.</p>
+<p>Hahn, Johannes, and Volker-Lorenz Menze. The Wandering Holy Man: The Life of Barsauma, Christian Asceticism, and Religious Conflict in Late Antique Palestine. Transformation of the Classical Heritage 60. Oakland, CA: University of California Press, 2020.</p>
+<p>Harrak, Amir. Syriac and Garshuni Inscriptions of Iraq. 2 vols. Recueil des inscriptions syriaques 2. Paris: De Boccard, 2010.</p>
+<p>Horner, George William. The Coptic Version of the New Testament in the Southern Dialect, Otherwise Called Sahidic and Thebaic, Vol. 1: The Gospels of S. Matthew and S. Mark. Oxford: Clarendon Press, 1911.</p>
+<p>Hugoye 29.1</p>
+<p>42</p>
+<p>Innemée, Karel C. “Dayr Al-Suryan: New Discoveries.” In Claremont Coptic Encyclopedia, edited by Karen Torjesen and Gawdat Gabra. Claremont Graduate University, 2016.</p>
+<p>Innemée, Karel C., Lucas Van Rompay, and Dobrochna Zielińska. “The Church of the Virgin in Dayr Al-Suryān (Wadi al-Natrun): Architecture, Art, and History between Coptic and Syriac Christianity.” In Worlds of Byzantium: Religion, Culture, and Empire in the Medieval Near East, edited by Elizabeth Bolman, Scott Fitzgerald Johnson, and Jack Tannous, 281–322. Cambridge: Cambridge University Press, 2024.</p>
+<p>Jarry, Jacques. “Les inscriptions syriaques de Deir Abu Hennes l’Institut Français</p>
+<p>en Moyenne Égypte.” Bulletin de d’Archéologie Orientale 68 (1969): 121–31.</p>
+<p>_______. “Nouvelles inscriptions coptes, grecques, arabes et syriaque de Deir Abou Hennes.” Bulletin de la Société d’Archéologie Copte 21 (1973 1971): 55–81.</p>
+<p>Loon, Gertrud J. M. van, and Alain Delattre. “Patterns of Monastic Habitation on the East Bank of the Nile in Middle Egypt: Dayr al-Dik, Dayr Abū Ḥinnis, and al-Shaykh Saʿīd.” Journal of Coptic Studies 16 (2014): 235–278.</p>
+<p>Margoliouth, George. Descriptive List of Syriac and Karshuni Mss. in the British Museum Acquired since 1873. London: British Museum, 1899.</p>
+<p>Meinardus, Otto, René-Georges Coquin, Maurice Martin, and Paul van Moorsel. “Dayr Anbā Būlā.” In The Coptic Encyclopedia, edited by Aziz S. Atiya, vol. III: 741a–744b. New York, NY: Macmillan Publishing Company, 1991.</p>
+<p>Palmer, Andrew. “Editing a Syriac Hagiography: The Life of Barṣawmo the Northerner.” In Syrische Studien: Beiträge zum 8. Deutschen Syrologie-Symposium in Salzburg 2014, edited by Dietmar W. Winkler, 89–108. Orientalia ‒ Patristica ‒ Oecumenica 10. Wien: LIT Verlag, 2016.</p>
+<p>Aaron Michael Butts</p>
+<p>43</p>
+<p>_______. The Life of the Syrian Saint Barsauma: Eulogy of a Hero of the Resistance to the Council of Chalcedon. Transformation of the Classical Heritage 61. Oakland, CA: University of California Press, 2020.</p>
+<p>_______. “The West-Syrian Monastic Founder Barṣawmo: A Historical Review of the Scholarly Literature.” In Orientalia für Hubert Kaufhold zum 70. Christiana: Festschrift Geburtstag, edited by Peter Bruns and Heinz Otto Luthe, 399–413. Wiesbaden: Harrassowitz Verlag, 2013.</p>
+<p>Pearson, Birger A. “The Coptic Inscriptions in the Church of St. Antony.” In Monastic Visions: Wall Paintings in the Monastery of St. Antony at the Red Sea, edited by Elizabeth S. Bolman, 217–239. New Haven: Yale University Press, 2002.</p>
+<p>Samir, Samir Khalil. “Gabriel VII.” In The Coptic Encyclopedia, edited by Aziz S. Atiya, vol. IV: 1133b–1135a. New York, NY: Macmillan Publishing Company, 1991.</p>
+<p>Van Rompay, Lucas. “Al-Suryān, Dayr.” In Gorgias Encyclopedic Dictionary of the Syriac Heritage, edited by Sebastian P. Brock, Aaron M. Butts, George A. Kiraz, and Lucas Van Rompay, 386–387. Piscataway, NJ: Gorgias Press, 2011.</p>
+<p>_______. “Barṣawmo.” In Gorgias Encyclopedic Dictionary of the Syriac Heritage, edited by Sebastian P. Brock, Aaron M. Butts, George A. Kiraz, and Lucas Van Rompay, 59. Piscataway, NJ: Gorgias Press, 2011.</p>
+<p>_______. “Syriac and Related Scripts in Egypt.” In Journey of Writing in Egypt, edited by Khaled Azab and Ahmed Mansour, 104–153. Alexandria: Bibliotheca Alexandrina, 2008.</p>
+<p>_______. “Syriac Contacts with Coptic Christianity.” In Gorgias Encyclopedic Dictionary of the Syriac Heritage, edited by Sebastian P. Brock, Aaron M. Butts, George A. Kiraz, and</p>
+<p>Hugoye 29.1</p>
+<p>44</p>
+<p>Lucas Van Rompay, 103–106. Piscataway, NJ: Gorgias Press, 2011.</p>
+<p>Walker, Joel. “Fars.” In Gorgias Encyclopedic Dictionary of the Syriac Heritage, edited by Sebastian P. Brock, Aaron M. Butts, George A. Kiraz, and Lucas Van Rompay, 163–164. Piscataway, NJ: Gorgias Press, 2011.</p>
+<p>Wright, William. Catalogue of Syriac Manuscripts in the British Museum, Acquired since the Year 1838. 3 vols. London: Trustees of the British Museum, 1870–1872.</p>
+<p>Zotenberg, Hermann. Catalogues des manuscrits syriaques et sabéens (mandaïtes) de la Bibliothèque nationale. Manuscrits orientaux. Paris: Imprimerie nationale, 1874.</p>
+</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            
+<div class="PDFviewer text-center" style="width:100%; margin-top:1rem;">
+  <object data="HV29N1Butts.pdf" type="application/pdf" width="100%" height="800">
+    <a href="HV29N1Butts.pdf">Open the PDF</a>
+  </object>
+</div>
+          </div>
+
+          <!-- RIGHT MENU (as in your example) -->
+          <div class="col-md-3 col-lg-3 right-menu">
+            <div id="rightCol" class="noprint">
+              <div id="sedraDisplay" class="sedra panel panel-default">
+                <div class="panel-body">
+                  <span style="display:block;text-align:center;margin:.5em;"><a href=" http://sedra.bethmardutho.org" title="SEDRA IV">SEDRA IV</a></span>
+                  <img src="/resources/img/sedra-logo.png" title="Sedra logo" width="100%" />
+                  <h3>Syriac Lexeme</h3>
+                  <div id="sedraContent"><div class="content"></div></div>
+                </div>
+              </div>
+            </div>
+
+            <div class="panel panel-default">
+              <div class="panel-heading"><a href="#" data-toggle="collapse" data-target="#aboutDigitalText">About This Digital Text</a></div>
+              <div class="panel-body collapse in" id="aboutDigitalText">
+                <div><h5>Record ID:</h5><span>https://hugoye.bethmardutho.org/article/hv29n1butts</span></div>
+                <div style="margin-top:1em;"><span class="h5-inline">Status: </span><span>PDF</span>
+                  &nbsp;<a href="https://github.com/Beth-Mardutho/hugoye-data/wiki/Status-of-Contents-in-Hugoye"><span class="glyphicon glyphicon-question-sign text-info moreInfo"></span></a>
+                </div>
+                <div style="margin-top:1em;"><span class="h5-inline">Publication Date: </span>2026</div>
+              </div>
+            </div>
+
+            <div class="panel panel-default">
+              <div class="panel-heading"><a href="#" data-toggle="collapse" data-target="#citationText">How to Cite this Article</a></div>
+              <div class="panel-body collapse in" id="citationText">
+                <div>
+                  <span class="tei-sourceDesc">
+                    <span class="section indent">
+                      Aaron Michael Butts,  "<span class="title-analytic">Syriac-Script Inscriptions and Graffiti at the Monastery of St. Antony (Egypt)</span>."
+                      <span class="title-journal">Hugoye: Journal of Syriac Studies</span> (<span class="publisher">Beth Mardutho: The Syriac Institute</span>,  <span class="date">2026</span>).
+                    </span>
+                  </span>
+                </div>
+              </div>
+            </div>
+
+            <span class="badge access-pills"><a href="/open-access.html" style="color:#555">open access <i class="fas fa-unlock-alt"></i></a></span>
+            <span class="badge access-pills"><a href="https://github.com/Beth-Mardutho/hugoye-data/wiki/Peer-Review-Policy" style="color:#555">peer reviewed <i class="fas fa-check"></i></a></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

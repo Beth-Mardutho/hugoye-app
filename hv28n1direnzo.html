@@ -1,0 +1,564 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:srophe="https://srophe.app">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>The Epistolary Correspondence of Papa bar Aggai: First Analysis and Manuscripts Overview</title>
+    <link rel="schema.DC" href="http://purl.org/dc/elements/1.1/" />
+    <link rel="schema.DCTERMS" href="http://purl.org/dc/terms/" />
+    <meta name="DC.type" property="dc.type" content="Text" />
+    <meta name="DC.isPartOf" property="dc.ispartof" content="Syriaca.org" />
+    <link data-template="app:metadata" />
+    <link rel="shortcut icon" href="/resources/img/favicon.ico" />
+    <link rel="stylesheet" type="text/css" href="/resources/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="/resources/css/sm-core-css.css" />
+    <link rel="stylesheet" href="/resources/css/syr-icon-fonts.css" />
+    <link rel="stylesheet" type="text/css" href="/resources/css/main.css" />
+    <link rel="stylesheet" type="text/css" media="print" href="/resources/css/print.css" />
+    <link href="/resources/jquery-ui/jquery-ui.min.css" rel="stylesheet" /><script type="text/javascript" src="/resources/js/jquery.min.js"></script><script type="text/javascript" src="/resources/jquery-ui/jquery-ui.min.js"></script><script type="text/javascript" src="/resources/js/jquery.smartmenus.min.js"></script><script type="text/javascript" src="/resources/js/clipboard.min.js"></script><script type="text/javascript" src="/resources/js/bootstrap.min.js"></script><script src="https://www.google.com/recaptcha/api.js"></script><link href="/resources/keyboard/css/keyboard.min.css" rel="stylesheet" />
+    <link href="/resources/keyboard/css/keyboard-previewkeyset.min.css" rel="stylesheet" />
+    <link href="/resources/keyboard/syr/syr.css" rel="stylesheet" /><script type="text/javascript" src="/resources/keyboard/syr/jquery.keyboard.js"></script><script type="text/javascript" src="/resources/keyboard/js/jquery.keyboard.extension-mobile.min.js"></script><script type="text/javascript" src="/resources/keyboard/js/jquery.keyboard.extension-navigation.min.js"></script><script type="text/javascript" src="/resources/keyboard/syr/jquery.keyboard.extension-autocomplete.js"></script><script type="text/javascript" src="/resources/keyboard/syr/keyboardSupport.js"></script><script type="text/javascript" src="/resources/keyboard/syr/syr.js"></script><script type="text/javascript" src="/resources/js/keyboard.js"></script>
+  </head>
+  <body id="body">
+    <div class="navbar navbar-default navbar-fixed-top" role="navigation" data-template="app:fix-links">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand banner-container" href="/index.html">
+            <!--<img property="logo" class="img-responsive" alt="Syriac.org" src="/resources/img/syriaca-logo.png"/> Draft-->
+            <span class="banner-icon"></span>
+            <span class="banner-text">Hugoye: Journal of Syriac Studies</span>
+          </a>
+        </div>
+
+        <div class="navbar-collapse collapse pull-right">
+          <ul class="nav navbar-nav sm sm-vertical" id="main-menu">
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                About Hugoye  <b class="caret"></b>
+              </a>
+              <ul class="dropdown-menu">
+                <li><a href="/editorial-board.html">Editorial Board</a></li>
+                <li><a href="/submissions.html">Submissions</a></li>
+                <li><a href="/open-access.html">Open Access</a></li>
+                <li><a href="https://www.gorgiaspress.com/hugoye-journal-of-syriac-studies" target="_blank">Printed Edition Subscription</a></li>
+              </ul>
+            </li>
+
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                Indexes  <b class="caret"></b>
+              </a>
+              <ul class="dropdown-menu">
+                <li><a href="/current-issue.html">Current Issue</a></li>
+                <li><a href="/volumes.html">Volume Index</a></li>
+                <li><a href="/authors.html">Author Index</a></li>
+              </ul>
+            </li>
+          </ul>
+
+          <ul class="nav navbar-nav navbar-right keboard-btn">
+            <li>
+              <div class="btn-nav">
+                <a class="btn btn-default navbar-btn dropdown-toggle" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" title="Select Keyboard">
+                  <span class="syriaca-icon syriaca-keyboard"></span>
+                  <span class="caret"></span>
+                </a>
+                <ul data-template="app:keyboard-select-menu" data-template-input-id="q"></ul>
+              </div>
+            </li>
+
+            <li>
+              <div class="btn-nav">
+                <a href="#" class="btn btn-default navbar-btn dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" title="Search Tools">
+                  <span class="glyphicon glyphicon-search"></span> <span class="caret"></span>
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a href="/search.html">Advanced Search</a></li>
+                </ul>
+              </div>
+            </li>
+
+            <li>
+              <div class="btn-nav">
+                <a href="#" class="btn btn-default navbar-btn dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" title="Select Font">
+                  Font <span class="caret"></span>
+                </a>
+                <ul class="dropdown-menu" id="swap-font">
+                  <li><a href="#" class="swap-font" id="DefaultSelect" data-font-id="EstrangeloEdessa">Default</a></li>
+                  <li><a href="#" class="swap-font" id="EstrangeloEdessaSelect" data-font-id="EstrangeloEdessa">Estrangelo Edessa</a></li>
+                  <li><a href="#" class="swap-font" id="EastSyriacAdiabeneSelect" data-font-id="EastSyriacAdiabene">East Syriac Adiabene</a></li>
+                  <li><a href="#" class="swap-font" id="SertoJerusalemSelect" data-font-id="SertoJerusalem">Serto Jerusalem</a></li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+
+          <form class="navbar-form navbar-right navbar-input-group" role="search" action="/search.html" method="get">
+            <div class="input-group">
+              <input type="text" class="form-control keyboard" placeholder="search" name="q" id="q" />
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <div class="main-content-block">
+      <div class="interior-content">
+        <div class="container otherFormats">
+          <a href="https://github.com/Beth-Mardutho/hugoye-data/raw/master/pdf/vol28/HV28N1DiRienzo.pdf" class="btn btn-default btn-xs" id="pdfBtn" data-toggle="tooltip" title="Click to download the PDF version of this article."><i class="fas fa-file-pdf"></i> PDF</a> <a href="HV28N1DiRienzo.xml" class="btn btn-default btn-xs" id="teiBtn" data-toggle="tooltip" title="Click to view the TEI XML data for this record."><span class="glyphicon glyphicon-download-alt" aria-hidden="true"></span> TEI/XML</a>
+        </div>
+  <!-- LEFT TOC COLUMN -->
+  <div class="col-sm-2 col-md-2 col-lg-2 noprint">
+    <div class="left-menu">
+      <span style="display:block; margin:1em;">
+        <i class="fas fa-book"></i> <a href="/volume/">Volume (2025)</a>
+      </span>
+      <div class="panel panel-default" id="toc">
+        <div class="panel-heading">
+          <a href="#" data-toggle="collapse" data-target="#showToc">Table of Contents</a>
+        </div>
+        <div class="panel-body collapse in" id="showToc"><a href="#pdf" class="toc-item">PDF</a></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- MAIN CONTENT -->
+  <div class="col-sm-7 col-md-7 col-lg-7 mssBody">
+    <div class="article-header text-center">
+      <h1>The Epistolary Correspondence of Papa bar Aggai: First Analysis and Manuscripts Overview</h1>
+      <span class="tei-author">
+        <span class="tei-name">Annunziata <span class="tei-surname">Di Rienzo</span></span>
+        <span class="tei-affiliation"><span class="tei-orgName">La Sapienza Università di Roma</span></span>
+      </span>
+    </div>
+
+    <div class="section tei-text">
+      <div class="body">
+        <div class="section" style="display:block;">
+          <div class="tei-div tei-title" lang="en">
+            <span class="tei-ab tei-review-title"></span>
+          </div>
+          <div class="tei-div tei-body" lang="en">
+            
+<a id="pdf"></a>
+<div class="PDFviewer text-center" style="width:100%; margin-top:1rem;">
+  <object data="https://github.com/Beth-Mardutho/hugoye-data/raw/master/pdf/vol28/HV28N1DiRienzo.pdf" type="application/pdf" width="100%" height="800">
+    <p>PDF viewer not available.
+      <a href="https://github.com/Beth-Mardutho/hugoye-data/raw/master/pdf/vol28/HV28N1DiRienzo.pdf">Download the PDF</a>.
+    </p>
+  </object>
+</div>
+<div class="pdf-transcript">
+<h3 class="h4">Full text (from PDF)</h3>
+<p>Hugoye: Journal of Syriac Studies, Vol. 28.1, 181-216 © 2025 by Beth Mardutho: The Syriac Institute and Gorgias Press</p>
+<p>THE EPISTOLARY CORRESPONDENCE OF PAPA BAR AGGAI: FIRST ANALYSIS AND MANUSCRIPTS OVERVIEW1</p>
+<p>ANNUNZIATA DI RIENZO</p>
+<p>LA SAPIENZA UNIVERSITÀ DI ROMA</p>
+<p>ABSTRACT</p>
+<p>Some Syriac manuscripts preserve a corpus of eight letters presented as the epistolary correspondence of the early 4th-century bishop of Seleucia-Ctesiphon Papa bar Aggai. These letters are forgeries, probably composed during the 6th century, to legitimate the role and primacy of the see of Seleucia among the Eastern bishoprics. The corpus comprises eight letters written by Papa or addressed to him by some Western political and religious leaders (e.g., the empress Helena, Judah Kyriakos, Ephrem, and Jacob of Nisibis). This article presents an overview of Papa&#x27;s correspondence, providing a first look at its manuscript tradition and some hypotheses on the</p>
+<p>1 This article is the fruit of a post-doc fellowship from the Marie Skłodowska-Curie EU-funded project &quot;ForM – FORGED MEMORIES: The Church of Late Antique Iran and the West. The Textual Construction of a Relation with the Western Church and State Through Hagiographies, Epistles, Documents (4th-5th century).</p>
+<p>181</p>
+<p>Hugoye 28.1</p>
+<p>182</p>
+<p>authorship and reasons behind the composition of these pseudo-epigraphs.</p>
+<p>ܿU ?+#$ܬ&amp;</p>
+<p>ܿ.ܪN)ܗܝ ܐ=S̈ܣ ܪ/ܼ</p>
+<p>ܘܐ#$ܬ&amp; ܕ()*+&amp; ,-./01̈ ,1 ,3ܝ *56)ܒ ܕ89*:;1 ܐܦ ,1 ,3ܝ ܐ=3*&gt; ?)ܬܗ ܕܗ8A =+=A ,BC ()DC *E;FG. ܘ/Äܬ&amp; ?Ä=;H̄ ܕܐ,ܼ3K) ?6)ܼ(LG. ܘܐ8;1̈ ܐܿ,3*1 ܕ*)NO /+ܬܘ?;6A /P Qܼ ܗ?;1</p>
+<p>Letters of consolation from Mar Jacob of Nisibis and from Mar Ephrem to this Papa exist because of the infirmity of his right hand and the censures of the bishops who ventured against him. And some say that Joseph the Catholicos composed those letters when the bishops had deposed him.2</p>
+<p>The 13th-century historian Bar Hebraeus writes thus, in his Ecclesiastical History, about Papa Bar Aggai, bishop of Seleucia from the late 3rd to the second or third decade of the 4th century. Papa Bar Aggai was the protagonist of a dispute concerning the authority of the bishop of the capital city of the Sasanian kingdom over the Persian bishoprics. As Bar Hebraeus affirms, two letters existed, written by Jacob of Nisibis and Ephrem to &quot;console&quot; Papa after the mentioned dispute, and whose composition was commonly attributed to a forger, to be supposedly identified with the 6th-century patriarch of Seleucia, Joseph.3</p>
+<p>2 Syriac text in J.B. Abbeloos, T. Lamy, Gregorii Barhebraei Chronicon Ecclesiasticum e codice musei britannici descriptum conjuncta opera ediderunt, latinitate donarunt annotationibusque theologicis, historicis, geographicis et archeologicis illustrarunt Joannes Baptista Abbeloos et Thomas Josephus Lamy, Tomus III, (Lovanii 1877), 34. The English translation is mine. 3 Accounts on Joseph (Yawsep I) and his story can be found in various historiographical sources: the main source is the Arabic Chronicle of Seert (A. Scher, ed., Histoire Nestorienne Inédite (Chronique de Séert): Seconde partie</p>
+<p>Annunziata Di Rienzo</p>
+<p>183</p>
+<p>Flipping through the pages of some large manuscript codices that preserve the so-called Synodicon Orientale – the collection of the synod acts of the councils held in the Church of the East from the 5th to the 8th century,4 the reader comes across a corpus of letters with Papa bar Aggai as their sender or addressee. Two of these letters are purportedly from Jacob of Nisibis and Ephrem, and their contents perfectly fit the definition of &quot;consolatory letters.&quot; Besides these two letters, there are six other letters addressed to or sent by various exponents of what we could call the &quot;West.&quot;5 This contribution, initially developed in connection with my forthcoming edition and English translation of Papa&#x27;s correspondence, aims to</p>
+<p>(I), Patrologia Orientalis 7, (Paris: Firmin-Didot, 1946), 176-–79); Bar Hebraeus (J. B. Abbeloos, T. Lamy, Gregorii Barhebraei Chronicon, 95–98); &#x27;Amr (Maris Amri et Slibae De patriarchis Nestorianorum Commentaria. Ex codicibus vaticanis edidit ac latine reddidit Henricus Gismondi. Pars prior, Maris textus arabicus; Pars prior, Maris versio latina (Romae 1899), 46-7. A good summary can be found in C. Jullien, The Synod of Joseph – 554, in Corpus Christianorum Conciliorum Oecumenicorum Generaliumque Decreta: editio critica. V/2. The General Councils of the Eastern Christian Churches: Synods of the Church of the East, A. Melloni, E. A. Ishac (eds), (Turnhout: Brepols, 2023), 869–71. For a general overview, see the GEDSH entry by Lucas Van Rompay (“Yawsep I of Seleucia-Ctesiphon.” In Yawsep I of Seleucia-Ctesiphon, eds. Sebastian P. Brock, Aaron M. Butts, George A. Kiraz and Lucas Van Rompay. Digital edition prepared by David Michelson, Ute Possekel, and Daniel L. Schwartz (Piscataway: Gorgias Press, 2011); online ed. Beth Mardutho, 2018, https://gedsh.bethmardutho.org/ Yawsep-I-of-Seleucia-Ctesiphon).</p>
+<p>4 More precisely, the Synodicon is the collection of synodical acts and canons of the council organized within the Church of the East (the church spread in the territory of the Sasanian empire) from 410 (Synod of Isaac) to 782 (Synod of Timotheos I). It was probably collected at the behest of Timotheos I in the 8th century. For the list of the manuscripts trading the Synodicon, see G. Gomiero &amp; C. E. Biuzzi, &quot;Répertoire des manuscrits de droit en syriaque&quot;, in Le droit en monde syriaque, Études syriaques 18, eds. V. Berti &amp; M. Debié (Paris: Geuthner, 2023), 415–90 (esp. 471–472).</p>
+<p>5 By the definition of &quot;West&quot;, we mean both the Roman Empire and its exponents, and the “Western Fathers”, i.e., exponents of the Western churches and bishoprics, including the Western Syriac Church.</p>
+<p>Hugoye 28.1</p>
+<p>184</p>
+<p>provide a concise initial overview of the texts&#x27; content. It includes a preliminary description of the manuscript sources used for the edition and their interrelations, along with a brief analysis of their potential origins. Additionally, it evaluates the reliability and significance of Bar Hebraeus’ accusation that the 6th-century patriarch Joseph was responsible for producing these pseudepigraphic documents.6</p>
+<p>PAPA BAR AGGAI</p>
+<p>Papa is commonly recognized as the first historical bishop of Seleucia. Sometimes referred to as the first patriarch of the Church of the East – a definition improperly used as it is anachronistic7 – we have little information about him in</p>
+<p>6 The letters are still unpublished in Syriac. I am currently working on the critical edition and English translation of the correspondence, with an indepth analysis of their content. The Syriac texts will be available at https://syriaccorpus.org. An old German translation exists, by Oskar Braun, &quot;Der Briefwechsel des Katholikos Papa von Seleucia. Ein Beitrag zur Geschichte der ostsyrischen Kirche im vierten Jahrhundert&quot; (Zeitschrift für katholische Theologie 18 [1894]), 163–82, 546–65.</p>
+<p>7 It is just in the 5th century (probably, after the Synod of 410, if we consider trustworthy its canon 12) that the regulation about the primacy of the bishopric of Selucia is established; the Acts of the Synod of 410 are preserved in the Synodicon, see A. Melloni, E. A. Ishac, eds., Corpus Christianorum Conciliorum Oecumenicorum Generaliumque Decreta: editio critica. V/2. The General Councils of the Eastern Christian Churches: Synods of the Church of the East, (Turnhout: Brepols, 2023), 523–605. Even more complicated to set with a certain degree of certitude the attribution of the patriarchal see to Seleucia; it is common opinion that Joseph of Seleucia (6th c.) was the first bishop of Seleucia to claim the title of patriarch (cf. C. Jullien, The Synod of Joseph, 874). Together with the Synodicon and with Papa&#x27;s correspondence a letter from the Western Fathers concerning the attribution of the patriarchal title to Seleucia is preserved; this letter, published by Assemani in his Bibliotheca Orientalis, is linked to the figure of Agapethos of Beth Lapat, which should place the claimed redaction of this document (whose autenticity is, of course, doubtful) around 420 (cf. J. S. Assemani, Bibliotheca orientalis Clementino-Vaticana: De scriptoribus Syris Nestorianis</p>
+<p>Annunziata Di Rienzo</p>
+<p>185</p>
+<p>ancient sources, and that information itself is also unreliable. A well-established tradition states that he ruled the church of Seleucia for an implausible period of about seventy years.8 Medieval historiographers usually place his death during the reign of King Shapur II (309-379), but they disagree on the year: 326/327 according to ‘Amr ibn Mattai,9 but 335 according to Bar</p>
+<p>2011);</p>
+<p>online</p>
+<p>ed.</p>
+<p>Beth</p>
+<p>Mardutho,</p>
+<p>(Roma: Typis Sacræ Congregationis de Propaganda Fide, 1725), 52–5). Scholars usually suppose that this declaration meant a successfull attempt to gain indipendence from the patriarchal see of Antioch, but some doubts have been raised about the supposed original dependence from Antioch; cf. L. Van Rompay, &quot;Dadisho&#x27; I&quot;, In Dadisho&#x27; I, eds. Sebastian P. Brock, Aaron M. Butts, George A. Kiraz and Lucas Van Rompay. Digital edition prepared by David Michelson, Ute Possekel, and Daniel L. Schwartz (Piscataway: Gorgias Press, 2018, https://gedsh.bethmardutho.org/entry/Dadisho-I. The so-called Canons of Marutha (canon 3) place the Metropolitan bishop of Seleucia under the hegemony of his direct superior, the Patriarch of Antioch; the Canons of Marutha (or Pseudo-Nicene canons) have been published in A. Vööbus, ed., The Canons Ascribed to Mārūtā of Maipherqat and Related Sources, Corpus Scriptorum Christianorum Orientalium 439. Scriptores Syri 191, (Louvain: Peeters, 1982); on the influences of the Western canons (the canons of Nicaea, the pseudo-Nicene canons, and the canons of other ecumenical synods) on the Eastern canonical acts of the 5th-century synods, see A. Di Rienzo, Présence et utilisation des canons conciliaires du ive siècle dans les premiers synodes syro-orientaux (410-424), in Le droit en monde syriaque, Études syriaques 18, eds. V. Berti &amp; M. Debié (Paris: Geuthner, 2023), 135–72. 8 The Letter from Ephrem to Papa says 68 years (&quot;[...] and sixty-eight years you governed the greatness of your household with a beautiful fame. And now that you came to an extreme old age, in sixty-eight years that the high priesthood of the patriarchate governed in the East and in the West, there is no one in the order of priests that reached you in no one of those gifts that you received from your Lord.&quot;). Syriac text at https://syriaccorpus.org/690; cf. Braun&#x27;s translation (Braun, &quot;Der Briefwechsel des Katholikos Papa&quot;, 171).</p>
+<p>9 &#x27;Amr and Mari are the authors of an encyclopedic work in seven parts, known as Liber Turris. The second part of this work is represented by the History of the Patriarchs (which includes the story of Papa). According to Muriel Debié (M. Debié, L’écriture de l’histoire en syriaque (Leuven: Peeters, 2015), 640), the Liber Turris was composed by &#x27;Amr, in the 12th c., and then completed by Mari for the accounts about episodes and people from the 12th</p>
+<p>Hugoye 28.1</p>
+<p>186</p>
+<p>Hebraeus.10 The liturgy usually commemorates Papa as one of Seleucia&#x27;s first four martyr bishops, together with Simeon Bar Sabba&#x27;e, Shahdost, and Barbashmine. However, there is no evidence that he was martyred.11 During the early part of the 4th century, likely around 314 or 315, the bishops of the dioceses in Persia assembled to dispute the authority of Papa, the bishop of Seleucia.12 They charged him with exhibiting an arrogant and somewhat authoritarian demeanor toward his priests, deacons, and fellow bishops. Sources for this dispute – which would later also be called the Synod of Mar Papa (314/315) – are a hagiographic account of the main opponent of Papa, the bishop of Šuš, Miles,13 the Acts of the Synod of the Church of the East</p>
+<p>to 14th c. For the part composed by &#x27;Amr, see the already mentioned edition/translation by H. Gismondi, ed. Maris Amri et Slibae.</p>
+<p>ʼIlū.</p>
+<p>10 Cf. J. B. Abbeloos, T. Lamy, Gregorii Barhebraei Chronicon, 27–34. 11 J.-M. Fiey, Saints syriaques, (Princeton: Darwin Press), 148 (entry 336). 12All the late antique and medieval historiographical sources but Bar Hebraeus (who places the event in around 334) agree on this date. The basis for the info could be the Chronicle of Arbela, where the episode is placed when Sh&#x27;ria was bishop of Arbela (291-316/317), and Papa addresses the bishop of Edessa, Sa&#x27;da, right after the synod to obtain his support. Sa&#x27;da is bishop of Edessa until 324, probably starting from the 313. The years when the two were bishops at the same time limit to 313-316/317. The intervention of the already converted Constantine supports this dating. The Syriac text of the Chronicle can be found in P. Kawerau, Die Chronik von Arbela, CSCO 467 / Scriptores Syri 199 (Louvain: Secretariat du Corpus Scriptorum Christianorum Orientalium, 1985) (not an edition but a photographic reproduction of the codex Berlin, Staatsbibliothek zu Berlin - Preußischer Kulturbesitz, Ms. or. fol. 3126, the only extant witness of the Chronicle); an Italian translation is available in I. Ramelli, Il chronicon di Arbela: presentazione, traduzione e note essenziali. Anejos 8 (Madrid: Universidad Complutense de Madrid, Instituto Universitario de Ciencias de las Religiones, 2002).</p>
+<p>13 For the Acts of Miles, see the recently published S. A. Harvey, et al. (eds), Three Persian Martyr Acts. The Acts of Miles, Bishop of Susa, the Priest Abursam, and Deacon Sinai, The Martyrdom of Zebina and his Companions, and The Martyrdom of the Forty Martyrs of Beth Kashkraye, Persian Martyr Acts in Syriac: Text and Translation 9. (Piscataway, NJ: Gorgias Press: 2023).</p>
+<p>Annunziata Di Rienzo</p>
+<p>187</p>
+<p>gathered in Markabtha in 424 (or Synod of Dadishoʿ), where bishop Agapetha of Beth Lapat narrates the episode in his</p>
+<p>Here is the concerned passage of Acts of Miles (ibid., 38–40, paragr. 7): &quot;Then, Miles went down to Beth Aramaye, and he was present at a great controversy regarding the bishop of Seleucia-Ctesiphon, who was called Papa bar &#x27;Aggai. And he saw that he was haughty toward the bishops of the various lands who were assembled there for his judgment, and moreover he was also arrogant toward the priests and deacons of his city. And he recognized the pride of the man over them and his falling away from God. And [Miles] stood in the middle, and said to him: &quot;How dare you be haughty toward your brothers and members and jealous of them in vain and without cause, like a godless person? Is it not written thus: &#x27;Whoever is first among you, let him be your servant? Papa said to him, &quot;You would teach me these things, you fool? Behold, do I not also know these things?&quot;. That very moment Miles drew near and set the gospel that was in his bag on the cushion before him, and said to him, &quot;If you are not willing to learn from me myself as a human being, then be judged by the gospel of our Lord, which is laid out, lo, before your physical eyes, because you do not see the commandment with the inner eye of your mind.&quot; Then Papa in his evil rage raised his hand in his anger and smote the gospel, saying: &quot;Speak, gospel, speak!&quot;. Then the holy Miles quaked and rushed to take the gospel. And he kissed it and placed it over his eyes. Then with a loud voice he said in the hearing of all the congregation, &quot;Because you ventured in your pride against the living words of our Lord, be-hold! His angel has come, and He will strike half [your body] and make it wither. And there will be fear and terror for many, yet you will not die suddenly, but rather you will linger as a sign and a marvel.&quot; At once there descended something like lightning from the sky, and it struck him and withered half [his body]. Then he fell upon his side in anguish, speechless for twelve years, and he died in this affliction&quot;. Another (partial) translation of Acts of Miles is available in J. Edward Walters, &quot;Martyrdom of Miles, Abursam, and Sinay,&quot; in Eastern Christianity: A Reader, ed. J. Edward Walters (Grand Rapids, 2021), 44-54.</p>
+<p>Hugoye 28.1</p>
+<p>188</p>
+<p>speech,14 the Chronicle of Arbela15, Bar Hebraeus &#x27; Ecclesiastical History,16 and the so-called Haddad Chronicle17. All these</p>
+<p>14 K. Smith, ed., The Synod of Dadishoʿ – 424, in Corpus Christianorum Conciliorum Oecumenicorum Generaliumque Decreta: editio critica. V/2. The General Councils of the Eastern Christian Churches: Synods of the Church of the East, A. Melloni, E. A. Ishac (eds), (Turnhout: Brepols, 2023), 672–75: &quot;He (Agapeta) began to speak in succession about the earlier disturbances from which persecutions against the churches had arisen, especially (those instigated) by rebellious and disobedient bishops, who, because of their disgraceful conduct, had received a severe reprimand from the holy and eminent high priest, the faithful Mar Papa the catholicos, at the time when they went to Mar Miles and to the virtuous bishops like him and troubled their minds. Because of their simple-mindedness, they were unwittingly carried off in empty zeal after the (instigators). Some of these rebels became plaintiffs and others witnesses. And Mar Miles and the virtuous like him, as if they were judges, accepted the testimonies of the rebels. Although they had no authority as judges, they pronounced the dismissal and annulment of Mar Papa. Mar Papa, when he saw that justice had abandoned the synod, that lawlessness flourished among the virtuous and the unjust, and that truth had fled from the rebels as well as the elect—and seeing that the Gospel was set up there in the middle while there was no righteous inquiry between him and the synod—he became inflamed in a great rage and pounded the Gospel, and he said to it, ‘Speak! Speak, Gospel!’ as if (to say) ‘Why are you set up here as a judge in the middle, and have seen truth fleeing from the upright and the corrupted bishops alike, and yet refrain from the inquiry of justice?’ But, because he did not approach the Gospel in fear and reverence, and did not place his hand upon it as a man seeking refuge, Mar Papa immediately received a blow of judgment upon his body. And all the more believable became to the bishops all the unjust, slanderous, and calumnious accusations and charges that the rebellious bishops had written against Mar Papa. For, as if they were dealing with an evil-doing man, they composed a report in numerous copies and sent it out to many regions&quot;.</p>
+<p>15 I. Ramelli, Il chronicon di Arbela, 52: &quot;In Oriente dunque Papa, vescovo delle Mₔdīnātā, che ricordammo, poiché nella città regale abitava e altri vescovi per affari esterni avevano bisogno di lui, ebbe il desiderio di dominare sopra tutti i vescovi, come se un solo capo fosse opportuno, che vi fosse per loro. E gli si opposero in questo i presbiteri delle Mₔdīnātā e tutto il popolo, e richiesero che per questo essi dichiarassero la sua deposizione. E anche Šem‘on, l’arcidiacono suo, per queste cose s’indignò, e denunciò questo a Miles di Šōšān e a ‘Aqēb Allāhā di Karkā dₔ-Bēt Sₔlōk e ad altri molti.</p>
+<p>Annunziata Di Rienzo</p>
+<p>189</p>
+<p>versions differ in some points, but share a common structure and narrative basis: 1) Papa is accused for his authoritarian and arrogant attitude towards the other bishops, the priests and deacons; 2) during the confrontation with his opponents, Papa takes a Gospel book in front of him and misbehaves, picking it up and shaking or beating it (saying, with an angered tone: &quot;Speak, Gospel!&quot;). For this irreverent attitude towards the Holy Book, he is divinely punished with a disease (a paralysis of half</p>
+<p>E temette allora molto Mar Papa, poiché i genitori di Šem‘on molto vicini erano al re ed erano stimati da ciascuno. E scrisse ai vescovi d’Occidente, e primariamente al vescovo di Ōrhāi, che aveva nome Sa‘dā. E risposero a lui tutti i vescovi, poiché stimavano che uomo fosse forte ed energico, e gli promisero che lo avrebbero aiutato presso il re dei re Qōsṭānṭīnōs. Avevano compreso infatti che sarebbe stata una bella cosa, se il vescovo della città regale avesse avuto il primato sopra tutti i vescovi d’Oriente. E scrissero a lui una lettera su questa questione, sia da parte loro, sia da parte dei re e dei capi dell’Oriente. E scrissero a lui che nell’Occidente che stava sotto l’impero dei Rhōmāyē, vi erano diversi Patriarchi, d’Anṭakyā e di Rhōmeē e Aleksandriyā e Qōsṭānṭīnōpōlīs; così nell’Oriente che era sotto il regno dei Parsāyē, giusto era che vi fosse almeno un Patriarca&quot;.</p>
+<p>16 J. B. Abbeloos, T. Lamy, Gregorii Barhebraei Chronicon, 29–30; English transl. is mine): &quot;And he lifted his hand and beat the venerable Gospel that was set on the throne in front of him, and said: ‘Speak, if there is word in you, because I am unable to speak’. And at that very moment his right hand was dried up&quot;.</p>
+<p>17 The so-called Haddad Chronicle (P. Haddad, ed., Muḥtaṣar al-Aḫbār albi῾iyya (Abrégé de la chronique de l’Église), (Baghdad, 2000); cf. P. Wood, The Chronicle of Seert. Christian Historical Imagination in Late Antique Iraq, (Oxford: University Press, 2013), 84–6), is an Arabic historiographic text probably produced in the 10th-11th century. The work dedicated three paragraphs to Papa; in the third one the story of the controversy with Miles is recounted. Here, the bishop of Šuš is allied with the bishop of Dastamaisan, Boulida’, and the accusation moved against Papa is very specific: he is consecrating two bishops per diocese. It is during the Synod of Nicaea that a Western intervention brings the condemnation of the actions of the Persian bishops against the bishop of Seleucia; the episode of the Gospel book and the paralysis of Papa recur, but this disease/punishment happens to be temporary, as the bishops recovers after twelve years.</p>
+<p>Hugoye 28.1</p>
+<p>190</p>
+<p>his body or his right hand). The consequences may vary according to the sources.18 In general, Papa is at first deposed, and (except for the Acts of Miles) later restored as bishop of Seleucia, thanks to the intervention of what the sources call &quot;Western Fathers&quot;19.</p>
+<p>THE EPISTOLARY CORRESPONDENCE OF PAPA: AN OVERVIEW</p>
+<p>eight</p>
+<p>extant</p>
+<p>letters</p>
+<p>composing</p>
+<p>the</p>
+<p>epistolary</p>
+<p>The correspondence of Papa are: - a Letter from Eusebius, bishop of Rome, to Papa</p>
+<p>18 To sum-up: In Acts of Miles, Papa dies after twelve years of atrocious sufferings (S. A. Harvey, et al. (eds), Three Persian Martyr Acts, 39). The episode of the Gospel book and the consequent divine punishment recurs also in the Acts of the Synod of 424, which shows a pro-Papa position; in the Synodical Acts, Papa, although stroke in his hand, is later restored to the role of bishop of Seleucia thanks to an intervention of the &quot;Western fathers&quot;, the bishops of the Syrian region under the Roman Empire (see K. Smith, ed., The Synod of Dadishoʿ, 674–79). The Chronicle of Arbela, avoiding the narration of the Gospel book&#x27;s episode, narrates that the council ratifies Papa&#x27;s removal. But Papa addresses some Western bishops (in particular those of Edessa and Nisibis), and they in turn ask for an intervention of the emperor Constantine to grant his restoration and the patriarchal authority for the bishop of Seleucia (see I. Ramelli, Il chronicon di Arbela, 52). According to the Haddad Chronicle the illness is temporary, and Papa recovers after 12 years (P. Haddad, ed., Muḥtaṣar al-Aḫbār al-bi῾iyya, 158). An in-depth analysis of the episode in the various sources, leading to the hypothesis of a common original version and a later re-semantization presented by some sources more favorable to Papa, can be found in A. Di Rienzo, &#x27;&#x27;Risemantizzare la memoria. Il conflitto tra Papa bar Aggai e Miles di Susa nell’ottica del catholicos di Seleucia&#x27;&#x27;, (Cristianesimo nella storia 38:3 [2017]), 637–54.</p>
+<p>19 According to the Acts of the Synod of Mar Dadishoʿ (424), the Western bishops send a letter to the Eastern (Persian) ones, where they recognize to the bishop of Seleucia the primacy among the Iranian bishoprics, as Peter is the first among the apostle and following an use that is already well spread in the West (K. Smith, ed., The Synod of Dadishoʿ, 676–79). A different version of the same document is preserved among Papa&#x27;s letters, see below, p. 194.</p>
+<p>Annunziata Di Rienzo</p>
+<p>191</p>
+<p>- a Letter from Judah Kyriakos, bishop of Jerusalem, to Papa - a Letter from the Empress Helena to Papa - a Letter from Papa to the Empress Helena - a Letter from Jacob, bishop of Nisibis, to Papa - a Letter from Ephrem to Papa - a Letter of Papa to the citizens of Nisibis - the Letter from the Western Fathers on the illegal removal of Papa.</p>
+<p>The order of the letter is generally the same in all manuscripts, except for a case of subverted order because of a codicological problem, which I will analyse in the following section. Due to the consistent order in which these letters appear and the fact that they are often preserved together, I tend to refer to them as a corpus. However, there are two notable exceptions to this pattern. The codex Mingana syr. 579 contains only Eusebius&#x27;s Letter, which was added later on previously blank pages at the end of the manuscript. Similarly, the codex Alqosh, Scher 326, only preserves the Letter to the Nisibenes and the letters of Jacob of Nisibis and Ephrem. These three letters—Nisibenes, Jacob, and Ephrem—form a clearly defined subgroup. Based on their content, we can easily distinguish the letters into two groups:</p>
+<p>The first four letters (Eusebius, Judah Kyriakos, and the Helena-Papa exchange) present – and literarily represent – an alleged supportive and collaborative relationship between Papa and the emperors Helena and Constantine, also through the mediation of episcopal figures linked to the emperors (Eusebius and Judah Kyriakos). Identifying the alleged author of Eusebius&#x27; letter is not easy. The title identifies him as ‘bishop of Rome’, but we know that the city&#x27;s only bishop named Eusebius ruled the city&#x27;s church for only a few months in 309, years before the Constantinian turning point (and the emperor&#x27;s supposed conversion to Christianity) of which all the first four letters</p>
+<p>Hugoye 28.1</p>
+<p>192</p>
+<p>show clear echoes.20 One might, with some caution, speculate on an overlap with the homonymous bishop of Constantinople, Nova Roma (the New Rome), formerly bishop of Nicomedia and the probable (Arian) baptist of Constantine. The content of the very short Letter from Eusebius of Rome does not go much beyond the mere exaltation of the figure of Papa, the declaration of the wonder and admiration that his works arouse in the emperors Constantine and Helena, accompanied by the sending of liturgical instruments and rescripts (Sacra) by them. The Letter of Judah Kyriakos sets the stage for the subsequent epistolary exchange between Helena and Papa. Judah Kyriakos is also the protagonist, together with the empress Helena, of the Inventio Crucis, according to a mid-fifth-century version of this story that was widespread in the Syriac area, which probably came from the Jerusalem area.21 The Letter of Judah Kyriakos,</p>
+<p>20 On the bishop Eusebius of Rome, L. Duchesne, Le Liber pontificalis; texte, introduction et commentaire par l&#x27;abbé Duchesne. Tomus I, (Paris: E. Thorin, 1886), 167.</p>
+<p>21 The so-called Judah Kyriakos Legend is generally considered the last stage in the evolution of a narration which was already known at the end of the 4th c. in the West. The original legend had Helena as absolute protagonist and, according to Winkelmann, it was first put in writing in around 390, in Greek, by Gelasius of Caesarea, in his lost History of the Church, and thence soon translated in Latin by Rufinus (Historia Ecclesiastica X,7–8)(cf. H. J.W. Drijvers and J. W. Drijvers, The Finding of the True Cross, the Judas Kyriakos legend in Syriac, Corpus scriptorum Christianorum Orientalium; v. 565. Subsidia; t. 93, (Lovanii: Peeters, 1997), 13; Friedhelm Winkelmann, Untersuchungen zur Kirchengeschichte des Gelasios von Kaisareia, Sitzungsberichte der deutschen Akademie der Wissenschaften zu Berlin 65, Nr.3, (Berlin: Akademie–Verlag, 1966); id., &quot;Charakter und Bedeutung der Kirchengeschichte des Gelasios von Kaisareia&quot;, (Byzantinische Forschungen 1[1966]), 346–85). According to this original story, the empress Helena travels to Jerusalem in search of the Cross; she finds three crosses and she is guided to the identification of the True one by the help of Macarius, bishop of Jerusalem. A specific Syriac version of the Legend emerges a few later: it is the so-called Protonike Legend, included in the final redaction of the Teaching of Addai, the official - although fictional - foundation legend of the</p>
+<p>Annunziata Di Rienzo</p>
+<p>193</p>
+<p>similarly to Eusebius&#x27; one, focuses on the exaltation of the figure of Papa and the admiration of the emperors for him and his work, so much so that Helena would like to help Papa by</p>
+<p>Church of Edessa, which places the founding of the Church in the first century (Addai is a disciple of Jesus, and the king Abgar V Ukkama, coprotagonist of the tale, is presented in epistolary contact with Jesus himself). The Protonike Legend has had an independent life even beside its insertion in the Teaching of Addai; it is clearly an adaptation of Helena Legend to the Syriac world, and its collocation within the Doctrina Addai seems to be the reasons of the re-placing of the Finding in the first century, attributing it to a legendary figure, the queen Protonike, whose name is not found anywhere else, but has evident symbolical meaning. Her co-protagonist is still the bishop of Jerusalem, who, in this case, is James. On the Doctrina Addai: A. Desreumaux, Histoire du roi Abgar et de Jésus. Présentation et traduction du texte syriaque intégral de la Doctrine d&#x27;Addai. (Paris/Turnhout: Brepols, 1993); some notes on the political connections in Philip Wood, We Have No King But Christ&#x27;: Christian Political Thought in Greater Syria on the Eve of the Arab Conquest (c.400-585). Oxford Studies in Byzantium, (Oxford/New York: Oxford University Press, 2010); J.-N. Mellon Saint-Laurent, Missionary Stories and the Formation of the Syriac Churches (Oakland, CA: University of California Press, 2015), 36-55. Probably in the first decades of the 5th century, a new version arises: the protagonist is a fictional character, Judah, called is again Helena. Kyriakos after his conversion. His co-protagonist Interestingly, some manuscripts exist which contain, in succession, both versions, the Protonike Legend and the Judah Kyriakos&#x27; story: the evident contradiction is justified by the redactor with the explanation that after the first finding - by Protonike - the cross was lost again, so that a second inventio - by Helena and Judah Kyriakos - has been made necessary. In any case, although a Syriac origin for the Judah Kyriakos legend has been supposed over a long period of time, in recent years scholars have agreed in deeming Jerusalem as the place of birth of this version. On the Protonike legend, see J. W. Drijvers, “The Protonike Legend, the Doctrina Adaai and the Bishop Rabbula of Edessa”, (Vigiliae Christianae 51 [1997]): 298–315; id. &quot;The Protonike Legend and the Doctrina Addai&quot;, (Studia Patristica XXXIII [1996]), pp. 517–23. On the Finding of the Cross versions and Judah Kyriakos legend, (and for further bibliography on the topic) see Drijvers – Drijvers, The Finding of the True Cross. On the figure of Helena, J. W. Drijvers, Helena Augusta. The Mother of Constantine the Great and her Finding of the True Cross (Leiden: Brill, 1992).</p>
+<p>Hugoye 28.1</p>
+<p>194</p>
+<p>subsidising the building of churches in his region. It is no coincidence that the proposal to build churches and sacred buildings is at the heart of the letter that the empress herself sends to the bishop of Seleucia. The Letter of Helena uses the imagery of Constantine&#x27;s conversion through the vision of the cross in heaven. It expresses the sovereign&#x27;s profound gratitude to God who gave her house such glory. To offer thanks to God for this benevolence, the empress constructs buildings dedicated to Him throughout her kingdom, and she proposes, if Papa sees the need and brings it to her attention, through the mediation of Jacob of Nisibis, to provide for construction also in the city and region of the bishop (which, however, it should be remembered, did not fall under Roman jurisdiction, as it was the capital of the Sassanid Empire!). In the Letter from Papa to Helena, the bishop expresses a clear desire not to arouse the jealousies of pagans, Jews, and Marcionites by attracting their attention with luxurious and imposing buildings, since these groups already persecute the Christian community. While politely refusing Helena&#x27;s proposal, Papa shows himself willing to accept whatever the Empress&#x27;s final decision on the matter is: she is like a doctor who understands the patient&#x27;s illness better than he does and knows how to cure it to obtain his healing, if there is a cure. The nucleus that we might call ‘Constantinian’ in the epistolary is thus a homogeneous and compact one that revolves around the imperial figures of Helena and Constantine (the latter only evoked) and a putative relationship with Papa that is expressed not only through admiration (certainly mutual, but there is much more insistence on how much the emperors admire Papa) but also through the material support that Helena and her son are eager to give to Papa&#x27;s (Persian!) diocese.</p>
+<p>The letters of Jacob of Nisibis and Ephrem, as well as Papa&#x27;s reply addressed to the citizens of Nisibis, intended to thank the two eminent figures of the city of Nisibis for their letters of</p>
+<p>Annunziata Di Rienzo</p>
+<p>195</p>
+<p>support, are related to the episode of the Synod of 314/315 and its consequences. It is no coincidence that Bar Hebraeus identifies the letters of Jacob and Ephrem as &quot;consolatory letters.&quot;22 It is also noteworthy that they are followed by the Letter of the Western Fathers instructing the bishops of the East about the opportunity of restoring Papa to the see of Seleucia. The letters of Jacob and Ephrem share similar contents: 1) Starting from observing the painful situation in which Papa finds himself, they present a summary reconstruction of the affair of which they have become aware from some writings that exponents of both factions have sent to them. 2) They focus on the wrongness of the position of the adversaries of the bishop of Seleucia, but at the same time do not omit references to Papa&#x27;s &quot;punishment&quot; (as a consequence of the Gospel book episode). Instead, they justify Papa&#x27;s anger as righteous, given the slanderous accusations he had received. Satan himself led the hand of his opponents, who were nevertheless joined by some bishops like Miles, ‘Aqbalāhā (and Habib)23, who, in their ignorance and simplicity, supported the cause.24 For these latter and their companions, who begged Jacob and Ephrem to intercede for them, the two senders ask Papa, in his mercy, for forgiveness. Papa&#x27;s reply is addressed to the entire community</p>
+<p>22 Cf. J. B. Abbeloos, T. Lamy, Gregorii Barhebraei Chronicon, 34. 23 This latter name (</p>
+<p>!&quot;#&quot;%</p>
+<p>likely).</p>
+<p>Syriac</p>
+<p>text</p>
+<p>of</p>
+<p>the</p>
+<p>Letter</p>
+<p>from</p>
+<p>Jacob,</p>
+<p>!&quot;#$ ) is mentioned only in Jacob&#x27;s letter (in the others letters only Miles and ‘Aqbalāhā are mentioned); it could actually be the result of a transcription error in the manuscripts, probably for &#x27;my beloved&#x27;, which in fact recurs in the Letter to the Nisibenes exactly in place of Habib&#x27;s name (an opposite mistake cannot be ruled out in principle, though less at https://syriaccorpus.org/689 (for a German translation, see Braun, &quot;Der Briefwechsel des Katholikos Papa&quot;, 167–9). Syriac text of the Letters to the Nisibenes at https://syriaccorpus.org/691 (for a German translation, see Braun, &quot;Der Briefwechsel des Katholikos Papa&quot;, 174–8).</p>
+<p>24 The reference to the simplicity of those bishops has a clear parallel in the Acts of the Synod of 424 (see above, n. 14; both in the Acts and in the Letters, the term to indicate their simplicity is</p>
+<p>).</p>
+<p>&amp;’#()ܬ+</p>
+<p>Hugoye 28.1</p>
+<p>196</p>
+<p>of Nisibis (Letter that Mar Papa wrote to the citizens of Nisibis); a letter in which a new image of the &#x27;holy&#x27; bishop emerges, that of a prophet who foresees some of the future events that will involve the church in the East and West (the siege of the city of Nisibis, the persecution of Shapur, the martyrdom of three patriarchs of Seleucia, the end of the clash with the Arians in the West). The Letter of the Western Fathers, which explicitly refers to the writings of Ephrem and Jacob, mentioning letters that they had addressed to them as well, is in a completely different form from the one preserved in the long quotation in the Acts of the Synod of 424, in the Synodicon.25 The text in the codices (which usually have a variable number of blank pages after the letter) is incomplete. Like in the previous letters, the Fathers present a harsh description of Papa&#x27;s opponents (described as wolves or serpents, led by Satan) without omitting a mention of Papa&#x27;s wrong attitude towards the Gospel book and the consequent corporal punishment. Only the end of the letter recalls the content of the letter preserved in the Acts of 424, declaring the primacy of the bishop of Seleucia and the see of Kokhe over the dioceses of the Persian area, without the bishops of this region having the right to challenge his authority or judge him.</p>
+<p>THE MANUSCRIPTS</p>
+<p>Papa&#x27;s correspondence is usually preserved in the same manuscripts that transmit the so-called Synodicon Orientale and other juridical documents, which are different in genre and period of composition. The extant manuscripts are mostly later copies made in the 19th—20th century, mainly based on the same codex, identified in the manuscript Erbil OAOC syr. 509 (olim Alqosh, Notre Dame des Semences 169/ Baghdad 509, from now on Erbil 509).</p>
+<p>25 Cf. K. Smith, ed., The Synod of Dadishoʿ, 676–79</p>
+<p>Annunziata Di Rienzo</p>
+<p>197</p>
+<p>Most of the derivative codices faithfully reproduce the structure of Erbil 509. However, some of these copies divide the contents of the Erbil codex into two separate volumes (see the Borgiano siriaco 82, which is completed by Borgiano siriaco 81, and Mingana syr. 586, completed by Mingana syr. 587). Differences in the order of the documents contained in each manuscript generally depend on contingent situations that occurred at the time of copying: we know that the copying, in some cases, took place at a time when the original manuscript was in poor condition and its folios were even dismembered; this situation has had an impact on the work of some copyists. By examining Papa&#x27;s letters, we can deduce that some disturbance to the text occurred between 1811 and 1869. In the witness APSTCH THRI 65 (dated 1811), the order of the letters remains correct. However, in the Borgiano Siriaco 82 (copied before 1869), the letters are in a different order, indicating evidence of an intervention with the arrangement of the sheets in the original manuscript. The Erbil codex was later restored and supplemented in some missing passages in 1903.</p>
+<p>The Letters, or some of them, are sometimes preserved independently: this is the case with the codex Baghdad, Chaldean Catholic Church. Patriarchate of Baghdad 377 (which contains only Papa&#x27;s correspondence and two other epistolary documents), the manuscripts Mingana syr. 579 (containing the Letter from Eusebius), and Alqosh, Scher 326 (containing &quot;Nisibenes, &quot;Jacob,&quot; and &quot;Ephrem&quot;).</p>
+<p>Erbil OAOC syr. 509 (olim Alqosh, Notre Dame des Semences 169/ Baghdad 509)26</p>
+<p>It is the oldest of the preserved witnesses and probably the source behind all other existing witnesses (in some cases,</p>
+<p>26 The Erbil OAOC collection includes the Syriac manuscripts kept at the Monastery of the Martyr Abbot Gabriel Danbow, at Erbil (Ankawa). The</p>
+<p>Hugoye 28.1</p>
+<p>198</p>
+<p>presumably together with at least one other codex). The codex is not dated but can be dated to the 12th-15th century.27</p>
+<p>This large paper codex contains an extensive and varied series of legislative texts. As for the contents, at f. 5v of quire 42, it is stated that the original collection was made by Mar Elyja I of Tirhan, catholicos (who died in 1049).28</p>
+<p>It is customary to divide the contents into three sections: - the first part contains several canonical and synodical documents (canons of Nicaea and other synods, the so-called canons of Marutha and other documents attributed to the latter, epistolary material including the correspondence of Mar Papa);</p>
+<p>- the second section is the proper Synodicon (the collection of the acts of synods of the Eastern Syriac Church from the Synod of Mar Isaac, 410, to the Synod of Mar Timothy I in 782);</p>
+<p>collection of the Monastery of Notre-Dame-des-Semences (Our Lady of the Seeds), in Alqosh, was moved to Erbil and is now included in Erbil OAOC collection. The codex is described in J.- M. Vosté, Catalogue de la Bibliothèque syro-chaldéenne du Couvent de Notre-Dame des Semences près d&#x27;Alqosh (Iraq). (Rome, Paris: Bureaux of the «angelicum», P. Geuthner, 1929), 63–6 (entry: Alqosh 169), and A. Scher, Notice sur les manuscrits syriaques conservés dans la bibliothèque du couvent des Chaldéens de Notre-Dame-des-Semences. (Paris: National Publisher, 1906) (entry: Alqosh 90).</p>
+<p>27 On this dating see (and for the other avalable descriptions – although imperfect – of the manuscript, and the story of his loss and recovery in recent years), see: A. Scher, Notice sur les manuscrits; cf. A. Vööbus, The Canons Ascribed to Mārūtā, viii; E. A. Ishac, &quot;The Syriac Manuscript of Alqosh 169 [olim. Baghdad 509]: Historical, Codicological, Palaeographical Remarks and a Critical Edition&quot;. (ReIReS Workshop: Use and Study of Special Documents, 22-26 March 2021, FSCIRE, Bologna). Some further information can be found in G. Gomiero &amp; C. E. Biuzzi, &quot;Répertoire des manuscrits&quot;, 465. 28 See Vööbus, The Canons Ascribed to Mārūtā, VII, who quotes the ,)-.ܕܘܣ 23&quot;%̈ܬ+ ܕ567 ܐ9)ܢ ;)96&lt; 2=ܝ ܐ?#&lt; @Aܘ?#B&lt; &amp;(=C=5&lt; passage: @DC’&lt; 2E ܨܚ̈!&lt; ܕܐ9.̈ܬ+ ;)ܒ̈-&lt; , &quot;A collection of synods which our father, blessed Mār &#x27;Eliyā I, catholicos and patriarch, gathered from the volumes of the blessed fathers&quot;</p>
+<p>Annunziata Di Rienzo</p>
+<p>199</p>
+<p>- the third and final part contains other legal and synodical</p>
+<p>material.</p>
+<p>According to the description proposed by Addai Scher in the catalogue of manuscripts preserved in Alqosh (where the nowErbil codex was originally kept), the codex consisted of approximately 420 folios and 42 quires.29 Several hands are recognizable; the codex was probably composed and collected in several stages.</p>
+<p>The codex remained in poor condition for a long time. As mentioned above, the folios were disassembled for a period, which affected the copies made then. In 1903, the codex underwent restoration, and the original order of the sheets was re-established by the copyist and monk Elyja Saqlawa, also integrating the deficient text based on the codex Seert 65 (now lost)30.</p>
+<p>Papa&#x27;s epistolary correspondence is found in the first part of the codex. The letters occupy the leaves from quire 9, f. 7r to quire 10, f. 1v (ff. 71r-75v), following the order: &quot;Eusebius&quot; (quire 9, f. 7r), &quot;Judah Kyriakos&quot; (quire 9, f. 7r/v), &quot;Helena&quot; (quire 9, f. 7v), &quot;Papa to Helena&quot; (quire 9, f. 7v-8r), &quot;Jacob&quot; (quire 9, f. 8r/v), &quot;Ephrem&quot; (quire 9, f. 8v-9v), &quot;Papa to the Nisibenes&quot; (quire 9, f. 9v-10v), &quot;Western Fathers&quot; (quire 9, f. 10v – quire 10, f. 1v). They are preceded by a Synodical letter of the Western Fathers on the title of Patriarch of Seleucia.31 After the Letter of the Western</p>
+<p>29 J.- M. Vosté, Catalogue de la Bibliothèque syro-chaldéenne, 66. 30 A. Scher, Catalogue des manuscrits syriaques et arabes, conservés dans la Bibliothèque épiscopale de Séert (Kurdistan) avec notes bibliographiques. (Mosul: Printer of the Dominican Fathers, 1905), 48–51; cf. A. Vööbus, The Canons Ascribed to Mārūtā, vi.</p>
+<p>31 See above, n. 7. This document has been published (with a Latin translation) in J. S. Assemani, Bibliotheca orientalis, 52–5; cf. Hubert Kaufhold, Sources of Canon Law in the Eastern Churches, in The History of Byzantine and Eastern Canon Law to 1500, W. Harthmann and K. Pennington eds., (Washington DC: Catholic University of America Press, 2012), 299–300; Jean Dauvillier, Chaldéen (Droit), in Dictionnaire de Droit Canonique, R. Naz</p>
+<p>Hugoye 28.1</p>
+<p>200</p>
+<p>Fathers on the illegal removal of Papa (the last of the corpus of eight letters), the Synodicon immediately follows.</p>
+<p>Trichur, Chaldean Syrian Church (APSTCH THRI) 6532</p>
+<p>The paper codex preserved in Trichur (India) was produced in Alqosh in 1811 (a colophon gives the precise date: 11 Ḥzírān 2122 AG, 10 March 1811).</p>
+<p>It consists of 304 folios but seems to be missing some folios at the beginning and end. The text is in a clear and very readable Eastern-Syriac script.</p>
+<p>A note on f. 266v names the author of the copy:</p>
+<p>!&quot;#&quot;$% &amp;’() *+ ,-.% ܬܐܘ!2% *+ !&quot;#&quot;$% (.3% *+ܗ ܕ6&quot;.&quot;% ; 78+ܘܣ ܕ!:ܕ;&lt;.= *.: ܐ*’&gt;%</p>
+<p>It is evident that the codex APSTCH THRI 65 is a copy of Erbil 509, which must have already been in a poor state of preservation, with many lacunae due mainly to the deteriorated margins (lacunae that the scribe usually does not remedy, but he prefers to leave blank spaces where he does not understand or read the word or part of the sentence; Borgiano Siriaco 82 and Mingana syr. 586 share a similar behavior (see below). The Erbil 509 codex, although worn, must nevertheless still have been in an intact form, as APSTCH THRI 65&#x27;s copy respects the order of the texts in the antigraph. It follows that the dismemberment of</p>
+<p>ed., (Paris: Letouzey et Ané, 1943), 300–1; W. Selb, Orientalisches Kirchenrecht. Bd. 1: Die Geschichte des Kirchenrechts der Nestorianer (von den Anfängen bis zur Mongolenzeit), Sitzungsberichte der Österreichische Akademie der Wissenschaften, Philosophisch-Historische Klasse 388 (Wien: Verlag der Österreichischen Akademie der Wissenschaften, 1981), 61, 108–110).</p>
+<p>is</p>
+<p>available</p>
+<p>on</p>
+<p>HMML,</p>
+<p>32 The collection belongs to the Chaldean Church of Trichur. Cf. Mar Aprem Metropolitan, Assyrian Manuscripts in India (Thrissur, Kerala: Mar Narsai Press, 2011), 29–30. A digitized copy of the manuscript (with a brief description) at https://www.vhmml.org/readingRoom/view/511738.</p>
+<p>Annunziata Di Rienzo</p>
+<p>201</p>
+<p>the folios should have taken place between 1811 (the year of production of APSTCH THRI 65) and before 1869 (terminus ante quem for the copy of Borgiano Siriaco 82, see below, which follows an incorrect order of the letters).</p>
+<p>The order of the letters in Papa&#x27;s epistolary is thus as follows</p>
+<p>(and usual):</p>
+<p>&quot;Eusebius&quot; (48r), &quot;Judah Kyriakos&quot; (48r/v), &quot;Helena&quot; (48v), &quot;Papa to Helena&quot; (48v-49r), &quot;Jacob&quot; (49r/v), &quot;Ephrem&quot; (49v-50v), &quot;Nisibenes&quot; (50v-51v), &quot;Western Fathers&quot; (51v-53r). They are preceded by the Westerns&#x27; letter on the title of Patriarch of Seleucia. Three blank pages follow, and then the Synodicon begins.</p>
+<p>Vatican, Bibl. Apostolica Vaticana, Borgiano siriaco 8233</p>
+<p>The codex represents, along with the Borgiano siriaco 81, the copy of the manuscript Erbil 509. A note (in Italian) added to the codex (at f. 123v) states that it is a copy made in Mosul at the behest of George Abdisho Hayyat (future Patriarch of the Chaldees) and Yusif Dawud, based on Alqosh Notre-Dame des Semenced 169 (now Erbil 509), then in a very bad state, compared in 1878 with another codex, Seert 65 (this latter seems to be now lost)34.</p>
+<p>33 The codex is digitized at: https://digi.vatlib.it/view/MSS_ Borg.sir.82. For</p>
+<p>a brief description, see Vööbus, The Canons Ascribed to Mārūtā, x-xiii</p>
+<p>5A9#E</p>
+<p>34 Cf. Vööbus, The Canons Ascribed to Mārūtā, xi, who transcribes the entire note: &quot;Il brano scritto con carattere ed inchiostro diverso dal principio di questa mancante pagina, che incomincia con ܬܘܒ , fino alla parola , l&#x27;ho aggiunto io sottoscritto qui, avendo truovato da me quelle ܕCIܕJ=ܕ parole cin altre copiate già su man. omogenei di Seert del 1878. Giacché due soli esemplai si truovano in tutta la Caldea di questa importante collezione. Si vede però che quello di Alkosh, sul quale fu fatto questo a Maussoul per opera mia e quella di Mgr David, mancava in quella parte come in molte altre ed è meno completo di quello di Seert. Giorgio Ebedjesus arciv. cald. di Diarbekir e Maiafarkat&quot;.</p>
+<p>Hugoye 28.1</p>
+<p>202</p>
+<p>It is also stated that Yusuf Dawid brought the codex to Europe in 1869, indicating that it should date to a few years earlier. We know that at the time of copying, the Erbil 509 codex was still dismembered and in very poor condition (see above, p. 196, on the arrangement completed in December 1903).</p>
+<p>The Eastern-Syriac script is clumsy, untidy, and not easy to</p>
+<p>read.</p>
+<p>Due to the poor state of preservation of the antigraph at the time of copying, the order of the letters is not the usual one: &quot;Jacob&quot; (ff. 109v-111r), &quot;Ephrem&quot; (ff. 111r-113v), &quot;Papa to the Nisibenes&quot; (ff. 113v-114v), &quot;Eusebius&quot; (f. 104v), &quot;Judah Kyriakos&quot; (ff. 114v-115r), &quot;Helena&quot; (f. 115r/v), &quot;Papa to Helena&quot; (ff. 115v-118r), &quot;Western Fathers&quot; (ff. 118r-120v). Five pages are left blank, and then the Synodicon follows these.</p>
+<p>As in the case of APSTCH THRI 65, the scribe of Borgiano siriaco 82 most often prefers to leave blank spaces where he finds lacunae, and he finds it impossible to understand the content of the antigraph.</p>
+<p>Baghdad, Chaldean Catholic Church. Patriarchate of Baghdad 37735</p>
+<p>The small paper codex Patriarchate of Baghdad 377 is preserved in the Chaldean Catholic Church. It was composed in 1894. A colophon on f. 22r refers to the transcription of the last two letters on 4 Nísān (8 April) 1894 CE. The difference in hand and ink suggests that the rest of the codex may have been transcribed at another time.</p>
+<p>The codex consists of 22 sheets of paper (not of good quality). The text, written in Eastern-Syriac script, is arranged in a single column.</p>
+<p>35 The manuscript</p>
+<p>is digitized and available on HMML, at: some</p>
+<p>where</p>
+<p>https://www.vhmml.org/readingRoom/view/609956, information about its description, state and content can be found.</p>
+<p>Annunziata Di Rienzo</p>
+<p>203</p>
+<p>The manuscript contains only letters. Papa&#x27;s epistolary is preserved in incomplete form, without the Letter of the Western Fathers; the order of the letters is as follows: &quot;Jacob&quot; (2v-4v), &quot;Ephrem&quot; (4v-9r), &quot;Eusebius&quot; (12r), &quot;Judah Kyriakos&quot; (12r/v), &quot;Helena&quot; (13 r/v), &quot;Papa to Helena&quot; (13r-14v), &quot;Nisibenes&quot; (15r20r). It can be observed that the order follows neither the most common tradition nor that of the Borgiano Siriaco 82 codex. It is unclear whether the codex is dependent on Erbil 509 or more likely only partially dependent on it. Unlike the codices directly and exclusively dependent on Erbil 509, Baghdad, Chaldean Catholic Church. Patriarchate of Baghdad 377 makes up for the lacunae in Erbil 509 with its own distinctive lessons (some shared with Mingana syr. 47, see below, others of its own, which may be the result of the copyist&#x27;s ope ingenio conjecture). Two other epistolary documents follow and complete the small codex: a Letter from Publius Lentulus, chiliarch of the Jews, to the Roman Senate (ff. 20r-21r) and a Letter from Pontius Pilate to Claudius (ff. 21r-22r)36.</p>
+<p>Birmingham, Cadbury Research Library, Mingana syr. 4737</p>
+<p>The late, paper codex Mingana syr. 47 was transcribed in Alqosh by Abraham Shikwāna in 1907 (as stated by the colophons on ff. 238v-240v), copying an ancient manuscript preserved in Alqosh.38 There is some doubt that this was Erbil 509, as the scribe claims that the manuscript from which he is copying is dated 1298/1299, whereas Erbil 509 does not appear to be dated.</p>
+<p>36 The Syriac version of both these apocryphal letters (based on Mingana syr. 47 and with readings from the Greek and Latin editions for comparison) are published in S. Brock, “A Syriac Version of the Letters of Lentulus and Pilate.” (OCP 35 [1969]): 45–62.</p>
+<p>37 A brief and incomplete description of the codex can be found in the A. Mingana, Catalogue of the Mingana Collection of Manuscripts now in the Possession of the Trustees of the Woodbrooke Settlement, vol. 1, (Cambridge: W. Heffer and Sons, 1933), 121–33.</p>
+<p>38 A. Mingana, Catalogue of the Mingana Collection, 125–6, 130–1.</p>
+<p>Hugoye 28.1</p>
+<p>204</p>
+<p>However, the copyist explains that he made some cuts, corrections, and additions due to some gaps in the original text, but he does not clarify the provenance of the rest of the material.</p>
+<p>Papa&#x27;s epistolary, preceded by the letter on the title of patriarch to be conferred to the bishop of Seleucia, occupies ff. 34v-45r and follows the usual order: &quot;Eusebius&quot; (34v), &quot;Judah Kyriakos&quot; (34v-35r), &quot;Helena&quot; (35r/v), &quot;Papa to Helena&quot; (35v-36r), &quot;Jacob&quot; (36r-37v), &quot;Ephrem&quot; (37v-40r), &quot;Nisibenes&quot; (40r-42v), &quot;Western Fathers&quot; (42v-45r). It is followed by the letter of Publius and the letter of Pontius Pilate (cf. above, on codex Baghdad, Chaldean Catholic Church. Patriarchate of Baghdad 377 and n. 36) and by a curious text titled Part of the stories of the persecution of the church of the East by Shapor, according to the prophesy of the Patriarch Papa; then, the Synodicon follows.</p>
+<p>Birmingham, Cadbury Research Library, Mingana syr. 58639</p>
+<p>According to the colophon (f. 462r), copied for Mingana in 1932 (at the time of Pope Pius XI and Chaldean Patriarch Emmanuel II), in Alqosh, through the deacon Joseph Abuna, by the deacon Matthew son of Paul, based on a manuscript from Alqosh, Notre Dame des Semences, which we can identify with our Erbil 509: as we have observed for APSTCH THRI 65 and Borgiano Siriaco 82, the copyist tends to leave blank spaces where the antigraph is lacunar or illegible due to damage to the margins.</p>
+<p>The copy of the Alqosh original is completed with a second codex, Birmingham, Cadbury Research Library, Mingana syr. 587. The letters of Papa occupy ff. 103r-114r and follow the usual order: &quot;Eusebius&quot; (f. 103r), &quot;Judah Kyriakos&quot; (f. 103r/v), &quot;Helena&quot; (ff. 103v-104r), &quot;Papa to Helena&quot; (f. 104r/v), &quot;Jacob&quot; (ff. 104v-106r),</p>
+<p>39 A brief description of the codex can be found in A. Mingana, Catalogue</p>
+<p>of the Mingana Collection, 1109–16.</p>
+<p>Annunziata Di Rienzo</p>
+<p>205</p>
+<p>&quot;Ephrem&quot; (ff. 106r-108v), &quot;Nisibenes&quot; (ff. 108v-111r), &quot;Western Fathers&quot; (ff. 111r-114r). The Synodicon follows.</p>
+<p>In addition</p>
+<p>to</p>
+<p>these</p>
+<p>codices</p>
+<p>that</p>
+<p>contain</p>
+<p>from</p>
+<p>the correspondence in its entirety (or nearly so), we can mention another manuscript the Mingana Collection (Birmingham, Cadbury Research Library, Mingana syr. 579), whose copy was completed in 1863, according to its colophon;40 only the Letter of Eusebius is preserved, but it is not part of the manuscript in its original form (the contents of which are varied, however); rather, it is an addition (made in 1931 by the Patriarchal Vicar of the Church of the East, Joseph, in Mosul), on the recto of the last folio of the codex (probably a guard sheet, in origin).</p>
+<p>CLUES OF INAUTHENTICITY</p>
+<p>Several clues suggest the inauthenticity of the letters. First, Ephem&#x27;s letter to Papa is written to &quot;console&quot; the bishop of Seleucia after the synod of bishops gathered against him. Following the Chronicle of Arbela (and according to the later medieval historians, except Bar Hebraeus), the synod might date to around 315. Ephrem was born around 306, so he was too young then to have written his letter to Papa.41 Besides that, in the Letter to the Nisibenes, Papa foresees a series of future events:</p>
+<p>•</p>
+<p>the siege of Nisibis by Shapur II, in 337/338;42</p>
+<p>40 For a description see ibid., 1095–97. 41 The version of Bar Hebraeus (J. B. Abbeloos, T. Lamy, Gregorii Barhebraei Chronicon, 29–30), who dates the synod nine years after Nicaea, would be the only one coherent with a possible letter from Ephrem.</p>
+<p>42 The siege has been described, among others, by Theodoret of Cyrrus (Historia Ecclesiastica II, 30 and Historia Religiosa I,11-12). Generally speaking, the claim of a strong connection of Seleucia with the city and the see of Nisibis that at least three of the Letters (Jacob, Ephrem, Nisibenes)</p>
+<p>Hugoye 28.1</p>
+<p>206</p>
+<p>•</p>
+<p>•</p>
+<p>•</p>
+<p>the Persian persecutions against the Christians, saying that they begin just as the persecutions end in the West; this could be a reference to the idea, widespread during the reign of Theodose II (402-450), that the Persian persecutions arose as a reaction to Constantine&#x27;s conversion. In any case, the Persian persecution par excellence is usually identified with that of Shapur II. It spread around 339 and lasted until he died in 379;43 the death of three bishops of Seleucia during the persecution in the Church of the East; the three patriarchs martyred are Simeon Bar Sabba‘e, Shadost, and Barbashmin, the latter martyred in 346;44 an imminent end to the Arian persecution (which could be represented by the council of Nicaea, this way proving wrong Bar Hebraeus&#x27; dating of the synod of Papa nine years after Nicea)45, and the concomitant rise of another persecution in the Church, but without the shedding of human blood; this is very unclear, but could refer to the spread of the Myaphisite doctrine.</p>
+<p>stress, can be interpreted as expression of a moment when Nisibis was under the Persian empire, so, after 363.</p>
+<p>43 An account on Shapur&#x27;s persecution is in Sozomen (Historia Ecclesiastica II, 9-15). For an overview on Shapur&#x27;s persecution and its background and reference to the connected martyral literature, see K. Smith, Constantine and the Captive Christians of Persia: Martyrdom and Religious Identity in Late Antiquity, (Oakland: Univ of California Press, 2016).</p>
+<p>Märtyrer:</p>
+<p>mit</p>
+<p>einem</p>
+<p>Anhang:</p>
+<p>44 For the texts recounting the Martyrdom of Simeon bar Sabbaʿe, see: K. Smith, The Martyrdom and History of Blessed Simeon bar Sabbaʿe. Persian Martyr Acts in Syriac: Text and Translation, 3. (Piscataway, NJ: Gorgias Press LLC, 2014). For the martyrdoms of Shahdost and Barbashmine we still rely on Bedjan&#x27;s editions: Paul Bedjan, ed., Acta martyrum et sanctorum. Vol. 2 (Parisiis; Lipsiae: Harrasssowitz, 1890), 276–81(Shahdost), 296–303 (Barbashmin). Old German translations exist: O. Braun, Ausgewählte Akten persischer Ostsyrisches Mönchsleben (Kempten: J. Kösel, 1915), 93–6; 100–4.</p>
+<p>45 Cf. J. B. Abbeloos, T. Lamy, Gregorii Barhebraei Chronicon, 29-30</p>
+<p>Annunziata Di Rienzo</p>
+<p>207</p>
+<p>In the letters (especially in the &quot;Constantinian&quot; ones, as we have seen), there are numerous references to the tradition of the &quot;Finding of the Holy Cross&quot; in the version having Helena and Judah Kyriakos as protagonists. This early 5th-century version derived from and innovated the older one, where the bishop of Jerusalem and protagonist with the empress was Makarios (this version is found in Socrates, Sozomen, and Theodoret, in the first half of the same century).46 In the Letter from Eusebius, a reference to Addai could be cited to propose a slightly later terminus post quem, if we assume this reference meant the Teaching of Addai, whose production is supposed to date from around 420.47 On the other hand, in the same Letter from Eusebius, the bishop of Rome mentions the apostles Addai and Thomas as the origin of the Church of Seleucia and the Eastern Churches in general. However, he does not mention Mari, the protagonist of the conversion of the Persian area according to a well-known text, the Acts of Mar Mari; the date of composition of the Acts of Mar Mari is uncertain but should not be earlier than the late 6th century.48</p>
+<p>46 This legend was known &quot;at an early stage in Syriac tradition in a form linked with Constantine&#x27;s vision of the cross of light&quot;, as a verse homily by Jacob of Serugh (d. 521) on the Finding demonstrates (S. Brock, Two Syriac poems on the invention of the Cross, in Lebendige überlieferung: Prozesse der Annäherung und Auslegung; Festschrift für Hermann-Josef Vogt (Beirut: Friedrich-Rückert-Verlag, 1992), reprinted in id. From Ephrem to Romanos: interactions between Syriac and Greek in Late Antiquity, Variorum collected studies series / 664, (Aldershot: Ashgate, 1999), xi).</p>
+<p>47 The legend of Abgar of Edessa was already mentioned by Eusebius in the Historia Ecclesiastica and by Egeria in her Peregrination (late 4th c.), but in neither case the name of Addai is mentioned.</p>
+<p>48 This position was at first expressed by J.-B. Abbeoos, ed., Acta Sancti Maris, Assyriae, Babyloniae ac Persidis seculo I apostoli, Syriace sive Aramaice, juxta manuscriptum Alqoschianum adjectis aliorum codicum lectionibus variantibus versione latina et annotationibus illustrata, (Leipzig: F. A. Brockhaus, 1885); it has been more recently reprised by C. Jullien, F. Jullien in their Les Actes de Mar Mari. L&#x27;apôtre de la Mésopotamie (Turnhout:</p>
+<p>Hugoye 28.1</p>
+<p>208</p>
+<p>These last points may also help us to delimit the period of composition: the reference to the Finding of the Cross by Judah Kyriakos narrative and perhaps to the Teaching of Addai provides us with a possible terminus post quem in the mid-5th century more or less; the absence of any reference to Mar Mari, on the other hand, could provide a possible terminus ante quem in the late 6th c.49</p>
+<p>THE 6TH CENTURY AND THE PATRIARCH JOSEPH</p>
+<p>From the internal clues and references presented above, the 6th century is plausible—and probably the most suitable—period for the composition of these pseudo-epigraphs.</p>
+<p>Among other things, we have seen that in the 13th century, Bar Hebraeus mentioned the existence of a hypothesis that the letters were written by a 6th-century patriarch, Joseph.50 The reasons behind this hypothesis are clear: Joseph (consecrated patriarch in 552) had experienced, during his patriarchate, some legitimization problems similar to those experienced by</p>
+<p>Brepols, 2001); recent editor Arrak, has pushed toward a 6th c. dating (cf. A. Harrak, The Acts of Mār Mārī the Apostle. Writings from the Greco-Roman World 11 (Atlanta: Society of Biblical Literature, 2005), see esp. xiv–xvii). Papa is mentioned in the Acts of Mar Mari as disciple of Mari; the &quot;apostle&quot; himself ordained Papa bishop of Seleucia before departing from the city (A. Harrak, ed., The Acts of Mār Mārī, 76–7, paragr. 33).</p>
+<p>&amp;6(B=ܐ;)</p>
+<p>49 Looking at the terminology, the anachronism in the definition of Papa as &quot;patriarch of the East&quot;, which does not reflect the reality of the early 4th century, cannot be indicated as proof of inauthenticity, as it could be due to an initiative of some copyists (one of the manuscripts also uses the term &quot;catholicos&quot;). Unexpected, on the other hand, is the presence of the term pantocrator referring to the emperor Constantine; the Syriac is a calque from Greek and seems to be a very uncommon word in Syriac, to the best of my knowledge. A later addition of the term is unrealistic, especially considering that it is almost never used in reference to emperors. The spread of the iconography of the Pantocrator Christ and, almost at the same time, of the emperor as Christ seems to push us towards the 6th century.</p>
+<p>50 See above, n. 3.</p>
+<p>Annunziata Di Rienzo</p>
+<p>209</p>
+<p>the election of Ezekiel and</p>
+<p>Papa, which had led to his premature deposition a few years after his consecration. Joseph had been ordained bishop of Seleucia with the support of the Sasanian king Khosrow. His conduct as Catholicos, however, was not appreciated by the clergy, the laity, and the other bishops of the region. He was accused of removing bishops without an apparent reason and even of having imprisoned the bishop of Anbar, Simon. Just three years after his ordination, in 555, Joseph was deposed, and Ezekiel of Zabe was consecrated catholicos in his place. In the following years, the deposed patriarch did not cease to consecrate bishops and priests loyal to him, so much so that a direct intervention by Khosrow, in 567, was necessary to end his episcopal career once and for all. His supporters did not recognize forbade his enthronement. For three years, until Joseph&#x27;s death, the see of Seleucia remained vacant. In 570, Joseph died, and Ezekiel could finally be recognized as catholicos.</p>
+<p>The similarities between the story of Joseph and that of Papa have given rise to the suspicion that the former could have been the possible true author of at least some of the letters preserved as correspondence of Mar Papa: namely, the letter of Jacob of Nisibis and that of Ephrem, the two that most clearly touch upon the problem of the disputed authority of the bishop of Seleucia. This hypothesis is mentioned by Bar Hebraeus, who refers to it as a rumor and speaks of the two texts as &quot;two consolatory letters&quot;.</p>
+<p>CONCLUSIONS</p>
+<p>letters,</p>
+<p>The entire corpus of eight including the four &quot;Costantinian&quot; ones and the ones linked to the Synod of 314/315, seems to share a common aim: to present the legitimacy of the role of the bishop of Seleucia and proclaim the illegitimacy of the deposition of a Catholicos. Both do that by turning to imagined Western sources to legitimate their authority. These</p>
+<p>Hugoye 28.1</p>
+<p>210</p>
+<p>sources are represented in some cases by a claimed friendly and supportive relationship with the imperial figures of Helena and Constantine (as expressed in the letters of Eusebius, Judah, Helena, and Papa to Helena). In other cases, the claimed deep link is with the community of Nisibis, with its prophet Ephrem and its bishop Jacob. The letters&#x27; depiction of Jacob and Ephrem advocating for Papa before the Western Fathers elevates the See of Seleucia, and they portray the See’s primacy among the Persian bishoprics. If we consider the story of patriarch Joseph and the accusations made against him, attributing the forgery to him appears plausible. His situation motivated him to seek legitimation for his role (especially after losing the Sasanian king&#x27;s support).</p>
+<p>The chronology of the letters and the terminus ante and post quem we have identified do not contradict this hypothesis: it is not impossible that patriarch Joseph—or someone from his entourage—is the author of the forged epistolary corpus or part of it.</p>
+<p>The 6th century remains the most plausible time that we can hypothesize for the composition of the corpus.51 The problem</p>
+<p>51 Some scholars have hypothesized interpolations in the Acts of the Synod of 424 (the one narrating of Papa and of the Western invitation to the Eastern bishop to give the bishop of Saleucia the authority over them) by the patriarch Joseph himself; cf. L. Abramowski, Der Bischof von SeleukiaKtesiphon als Katholikos und Patriarch der Kirche des Ostens, in Syrien im 1. – 7. Jahrhundert nach Christus, Studien und Texte zu Antike und Christentum 62, ed. D. Bumazhnov, H. R. Seeliger (Tübingen 2011), 46–9; A. de Halleux, Autonomy and Centralization in the Ancient Syriac Churches: Edessa and Seleucia-Ctesiphon, (Wort und Wahrheit, Supplement 4 [1978]), 65; of different opinion is Gerö, who hypothesises an intervention by Timotheos I (S. Gerö, The See of Peter in Babylon: Western Influences on the Ecclesiology of Early Persian Christianity, in East of Byzantium: Syria and Armenia in the Formative Period, N. G. Garsoïan, T. F. Mathews, R. W. Thomson eds. (Dumbarton Oaks Symposium, 1980, Washington DC 1982), 45–51. Joseph is also &quot;accused&quot; of having rewritten the patriarchal lists with the name of his predecessors (this accusation, found in Elijah of Damascus, is referred by</p>
+<p>Annunziata Di Rienzo</p>
+<p>211</p>
+<p>the now Christian Miaphysite Edessa)52,</p>
+<p>in</p>
+<p>of authority and the attempt to find legitimacy for the hierarchical structure of a Church of the East that looks to the western model is a theme we also find in another probable product of the 6th century, the Acts of Mar Mari. But if with the Acts, Persian Christianity will take a further step forward, not only looking at a western legitimisation, but aiming to even fix its roots in an apostolic foundation (that could by-pass the link the with correspondence of Papa the focus seems to be more on the problem of the centralization of the power and on the autorithy of the &quot;patriarch&quot; of Seleucia. Therefore, once the inauthenticity of the letters and their being a product of a later time have been established, one can easily assume a production of the corpus in Seleucia and/or within the entourage of a bishop of the city, be it Joseph or some other catholicos having ruled in the 6th century.</p>
+<p>BIBLIOGRAPHY</p>
+<p>Abbeoos J.-B. ed. Acta Sancti Maris, Assyriae, Babyloniae ac Persidis seculo I apostoli, Syriace sive Aramaice, juxta manuscriptum Alqoschianum adjectis aliorum codicum lectionibus variantibus</p>
+<p>Assemani, Bibliotheca orientalis, 435); he is supposed to have done that in the moment when his authority was questioned, so this action has been interpreted as an attempt to increase the prestige of the patriarchal see, consolidating his authority (cf. Labourt, Le christianisme dans l&#x27;empire Perse sous la dynastie Sassanide (224-632) (Paris: Victor Lecoffre, 1904), 197; Wood, The Chronicle of Seert, 86, 95: C. Jullien, The Synod of Joseph, 874).</p>
+<p>52 On the Acts of Mari and the reasons guiding their redaction, see. J.-N. Mellon Saint-Laurent, Missionary Stories, 56-71. The emphasis, in the letters of Papa, on the purported link with Nisibis and the central role that the city plays in Papa&#x27;s corpus, could be seen as another indication that the letters were written after the end of the 5th century and the suppression of Nestorianism in Edessa (and the closure of the ‘School of the Persians’, which would soon be established in Nisibis).</p>
+<p>Hugoye 28.1</p>
+<p>212</p>
+<p>versione latina et annotationibus illustrata. Leipzig: F. A. Brockhaus, 1885.</p>
+<p>Abbeloos J.B. and T. Lamy. Gregorii Barhevraei Chronicon Ecclesiasticum e codice musei britannici descriptum conjuncta opera theologicis, latinitate donarunt annotationibusque ediderunt, historicis, geographicis et archeologicis illustrarunt Joannes Baptista Abbeloos et Thomas Josephus Lamy, Tomus III. Lovanii 1877.</p>
+<p>Abramowski L. Der Bischof von Seleukia-Ktesiphon als Katholikos und Patriarch der Kirche des Ostens, in Syrien im 1. – 7. Jahrhundert nach Christus. Studien und Texte zu Antike und Christentum 62. ed. D. Bumazhnov, H. R. Seeliger. Tübingen: Mohr Siebeck, 2011, 1-55.</p>
+<p>Assemani J. S. Bibliotheca orientalis Clementino-Vaticana: De scriptoribus Syris Nestorianis. Roma: Typis Sacræ Congregationis de Propaganda Fide, 1725.</p>
+<p>Bedjan P. ed. Acta martyrum et sanctorum. Vol. 2. Parisiis Lipsiae: Harrasssowitz, 1890.</p>
+<p>Braun O. Ausgewählte Akten persischer Märtyrer: mit einem Anhang:</p>
+<p>Ostsyrisches Mönchsleben. Kempten: J. Kösel, 1915.</p>
+<p>Braun O. &quot;Der Briefwechsel des Katholikos Papa von Seleucia. Ein Beitrag zur Geschichte der ostsyrischen Kirche im vierten Jahrhundert.&quot; Zeitschrift für katholische Theologie 18 [1894]: 163– 82, 546–65.</p>
+<p>Brock S. P. Two Syriac poems on the invention of the Cross, in Lebendige überlieferung: Prozesse der Annäherung und Auslegung; Festschrift für Hermann-Josef Vogt. Beirut: Friedrich-Rückert-Verlag, 1992, 55– 82 [reprinted in id. From Ephrem to Romanos: interactions between Syriac and Greek in Late Antiquity. Variorum collected studies series / 664. Aldershot: Ashgate, 1999].</p>
+<p>Brock S. P. “A Syriac Version of the Letters of Lentulus and</p>
+<p>Pilate.” OCP 35 (1969): 45–62.</p>
+<p>Dauvillier J. Chaldéen (Droit), in Dictionnaire de Droit Canonique, ed.</p>
+<p>R. Naz. Paris: Letouzey et Ané, 1943, 300–1.</p>
+<p>Debié M. L’écriture de l’histoire en syriaque, Leuven : Peeters, 2015.</p>
+<p>de Halleux A. Autonomy and Centralization in the Ancient Syriac Churches: Edessa and Seleucia-Ctesiphon, Wort und Wahrheit, Supplement 4 [1978].</p>
+<p>Annunziata Di Rienzo</p>
+<p>213</p>
+<p>Desreumaux A. Histoire du roi Abgar et de Jésus. Présentation et traduction du texte syriaque intégral de la Doctrine d&#x27;Addai. Paris/Turnhout: Brepols, 1993.</p>
+<p>Di Rienzo A. Présence et utilisation des canons conciliaires du ive siècle dans les premiers synodes syro-orientaux (410-424), in Le droit en monde syriaque, Études syriaques 18, eds. V. Berti &amp; M. Debié. Paris: Geuthner, 2023, 135–72.</p>
+<p>Di Rienzo A. &#x27;&#x27;Risemantizzare la memoria. Il conflitto tra Papa bar Aggai e Miles di Susa nell’ottica del catholicos di Seleucia.&#x27;&#x27; Cristianesimo nella storia 38:3 [2017]: 637–54.</p>
+<p>Drijvers H. J.W. and J.W. Drijvers. The Finding of the True Cross, the Judas Kyriakos legend in Syriac, Corpus scriptorum Christianorum Orientalium ; v. 565. Subsidia ; t. 93. Lovanii : Peeters, 1997.</p>
+<p>Drijvers J. W. “The Protonike Legend, the Doctrina Adaai and the Bishop</p>
+<p>Rabbula of Edessa”, Vigiliae Christianae 51 [1997]: 298–315.</p>
+<p>Drijvers J. W. &quot;The Protonike Legend and the Doctrina Addai&quot;, Studia</p>
+<p>Patristica XXXIII [1996]: 517–23.</p>
+<p>Drijvers J. W. Helena Augusta. The Mother of Constantine the Great and</p>
+<p>her Finding of the True Cross, Leiden: Brill, 1992.</p>
+<p>Duchesne L. Le Liber pontificalis; texte, introduction et commentaire</p>
+<p>par l&#x27;abbé Duchesne. Tomus I. Paris: E. Thorin, 1886.</p>
+<p>Fiey J.-M. Saints syriaques, Princeton: Darwin Press.</p>
+<p>Gerö S. The See of Peter in Babylon: Western Influences on the Ecclesiology of Early Persian Christianity, in East of Byzantium: Syria and Armenia in the Formative Period, eds. N. G. Garsoïan, T. F. Mathews, R. W. Thomson. Dumbarton Oaks Symposium, 1980; Washington DC 1982, 45–51.</p>
+<p>Gismondi E. ed. Maris Amri et Slibae De patriarchis Nestorianorum Commentaria. Ex codicibus vaticanis edidit ac latine reddidit Henricus Gismondi. Pars prior, Maris textus arabicus; Pars prior, Maris versio latina, Romae 1899.</p>
+<p>Gomiero G. and C.E. Biuzzi. &quot;Répertoire des manuscrits de droit en syriaque&quot;, in Le droit en monde syriaque, Études syriaques 18, eds. V. Berti &amp; M. Debié, Paris: Geuthner, 2023, 415–90.</p>
+<p>Haddad P. ed. Muḥtaṣar al-Aḫbār al-bi῾iyya (Abrégé de la chronique de</p>
+<p>l’Église). Baghdad, 2000.</p>
+<p>Hugoye 28.1</p>
+<p>214</p>
+<p>Harrak A. The Acts of Mār Mārī the Apostle. Writings from the Greco Roman World 11, Atlanta: Society of Biblical Literature, 2005.</p>
+<p>Harvey S. et al. (eds), Three Persian Martyr Acts. The Acts of Miles, Bishop of Susa, the Priest Abursam, and Deacon Sinai, The Martyrdom of Zebina and his Companions, and The Martyrdom of the Forty Martyrs of Beth Kashkraye, Persian Martyr Acts in Syriac: Text and Translation 9. Piscataway, NJ: Gorgias Press, 2023.</p>
+<p>Ishac, E. A. &quot;The Syriac Manuscript of Alqosh 169 [olim. Baghdad 509]: Historical, Codicological, Palaeographical Remarks and a Critical Edition&quot;. ReIReS Workshop: Use and Study of Special Documents, 22-26 March 2021, FSCIRE, Bologna.</p>
+<p>Jullien C. and F. Jullien. Les Actes de Mar Mari. L&#x27;apôtre de la</p>
+<p>Mésopotamie. Turnhout: Brepols, 2001.</p>
+<p>Jullien C. The Synod of Joseph – 554, in Corpus Christianorum Conciliorum Oecumenicorum Generaliumque Decreta: editio critica. V/2. The General Councils of the Eastern Christian Churches: Synods of the Church of the East, eds. A. Melloni, E. A. Ishac. Turnhout: Brepols, 2023, 869–71.</p>
+<p>Kaufhold H. Sources of Canon Law in the Eastern Churches, in The History of Byzantine and Eastern Canon Law to 1500, eds. W. Harthmann and K. Pennington. Washington DC: Catholic University of America Press, 2012, 299–300.</p>
+<p>Kawerau P. Die Chronik von Arbela, CSCO 467 / Scriptores Syri 199. Louvain: Secretariat du Corpus Scriptorum Christianorum Orientalium, 1985.</p>
+<p>Labourt J. Le christianisme dans l&#x27;empire Perse sous la dynastie</p>
+<p>Sassanide (224-632), Paris: Victor Lecoffre, 1904.</p>
+<p>Mar Aprem Metropolitan. Assyrian Manuscripts in India. Thrissur,</p>
+<p>Kerala: Mar Narsai Press 2011, 29–30.</p>
+<p>Melloni A. and E.A. Ishac eds. Corpus Christianorum Conciliorum Oecumenicorum Generaliumque Decreta: editio critica. V/2. The General Councils of the Eastern Christian Churches: Synods of the Church of the East. Turnhout: Brepols, 2023.</p>
+<p>Mingana A. Catalogue of the Mingana Collection of Manuscripts now in the Possession of the Trustees of the Woodbrooke Settlement, vol. 1. Cambridge: W. Heffer and Sons, 1933.</p>
+<p>Annunziata Di Rienzo</p>
+<p>215</p>
+<p>Ramelli I. Il chronicon di Arbela: presentazione, traduzione e note essenziali. ʼIlū. Anejos 8. Madrid: Universidad Complutense de Madrid, Instituto Universitario de Ciencias de las Religiones, 2002.</p>
+<p>Saint-Laurent, J.-N. Missionary Stories and the Formation of the Syriac</p>
+<p>Churches. Oakland, CA: University of California Press, 2015.</p>
+<p>Scher A. ed. Histoire Nestorienne Inédite (Chronique de Séert): Seconde</p>
+<p>partie (I). Patrologia Orientalis 7. Paris: Firmin-Didot, 1946</p>
+<p>Scher A. Notice sur les manuscrits syriaques conservés dans la bibliothèque du couvent des Chaldéens de Notre-Dame-desSemences. Paris: National Publisher, 1906.</p>
+<p>Scher A. Catalogue des manuscrits syriaques et arabes, conservés dans la Bibliothèque épiscopale de Séert (Kurdistan) avec notes bibliographiques. Mosul: Printer of the Dominican Fathers, 1905.</p>
+<p>Selb W. Orientalisches Kirchenrecht. Bd. 1: Die Geschichte des Kirchenrechts der Nestorianer (von den Anfängen bis zur Mongolenzeit). Sitzungsberichte der Österreichische Akademie der Wissenschaften, Philosophisch-Historische Klasse 388. Wien: Verlag der Österreichischen Akademie der Wissenschaften, 1981.</p>
+<p>Smith K. ed., The Synod of Dadishoʿ – 424, in Corpus Christianorum Conciliorum Oecumenicorum Generaliumque Decreta: editio critica. V/2. The General Councils of the Eastern Christian Churches: Synods of the Church of the East, eds. A. Melloni, E. A. Ishac. Turnhout: Brepols, 2023, 672–75.</p>
+<p>Smith K. Constantine and the Captive Christians of Persia: Martyrdom and Religious Identity in Late Antiquity. Oakland: Univ of California Press, 2016.</p>
+<p>Smith K. The Martyrdom and History of Blessed Simeon bar Sabbaʿe. Persian Martyr Acts in Syriac: Text and Translation, 3. Piscataway, NJ: Gorgias Press LLC, 2014.</p>
+<p>Van Rompay L., &quot;Dadisho&#x27; I&quot;, In Dadisho&#x27; I, eds. Sebastian P. Brock, Aaron M. Butts, George A. Kiraz and Lucas Van Rompay. Digital edition prepared by David Michelson, Ute Possekel, and Daniel L. Schwartz (Piscataway: Gorgias Press, 2011); online ed. Beth Mardutho, 2018, https://gedsh.bethmardutho.org/entry/Dadisho-I.</p>
+<p>Van Rompay L., “Yawsep I of Seleucia-Ctesiphon.” In Yawsep I of Seleucia-Ctesiphon, eds. Sebastian P. Brock, Aaron M. Butts, George A. Kiraz and Lucas Van Rompay. Digital edition prepared by David Michelson, Ute Possekel, and Daniel L. Schwartz (Piscataway:</p>
+<p>Hugoye 28.1</p>
+<p>216</p>
+<p>Gorgias Press, 2011); online ed. Beth Mardutho, 2018, https://gedsh.bethmardutho.org/Yawsep-I-of-Seleucia-Ctesiphon).</p>
+<p>Vööbus A. ed. The Canons Ascribed to Mārūtā of Maipherqat and Related Sources, Corpus Scriptorum Christianorum Orientalium 439. Scriptores Syri 191. Louvain: Peeters, 1982.</p>
+<p>Vosté J.-M. Catalogue de la Bibliothèque syro-chaldéenne du Couvent de Notre-Dame des Semences près d&#x27;Alqosh (Iraq). Rome, Paris: Bureaux of the «angelicum», P. Geuthner, 1929</p>
+<p>Walters, J. E.,&quot;Martyrdom of Miles, Abursam, and Sinay,&quot; in Eastern Christianity: A Reader, ed. J. Edward Walters (Grand Rapids, 2021), 44-54.</p>
+<p>Winkelmann F. Untersuchungen zur Kirchengeschichte des Gelasios von Kaisareia, Sitzungsberichte der deutschen Akademie der Wissenschaften zu Berlin 65, Nr.3. Berlin: Akademie–Verlag, 1966.</p>
+<p>Winkelmann F. &quot;Charakter und Bedeutung der Kirchengeschichte des Gelasios von Kaisareia&quot;. Byzantinische Forschungen 1[1966]: 346– 85.</p>
+<p>Wood P. The Chronicle of Seert. Christian Historical Imagination in Late</p>
+<p>Antique Iraq, Oxford: University Press, 2013.</p>
+<p>Wood P. We Have No King But Christ&#x27;: Christian Political Thought in Greater Syria on the Eve of the Arab Conquest (c.400-585). Oxford Studies in Byzantium. Oxford/New York: Oxford University Press, 2010.</p>
+</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    https://github.com/Beth-Mardutho/hugoye-data/raw/master/pdf/vol28/HV28N1DiRienzo.pdf
+    
+  </div>
+
+  <!-- RIGHT MENU -->
+  <div class="col-sm-3 col-md-3 col-lg-3 right-menu">
+    <div id="rightCol" class="noprint">
+      <div id="sedraDisplay" class="sedra panel panel-default">
+        <div class="panel-body">
+          <span style="display:block;text-align:center;margin:.5em;"><a href=" http://sedra.bethmardutho.org" title="SEDRA IV">SEDRA IV</a></span>
+          <img src="/resources/img/sedra-logo.png" title="Sedra logo" width="100%" />
+          <h3>Syriac Lexeme</h3>
+          <div id="sedraContent"><div class="content"></div></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="panel panel-default">
+      <div class="panel-heading"><a href="#" data-toggle="collapse" data-target="#aboutDigitalText">About This Digital Text</a></div>
+      <div class="panel-body collapse in" id="aboutDigitalText">
+        <div><h5>Record ID:</h5><span>https://hugoye.bethmardutho.org/article/hv28n1dirienzo</span></div>
+        <div style="margin-top:1em;"><span class="h5-inline">Status: </span><span>PDF</span>
+          &nbsp;<a href="https://github.com/Beth-Mardutho/hugoye-data/wiki/Status-of-Contents-in-Hugoye"><span class="glyphicon glyphicon-question-sign text-info moreInfo"></span></a>
+        </div>
+        <div style="margin-top:1em;"><span class="h5-inline">Publication Date: </span>2025</div>
+      </div>
+    </div>
+
+    <div class="panel panel-default">
+      <div class="panel-heading"><a href="#" data-toggle="collapse" data-target="#citationText">How to Cite this Article</a></div>
+      <div class="panel-body collapse in" id="citationText">
+        <div>
+          <span class="tei-sourceDesc">
+            <span class="section indent">
+              Annunziata Di Rienzo,  "<span class="title-analytic">The Epistolary Correspondence of Papa bar Aggai: First Analysis and Manuscripts Overview</span>."
+              <span class="title-journal">Hugoye: Journal of Syriac Studies</span> (<span class="publisher">Beth Mardutho: The Syriac Institute</span>,  <span class="date">2025</span>).
+            </span>
+          </span>
+        </div>
+      </div>
+    </div>
+
+    <span class="badge access-pills"><a href="/open-access.html" style="color:#555">open access <i class="fas fa-unlock-alt"></i></a></span>
+    <span class="badge access-pills"><a href="https://github.com/Beth-Mardutho/hugoye-data/wiki/Peer-Review-Policy" style="color:#555">peer reviewed <i class="fas fa-check"></i></a></span>
+  </div>
+</div> <!-- /row -->
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

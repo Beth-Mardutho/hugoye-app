@@ -1,0 +1,909 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:srophe="https://srophe.app">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Angelic and Earthly Priesthoods</title>
+    <link rel="schema.DC" href="http://purl.org/dc/elements/1.1/" />
+    <link rel="schema.DCTERMS" href="http://purl.org/dc/terms/" />
+    <meta name="DC.type" property="dc.type" content="Text" />
+    <meta name="DC.isPartOf" property="dc.ispartof" content="Syriaca.org" />
+    <link data-template="app:metadata" />
+    <link rel="shortcut icon" href="/resources/img/favicon.ico" />
+    <link rel="stylesheet" type="text/css" href="/resources/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="/resources/css/sm-core-css.css" />
+    <link rel="stylesheet" href="/resources/css/syr-icon-fonts.css" />
+    <link rel="stylesheet" type="text/css" href="/resources/css/main.css" />
+    <link rel="stylesheet" type="text/css" media="print" href="/resources/css/print.css" />
+    <link href="/resources/jquery-ui/jquery-ui.min.css" rel="stylesheet" /><script type="text/javascript" src="/resources/js/jquery.min.js"></script><script type="text/javascript" src="/resources/jquery-ui/jquery-ui.min.js"></script><script type="text/javascript" src="/resources/js/jquery.smartmenus.min.js"></script><script type="text/javascript" src="/resources/js/clipboard.min.js"></script><script type="text/javascript" src="/resources/js/bootstrap.min.js"></script><script src="https://www.google.com/recaptcha/api.js"></script><link href="/resources/keyboard/css/keyboard.min.css" rel="stylesheet" />
+    <link href="/resources/keyboard/css/keyboard-previewkeyset.min.css" rel="stylesheet" />
+    <link href="/resources/keyboard/syr/syr.css" rel="stylesheet" /><script type="text/javascript" src="/resources/keyboard/syr/jquery.keyboard.js"></script><script type="text/javascript" src="/resources/keyboard/js/jquery.keyboard.extension-mobile.min.js"></script><script type="text/javascript" src="/resources/keyboard/js/jquery.keyboard.extension-navigation.min.js"></script><script type="text/javascript" src="/resources/keyboard/syr/jquery.keyboard.extension-autocomplete.js"></script><script type="text/javascript" src="/resources/keyboard/syr/keyboardSupport.js"></script><script type="text/javascript" src="/resources/keyboard/syr/syr.js"></script><script type="text/javascript" src="/resources/js/keyboard.js"></script>
+  </head>
+  <body id="body">
+    <div class="navbar navbar-default navbar-fixed-top" role="navigation" data-template="app:fix-links">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand banner-container" href="/index.html">
+            <!--<img property="logo" class="img-responsive" alt="Syriac.org" src="/resources/img/syriaca-logo.png"/> Draft-->
+            <span class="banner-icon"></span>
+            <span class="banner-text">Hugoye: Journal of Syriac Studies</span>
+          </a>
+        </div>
+
+        <div class="navbar-collapse collapse pull-right">
+          <ul class="nav navbar-nav sm sm-vertical" id="main-menu">
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                About Hugoye  <b class="caret"></b>
+              </a>
+              <ul class="dropdown-menu">
+                <li><a href="/editorial-board.html">Editorial Board</a></li>
+                <li><a href="/submissions.html">Submissions</a></li>
+                <li><a href="/open-access.html">Open Access</a></li>
+                <li><a href="https://www.gorgiaspress.com/hugoye-journal-of-syriac-studies" target="_blank">Printed Edition Subscription</a></li>
+              </ul>
+            </li>
+
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                Indexes  <b class="caret"></b>
+              </a>
+              <ul class="dropdown-menu">
+                <li><a href="/current-issue.html">Current Issue</a></li>
+                <li><a href="/volumes.html">Volume Index</a></li>
+                <li><a href="/authors.html">Author Index</a></li>
+              </ul>
+            </li>
+          </ul>
+
+          <ul class="nav navbar-nav navbar-right keboard-btn">
+            <li>
+              <div class="btn-nav">
+                <a class="btn btn-default navbar-btn dropdown-toggle" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" title="Select Keyboard">
+                  <span class="syriaca-icon syriaca-keyboard"></span>
+                  <span class="caret"></span>
+                </a>
+                <ul data-template="app:keyboard-select-menu" data-template-input-id="q"></ul>
+              </div>
+            </li>
+
+            <li>
+              <div class="btn-nav">
+                <a href="#" class="btn btn-default navbar-btn dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" title="Search Tools">
+                  <span class="glyphicon glyphicon-search"></span> <span class="caret"></span>
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a href="/search.html">Advanced Search</a></li>
+                </ul>
+              </div>
+            </li>
+
+            <li>
+              <div class="btn-nav">
+                <a href="#" class="btn btn-default navbar-btn dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" title="Select Font">
+                  Font <span class="caret"></span>
+                </a>
+                <ul class="dropdown-menu" id="swap-font">
+                  <li><a href="#" class="swap-font" id="DefaultSelect" data-font-id="EstrangeloEdessa">Default</a></li>
+                  <li><a href="#" class="swap-font" id="EstrangeloEdessaSelect" data-font-id="EstrangeloEdessa">Estrangelo Edessa</a></li>
+                  <li><a href="#" class="swap-font" id="EastSyriacAdiabeneSelect" data-font-id="EastSyriacAdiabene">East Syriac Adiabene</a></li>
+                  <li><a href="#" class="swap-font" id="SertoJerusalemSelect" data-font-id="SertoJerusalem">Serto Jerusalem</a></li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+
+          <form class="navbar-form navbar-right navbar-input-group" role="search" action="/search.html" method="get">
+            <div class="input-group">
+              <input type="text" class="form-control keyboard" placeholder="search" name="q" id="q" />
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <div class="main-content-block">
+      <div class="interior-content">
+        <div class="container otherFormats">
+          <a href="HV29N1Grenert.xml" class="btn btn-default btn-xs" id="teiBtn" data-toggle="tooltip" title="Click to view the TEI XML data for this record."><span class="glyphicon glyphicon-download-alt" aria-hidden="true"></span> TEI/XML</a>
+        </div>
+
+        <div class="row">
+          <!-- MAIN CONTENT (use 9/3 split like your example) -->
+          <div class="col-sm-9 col-md-9 col-lg-9 mssBody">
+            <div class="article-header text-center">
+              <h1>Angelic and Earthly Priesthoods</h1>
+              <h2></h2>
+              <span class="tei-author">
+                <span class="tei-name">Briana <span class="tei-surname">Grenert</span></span>
+                <span class="tei-affiliation"><span class="tei-orgName">Duke University</span></span>
+              </span>
+            </div>
+
+            <div class="section tei-text">
+              <div class="body">
+                <div class="section" style="display:block;">
+                  <div class="tei-div tei-title" lang="en">
+                    <span class="tei-ab tei-review-title"></span>
+                  </div>
+
+                  <div class="tei-div tei-body" lang="en">
+                    <div class="pdf-transcript">
+<h3 class="h4">Full text (from PDF)</h3>
+<p>Hugoye: Journal of Syriac Studies, Vol. 29.1, 97-138 © 2026 by Beth Mardutho: The Syriac Institute and Gorgias Press</p>
+<p>ANGELIC AND EARTHLY PRIESTHOODS:</p>
+<p>Bar Hebraeus’s Candelabra V and VI and West Syriac Liturgical Commentary</p>
+<p>BRIANA GRENERT1</p>
+<p>DUKE UNIVERSITY</p>
+<p>ABSTRACT</p>
+<p>What is the relationship between the celestial and earthly churches? This article analyzes Bar Hebraeus’s ranking of angels and his analysis of the role of the priesthood in his Candelabra V and Candelabra VI. It is an exploration of his use of sacerdotal imagery in the angelic hierarchy, as well as an analysis of the sources that shape his understanding of the priesthood. Bar Hebraeus sees the ranks of angels as priests organized in three celestial churches, continuous with the human church. This interpretation diverges from Dionysius but developed through the West Syriac commentary tradition and is</p>
+<p>and</p>
+<p>most of all</p>
+<p>1 I would like to thank Ephrem Ishac, Warren Smith, Maroun El Houkayem, Slavomír Čéplö for their invaluable feedback Nate Tilley, and support in writing this article. I would also like to thank the anonymous reviewer for their helpful corrections and suggestions , especially for introducing me to Brock’s</p>
+<p>The Luminous Eye .</p>
+<p>97</p>
+<p>Hugoye 29.1</p>
+<p>98</p>
+<p>intimately interlinked with sacramental theology. This article traces the sources Bar Hebraeus draws on to interpret the Dionysian hierarchy and situates him within the West Syriac commentary tradition, showing how he innovates to address the political turmoil of his day through an expansive view of the Church.</p>
+<p>INTRODUCTION</p>
+<p>In Beyond Smells and Bells, Mark Galli, an editor at Christianity Today, seeks to explain the appeal and wonder of the liturgy for modern Americans. He writes, “The liturgy lives out a story in a story-deprived world. Liturgy is not a once-upon-a-time story we merely watch others perform. We are the characters in this story, actors in the divine drama whose opening and closing has been written by Jesus Christ himself.”2 He attempts to explain, for as broad an audience as possible, the church calendar, the sacraments, and the ecclesiology that come together in the liturgical life of the Church. In this way, he joins the company of many Christian writers before him, trying to elucidate the peculiarities of the church’s practice.</p>
+<p>In much greater detail, the 13th-century Syriac Orthodox author Bar Hebraeus attempts the same task.3 He addresses</p>
+<p>2 Mark Galli, Beyond Smells and Bells: The Wonder and Power of Christian</p>
+<p>Liturgy (Brewster, Mass: Paraclete Press, 2008), 13.</p>
+<p>ܣܐ̈ܝܣܘܐܕ</p>
+<p>ܐܬܥܕܝ</p>
+<p>ܐܟ� ̈ܡ</p>
+<p>ܐܬܝܢ̈ܝܡܫ ܢܘܗܝܬܝܐܕ</p>
+<p>the Sanctuary. These are the fifth base, ܢܘܗܝ ̈ܡܓܐܬܕ ܐܬܝܢܥܪܐ ܐܕܗ</p>
+<p>ܐܬܘܦܠܚܫܡܒ ܐܬܘܢܗܟ</p>
+<p>̈ܕܘܩܐܫ</p>
+<p>ܬܪܢܡ</p>
+<p>. The Candelabra of the Sanctuaries (</p>
+<p>3 In this paper, I use two works by Bar Hebraeus both from his Candelabra of ܠܛܡ and the sixth, ܠܛܡ ), called Bar Hebraeus’s “Summa” by Antoine Torbey, is a twelve-volume work covering all manner of theology. The Candelabra was written in the late 1260s to the early 1270s, after Bar Hebraeus’s elevation to the Maphrianate. It was originally written in Syriac, an ecclesial language, and later translated into Arabic, already the common tongue of Syriac in Le Candélabre Du Christians. Antoine Torbey, “Introduction,”</p>
+<p>Briana Grenert</p>
+<p>99</p>
+<p>questions like “Why there is one time in the year on which [Myron] is consecrated, and this is the Thursday of Mysteries”4 and “How many and which names is this consecration i.e. baptism called?”5 as well as “Given that the bread is not fleshly, and the wine is not bloody, how are they called the Body and</p>
+<p>Barhebraeus,</p>
+<p>Sanctuaire de Grégoire Aboulfaradj Dit Barhebraeus Cinquième Base: Des Anges, ed. François Graffin, Patrologia Orientalis (Paris: Fermin-Didot, 1963), 30:607; Hidemi Takahashi, “Simeon Of Qal‘a Rumaita, Patriarch Philoxenus Nemrod and Bar ‘Ebroyo,” Hugoye: Journal of Syriac Studies 4, no. 1 (January 2010): n. 45, https://doi.org/10.31826/9781463214098-004. I use the edition by Antoine Torbey. The second work is Bar Hebraeus’s sixth base, and I use the German edition: Radbert Kohlhaas, Jakobitische Sakramententheologie Im 13. Jahrhundert : Der Liturgiekommentar Des Gregorius Liturgiewissenschaftliche Quellen Und Forschungen 36 (Münster, Westfalen: Aschendorff, 1959). Neither base has been translated into English. The fifth base has been translated twice, first into French (prepared also by Torbey) and second into Italian: Bar Hebraeus, Le Candélabre Du Sanctuaire de Grégoire Aboulfaradj Dit Barhebraeus Cinquième Base: Des Anges, ed. Antoine Torbey and François Graffin, vol. 188, Patrologia Orientalis (Paris: Fermin-Didot, 1963); Vittorio Berti, “L’angelologia siriaca: Gregorio Abu-l-Farag Bar Ebraya, Della conoscenza delle essenze celesti, che sono gli angeli, nei loro differenti cori,” in Angeli: ebraismo, cristianesimo, islam, ed. Giorgio Agamben and Emanuele Coccia, La quarta prosa (Vicenza: Pozza, 2009), 1403–51. All of my translations are made from Torbey’s Syriac edition, though I would not recommend his French translation (it has some fatal flaws in an attempt to harmonize with the Latin Dionysian tradition, thereby obscuring the Syriac) – the Italian translation is superior. The sixth base has been translated to German by Kohlhaas.</p>
+<p>ܐܫܡܚ</p>
+<p>ܡܘܝܒ</p>
+<p>4 Bar Hebraeus, Candelabra VI.2.2.2 ܐܕܗܘ ܫܕܩܬܡ ܐܬ̱ܢܫܒ ܢܒܙ ܐܕܚ ܐܢܡ ܠܛܡܕ ܐܙܪ̈ ̱ܐ This refers to the older orthodox practice, where chrism was originally consecrated on Holy Thursday each year in a six-to-sevenhour ceremony. See: Baby Varghese, “Studies in the West Syrian Liturgy of the Consecration of Holy Myron,” The Harp 6 (1993): 72–73. All translations are my own, unless otherwise noted.</p>
+<p>5 Candelabra VI.2.3.2 ܐܢܩܬܡ ܢܝܠܝܐ ܟܝܐ ܕܒܕܘ ܐܕܡܥܒܕ ܐܝܠܡܘܫ ܘܢܡܕ ܝ ̇ܗܠܛܡ</p>
+<p>Hugoye 29.1</p>
+<p>100</p>
+<p>Blood?”6 He answers questions about practice, like “whether the [communion] bread should be leavened or unleavened? And the wine mixed or not?”7 On theology, he considers “why, if [those who believe in the Lord] are not experiencing death, that is to say torment, why is there a need for prayer for believers?”8 However, before he can proceed to specific questions about the liturgy, he needs to address the people who conduct the liturgy and sacraments: priests and deacons. It is to the priesthood that this paper turns.</p>
+<p>I consider the ecclesiology presented in his Candelabra of the Sanctuary, bases V and VI, to be on the celestial and earthly priesthoods, respectively. I explore how he (and the wider West Syriac tradition) expands on Dionysian angelology and ecclesiology to create a strongly sacerdotal reading of Dionysius and a sense of continuity between heaven and earth. In Christianity, the earthly priesthood has frequently mirrored the heavenly worship of angels.9 Further, there is a strong mystagogic component to Eastern Christian liturgies, beyond just the West Syriac tradition.10 However, as we will see in Bar</p>
+<p>6 Candelabra VI.2.4.2 ܐܢܟܝܐ .ܝܢܡܕ � ܐܪܡܚܘ ܝܢܪܣܒ � ܕܟ ܐܡܚܠܕ ܝ ̇ܗ ܠܛܡ</p>
+<p>ܢܝܪܩܬܡ</p>
+<p>ܐܡܕܘ</p>
+<p>ܐܪܓܦ</p>
+<p>7 Candelabra VI.2.4.5 ܐܪܡܚܘ .ܐܪ̣ܝܛܦ ܘܐ ܘ ̇ܗ ܐܡܚܠ ܐܪܐ ܐܘ ̣ܗ ܐܥ̣ܝܡܚܕ ܝ ̇ܗ ܠܛܡ</p>
+<p>�</p>
+<p>ܐܘܗ ܘܐ</p>
+<p>ܘ ̇ܗ</p>
+<p>ܒܘܬ ܓ̣ܝܙܡ</p>
+<p>ܐܢܡ̈ܝܗܡ</p>
+<p>ܠܥܕ</p>
+<p>ܐܬܘܠܨ</p>
+<p>ܐܝܥܒܬܡ</p>
+<p>ܐܢܡܠ</p>
+<p>�</p>
+<p>ܐܩܢܘܫ</p>
+<p>ܢ̣ܝܡܥܛ</p>
+<p>8 Candelabra VI.2.5.4 ܬܝܟܘܐ ܐܬܘܡ ܢܪܡܒ ܘܢ ̣ܡܝܗܕ ܢܘܢ ̇ܗ ܢܘܗܠܟ ܕܟܕ ܝ ̇ܗܠܛܡ . 9 Candelabra VI.2.2.2 he potentially goes back to Second Temple Judaism. For one analysis, see: Margaret Barker, The Great High Priest: The Temple Roots of Christian Liturgy (London ; New York: T&amp;T Clark, 2003), 73–145. For analysis and development of the Syriac liturgy in particular, see: Baby Varghese, The Early History of the Syriac Liturgy: Growth, Adaptation and Inculturation, Göttinger Orientforschungen, Band 62 (Wiesbaden: Harrassowitz Verlag, 2021).</p>
+<p>10 Stefanos Alexopoulos and Maxwell E. Johnson, Introduction to Eastern Christian Liturgies, Alcuin Club Collection, no. 96 (Collegeville, Minnesota: Liturgical Press Academic, 2022), xxx–xxxi, 130–35; Baby Varghese, West Syrian Liturgical Theology, Liturgy, Worship and Society (Burlington, VT:</p>
+<p>Briana Grenert</p>
+<p>101</p>
+<p>Hebraeus, the West Syriac tradition expanded on these two elements present in all Eastern Christian liturgical thought, and the fusion of liturgical mystery and hierarchy that originated with Dionysius himself.11 Bar Hebraeus presents a unique framing and synthesis of Dionysian ideas, bringing them to bear on his understanding of the liturgy.</p>
+<p>The priesthood and the rites of the Church are hardly selfexplanatory, and Bar Hebraeus sets out to shed light on how the church’s hierarchy sheds light on believers.</p>
+<p>PART I: BAR HEBRAEUS, DIONYSIUS, AND WEST SYRIAC LITURGICAL COMMENTARIES</p>
+<p>1F</p>
+<p>In this section, I introduce Bar Hebraeus and Dionysius’s reception in Syriac, as well as the genres of the liturgical commentary. The 13th-century Syriac Orthodox Maphrian Grigorios II Abu ʿl-Faraj bar Ahron (ܐܝܪܒܥ ܪܒ ܣܘܝܪܘܓܝܪܓ), known to us as Bar Hebraeus, was writing against the backdrop of extremely turbulent times and a renaissance of Syriac learning, thanks to the wider acceptance of the Islamic genre 12 While sometimes accused of either a lack of and subjects.1</p>
+<p>Ashgate, 2004), 16–29; Emmanuel Hatzidakis, The Heavenly Banquet: Understanding the Divine Liturgy (Clearwater, FL: Orthodox Witness, 2008), 46–50, 341–44.</p>
+<p>11 Emiliano Fiori, “Mystique et Liturgie Entre Denys l’Aréopagite et Le Livre de Hiérothée : Aux Origines de La Mystagogie Syro-Occidentale,” in Les Mystiques Syriaques, ed. A. Desreumaux, Études Syriaques 8 (Paris: Geuthner, 2011), 27–44.</p>
+<p>12 Anton Baumstark, Geschichte der syrischen Literatur, mit Ausschluss der christlich-palästinensischen Texte (Bonn, Weber, 1922), 285–95; Herman G. B. Teule, “Renaissance, Syriac,” in Gorgias Encyclopedic Dictionary of the Syriac Heritage: Electronic Edition (Piscataway: Gorgias Press, 2011), https://gedsh.bethmardutho.org/Renaissance-Syriac; Hidemi Takahashi, “Bar ʿEbroyo, Grigorios,” Gorgias Encyclopedic Dictionary of the Syriac Heritage: Electronic Edition, Beth Mardutho, The Syriac Institute/Gorgias Press, 2011, https://gedsh.bethmardutho.org/Bar-Ebroyo-Grigorios.</p>
+<p>Hugoye 29.1</p>
+<p>102</p>
+<p>originality or a lack of depth, no one can deny the breadth of his work.13 Of his 40 surviving treatises, we have works on theology, philosophy, psychology, medicine, literature, ethics, canon, law, astronomy, history, poetry, linguistics, exegesis, and mathematics. His genius lay in how he integrated and synthesized ideas from a wide range of subjects and sources into coherent treatises. Of particular interest to me are two treatises in his “systematic” theology, The Candelabra of the Sanctuary, which together summarize his perspective on the priesthood. These are the fifth and sixth bases (treatises): “Concerning the knowledge of Celestial Essences, which are Angels, in the diversity of their Ranks” and “On the Earthly Priesthood.”14 Dionysius is his most significant named source, though he draws on a long tradition of both Dionysian and liturgical interpretations to arrive at his particular synthesis.15</p>
+<p>Dionysius’s Celestial and Ecclesiastical Hierarchies</p>
+<p>There is significant debate about what, if anything, can be known about the authorship of the Dionysian corpus, which first appeared in Greek in the mid-sixth century.16 However,</p>
+<p>13 E.g. in Baumstark’s classic Geschichte der syrischen Literatur, Baumstark compares Bar Hebraeus to Albert the Great, saying despite the great breath of Bar Hebraeus’s work “allerdings ermöglichte naturgemäß nur eine mehr in die Breite als in die Tiefe gehende, nicht selten den Charakter sklavischer Anhängigkeit oder bloßer Übersetzertätigkeit annehmende Arbeitsweise dieses umfänglich gewaltige Lebenswerk, zu dem die Bedeutungslosigkeit einiger jüngerer jakobitischer Zeitgenossen eine geradezu klägliche Folie bildet“. Baumstark, Geschichte der syrischen Literatur, mit Ausschluss der christlich-palästinensischen Texte, 313.</p>
+<p>ܢܘܗܝ ̈ܡܓܐܬܕ</p>
+<p>ܐܬܘܦܠܚܫܡܒ</p>
+<p>ܐܬܝܢܥܪܐ</p>
+<p>ܐܕܗ</p>
+<p>ܐܬܘܢܗܟ</p>
+<p>ܠܛܡ</p>
+<p>14 Syriac Titles : The fifth, ܐܟ� ̈ܡ ܢܘܗܝܬܝܐܕ ܐܬܝܢ̈ܝܡܫ ܣܐ̈ܝܣܘܐܕ ܐܬܥܕܝ ܠܛܡ and the sixth,</p>
+<p>.</p>
+<p>15 “Significant” here in the sense that Dionysius is the source he claims</p>
+<p>influences him the most.</p>
+<p>16 Beate Regina Suchla, Dionysius Areopagita: Leben, Werk, Wirkung (Freiburg: Herder, 2008), 15–25; Sarah Coakley, “Introduction -- Re</p>
+<p>Briana Grenert</p>
+<p>103</p>
+<p>Pseudo-Dionysius (hereafter: Dionysius) was an influence on West Syriac understandings of the liturgy and, by extension, of the Church. Dionysius was a dominating voice on angelic and liturgical matters.17 Anonymous commentaries18 and the works of the tradition’s most esteemed commentators, such as Jacob of Edessa (d. 708),19 George Bishop of the Arabs (d. 724),20 John</p>
+<p>Thinking Dionysius the Areopagite,” in Re-Thinking Dionysius the Areopagite, ed. Charles M. Stang, Directions in Modern Theology (Chichester, U.K.: Wiley-Blackwell, 2009), 1–10; Rosemary A. Arthur, Pseudo-Dionysius as Polemicist: The Development and Purpose of the Angelic Hierarchy in Sixth Century Syria, Ashgate New Critical Thinking in Religion, Theology and Biblical Studies (Burlington, VT: Ashgate, 2008); Jaroslav Pelikan, “The Odyssey of Dionysian Spirituality,” in PseudoDionysius: The Complete Works, The Classics of Western Spirituality (New York: Paulist Press, 1987), 11–24.</p>
+<p>17 This was also true of the Greek Byzantine world. See: Germanus and Paul Meyendorff, On the Divine Liturgy (Crestwood, N.Y: St. Vladimir’s Seminary Press, 1984), 23–48; Andrew Louth, “The Reception of Dionysius in the Byzantine World: Maximus to Palamas,” Modern Theology 24, no. 4 (2008): 586–99; Suchla, Dionysius Areopagita, 64–73.</p>
+<p>18 Sebastian Brock, “An Early Syriac Commentary on the Liturgy,” in Fire from Heaven: Studies in Syriac Theology and Liturgy, Variorum Collected Studies Series CS863 (Aldershot, England: Ashgate Variorum, 2006), 387–403. 19 Gabriel Aydin and Ephrem Aboud Ishac, “Jacob of Edessa&#x27;s Liturgical Commentary to George the Stylite of Serugh”, The Syriac Orthodox Patriarchal Journal 60 (2022), 67–89.</p>
+<p>20 Of George, Heinz writes “Wie schoon die Liturgieerklarung von Georg…zeigt, liess sich die syrischen Kommentatoren stark von PseudoDionysius Areopagita beinflussen. Das gilt auch fur das Komentarwerk von Mose bar Kepha.“ Andreas Heinz, Die Eucharistiefeier in Der Deutung Syrischer Liturgieerklärer: Die Liturgiekommentare von Georg Dem Araberbischof ([d.] 724), Mose Bar Kepha ([d.] 903), Dionysius Bar Ṣalibi ([d.] 1171), Sophia 33 (Trier: Paulinus, 2000), 40.</p>
+<p>Hugoye 29.1</p>
+<p>104</p>
+<p>Dara (d. 860),21 Moshe bar Kepha (d. 903),22 and Dionysius bar Ṣalibi (d. 1171),23 show Dionysian influence and quote from “the great Dionysius” in their efforts to explicate the liturgy.</p>
+<p>Dionysius’s project is to demonstrate what has been “revealed to us in a symbolic and uplifting fashion.”24 He applies this heavily symbolic reading both to scriptural accounts of angels and to the contemplation of the liturgy. He wants to understand the significations of angelic names, as well as lay out how to understand imagery in Scripture through unlikelikenesses: how angels are both like and unlike the images we see in Scripture.25 Dionysius also applies this symbolic reading to the elements of the liturgy, and the institution of both the legal priesthood and “our” hierarchy, in contrast to the celestial one:</p>
+<p>Now the Word of God asserts that our hierarchy represents a more perfect imitation in that it is a fulfillment and completion of that [legal] hierarchy. It is both celestial and of the Law for it occupies a place halfway between two opposites. With the one it shares the contemplations of understanding; with the other it has in common the use of varied symbolism derived from the realm of perception, symbolism, by means of which there is sacred uplifting to the divine.26</p>
+<p>21 John Dara, The Commentary of John of Dara on the Eucharist, trans. Baby</p>
+<p>Varghese, Moran Etho 12 (Piscataway, NJ: Gorgias Press, 2011).</p>
+<p>22 Moses bar Kepha’s Commentary on the Eucharist, see Heinz, Die</p>
+<p>Eucharistiefeier in Der Deutung Syrischer Liturgieerklärer, 54.</p>
+<p>23 Dionysius bar Ṣalibi, Expositio liturgiae IV. See: Jérôme Labourt Dionysius liturgiae (E Typographeo Reipublicae, 1903),</p>
+<p>bar Ṣalībī, Expositio http://archive.org/details/expositioliturg00labogoog.</p>
+<p>24 Dionysius, Celestial Hierarchy 1.2, trans. Luibheid and Rorem. 25 Celestial Hierarchy 15. 26 Dionysius, Ecclesiastical Hierarchy V.1.2, trans. Luibheid and Rorem.</p>
+<p>Briana Grenert</p>
+<p>105</p>
+<p>As such, the ecclesiastical hierarchy is the more perfect successor of the legal hierarchy because it shares more with the celestial hierarchy, according to Dionysius. And that which is farther from God is less perfect: “The final ranks lack the full and complete power of the more senior ones. But they do have a partial, proportionate share in that power and they do so as part of that one, harmonious, intertwined communion of all.”27 As such, even human hierarchs (or high priests) can be called angels, because “it is characteristic of him that like the angels he is, to the extent of which he is capable, a messenger and that he is raised up to imitate, so far as a man may, the angelic power to bring revelation.” 28</p>
+<p>There is a “triple power connected with the holy work</p>
+<p>of the sacraments”29 Dionysius argues that</p>
+<p>From scripture it has been shown that the sacred divine birth is a purification and an illuminating enlightenment, that the sacraments of the synaxis and of the Myron ointment provide a perfecting knowledge and understanding of the divine workings and that it is through this that there is effected both the unifying uplifting toward the divine and the most blessed communion with it.30</p>
+<p>The triad of purification, illumination, and perfection is key to Dionysian ascent.31 From there, Dionysius endeavors to show how the three clerical ranks are three harmonious orders, “the one which purifies, the one which illuminates, and the one</p>
+<p>27 CH 12.2, trans. Luibheid and Rorem. 28 CH 12.2, trans. Luibheid and Rorem. 29 Dionysius, Ecclesiastical Hierarchy V.1.3, trans. Luibheid and Rorem. 30 Ecclesiastical Hierarchy V.1.3, trans. Luibheid and Rorem. 31 Though these are not exclusively Dionysian – see Paul Rorem, “Negative Theologies and the Cross,” The Harvard Theological Review 101, no. 3/4 (2008): 451–64.</p>
+<p>Hugoye 29.1</p>
+<p>106</p>
+<p>which brings about perfection.”32 As such, the place of the priesthood is that of the hierarchy on earth, which uses the perceptible symbols of the liturgy to uplift congregants to the extent that is possible for humans. In this, the ecclesiastical hierarchy has the same function as the celestial hierarchy, and indeed all hierarchies.</p>
+<p>Dionysius was extremely</p>
+<p>influential</p>
+<p>in Syriac, but translation and redaction led to a few important differences between the Greek and Syriac Dionysii.33</p>
+<p>Syriac Dionysius</p>
+<p>This earliest Syriac reception of Dionysius takes the form of a late sixth/early seventh-century translation by Sergius of Reshayna, accompanied by his introduction. The introduction circulated also with a later revision of the translation by Phocas in 684/686 CE. Notably, in both of these translations, the Greek Celestial Hierarchy is rendered as the Syriac Angelic High Priesthood.34 Bar Hebraeus also refers not to the Ecclesiastical Hierarchy but to the Priesthood which is On Earth.35 In many ways, this is significantly neater than the Greek tradition: “Ecclesiastical” is mentioned only once in the body of the Dionysian corpus, and even then it does not refer to the</p>
+<p>32 Dionysius, Ecclesiastical Hierarchy V.1.3, trans. Luibheid and Rorem. 33 Scholarly consensus today is that Dionysius probably comes from a Syrian (though not necessarily Syriac) milieu, see for example Arthur, PseudoDionysius as Polemicist. Sebastian Brock wonders if Dionysius could be a reader of Ephrem because of their shared interest in the theology of names, see Sebastian Brock, The Luminous Eye: The Spiritual World Vision of Saint Ephrem, Cistercian Studies Series 124 (Kalamazoo, Michigan: Cistercian Publications, 1992), 147.</p>
+<p>34Περὶ Τῆς Οὐρανιας Ἱεραρχιας as ܐܬܝܟ�ܡ ܐܬܘܢܗܟ ܬܘܫܝܪ ܠܥ. 35 Περὶ τῆς ἐκκλησιαστικῆς ἱεραρχίας as ܐܬܝܢܥܪܐ ܐܕܗ ܐܬܘܢܗܟ ܠܛܡ.</p>
+<p>Briana Grenert</p>
+<p>107</p>
+<p>itself.36 Normally, Dionysius simply says “our</p>
+<p>hierarchy hierarchy”.37</p>
+<p>Later commentators, particularly John Dara, expand on this heightened emphasis on priests, a point that Bar Hebraeus repeats: angels are organized in churches, priestly imagery in the Old Testament is read to understand the angelic hierarchy, and the function of each rank is understood in Aristotelian terms.38 Consider John Dara’s explanation:</p>
+<p>The heavenly high priesthood is divided into three churches, and every church has three ranks, and every rank has three orders, that is, a highest, a lowest, and a middle. And each order is divided into many hypostases, and every hypostasis has three things- essence and power and operation. And essence is what is inside of each one of them, and power is the ability that each one of them possess, and its capacity for receiving the rays, and for moving to those things that have been given to them by God. Likewise, the operation that is within each is its own proper thing that it performs rightly when it receives the gifts and rays and enlightenments from God.39</p>
+<p>This is the essential nature of all the entities in the hierarchy, which is imaged by churches and understood in terms of their</p>
+<p>36 Paul Rorem, Biblical and Liturgical Symbols within the Pseudo-Dionysian Synthesis, Studies and Texts 71 (Toronto: Pontifical Institute of Mediaeval Studies, 1984), 28–31.</p>
+<p>37 Rorem, Biblical and Liturgical Symbols within the Pseudo-Dionysian</p>
+<p>Synthesis, n. 6.</p>
+<p>38 Elizabeth Anderson, “The Interpretation of Pseudo-Dionysius in the</p>
+<p>Works of John of Dara” (PhD diss, Yale University, 2016).</p>
+<p>39 Commentary on the Angelic High Priesthood 10, 11v-12r, 26 of Anderson’s revised translation. That is “and each order is divided into many hypostases, and every hypostasis [ܐܡܘܢܩ] has three things- essence [ܐܝܣܘܐ] and power [ �ܝܚ] and operation [ܐܬܘܢܕܒܥܡ]”.</p>
+<p>Hugoye 29.1</p>
+<p>108</p>
+<p>operations. As such, the Angelic high priesthood of the Syriac Dionysius was expanded and expounded overtime, including in the work of Bar Hebraeus. This leads to a stronger connection between priestly imagery in the Old Testament and Syriac angelology: while Dionysius mentions that “the priestly vestment signifies the capacity to guide spiritually to divine and mysterious sights,” both John Dara and Bar Hebraeus consider the nitty-gritty of priestly adornment and read even the order of the stones on the priest’s breastplate as signifying the angelic hierarchy.40</p>
+<p>Other differences between the Greek and Syriac versions have been identified, in part because of the interests of the first translator, Sergius of Reshayna.41 Sergius’s translation circulated with an introduction from his “Discourse on the Spiritual Life.”42 In his introduction, Sergius presents the stages</p>
+<p>40 John of Dara, Commentary on the Angelic High Priesthood 6; Bar Hebraeus, Candelabra V II.1.2. There is a long history of Syriac reflection on priestly clothing, since Ephrem uses clothing imagery to tell salvation history, see Brock, The Luminous Eye, 85–98. Other Christian traditions also interpret the stones, for example as representing the martyrs in the Coptic Ps.Sevarian of Gabala’s Encomium on the Twelve Apostles 31 (CPG 4281).</p>
+<p>41 Emiliano Fiori, “Un Intellectuel Alexandrin En Mésopotamie. Essai d’une Interprétation d’ensemble de l’œuvre de Sergius de Rēš‘aynā,” in De l’Antiquité Tardive Au Moyen Âge Études de Logique Aristotélicienne et de Philosophie Grecque, Syriaque, Arabe et Latine Offertes à Henri HugonnardRoche, ed. Martini Bonadeo and E. Coda (Paris: J Vrin, 2014), 59–90; Emiliano Fiori, “Mélange Eschatologique et ‘Condition Spirituelle’ de l’intellect Dans Le Corpus Dionysiacum Syriaque: Un Cas Remarquable de Divergence Entre Le Corpus Dionysien Grec et Sa Traduction Par Serge de Reš‘aynā,” Parole de l’Orient 35 (2010): 261–76.</p>
+<p>42 Fiori, “Un Intellectuel Alexandrin En Mésopotamie. Essai d’une Interprétation d’ensemble de l’œuvre de Sergius de Rēš‘aynā,” 77–78. “Discourse on the Spiritual Life” is available in Sherwood’s edition, with French translation or in Fiori’s more complete Italian translation (mostly based on Sherwood’s edition): P Sherwood, “Mîmro de Serge de Reayna Sur La Vie Spirituelle,” L’Orient Syrien 5,6 (1961 1960): 433–59; 95–</p>
+<p>Briana Grenert</p>
+<p>109</p>
+<p>of spiritual life according to Evagrius (whom he does not name).43 The image Sergius gives us is of the soul’s original oneness which exists as pure mind and contemplates God. It falls from the state of pure mind, and, as Perczel phrases it “acquires the spirited and desiderative faculties of the soul, while its rational faculty is also darkened.”44 The healing of the soul must come both for the lower faculties and the high lower faculties are purified by following faculties. The commandments, but the mind is healed and brought back to its original state through contemplations.</p>
+<p>The rational beings (i.e., angels) make divine contemplation possible for humans, and a part of the healing of the rational faculties. This is how Sergius understands the Dionysian Corpus’s aim, and this is how he introduces and orders it for his audience and the subsequent Syriac tradition.45 He establishes a connection between the Ecclesiastical Hierarchy and ascetic and sacramental life. The “lost” Symbolic Theology is connected</p>
+<p>115, 121–56; Sergius of Reshayna, Trattato sulla vita spirituale, trans. Emiliano Fiori (Magnano: Edizioni Qiqajon, 2015).</p>
+<p>43 Fiori resists the use of “Origenist”, which Perczel uses, for Sergius, cautioning against using the term because the “catégorie très vague d’ ‘origénisme’ dont se servirent certains écrivains après 553 et encore beaucoup de savants aujourd’hui, qui a été utilisée pour condamner ou simplement indiquer des tendances intellectuelles très diverses. ” Here is a particular set of tendencies he would label as Origenism, such as those “anathématismes contenus dans les canons de 553”. Fiori, “Un Intellectuel Alexandrin En Mésopotamie. Essai d’une Interprétation d’ensemble de l’œuvre de Sergius de Rēš‘aynā,” 65. Perczel also proposes an “Origenist” reading of the entire Syriac Dionysian corpus which I did not find particularly convincing (and neither did Fiori). For an alternate reading, see: Emiliano Fiori, “Dionigi l’Areopagita e l’origenismo siriaco. Edizione critica e studio storico-dottrinale del trattato sui Nomi divini nella versione di Sergio di Res’ayna” (PhD Dissertation, Università di Bologna, 2010), 47–76, 426–68.</p>
+<p>44 Perczel, “The Earliest Syriac Reception of Dionysius,” 560. 45 Perczel, 561.</p>
+<p>Hugoye 29.1</p>
+<p>110</p>
+<p>to natural science and the Celestial Hierarchy is a second natural science, contemplation of the Intelligibles. Then, both the “lost” Theological Outlines and The Divine Names concern “substantial knowledge.”46</p>
+<p>Bar Hebraeus is receiving Dionysius as introduced by Sergius, with a particular view of contemplation. More importantly, though, he is receiving a tradition in which the Celestial Hierarchy is understood particularly as an angelic priesthood, and in which priestly imagery is the key to understanding Dionysius. In summary, the Syriac Dionysius links angelic and earthly hierarchies as priesthoods and connects contemplation with the rational faculties. The Syriac tradition uses Aristotelian terms to understand how hierarchies function.</p>
+<p>West Syriac Liturgical Commentary</p>
+<p>As influential as Dionysius was on Bar Hebraeus, he is not Bar Hebraeus’s only source. There was a rich tradition of commentaries on the liturgy, which employed typological and allegorical methods by the fourth century, and figures like Ephrem, Aphrahat, Jacob of Serugh, and Isaac of Antioch mobilized typology to comment on the mystery of the liturgy.47 Systematic allegory used to explain doctrinal issues and to link liturgical events to the life of Christ first appears in Theodore of Mopsuestia, who is important and almost as a pole, pulling</p>
+<p>46 It is unlikely that the Symbolic Theology ever existed, it seems to have been created lost. See: Pseudo-Dionysius, Pseudo-Dionysius: The Complete Works, trans. Colm Luibheid and Paul Rorem, The Classics of Western Spirituality (New York: Paulist Press, 1987), n. 89.</p>
+<p>47 Varghese, West Syrian Liturgical Theology, 17. The addition of Isaac of Antioch to this list was suggested to me by Ephrem Ishac, citing the fascinating “The Memra on the Parrot” which comments on the Trisagion. See: Michel van Esbroeck, “The Memra on the Parrot by Isaac of Antioch,” The Journal of Theological Studies 47, no. 2 (1996): 464–76.</p>
+<p>Briana Grenert</p>
+<p>111</p>
+<p>towards details, vis-à-vis</p>
+<p>the liturgical understanding decontextualized reading of Dionysius.48 And while, as I have said, Dionysius influences and is quoted by Syriac liturgical commentators, most commentators (with the exception of John Dara) are not Dionysian, in the sense that they follow Theodore of Mopsuestia’s more Antiochian mystagogical tradition grounded in the details of Christ’s life.49 John Dara is the exception here, and while he shows more interest in the details (he comments on architecture, liturgical texts, and liturgical implements), he applies the hermeneutical scheme that appears in Dionysius more consistently than any author before (or after) him.50</p>
+<p>Bar Hebraeus’s treatise considers, in depth, many rites at once. While other authors have done this, such as George Bishop of the Arabs in his Exposition of the Mysteries of the Church,51 it is more common for authors to consider one sacrament at a time.52 Further, while other authors reflect on the role of priests within a Dionysian framework in their liturgical commentaries, Bar Hebraeus is unique in how he</p>
+<p>48 Varghese, West Syrian Liturgical Theology, 18–19. 49 Varghese, West Syrian Liturgical Theology, 16–34. For Theodore, catechesis is the process whereby Christians become citizens of heaven, see Daniel L. Schwartz, Paideia and Cult: Christian Initiation in Theodore of Mopsuestia (Washington DC.: Center for Hellenic Studies, 2013), 37–47, https://chs.harvard.edu/book/schwartz-daniel-l-paideia-and-cultchristian-initiation-in-theodore-of-mopsuestia/.</p>
+<p>50 Varghese, West Syrian Liturgical Theology, 29–34; John Dara, The</p>
+<p>Commentary of John of Dara on the Eucharist.</p>
+<p>51 George Bishop of the Arabs, An Exposition of the Mysteries of the Church 52 Cf. George Bishop of the Arabs’s Memra on the Consecration of Myron; John Dara’s Commentary on the Eucharist; Moses Bar Kepha’s Commentary on the Eucharist in The Explanation of the Mysteries of the Oblation; Dionysius bar Salibi’s commentaries on the Myron and Baptism.</p>
+<p>Hugoye 29.1</p>
+<p>112</p>
+<p>the angelic</p>
+<p>reality</p>
+<p>to bear on his</p>
+<p>liturgical</p>
+<p>brings interpretation.53</p>
+<p>It is not that angels had no place in the liturgy. In fact, angels frequently attend and participate in terrestrial liturgies across the eastern Christian world.54 There are moments when they appear specifically in the liturgy, such as the Cherubic hymn in the Greek Divine Liturgy or the Syriac Liturgy of St. James.55 However, they are not just the subject of prayers, but also active participants in the proceedings. The 14th century Byzantine Nicholas Cabasilas, writes, for example, in his On the Divine Liturgy that even the Latins pray that the offerings “may be carried to the altar…for this, they have need of the hand of an angel, in the sense in which the great Dionysius speaks when he says that the first hierarchy, that of the angels, comes to the aid of the second and human hierarchy.”56 Contemporary 14thcentury iconographic developments showed Christ presiding over a heavenly liturgy, replete with angelic ministers dressed in priestly garb.57 However, despite this common backdrop of liturgy and angels in the eastern Christian world, Bar Hebraeus has a unique synthesis of West Syriac angelology, the Syriac reception of Dionysius, and his liturgical commentary tradition.</p>
+<p>53 Cf. the introductory part of George Bishop of the Arab’s Exposition of the</p>
+<p>Mysteries of the Church, or Dionysius bar Salibi On Baptism 9.2</p>
+<p>54For the Coptic tradition, see: Ibrahim Saweros, “Angels in Coptic 76–77,</p>
+<p>Shedet</p>
+<p>6,</p>
+<p>no.</p>
+<p>(December</p>
+<p>2019):</p>
+<p>Tradition,” 6 https://doi.org/10.21608/shedet.006.05.</p>
+<p>55 Hatzidakis, The Heavenly Banquet, 22, 163–65. 56 Nicolaus Cabasilas, On the Divine Liturgy II.30.7, trans. Hussey and McNulty. It is not clear to which Dionysian passage Nicholas is referring – perhaps Ecclesiastical Hierarchy V:501?</p>
+<p>57 Hans-Joachim Schulz, The Byzantine Liturgy: Symbolic Structure and Faith Expression, 1st ed, trans. Matthew O’Connell (New York: Pueblo Pub. Co, 1986), 111–14; Vasileios Marinis, “On Earth as It Is in Heaven? Reinterpreting the Heavenly Liturgy in Byzantine Art,” Byzantinische Zeitschrift 114, no. 1 (February 2021): 255–68, https://doi.org/10.1515/bz-2021-9012.</p>
+<p>Briana Grenert</p>
+<p>113</p>
+<p>With all these elements, he draws a fascinating picture of the role of the priest in the universe.</p>
+<p>PART II: CANDELABRA V AND VI</p>
+<p>Angelic Priests in Bar Hebraeus</p>
+<p>One of Bar Hebraeus’s most important moves, following John Dara, is to conceptualize the angels as organized into heavenly churches, instead of just Dionysius the Areopagite’s ranks in the hierarchy.58 Bar Hebraeus opens his section on the order and ranks of angels: “the word of theology knows three celestial churches, and in each there are again three orders, that is to say, ranks.”59 This is not just a one-off reference: in fact, his commentary on angels is infused with sacerdotal readings and how these “churches” are prefigured in the Old Testament priesthood.60 I will give only a few examples here of how Bar Hebraeus uses ecclesiastical terms to understand angelic operations, compared with the Greek Dionysian tradition. Consider the origin he gives for the names of the angelic ranks:</p>
+<p>58 In this, Bar Hebraeus has an unacknowledged debt to John Dara, who in his commentary on the Celestial High Priesthood (which in turn is following the Syriac tradition of calling Dionysius’s Celestial Hierarchy by that title) organizes angels not into choirs or ranks but “churches”. See: Anderson, “The Interpretation of Pseudo-Dionysius in the Works of John of Dara.” Both John Dara and Bar Hebraeus use the Syriac word which generally translates ἐκκλησία (rather than “hierarchy”). This is contrary to the claim of Berti, who says that Bar Hebraeus is the only “medieval” author to do this. See: Berti, “L’angelologia siriaca: Gregorio Abu-l-Farag Bar Ebraya, Della conoscenza delle essenze celesti, che sono gli angeli, nei loro differenti cori,” 1408.</p>
+<p>59 Bar Hebraeus, Candelabra V.II.1.1 ܐܬܠܡ ܐܥܕܝ ܐܬܝ̈ܢܝܡܫ ܐܬ̈ܕܥ ܪܝܓ ܬܠܬ</p>
+<p>ܐܣ̈ܟܛ</p>
+<p>ܐܡ ̈ܓܬ</p>
+<p>ܐܬܠܬ</p>
+<p>ܐܬܕܥ</p>
+<p>ܠܟܒܘ</p>
+<p>ܬ̣ܝܟܘܐ</p>
+<p>܆ܐܝܓܘܠܘܐܬܕ .</p>
+<p>60 Candelabra V.II.1.2 There are many other ways of conceptualizing the celestial hierarchy. Thomas Aquinas, for example, uses civil imagery of princes. See: ST I.108.5 ad 2-4.</p>
+<p>Hugoye 29.1</p>
+<p>114</p>
+<p>Rank</p>
+<p>Origin in Dionysius</p>
+<p>3 Thrones</p>
+<p>Θρόνος</p>
+<p>Origin in Bar Hebraeus61 From their repose in doing the will of God.</p>
+<p>ܐܒܬ ̈ܘܡ</p>
+<p>(mawtbe)</p>
+<p>5 Powers δύναμις</p>
+<p>ܐܬ ̈ܘܠܝܚ</p>
+<p>(ḥaylawoto)</p>
+<p>“From the manly power, unshakeable in all the operations, bearing resemblance to God.”64</p>
+<p>7 Principalities</p>
+<p>ἀρχός ܐܬܘܢܫܝܪ̈ (rišonuṯe)</p>
+<p>“From what which towards the principle: turning from the majesty of this principle to both wholly direct others, like a high priest,</p>
+<p>“transcendence over every earthly defect…forever separated from what is inferior…free of all passion and material concern”62 “masculine and unshakable courage in all its godlike activities. It is a courage which abandons all laziness and softness during the reception of the divine enlightenments granted to it, and is powerfully uplifted to imitate God”63 “the ability to returned completely toward that principle which is above all principles and to lead others to him like a prince.”65</p>
+<p>61 Candelabra V.II.2.1. 62 Dionysius, Celestial Hierarchy VII. 1, trans. Luibheid and Rorem. 63 Dionysius, Celestial Hierachy 8.1, trans. Luibheid and Rorem. 64 Bar Hebraeus, Candelabra V.II.2.1 �ܡ ܐܬܝܢܪܟܕ ܡܕܡ ܐܬܘܪܒ̱ܢܓ ܢ ̣ܡ ܢܝܗܠܟܒܕ</p>
+<p>ܝܬܝܡ</p>
+<p>ܐܗܠܐܒ</p>
+<p>݀ܬܝ ̈ܡܕܡ</p>
+<p>ܐܬܘ̈ܢܕܒܥܡ</p>
+<p>.</p>
+<p>ܐܬ̣ܝܢܙܥܕܙܡ .</p>
+<p>65 Dionysius, Celestial Hierarchy 91, trans. Luibheid and Rorem.</p>
+<p>Briana Grenert</p>
+<p>115</p>
+<p>and in that prefigured.”66</p>
+<p>8 Archangels ἀρχάγγελος</p>
+<p>ܐܟ ̈�ܡ ܝܫܝܪ̈</p>
+<p>(riši malake)</p>
+<p>It has relationship with both the turning principalities and the angels, bringing order to them.</p>
+<p>“also taken from the high priest. For as the name of the Principalities is above the name of the Archangels, so to the order of the archangels is above that of the angels”67</p>
+<p>There are four places at which we see this at play in the explanation of the origins of different angels in the hierarchy, or four places at which Bar Hebraeus diverges from Dionysius: in his description of the Thrones, in his description of the powers, and in his descriptions of the Principalities and Archangels.</p>
+<p>Bar Hebraeus makes his link with the Thrones from the world of men. Potentially, there is a liturgical link in that hierarchs repose on thrones during the liturgy. This link is not in Dionysius, and it is not in John of Dara’s Commentary on the Celestial High Priesthood, but he does make similar comments in his Commentary on the Eucharist. He says that the priests “should be like the Thrones, that is, he shall be a resting place for the Holy Spirit.”68 Perhaps, in the tradition of Aristotle, he is simply incorporating information from observation into his</p>
+<p>66 Bar Hebraeus, Candelabra V.II.2.1 ܐܬ̣ܝܫܝܪ ܬܘܠܕ ܝ ̇ܗ ܢ ̣ܡ .ܐܬܘܢܫ̣ܝܪ̈ܕ ܐܗܡܘܫܘ ݀ܬܝܠܥܡ ܬܝܐܢܠܟ</p>
+<p>܆ܐܢ�ܚ�</p>
+<p>ܦܐ</p>
+<p>ܢܝܢܦ</p>
+<p>ܢ ̣ܡ</p>
+<p>ܢܘܢ ̣ܗ</p>
+<p>̣ܬܝܟ</p>
+<p>ܐܬ̣ܝܫܝܪ</p>
+<p>ܐܝܨܡܕ</p>
+<p>ܟܝܐ</p>
+<p>ܢ̣ܝܠܒܫܡܘ ̇ܗܒܘ .</p>
+<p>ܬܘܢܫܝܪ ܢ̣ܝܣܦܛܬܡ</p>
+<p>ܦܐܕ</p>
+<p>.ܟܝܐ</p>
+<p>ܘ ̱ܗ</p>
+<p>ܒ̣ܝܣܢ</p>
+<p>ܬܝܐܢܗܟ . 67 Candelabra V.II.2.1 ܬܘܫ̣ܝܪܕ ̇ܗܢܡ ܬܘܟܗ ܘ ̣ܗ .ܐ̈ܟ�ܡ ܝܫܝܪ̈ܕ ܘ ̇ܗ ܐܗܡܘܫܘ ܐܬܘܢܫܝܪ̈ܕ ܐܬܘܢܗܟ ܐܡܓܬܕ</p>
+<p>. ܐܡܟܐ ܐ̈ܟ�ܡܕ</p>
+<p>ܝܫ̣ܝܪ̈ܕ ܐܢܫܝܪ܆ܐ̈ܟ�ܡ</p>
+<p>ܐ̈ܟ�ܡ ܘ ̱ܗ</p>
+<p>ܐܢܫܝܪ ܝܫ̣ܝܪ̈ܕ</p>
+<p>ܐܗܡܘܫ .</p>
+<p>68 John Dara, Commentary on the Eucharist 1.19 trans. Varghese.</p>
+<p>Hugoye 29.1</p>
+<p>116</p>
+<p>understanding of the universe: in this case, seeing people, or hierarchs in particular, reposing. John Dara adds that what characterizes the Thrones “is that it avoids wandering, that is toil over earthly things and illegitimate things.”69</p>
+<p>ܐܬ</p>
+<p>̈ܘܠܝܚ</p>
+<p>The second difference is also an Aristotelian one. The word Bar Hebraeus gives for Powers ( , ḥaylawoto) comes from �ܝܚ (ḥaylo)– which itself also translates δύναμις, but the Aristotelian δύναμις, i.e. power in action (i.e. not the potentiality of inactivity). The rank, then, is intertwined with the philosophical principle.</p>
+<p>2F</p>
+<p>The final divergence comes from the infusion of priestly imagery into Bar Hebareus’s understanding of the Principalities and the Archangels. A lot of the connection rests on a repetition of the root resh-shin, the same word that gives us “head” ܐܫܪ (rišo) (cognate with the Hebrew שׁאֹר). The ܐܫܪ (rišo) can be head, source, summit, ruler/ἄρχων. It is the word that translates “ἄρχοντα” in Exodus 2:14a/Acts 7:3570, as well as the anatomical head in 1 Cor 12:21 (κεφαλὴ)71 and “beginning” (Ἀρχὴ) in Mark 1:1.72 Syriac ܐܫܪ (rišo) appears very frequently with the sense of chief or ruler (e.g., Matthew 12:24, Matthew 20:25, Acts 3:17, Revelation 1:5). ܐܫܪ (rišo) for source or beginning and often translates the Greek ἀρχή for origin (e.g. Matt 24:8, Mk 13:8, Col 1:18, Heb 5:12), and it is a compound derivative of ܐܫܪ (rišo) that begins John 1:1 and Genesis 1:1, ܬܝܫܪܒ (berišiṯ). Importantly for our purposes, ܐܫܪ (rišo) also translates the Aristotelian ἀρχή, 73 All these different senses meaning starting point or principle.7</p>
+<p>69 John Dara, Commentary on the Eucharist 1.19, trans. Varghese 70 “ὁ δὲ εἶπεν τίς σε κατέστησεν ἄρχοντα καὶ δικαστὴν ἐφ᾽ ἡμῶν” ( ܟܘܠ ܡܩܡܟ ܝܢܡ</p>
+<p>ܐܢܝܕܘ ܐܫܪ ܢܠܥ).</p>
+<p>71 “ἢ πάλιν ἡ κεφαλὴ τοῖς ποσίν” (Sy: ܠܓܪܠ ܪܡܐܢܕ ܚܟܫܡ ܐܫܪ �ܦܐ). 72 “Ἀρχὴ τοῦ εὐαγγελίου” (Sy: ܢܘܝܠܓܢܘܐܕ ܐܫܪ). 73 Importantly for our purposes, ܐܫܪ also translates the Aristotelian ἀρχή in the works of Sergius of Reshayna, meaning starting point or principle. See: Sami Aydin, Sergius of Reshaina: Introduction to Aristotle and His</p>
+<p>Briana Grenert</p>
+<p>117</p>
+<p>are at play in the Bar Hebraeus’s understanding of the role of the Principalities:</p>
+<p>And the name of the Principalities</p>
+<p>ܬܝܠ</p>
+<p>ܥܡ̣</p>
+<p>ܐܬܘܢܫܝܪ̈ ܐܬܝܫܝܪ</p>
+<p>ܕ ܬܘܠܕ</p>
+<p>ܐܗܡܘܫܘ ܢܡ ܗ̇ܝ</p>
+<p>From what which towards the</p>
+<p>principle</p>
+<p>ܗ̇ܘܢ</p>
+<p>ܬܝܟ</p>
+<p>ܦ̇ܢܝܢ</p>
+<p>ܐܬܝܫܝܪ</p>
+<p>turning from the majesty of this</p>
+<p>ܦܐ</p>
+<p>ܢܝܠܒ</p>
+<p>ܫܡܘ</p>
+<p>principle to both wholly direct</p>
+<p>others</p>
+<p>ܬܝܐܢܗܟ</p>
+<p>in that</p>
+<p>like high priests, and</p>
+<p>ܢܝܣܦܛܬܡ</p>
+<p>ܢܡ ܬܝܐܢܠܘܟ ܐܢܪܚ�̈ ܬܘܫܝܪ ܐܝܨܡܕ</p>
+<p>(priesthood) prefigured</p>
+<p>ܗܒܘ ̇ ܟܝܐ .</p>
+<p>ܪ̈</p>
+<p>ܐܬܘܢܫܝ (rišonuṯe).</p>
+<p>ܐ</p>
+<p>ܬܝܫܝܪ</p>
+<p>The first instance in this passage is the word “principalities”. ܐܬܘܢܫܝ ܪ̈ This is translating ἀρχός/ ἄρχων (rišonuṯe) means any number of ruler-type things: principality, governorship, magistracy, dignity, principle, primacy, episcopacy, abbacy.74 The second and third mobilize a different (rišiṯo) is “beginning, origin, chief part, meaning: principle part”, or the Aristotelian ἀρχή. For Bar Hebraeus, of course, Principle is God.</p>
+<p>ܬܝܐܢܗܟ</p>
+<p>ܬܘܫܝܪ</p>
+<p>-</p>
+<p>The fourth instance of it is in the Syriac word for High Priest (rišuṯ kohnoyiṯ). (the adverbial form of ܬܘܫܝܪ</p>
+<p>Categories, Addressed to Philotheos (Leiden: Brill, 2016), 301. Sergius is particularly influential for the transmission of Aristotle and Dionysius, as we see Bar Hebraeus following him. Not all Syriac authors use ܐܫܪ for Aristotelian ἀρχή. Jacob of Edessa and George Bishop of the Arabs use ܐܝܪܘܫ in their translation Aristotle’s Categories VIII 9b20 (ἀρχὴν) This is also what the anonymous translator of De Interpretatione uses: ὁρῶμεν γὰρ ὅτι ἔστιν ἀρχὴ with ܐܝܪܘܫ . All Syriac and Greek texts, here, come from the Hunaynnet Project: https://hunaynnet.oeaw.ac.at/index.html (accessed 12/04/23).</p>
+<p>(Oxford: The Clarendon Press,</p>
+<p>74Ad. Loc, see R. Payne Smith and Jessie (Payne Smith) Margoliouth, A Compendious Syriac Dictionary, Founded upon the Thesaurus Syriacus of R.Payne Smith, D. D. 1903), https://catalog.hathitrust.org/Record/000017168.</p>
+<p>̇</p>
+<p>Hugoye 29.1</p>
+<p>118</p>
+<p>ܐܬܘܢܗܟ, rišuṯ kohnuṯo) 75 Resh-shin words are also in Bar Hebraeus’s description of the Archangels, six times over:</p>
+<p>And the name of the Archangels is</p>
+<p>also</p>
+<p>taken</p>
+<p>from</p>
+<p>the high</p>
+<p>priesthood</p>
+<p>For</p>
+<p>as</p>
+<p>the name</p>
+<p>of</p>
+<p>the</p>
+<p>Principalities is above</p>
+<p>the name of the Archangels</p>
+<p>so to the order of the archangels is</p>
+<p>ܐܟ ̈�ܡ ܝܫܝܪ̈ܕ ܘ̇ܗ ܐܗܡܘܫܘ ܬܘܫܝܪܕ ̇ܗܢܡ ܬܘܟܗ ܘ̇ܗ ܒ̣ ܝܣܢ ܐܬܘܢܗܟ ܐܬܘܢܫܝܪ̈ܕ ܐܗܡܘܫ ܦܐܕ ܟܝܐ ܐܢܫܝܪ ܐܟ ̈�ܡ ܝܫܝܪ̈ܕ ܘܗ ܝܫܝܪ̈ܕ ܐܡܓܐܬܕ ܐܡܟܐ ܐܟ ̈�ܡܕ ܘܗ ܐܢܫܝܪ ܐܟ ̈�ܡ</p>
+<p>above that of the angels</p>
+<p>Archangels, then, are to angels as high priests are to priests. In short, Bar Hebraeus does not diverge from Dionysius as much as fit him into the frameworks he has, both his understanding of the celestial hierarchy as a divine priesthood and his understanding of the world as working on Aristotelian principles, which goes back in the Syriac tradition at least to</p>
+<p>ܐ</p>
+<p>ܪܡܘܽ ݁ܟ</p>
+<p>݁ܒ</p>
+<p>ܪ</p>
+<p>ܐܢܗܟ</p>
+<p>ܒܪ</p>
+<p>ܐܬܘܢܗܟ</p>
+<p>ܬܘܫܝܪ</p>
+<p>ܐܢܗܟ</p>
+<p>ܝܫܝܪ</p>
+<p>ܬܘܫܝܪ</p>
+<p>75 This is not the only Syriac word for High Priest: In Hebrew 4:16, in the ” (high priest), and this is Peshitta for example, Jesus is called “ also the term for Caiaphas. Both in the Peshitta and in the Old Syriac as ܐܦܝܩ well, where Καϊάφαν τὸν ἀρχιερέα = (Mt 26:57). Bar , “high priesthood” is the same as the term Hebraeus’s term, ). The Harklean term ( ܝܫܝܪ for high priest in the Harklean version ( ܐܢܗܟ ) is also Bar Kepha’s term in his Commentary on Luke, where he says that ( ܢܘܗܠ ܘܘܗ ܢܝܪܒܕܡ ̈ܐܢܗܟ ܝܫܝܪ̈ ܣܘܕܘܪܗ ܐܢܗܕ ܗܢܒܙܠ ܐܡܕܥܘ ) “and from that time to the time of Herod high priests ruled over them”. It is also the term John of Dara uses, when he says “Angelic High Priesthood” (ܐܬܝܟ�ܡ ܐܬܘܢܗܟ ). For John of Dara, see: Harvard MS Syriac 122 (2v-18v). For a comparison of the versions, see: George Kiraz, Comparative edition of the Syriac Gospels: aligning the Sinaiticus, Curetonianus, Peshîṭtâ and Ḥarklean versions, vol. 1, New Testament tools and studies, 21 1-4 (Leiden: E. J. Brill, 1996), 416. For Bar Kepha, see: Abdul-Massih Saadi, Moshe Bar Kepha’s Commentary on the Gospel of Luke, Gorgias Eastern Christian Studies 59 (Piscataway, NJ: Gorgias Press, 2020), 281.</p>
+<p>ܰ</p>
+<p>ܶ</p>
+<p>Briana Grenert</p>
+<p>119</p>
+<p>Jacob of Edessa’s Hexameron.76 There is also wordplay, already present in Greek (ἀρχάγγελος, ἀρχιερεύς, ἄρχων/ἀρχός, ἀρχή), mobilizing multiple levels of ἀρχή : the Aristotelian and rulersense. The priestly imagery pervades Bar Hebraeus’s reading of the angelic hierarchy. The consequences of this difference are significant. As Berti explains in his introduction to his translation Bar Hebraeus’s Candelabra V,</p>
+<p>If the work of the Areopagite was all aimed at incorporating the structure of the church together with the monastic experience (which was problematic from the standpoint of politics in Palestine at the end of the fifth century, where [the Areopagite’s] work originated) into the framework of the Neoplatonic Emanation which had in heaven its most perfect symbol, then Bar Hebraeus instead lived in a time when the connection between the life of the church and the hierarchical structure is a completely established fact, which could then be re-projected onto heaven, since the church has become the perfect symbol of the cosmic hierarchy.77</p>
+<p>For Bar Hebraeus, there is a powerful and intimate connection between the church on earth and the church in heaven. However, what does this connection mean for the earthly priesthood and the place of the church in the universe?</p>
+<p>76 Marina Greatrex, “The Angelology in the Hexameron of Jacob of Edessa,” Journal of the Canadian Society for Syriac Studies 4, no. 1 (2009): 33–46, https://doi.org/10.1515/jcsss-2009-040106. Jacob of Edessa’s main influences were Gregory Nazianzus and Pseudo-Dionysius, but he was also involved in the translation and study of Aristotle. See: Henri HugonnardRoche, “Jacob Of Edessa And The Reception Of Aristotle,” in Jacob of Edessa and the Syriac Culture of His Day (Brill, 2008), 205–22, https://brill.com/display/book/9789047426936/Bej.9789004173477.i314_014.xml.</p>
+<p>77 Berti, “L’angelologia siriaca: Gregorio Abu-l-Farag Bar Ebraya, Della conoscenza delle essenze celesti, che sono gli angeli, nei loro differenti cori,” 1408. My translation from Italian.</p>
+<p>Hugoye 29.1</p>
+<p>120</p>
+<p>Earthly Priesthood</p>
+<p>The idea of angelic priesthood is also infused in Bar Hebraeus’s understanding of the earthly priesthood’s function. While I will focus here on the theological backing for the function of the priesthood, it is important to note in his treatise on the earthly priesthood, 4455 of 5542 words in the treatise are dedicated explicitly to the sacraments: consecration of different offices (such as priests and deacons), consecration of the chrism, theology and practice of baptism and eucharist, rituals related to the “sleeping”. I will primarily focus on the first section of his treatise, where he discusses what the priesthood is. Obviously, the priests are the people who engage in all of these rituals – who conduct the business of the church. However, Bar Hebraeus specifically addresses the place of the priesthood in the cosmos, which is what I analyze here.</p>
+<p>He begins by exploring what defines priesthood. The entire priesthood, regardless of rank, performs one single operation: “its operation is guiding humans towards similarity to God, as much as is possible for human nature, through the mediation of the similarity of intellectual essences.”78 Thus, as much as is humanly possible, the basic work of the priesthood is to bring people into similarity of God through its mediation. This happens “by (1) the comprehension of contemplative thoughts and (2) by the adornment of these customs which are for our spiritual churches, and (3) by mediation of similarity which is in the conceivable essence, [the priesthood does its work].”79</p>
+<p>ܐܬܝܢܥ̈ܕܝܬܡ</p>
+<p>ܣܐ̈ܝܣܘܐܒܕ</p>
+<p>ܐܬܘܝܡܕ</p>
+<p>.</p>
+<p>ܐܢܝܟܠ</p>
+<p>ܐܝܫܢ ̱ܐ</p>
+<p>ܐܝܨܡܕ .</p>
+<p>.</p>
+<p>ܐܢܚܘ�ܠܕ</p>
+<p>ܢܝܠܝܐ</p>
+<p>ܐܕ̈ܝܥܕ</p>
+<p>ܢ̈ ̣ܝ̣ܝܬܝܒ</p>
+<p>ܐܬܘܝܥܨܡܒܘ ܣܐ̈ܝܣܘܐܒܕ</p>
+<p>78 Candelabra VI.I.1.1 ܐܡܟ .ܐܗܠܐܒܕ ܐܬܘܝܡܕ ܬܘܠ ܐܫܢ̈ܝܢܒܠ ܐܝܕܗܡܕ ܐܬܘܪܘܥܣ ܬܘܝܥܨܡܒ 79 Bar Hebraeus, Candelabra VI.I.1.1 ܐܬܝܢ�ܡ ܣܐܝܪ̈ܘܐܬܕ ܐܢ ̱ܐ ܪ ̇ܡܐ ܐܬܘܢܟܪܕܡܒ ܐܬܘܢܬܒܛܨܡܒܘ ܐܬܘܝܡܕܕ ܐܬܝܢܥ̈ܕܝܬܡ Kohlhaas, in his German translates this as “und in der Ausschmückung mit Sitten, die den des Geistigen eigen sind, und vermittels der Angleichung an die geistigen Wesen“ (17).</p>
+<p>Briana Grenert</p>
+<p>121</p>
+<p>Mediation happens through contemplation of divine things, the Church’s practices, and through the basic fact of the similarity of the priesthood to the divine. In essence, mediation occurs by delving into the spiritual sense of the church&#x27;s actions and by participating in the church&#x27;s activities, whereby there is a mediation of similarity to that in the conceptual world through physical actions. This is very Dionysian, and in fact Bar Hebraeus follows this explanation with a quote from Dionysius, say that he also says that which was said “by the Great Dionysius, by who we are guided in each of our mysteries, who said: ‘we come towards the Holy Activity of the priesthood, we are in proximity to the essence which is greater than us, with similarity according to our power, which is unchangeable stability of their holy foundation.’”80 The priesthood is in action, and through this action, there is stability.</p>
+<p>ܐܬܘܢܕܒܥܡ</p>
+<p>ܬܘܠ</p>
+<p>ܢ ̣ܡܕ</p>
+<p>ܢܢ̣ܝܕܗܬܐ</p>
+<p>ܝܢܙܪ ̱ܐ</p>
+<p>ܟܝܐܕ</p>
+<p>ܐܬܘܝܡܕܒ</p>
+<p>ܠܟ ܢܢܝܘܗ</p>
+<p>ܘ ̇ܗ ܇ܢܢܝܬܐ</p>
+<p>ܐܬܫܝܕܩ ܢܠܝܚ . ܐܫܝܕܩ</p>
+<p>ܢܝܗܬܬܘܣܕ</p>
+<p>ܕܟ ܢܢܡ . ܐܢܦܠܚܬܫܡ</p>
+<p>ܟܝܐ</p>
+<p>ܝܗܘܬܝܐ</p>
+<p>ܐܩܢܢܐ</p>
+<p>ܢܡܕ</p>
+<p>ܘ ̇ܗܕ</p>
+<p>ܪܡܐܬܐܕ</p>
+<p>ܢܝܠܗ</p>
+<p>ܢܡ</p>
+<p>ܪܝܓ</p>
+<p>ܝ ̣ܗ</p>
+<p>80 Candelabra VI.I.1.1, Dionysius, Ecclesiastical Hierarchy I.1:372 B ܐܒܪ ܢ ̣ܡ ̇ܗܢܡܕ . ܪ ̣ܡܐܕ ܣܘܝܣܘܢܢܘܝܕ ܣܐ̈ܝܣܘܐܕ ܐܒܪܘܩܒ ܠܥܠܕ ܐܬܘܢܗܟܕ � ܐܪܬܘܟܒܕ . The Greek gives: ἐξ ἧς ἐπὶ τὴν ἁγίαν ἐρχόμενοι τῆς ἱερατείας ἐνέργειαν ἐγγύτεροι μὲν αὐτοὶ γινόμεθα τῶν ὑπὲρ ἡμᾶς οὐσιῶν τῇ κατὰ δύναμιν ἀφομοιώσει τοῦ μονίμου τε καὶ ἀνεξαλλάκτου τῆς αὐτῶν ἱερᾶς ἱδρύσεως (coming to that which is the holy activity of the priesthood, on the one hand we become nearer to the beings who are better than us, with the imitation of their power of stability and unchangeability of their holy foundation). Kohlhaas translates the Syriac quote as: Indem wir von ihr zur heiligen Betätigung des Priestertums gelangen, sind wir in der Nähe der Wesen, die über uns sind, in der unserer Kraft gemäßen Angleichung an die unveränderlich Dauer ihrer heiligen Beständigkeit (17). There are several important translation points, here, especially the words which translate Greek ἐνέργειαν and δύναμιν, both of which are significant Aristotelian terms. “activity” is here Syriac ܐܬܘܢܕܒܥܡ, frequently a translation of Greek ἐνέργεια. It frequently translates the Aristotelian ἐνέργεια (“operation”) in Syriac. For example, we see it in George Bishop of the Arab’s translation of De Interpretatione. Where the Greek gives Φανερὸν δὴ ἐκ τῶν εἰρημένων ὅτι τὸ ἐξ ἀνάγκης ὂν κατ’ ἐνέργειάν ἐστιν, ὥστε εἰ πρότερα τὰ ἀίδια, καὶ ἐνέργεια δυνάμεως προτέρα, the ܐܝܠܓ Syriac has:</p>
+<p>Hugoye 29.1</p>
+<p>122</p>
+<p>Mediation is a major function of the sacred institution of the hierarchy in both Dionysius and Bar Hebraeus, though Dionysius specifies that “the common goal of every hierarchy consists of the continuous love of God and of things divine, a love which is sacredly worked out in an inspired and unique way.”81 Bar Hebraeus, however, turns his attention specifically to the limits of mediation, saying “the priesthood has a manner of conducting humans from animalistic customs to angelic customs, as much as is possible through the mediation of corporeal materials which, in this, depicts the Type of those things which are not corporeal.”82 What does he mean by these things that depict these Types? The liturgical elements: “aromatic oil, and the heavenly bread, and the life-giving wine.”83 These things are the</p>
+<p>The words set to music, through which, by hearing it, the soul is aroused from sleep, and it is made to remember</p>
+<p>ܐܬܘܢܕܒܥܡ</p>
+<p>ܐ̈ܝܡܘܬܡ</p>
+<p>ܢܝܠܗ</p>
+<p>ܐ̈ܝܡܕܩ</p>
+<p>ܢܐ</p>
+<p>ܢܝܕܡ</p>
+<p>ܝܗܘܬܝܐ</p>
+<p>ܐܬܝܢܪܟܕ</p>
+<p>ܡܕܡ</p>
+<p>ܐܬܘܪܒܓ</p>
+<p>ܐܗܠܐܒ</p>
+<p>̈ܐܬܝܡܕܡ</p>
+<p>̈ܐܬܘܢܕܒܥܡ</p>
+<p>�ܘ ܐܬܝܢܥܙܥܕܙܡ</p>
+<p>here,</p>
+<p>come</p>
+<p>from</p>
+<p>the</p>
+<p>ܢܡ �ܝܚ ܐܬܘܢܕܒܥܡܒܘ ܐܡܝܕܩ. In the Greek NT, there are 8 occurrences of the lemma ἐνέργεια, and half of those instances are translated by ܐܬܘܢܕܒܥܡ (Eph 1:19, Eph 3:7, 2 Thess 2:9, 2 Thess 2:11). There are no other instances of the Syriac ܐܬܘܢܕܒܥܡ in the NT. Unsurprisingly for Bar Hebraeus, the concepts of ‘powers’ and ‘operations’ are closely linked – in his Candelabra V.II.2.1 he ܢܡ describes the angelic rank of powers as: ܝܬܝ ̇ܡ ܝܗܠܟܒܕ . “From the manly power, unshakeable in all the operations, bearing resemblance to God.” This George translation also shows us that the Syriac translated as “power” here (�ܝܚ) translates Greek προτέρα. this �ܝܚ word also translated δύναμις in our Dionysius translation and is the name of Dionysius’s fifth rank in Syriac (δύναμις/�ܝܚ) (cf. Candelabra V.II.2.1). All Syriac and Greek texts, Project: Hunaynnet https://hunaynnet.oeaw.ac.at/index.html (accessed 12/04/23).</p>
+<p>ܐܬܘܝܥܨܡܒ</p>
+<p>.</p>
+<p>ܐܝܨܡܕ</p>
+<p>ܐܡܟ</p>
+<p>܆ܐ̈ܝܟ�ܡ</p>
+<p>ܬܘܠ</p>
+<p>ܐ�ܒܘܕ</p>
+<p>81 Dionyisus, Ecclesiastical Hierarchy I.2. 82 Bar Hebraeus, Candelabra VI.I.1.1 ܐܫܢ̈ܝܢܒܠ ܐܪܒܥܡܕ ܐܚܪܘܐ ̇ܗܝܬܝܐ ܐܬܘܢܗܟܕ ܢ ̣ܡ</p>
+<p>ܐܝ�̣ܝܥܒ</p>
+<p>�ܕ</p>
+<p>ܢܝܢ ̇ܗܕ</p>
+<p>ܐܣܦܘܛ</p>
+<p>ܐܪܝܨ</p>
+<p>ܣ� ̈ܘܗܕ ܢ̣ܝܢܡ ̈ܫܘܓ</p>
+<p>ܐ�ܒܘܕ ܐܬ̈ܝܢܡܫܘܓ .</p>
+<p>ܝ ̇ܗܒܕ 83 Candelabra VI.I.1.1ܐܢܝܚܡ ܐܪܡܚܘ .ܐܢܝܡܫ ܐܡܚܠܘ . ܐܡܣܒܡ ܐܢ ̱ܐ ܪ ̇ܡܐ ܐܚܫܡ.</p>
+<p>Briana Grenert</p>
+<p>123</p>
+<p>its first homeland. Therefore, though from the yoke of matter, [the soul] is liberated, and from its bonds, it is related. Unimpededly, [the soul] is united to heavenly essences, according to what is constituted in its associations.84</p>
+<p>The priests, and even more so the high priests, are those whose activity wakes up the sleepers to a higher reality. There are two kinds of priesthoods: “Either the celestial, which is the same as the angels, or the earthly.”85 While Dionysius does say that God modeled the “our most pious hierarchy” on “the sacred institution and source of perfection” that is the celestial hierarchy, he does not conceptualize the angelic activities as an angelic priesthood in the way Bar Hebraeus, following John Dara, does.86 Bar Hebraeus writes that “the celestial priesthood is endowed with the possibility of mediation of similarity which is in it to God, without the material veil (that is to say, a persistent cloud over the faces of intellectual eyes) constantly occupying the created nature of angels.”87 This key difference shapes how Bar Hebraeus understands the place of the ecclesiastical priesthood in the cosmos: as a middle ground between the legal priesthood, which was given through Moses by God, and this angelic priesthood. “The legal priesthood,” Bar Hebraeus explains, “is the dimmer and more distant one, endowed with the mediation of similarity to God and that which was known and was given and established in limits and</p>
+<p>ܐܪܪܚܬܡ</p>
+<p>�ܘܗ</p>
+<p>84 Candelabra VI.I.1.1 ܟܝܐ ܐܪ̣ܝܥܬܬܡ ̇ܗܥܡܫܒܕ ܐܕܝܐ ܐܬܢ̣ܝܩܒ ݀ܬܠ̣ܝܒܓ �ܩ ݀ܬܪܒܘ ܕܟ ܐܢܟܗܘ . ܢ ̣ܡܕ ܐܬܢܫ ̇ܗܝܪ̈ܘܣܐ ܣܐ̈ܝܣܘܐܒ</p>
+<p>ܪ̣ܝܢ ܢ ̣ܡ ܐܬܝ̈ܢܝܡܫ</p>
+<p>̇ܗܪܬܐ ܐܝܡܕܩ ܬܝܐܢܟܘܥܬܡ</p>
+<p>ܐܕܗܥܡܘ .�</p>
+<p>ܐܫܦܢ ܐܪܡܬܫܡ</p>
+<p>ܢ ̣ܡܘ . ܐܬܝܬܝܒ ܐܟܒܚܬܡ</p>
+<p>ܟܝܐ ̇ܗܬ ̈ܘܢܟܒ</p>
+<p>.</p>
+<p>ܬܝܟܘܐ</p>
+<p>ܐܬܝܢܠܘܗ</p>
+<p>85 Candelabra VI.I.1.2 ܐܬܝܢܥܪܐ ܘܐ .ܐ̈ܟ�ܡܕ ܝ ̇ܗ ܟܝܐ ܆ܝ ̱ܗ ܐܬܝܢܝܡܫ ܘܐ. 86 Dionysius, Celestial Hierarchy 1.3, trans. Luibheid and Rorem. 87 Bar Hebraeus, Candelabra VI.I.1.2 ܐܝܢܩ ܐܬܝܬܝܒ ܪ̣ܝܬܝ ܆ܐܬ̣ܝܢܝܡܫ ܝ ̇ܗ ܐܬܘܢܗܟܘ ܡܥ ܘܠܕ ܬܘܢܝܨܡܬܡܠ ܐܬܝ̈ܢܢܘܗ</p>
+<p>ܐܢܢܥ ܐ̈ܟ�ܡܕ</p>
+<p>. ܐܝܪܒܡ</p>
+<p>ܢܘܗܢܝܟ</p>
+<p>ܐܬ̣ܝܦܚܬ ܐܢܥ</p>
+<p>ܝ ̇ܗܒ . ܐܬܝ̈ܙܚ</p>
+<p>ܐܗܠܐܒܕ ̈ܝܦܐܒ</p>
+<p>ܐܬܘܝܡܕ ܐܡܝܩܕ .</p>
+<p>Hugoye 29.1</p>
+<p>124</p>
+<p>corporeal admonitions.”88 So between the fully corporeal and fully incorporeal realities is the church: “After in it, indeed, participation is mixed through rational Contemplations with perceptual signs and through these, it has been brought sacredly to God.”89 Bar Hebraeus supports his point with an explanation of Dionysus, saying, “And this, the great Dionysius explains when he says: for there is another, collegially in the midst of the two breads, that is to say the celestial and the legal one.”90 The Church is between these two hierarchies: not fully incorporeal, not fully corporeal, and can understand the symbols of the legal priesthood as such.</p>
+<p>Participation in the divine is not a unique idea, but instead a fairly common idea in Christianity.91 What is particularly</p>
+<p>88 Candelabra VI.I.1.2 ܐܬܘܝܡܕ ܬܘܢܝܨܡܬܡܠ ݀ܬܘܗ ܐܝܢܩ ܐܬܩ̣ܝܚܪܘ ܐܬܪܘܗܒ ܪܝܬ ܐܡ ̈ܘܚܬܒܕ ܐܗܠܐܒܕ</p>
+<p>ܐܝܢܡ ̈ܫܘܓ</p>
+<p>ܐܪ̈ܗܘܙܘ</p>
+<p>ܝ ̇ܗ</p>
+<p>ܐܕܗ</p>
+<p>.</p>
+<p>ܢ ̣ܡ</p>
+<p>ܐܥ̣ܝܕ̣ܝܘ</p>
+<p>݀ܬܒܗܝܬܐ ݀ܬܡ̣ܝܩܬܐܘ.</p>
+<p>89 Candelabra VI.I.1.2 ܆ܢܝܕ ܝ ̇ܗܒ .ܐܬ̈ܝܢܬܥܘܕܝ ܣܐܝܪ̈ܘܐܬ ܕܝܒ ܆ܐܦܬܘܫܡ ܢ ̇ܡ ܝ ̇ܗܒ ܕܟ ܠܛܡ</p>
+<p>ܬܝܐܫܝܕܩ</p>
+<p>ܐܝܠܥܬܡ</p>
+<p>ܢܘܗ̈ܝܕܝܐܒܘ</p>
+<p>ܐܟܬܦܬܡ</p>
+<p>ܐܢܫܓܪ̈ܬܡ</p>
+<p>ܐܥܕ ̈ܘܘܫܒܕ</p>
+<p>ܬܘܠ ܐܗܠܐ.</p>
+<p>ܐܬܝܣܘܡܢ</p>
+<p>ܝ ̇ܗܕܘ</p>
+<p>ܬܝܟ</p>
+<p>ܢܘܗܝܪ̈ܬܕ</p>
+<p>܆ܐܬ̣ܝܢܝܡܫ</p>
+<p>90Candelabra VI.I.1.2 ܐܬܥܨܡܒ ܬܝܐܦܬܘܫ ܐܕ̣ܝܚܐܕ ܪܝܓ ̇ܗܝܬܝܐ .ܪ ̇ܡܐ ܕܟ ܐܫܝܪ̈ . Maybe a reference to EH</p>
+<p>ܝ ̇ܗܕ III.3.12, when Dionysius discusses the fraction of the bread?</p>
+<p>91 Candelabra VI.I.1.2; Ecclesiastical Hierarchy V.1; Divine Names II.4 (and throughout Divine Names). Thomas Aquinas, for example, also following Dionysius, situates angelic work within the idea of participation in Summa I.108.5.co. These properties show their participation in some aspect of God: “by participation, when an attribute is possessed by something not fully but partially; thus holy men are called gods by participation.” This is Thomas’s way of expressing Dionysius’s dissimilar similarities: there are certain ways in which the angels participate in properties to which they most adhere, though “in the angelic orders all spiritual perfections are common to all the angels.” Therefore, Thomas explains, “Dionysius explains the names of the orders accordingly as they befit the spiritual perfections they signify.” For more on participation, see: Hans Boersma, Heavenly Participation: The Weaving of a Sacramental Tapestry (Grand Rapids, Mich: W.B. Eerdmans Pub. Co, 2011).</p>
+<p>Briana Grenert</p>
+<p>125</p>
+<p>interesting here is how Bar Hebraeus’s reading of the angelic hierarchy as a priesthood brings him to situate the earthly priesthood, the fourth church, as between the fully perceptible and imperceptible.</p>
+<p>What these three divisions of the single priesthood share, that the so-called heathen priesthood does not share, is the “priestly office, which is imitation of that which is in God.”92 This priesthood is the inverse of real priesthood: “it cultivates that which is demonic through the mediation of idolatrous images, and without a certain participation and with a certain operation, so it deceives in its name.”93 Notably, like Dionysius, Bar Hebraeus makes no mention of other Christian confessions: there is only the Church, “our priesthood,” and the angelic high priesthood.94</p>
+<p>The process of elevation is “through a threefold birth”,95 where the one higher in the hierarchy “takes pains to carefully draw the inferior thing to association with that which is excellent (as much as is possible).”96 The process happens:</p>
+<p>1) Through the purification of despicable fornicators [or ways] who are aliens to the imitation of its own similarity and,</p>
+<p>2) The illumination, which is after purification</p>
+<p>92 Candelabra VI.I.1.2 ܐܢܗܟܡ ܐܗܠܐܒܕ ܐܬܘܝܡܕ. 93 Candelabra VI.I.1.2 � .ܐܝ�ܟܬܦ ܐ ̈ܡܠܨ ܬܘܝܥܨܡܒ ܐܚܠܦ ܘ ̣ܗ ܐ̈ܕܐܫܠ �ܐ</p>
+<p>ܐܡܫ</p>
+<p>݀ܬܠܓܕ</p>
+<p>ܡܕܡ</p>
+<p>ܐܬܘܪܘܥܣܘ</p>
+<p>ܢܢܝܢܡܕ</p>
+<p>ܢܝܠܗ</p>
+<p>ܐܬܘ̈ܢܗܟܠ</p>
+<p>ܐܦܬܘܫܡ</p>
+<p>ܝ ̱ܗ</p>
+<p>ܡܕܡܒ .</p>
+<p>94 Could this be because of his ecumenism? Bar Hebraeus was an extremely influential advocate for Christian unity. See: Ephrem Aboud Ishac, “Being Christians Together? The Situation of Ecumenism in the Middle East. An Institutional Perspective,” in Thinking about Christian Life in the Turmoil Times of the Middle East: Insights and Reflections from East and West, ed. Martin Tamcke and Claudia Rammelt, Universitätsdrucke Göttingen (Göttingen: Universitätsverlag Göttingen, 2020), 67–69.</p>
+<p>95 Candelabra VI.I.2.1 ܐܝܘܗ ܬܠܬ ܕܝܒ. 96 Candelabra VI.I.2.1ܐܝܨܡܕ ܐܡܟ ܪܬܝܡܕ ܘ ̇ܗܕ ܐܬܘܝܬܝܒ ܬܘܠ ܪ̣ܝܨܒܕ ܘ ̇ܗܕ ܝ ̱ܗ .</p>
+<p>Hugoye 29.1</p>
+<p>126</p>
+<p>3) And next, through the drawing of excellent images, which are the inimitable part of that which is perfection.97</p>
+<p>Once again, we see the threefold process: purification of that which is foreign to godliness, illumination, and then the individual is drawn, though exemplars, to imitate what about those exemplars is imitable and drawn near to perfection. This is the scheme of purification, illumination, and perfection accomplished by the ranks of the priesthood. Purification happens through the deacons: “through the deacons, [the soul] is guided and on account of this, the deacons are dubbed ‘purifying ones’”.98 Illumination happens through the priests: “and through the priests, [the soul] is filled, and on account of this, the priests are named ‘enlighteners’.”99 Finally, perfection happens through the high priests: “through the high priest, the soul is perfected, and on account of this, the high priests are called ‘perfectors’”.100 In summary, Bar Hebraeus says, “And thus are the three ranks of the fourth and earthly church, I have said: the deacons, priests, and high priests, each one from the churches which are in heaven.”101</p>
+<p>ܐܝܟܘܕ</p>
+<p>ܐܬܘܢܪܗܢܬܡ</p>
+<p>.</p>
+<p>ܐܛܝܐ . ܐܢܝܡܕܬܡܕ</p>
+<p>ܐܬܪ̈ܬܝܡ</p>
+<p>ܢ ̣ܡܕ ܐܬܪ̈ܘܨܒܕ</p>
+<p>ܕܝܒ ܝ ̣ܗܕ</p>
+<p>97 Candelabra VI.I.2.1 ܗܬܝ ܢ ̣ܡ ܐܢܝܡܕܬܡܠ ܢ̣ܝ̣ܝ�ܟܘܢܕ ܐ�̣ܝܣܒ ܐ̈ܝܢܙܕ ܐܝܟܘܕ ܕܝܒ ܪܬܒ ܕܝܒܘ ܐܢܝܡܕܡܕ ܐܬܘܢܡܫܪܬܡ ܐܬܘܪ̣ܝܡܓ ܝ ̣ܗ . Images/imagery and the interpretation of images is a major theme in the Ecclesiastical Hierarchy. Eg. Ecclesiastical Hierarchy 4.3.</p>
+<p>98 Candelabra VI.I.2.1 ܘ̣ܝܡܬܫܐ ܐܢܝ̈ܟܕܡ ܐܕܗܠܛܡܘ . ܐܪܒܕܬܡ ܐܢܫ ̈ܡܫܡ ܕܝܒ</p>
+<p>ܐܢܫ ̈ܡܫܡ.</p>
+<p>ܐܝܠܡܬܫܡ</p>
+<p>ܐܢ ̈ܗܟ</p>
+<p>ܘ̣ܝܢܟܬܐ</p>
+<p>99 Candelabra VI.I.2.1 Presumably, filled with light .ܐܝܠܡܬܡ ܐܢ ̈ܗܟ ܕܝܒ ܐܕܗܠܛܡܘ .</p>
+<p>ܐܕܚܠܟܕ</p>
+<p>ܐܬܠܬ</p>
+<p>ܟܝܐ ܦܐܕ</p>
+<p>ܐܢ ̈ܗܟ</p>
+<p>ܐܢ ̈ܗܟܘ</p>
+<p>ܝܫ̣ܝܪ̈ܘ</p>
+<p>ܪ ̇ܡܐ ܐܢ ̱ܐ</p>
+<p>ܐܢܪ̈ܗܢܡ 100 Candelabra VI.I.2.1 ܐܢ ̈ܗܟ ܝܫ̣ܝܪ̈ ܘ̣ܝܪܩܬܐ ܐܪ̈ܘܡܓ ܐܕܗܠܛܡ. 101 Candelabra VI.I.2.1 .ܐܬܝܢܥܪܐܘ ܐܬܝܥܝܒܪ ܐܬܕܥܕ ܐܡ ̈ܓܬ ܘܘ ̣ܗ ܐܬܠܬ ܐܢܟܗܘ ܐܢܫ ̈ܡܫܡ ܢ ̣ܡ . ܐܝܡܫܒܕ</p>
+<p>ܢ̈ ̣ܝܡܓܬ ܐܬ̈ܕܥ .</p>
+<p>Briana Grenert</p>
+<p>127</p>
+<p>Three groups are undergoing purification: the two types of penitents and the catechumens. All these have not been purified, and must be sent out by the deacons after the reading: “For their eyes are too dim for their sight, until they are purified from the stickiness of the eyes, which afflicts them, that is to say [until] the spiritual gifts are imparted to them.”102 It is not possible to be enlightened without being purified, and similarly, enlightenment is necessary for perfection.</p>
+<p>Next Bar Hebraeus turns his attention to those who think that there are three churches in nine orders on earth as in the celestial hierarchy. These (incorrect!) people</p>
+<p>divide the heavenly churches, and the first [church] in three ranks – that of the patriarchs and metropolitans and bishops, they count. And then again they set up the middle/second church in three ranks: that of elders, of deacons, and of subdeacons. And again, the other/third church, they reckon into three thanks: that of readers, and of cantors, and of exorcists.103</p>
+<p>issue</p>
+<p>is that this nine-rank</p>
+<p>This would lead to nine ranks within the church. For Bar Hebraeus, this completely misunderstands Dionysius, who “teaches that there is only one earthly church in three ranks.”104 The major interpretation misunderstands the nature of the ranks: each member of a</p>
+<p>102 Candelabra VI.I.2.2 .ܢܘܗܠ ܣ̣ܝܣܦ ܐ̈ܝܗܠܐ ܐ ̈ܒܬܟܕ ܕܘܚܠܒ ܐܥܡܫ ܐܣ̈ܟܛ ܢܝܠܗ ܐܙܚܡܠܘ ܘܝܘܓܬܡܠ ܢܘܢܐ ܐܩܦܣ �ܕ ܢܡܟܐ .ܐܢܫ ̈ܡܫܡ ܢ ̣ܡ ܢ̣ܝܩܦܬܬܡ ܐܛܝܐ ܐ̈ܝܗܠܐܘ ܐ̈ܝܠܥܡ ܐܙܪ̈�.</p>
+<p>ܐ</p>
+<p>ܦܕ ܢ̈</p>
+<p>103 Candelabra VI.I.2.3 ܢܝܗܠܟ ܕܟ ܐܬܝ̈ܢܝܡܫ ܐܬ̈ܕܥܕ .ܢܝܪܡܐ ܢܠܝܕ ܢܝܠܗ ܢ ̣ܡ ܢ ̇ܡ ܢ̈ܝܫܢ ̱ܐܘ ܦܐܕ ܐܨܠܐ ܝ ̱ܗ ܐܬ̣ܝܢܫܓܪܬܡ ܐܬܝܢܥܪܐ ܢܠܝܕ ܐܕܗܘ .ܢܝܢܐ ܐܬܝܢܥ̈ܕܝܬܡ ܐܕܚܟܐ ܐܢܟܗܘ .ܐܡ ̈ܓܬ ܐܥܫܬܒ ܐܬ̈ܕܥ ܢܝ ̈ܘܗܢ ܬܠܬ .ܢܡܬܪܗ ܦܐܕ ܐܡܟܐ ܢܬܘܠ ܐܟܪܗ ܘܟ�ܝܪܛ ̣ܝܡܓܬ ܐܬܠܬܒ ܐܬܝܡܕܩܘ ܐܬܝܠܥ ܐܬܕܥ .ܢ̣ܝܣܪܦܬܡ ܕܟ ܐܬܠܬܒ ܐܬ̣ܝܢܝܪܬܘ ܐܬܝܥܨܡ ܒܘܬ ܐܬܕܥܘ .ܢܝܢܡ ܐܦ ̈ܘܩܣܦܐܘ ܐܛܝܠܘܦܘ�ܛ̣ܝܡܘ ܐܬܝܬ̣ܝܠܬܘ ܐܬܝܪܚ ̱ܐ ܒܘܬ ܐܬܕܥܘ .ܢ̣ܝܡܝܣ ܘܢ ̈ܩܝܕܘܦܐܘ ܐܢܫ ̈ܡܫܡܘ ܐܫ̈ܝܫܩܕ ܢ̈ ̣ܝܡܓܬ ܢ̣ܝܒܫܚ ܐܢܝ ̈ܡܘܡܘ ܐܢ�ܡܙܡܘ ܐܝܘ�ܩܕ ܢ̈ܝܡܓܬ ܐܬܠܬܒ.</p>
+<p>104 Candelabra VI.I.2.3 ܐܒܪܕ ܗܢܡ ܐܬܝܢܙܪ̈ ̱ܐ ܢܝܠܗ ܣܐܝܪ̈ܘܐܬܠܕ ܠܛܡ ܢܝܕ ܢܢܚ ܢ̈ܝܣܟܛ ܐܬܠܬܒ ܐܬܝܢܥܪܐ ܐܬܕܥ ܕܘܚܠܒ ܐܕܚ ܘ ̣ܗܘ .ܢܝܢܐ ܢܡܠܫܬܬܐ ܣܘܝܣܘܢܢܘܝܕ ܢܢܝܕܪ ܗܬܒ ̈ܩܥܒܘ ܢܢ̣ܝܦܩܢ ܬܝܐܩܕܙ ܗܠ .ܦܠܐ.</p>
+<p>Hugoye 29.1</p>
+<p>128</p>
+<p>given rank shares one charisma.105 Its perfection, illumination, or purification, and “no way do they surpass one another concerning the sort of charisma.”106 So all three of the last rank (lectors, cantors, and exorcists) are one charisma, though they are specifically appointed to different functions. Bar Hebraeus elaborates: “they are not made perfect through the laying of hands – instead, permission is given to them so that he might read, and that he might sing, and that he might exorcise those who are baptized.”107</p>
+<p>With this, he concludes his introductory chapter, though Bar Hebraeus himself begins his commentary on the particular rites of the liturgy. It is with this reflection on and interpretation of Dionysius that Bar Hebraeus uses to introduce his commentary on the liturgy, grounding the activities the clergy do in what the clergy are: mediators, in the fourth and earthly church, imitating God.</p>
+<p>CONCLUSION</p>
+<p>For Bar Hebraeus, the earthly church is one of four, and the earthly priesthood of the church is one of three, finding itself between the rational celestial high priesthood of the angels and the perceptible legal priesthood of Moses. He does not, in contrast to contemporary writers, discuss schisms within the church and instead discusses one earthly priesthood.108 Bar Hebraeus closely reads and follows Dionysius, integrating Syriac Dionysian thought and liturgical commentary tradition into a new synthesis. He has an unacknowledged debt to John</p>
+<p>ܘ ̇ܗܕ</p>
+<p>.�ܐ</p>
+<p>ܢܦܐܘ</p>
+<p>ܢܘܗܠ ܢ ̇ܡ</p>
+<p>ܐܒܗܝܬܡ ܘܢ ̈ܩܐܝܕܘܦܐܘ</p>
+<p>ܕܘܚܠܒ ܢܝܕ ̇ܡܥܕ .</p>
+<p>ܐܬܘܢܣܦܡ ܢܘܢ ̇ܗܠ</p>
+<p>ܢܝܠܡܬܫܡ ܘ ̇ܗ ܢܝܕ ܐܡܘܢ</p>
+<p>ܐܕ ̇ܝܐ ܇ܪܡܙܢ ܢܝܕ</p>
+<p>105 Candelabra VI.I.2.3. 106 Candelabra VI.I.2.3 ܢ̣ܝܪܬܝܡ ܐܢܟܘܫܕ ܐܢܙܒ ܐܕ̈ܕܚ ܢ ̣ܡ ܡܕܡܒ �ܘ. 107 Candelabra VI.I.2.3 ܘܠ .ܐܢܝ ̈ܡܘܡܘ .ܐܢ�ܡܙܡܘ ܐܢ ̱ܐ ܪ ̇ܡܐ ܐܝܘ�ܩ ܐܢ�ܚ ̱ܐ ܢܘܢ ̇ܗ ܢ ̇ܡ ܐܪܩܢ ܡܝܣܒ . ܘ ̇ܗ ܇ܢ̣ܝܚܪܣܬܬܡ .</p>
+<p>108 Cf. Cabasilas, A Commentary on the Divine Liturgy.</p>
+<p>Briana Grenert</p>
+<p>129</p>
+<p>Dara and many other commentators before him, who lay down the principles by which Bar Hebraeus opens up the world of Dionysius to his 13th-century audience. Bar Hebraeus envisions a world of heavenly participation through the priesthood, liturgy, and sacraments through which, priests, like angels, guide humanity towards similarity to God through Types and symbols. However, there is one more unique aspect of his approach: he follows Dionysius in avoiding overt polemic in his Candelabra V and VI.</p>
+<p>In the Dionysian world, the Ecclesiastical Hierarchy serves to smooth divisions and differences into union. When description the work of the eucharist, Dionysius says “Every sacredly initiating operation draws our fragmented lives together into a one-like divinization. It forges a divine unity out of the divisions within us. It grants us communion and union with the One.”109 Reading Dionysius’s work, there are no overt polemics against the author’s contemporaries or acknowledgement of multiplicity of churches. There are hierarchs, deacons, and presbyters – but no patriarchs, named schisms, or councils. The author, writing under the pseudonym of Paul’s convert in Athens, Dionysius the Areopagite, would certainly have revealed he was not a first-century disciple. Dionysius’s vagueness about the doctrinal disputes of his day also enabled his popularity, and the enduring significance of his work for Christians who were otherwise not reading the same new work. Bar Hebraeus was a famously ecumenical leader.110 He considers the history of the Church of the East in his ecclesiastical chronicle, and even while holding his ground about his own Christological believes and refuting heresies (as in Candelabra IV), he claims that the pernicious heresies have</p>
+<p>109 Dionysius, Ecclesiastical Hierarchy 1, trans. Luibheid and Rorem. 110 Hidemi Takahashi, Barhebraeus: A Bio-Bibliography, 1st Gorgias Press ed</p>
+<p>(Piscataway, N.J: Gorgias Press, 2005), 47–53.</p>
+<p>Hugoye 29.1</p>
+<p>130</p>
+<p>passed and that the modern divisions of the church are a matter of terminology.111</p>
+<p>In Candelabra V Bar Hebraeus considers the question of when angels were created. His conclusion is definite: “all anteriority and posteriority must be within time” and cannot be considered outside of time.112 Angels were created beyond the determination of time, and Bar Hebraeus insists that all the Bible’s temporal associations with the creation of angels must be taken metaphorically.113 However, in contrast to his predecessors in the Syriac liturgical commentary tradition and in contrast, indeed, to a preoccupation that is common when Christians considered the sacraments and priesthood, Bar Hebraeus chooses to write a work of liturgical theology in the tradition of Dionysius, where there is one Ecclesiastical Hierarchy mediating between heaven and earth.</p>
+<p>In this paper, I have only really considered the first part of Bar Hebraeus’s Candelabra VI and V. Analysis of the rest of the work, compared to other West Syriac liturgical commentaries as well as more Byzantine and East Syriac liturgical commentaries, could reveal more about what is common to the West Syriac and wider Eastern Christian liturgical tradition and ecclesiology.114</p>
+<p>111 Takahashi, Barhebraeus, 50. A similar approach has been attempted by ‘Nestorian’ Church: A scholars today, see: Sebastian Brock, “The Lamentable Misnomer,” Bulletin of the John Rylands Library 78, no. 3 (September 1996): 3, https://doi.org/10.7227/BJRL.78.3.3.</p>
+<p>112 Bar Hebraeus, Candelabra V.III.1.1 More research is needed to understand Bar Hebraeus’s acceptance (or not) of the idea of the eternity of the world, something he seems to accept in some of his works but not in others. See: Hidemi Takahashi, “The Reception of Ibn Sīnā in Syriac: The Case of Gregory Barhebraeus,” in Before and After Avicenna, Islamic Philosophy, Theology and Science. Texts and Studies (Leiden: Brill, 2003), 52:272.</p>
+<p>113 Bar Hebraeus, Candelabra V.III.1. 114 Wilhelm de Vries, SJ, has already done considerable work West Syriac sacramental theology and some work on ecclesiology. His analysis of the</p>
+<p>Briana Grenert</p>
+<p>131</p>
+<p>Bar Hebraeus, much more so than any West Syriac liturgical commentator other than John Dara, integrates Dionysian thought in a meaningful way into his liturgical commentary. However, unlike Dionysius, he sees the earthly church as the fourth and final church, continuous with the three heavenly churches.</p>
+<p>BIBLIOGRAPHY</p>
+<p>Primary Sources:</p>
+<p>Augustine. “Homily 3 on the First Epistle of John.” In Nicene and Post-Nicene Fathers, First Series. Edited by Philip Schaff. Translated by H Browne. Vol. 7. Buffalo, NY: Christian Literature Publishing Co., 1888. https://www.newadvent.org/ fathers/170203.htm.</p>
+<p>———. “On Baptism, Against the Donatists.” In Nicene and Post-Nicene Fathers, First Series, edited by Philip Schaff, translated by J.R. King, vol. 4. Buffalo, NY: Christian Literature Publishing Co., 1887. https://www.newadvent.org/ fathers/1408.htm.</p>
+<p>Bar Hebraeus. Le Candélabre Du Sanctuaire de Grégoire Aboulfaradj Dit Barhebraeus Cinquième Base: Des Anges.</p>
+<p>is</p>
+<p>mysteries of the Church and the particular sacraments draws on many West Syriac authors, and is sensitive to the development of various idea. See: De Vries, Sakramententheologie Bei Den Syrischen Monophysiten. However, he is a Catholic scholar which shapes the sorts of questions he considers. For example, he has an entire section on the concept of “transubstantiation” (142-155). Another example in paper on ecclesiology, where he considers Syriac perspectives on the primacy of Peter, rejection of the jurisdiction of the Pope, and issues of ecumenism (e.g. “die monophysitische Kirche die allein wahre Kirche Christi?”), heretics, and schismatics. See: Wilhelm De Vries, “Zum Kirchenbegriff Der Späteren Jakobiten,” Orientalia Christiana Periodica 19 (1953): 128–77.</p>
+<p>Hugoye 29.1</p>
+<p>132</p>
+<p>Edited by Antoine Torbey and François Graffin. Vol. 188. Patrologia Orientalis. Paris: Fermin-Didot, 1963.</p>
+<p>———. Jakobitische Sakramententheologie Im 13. Jahrhundert : Der Liturgiekommentar Des Gregorius Barhebraeus. Edited by Kohlhaas, Radbert. Liturgiewissenschaftliche Quellen Und Forschungen 36. Münster, Westfalen: Aschendorff, 1959.</p>
+<p>Cabasilas, Nicolaus. A Commentary on the Divine Liturgy. Translated by J. M. Hussey and P. A. McNulty. London: S.P.C.K, 1966.</p>
+<p>Cyprian. “Letter 69.” In Early Latin Theology: Selections from Tertullian, Cyprian, Ambrose and Jerome, edited by S.L. Greenslade, 5:150–57. The Library of Christian Classics. Philadelphia: Westminster Press, 1956.</p>
+<p>Dionysius bar Ṣalībī. Expositio liturgiae. Edited by Jérôme 1903.</p>
+<p>E</p>
+<p>TypographeoReipublicae,</p>
+<p>Labourt. http://archive.org/details/expositioliturg00labogoog.</p>
+<p>———. Dionysius Bar Ṣalībī: Commentaries on the Myron and Baptism. Translated by Baby Varghese. Moran Etho 29. Kottayam: St. Ephrem Ecumenical Research Institute, 2006.</p>
+<p>George Bishop of the Arabs. “An Exposition of the Mysteries of the Church.” In Two Commentaries on the Jacobite Liturgy, translated by R.H. Connolly and H.W. Codrington. London: Text and Translation Society, 1913.</p>
+<p>Germanus. On</p>
+<p>the Divine Liturgy. Translated by Paul Meyendorff. Crestwood, N.Y: St. Vladimir’s Seminary Press, 1984.</p>
+<p>(Isaac of Antioch) Esbroeck, Michel van. “The Memra on the Parrot by Isaac of Antioch.” The Journal of Theological Studies 47, no. 2 (1996): 464–76.</p>
+<p>John Dara. The Commentary of John of Dara on the Eucharist. Translated by Baby Varghese. Moran Etho 12. Piscataway, NJ: Gorgias Press, 2011.</p>
+<p>Briana Grenert</p>
+<p>133</p>
+<p>(John Dara’s Commentary on the Celestial High Priesthood is</p>
+<p>listed under Anderson’s dissertation below)</p>
+<p>Kiraz, George. Comparative edition of the Syriac Gospels: aligning the Sinaiticus, Curetonianus, Peshîṭtâ and Ḥarklean versions. Vol. 1. New Testament tools and studies, 21 1-4. Leiden: E. J. Brill, 1996.</p>
+<p>Kohlhaas, Radbert. Jakobitische Sakramententheologie Im 13. Jahrhundert : Der Liturgiekommentar Des Gregorius Barhebraeus. Liturgiewissenschaftliche Quellen Und Forschungen 36. Münster, Westfalen: Aschendorff, 1959.</p>
+<p>Moses Bar Kepha, Commentary on Luke: Abdul-Massih Saadi, Moshe Bar Kepha’s Commentary on the Gospel of Luke, Gorgias Eastern Christian Studies 59 (Piscataway, NJ: Gorgias Press, 2020)</p>
+<p>———. “Die Liturgieerklärung von Mose Bar Kepha Und Zwar Die ErklLiturgieerklärerrung Der Mysterien Der Opfeier In Die (Qurobo).” Translated by Andreas Heinz. Eucharistiefeier in Der Deutung Syrischer Liturgieerklärer: Die Liturgiekommentare von Georg Dem Araberbischof ([d.] 724), Mose Bar Kepha ([d.] 903), Dionysius Bar Ṣalibi ([d.] 1171). Sophia, Bd. 33. Trier: Paulinus, 2000.</p>
+<p>Pseudo-Dionysius. Pseudo-Dionysius: The Complete Works. Translated by Colm Luibhéid and Paul Rorem. The Classics of Western Spirituality. New York: Paulist Press, 1987.</p>
+<p>Sergius of Reshayna. Trattato sulla vita spirituale. Translated by</p>
+<p>Emiliano Fiori. Magnano: Edizioni Qiqajon, 2015.</p>
+<p>Thomas Aquinas. The Summa Theologica. Translated by Fathers</p>
+<p>of the English Dominican Province. 1920.</p>
+<p>Secondary Literary:</p>
+<p>Alexopoulos, Stefanos, and Maxwell E. Johnson. Introduction to Eastern Christian Liturgies. Alcuin Club Collection, no. 96. Collegeville, Minnesota: Liturgical Press Academic, 2022.</p>
+<p>Hugoye 29.1</p>
+<p>134</p>
+<p>Anderson, Elizabeth. “The Interpretation of Pseudo-Dionysius in the Works of John of Dara.” PhD diss, Yale University, 2016.</p>
+<p>Arthur, Rosemary A. Pseudo-Dionysius as Polemicist: The Development and Purpose of the Angelic Hierarchy in Sixth Century Syria. Ashgate New Critical Thinking in Religion, Theology and Biblical Studies. Burlington, VT: Ashgate, 2008.</p>
+<p>Aydin, Sami. Sergius of Reshaina: Introduction to Aristotle and His Categories, Addressed to Philotheos. Leiden: Brill, 2016. https://brill.com/view/title/33621.</p>
+<p>Barker, Margaret. The Great High Priest: The Temple Roots of</p>
+<p>Christian Liturgy. London ; New York: T&amp;T Clark, 2003.</p>
+<p>Baumstark, Anton. Geschichte der syrischen Literatur, mit Ausschluss der christlich-palästinensischen Texte. Bonn, Weber, 1922.</p>
+<p>Berti, Vittorio. “L’angelologia siriaca: Gregorio Abu-l-Farag Bar Ebraya, Della conoscenza delle essenze celesti, che sono gli loro differenti cori.” In Angeli: ebraismo, angeli, nei cristianesimo, islam, edited by Giorgio Agamben and Emanuele Coccia, 1403–51. La quarta prosa. Vicenza: Pozza, 2009.</p>
+<p>Boersma, Hans. Heavenly Participation: The Weaving of a Sacramental Tapestry. Grand Rapids, Mich: W.B. Eerdmans Pub. Co, 2011.</p>
+<p>Brock, Sebastian. “An Early Syriac Commentary on the Liturgy.” In Fire from Heaven: Studies in Syriac Theology and Liturgy, 387–403. Variorum Collected Studies Series CS863. Aldershot, England: Ashgate Variorum, 2006.</p>
+<p>———. The Luminous Eye: The Spiritual World Vision of Saint Ephrem. Cistercian Studies Series 124. Kalamazoo, Michigan: Cistercian Publications, 1992.</p>
+<p>Briana Grenert</p>
+<p>135</p>
+<p>———. “The ‘Nestorian’ Church: A Lamentable Misnomer.” Bulletin of the John Rylands Library 78, no. 3 (September 1996): 3. https://doi.org/10.7227/BJRL.78.3.3.</p>
+<p>Coakley, Sarah. “Introduction -- Re-Thinking Dionysius the Areopagite.” In Re-Thinking Dionysius the Areopagite, edited by Charles M. Stang, 1–10. Directions in Modern Theology. Chichester, U.K.: Wiley-Blackwell, 2009.</p>
+<p>De Vries, Wilhelm. Sakramententheologie Bei Den Syrischen Monophysiten. Orientalia Christiana Analecta 125. Rome: Pont. institutum orientalium studiorum, 1940.</p>
+<p>———.</p>
+<p>Jakobiten.”</p>
+<p>“Zum Kirchenbegriff Der Späteren Orientalia Christiana Periodica 19 (1953): 128–77.</p>
+<p>Fiori, Emiliano. “Dionigi l’Areopagita e l’origenismo siriaco. Edizione critica e studio storico-dottrinale del trattato sui Nomi divini nella versione di Sergio di Res’ayna.” PhD Diss, Università di Bologna, 2010.</p>
+<p>———. “Mélange Eschatologique et ‘Condition Spirituelle’ de l’intellect Dans Le Corpus Dionysiacum Syriaque: Un Cas Remarquable de Divergence Entre Le Corpus Dionysien Grec et Sa Traduction Par Serge de Reš‘aynā.” Parole de l’Orient 35 (2010): 261–76.</p>
+<p>———. “Mystique et Liturgie Entre Denys l’Aréopagite et Le Livre de Hiérothée : Aux Origines de La Mystagogie SyroOccidentale.” In Les Mystiques Syriaques, edited by A. Desreumaux, 27–44. Études Syriaques 8. Paris: Geuthner, 2011.</p>
+<p>———. “Un Intellectuel Alexandrin En Mésopotamie. Essai d’une Interprétation d’ensemble de l’œuvre de Sergius de Rēš‘aynā.” In De l’Antiquité Tardive Au Moyen Âge Études de Logique Aristotélicienne et de Philosophie Grecque, Syriaque, Arabe et Latine Offertes à Henri Hugonnard-Roche, edited by Martini Bonadeo and E. Coda, 59–90. Paris: J Vrin, 2014.</p>
+<p>Hugoye 29.1</p>
+<p>136</p>
+<p>Galli, Mark. Beyond Smells and Bells: The Wonder and Power of</p>
+<p>Christian Liturgy. Brewster, Mass: Paraclete Press, 2008.</p>
+<p>Greatrex, Marina. “The Angelology in the Hexameron of Jacob of Edessa.” Journal of the Canadian Society for Syriac Studies 4, no. 1 (2009): 33–46. https://doi.org/10.1515/jcsss-2009040106.</p>
+<p>Hatzidakis, Emmanuel. The Heavenly Banquet: Understanding the Divine Liturgy. Clearwater, FL: Orthodox Witness, 2008.</p>
+<p>Hugonnard-Roche, Henri. “Jacob Of Edessa And The Reception Of Aristotle.” In Jacob of Edessa and the Syriac Culture of His Day, 205–22. Brill, 2008. https://brill.com/display/book/ 9789047426936/Bej.9789004173477.i-314_014.xml.</p>
+<p>Universitätsdrucke</p>
+<p>Göttingen.</p>
+<p>Ishac, Ephrem Aboud. “Being Christians Together? The Situation of Ecumenism in the Middle East. An Institutional Perspective.” In Thinking about Christian Life in the Turmoil Times of the Middle East: Insights and Reflections from East and West, edited by Martin Tamcke and Claudia Rammelt, 67–94. Göttingen: Universitätsverlag Göttingen, 2020.</p>
+<p>“Mariphan.”</p>
+<p>In Gorgias Encyclopedic the Syriac Heritage: Electronic Edition. https://gedsh. Gorgias</p>
+<p>Press,</p>
+<p>2011.</p>
+<p>Kiraz, George. B. Dictionary of Piscataway: bethmardutho.org/Maphrian.</p>
+<p>Louth, Andrew. “The Reception of Dionysius in the Byzantine World: Maximus to Palamas.” Modern Theology 24, no. 4 (2008): 586–99.</p>
+<p>114,</p>
+<p>no.</p>
+<p>1</p>
+<p>(February</p>
+<p>2021):</p>
+<p>Marinis, Vasileios. “On Earth as It Is in Heaven? Reinterpreting the Heavenly Liturgy in Byzantine Art.” Byzantinische Zeitschrift 255–68. https://doi.org/10.1515/bz-2021-9012.</p>
+<p>Payne Smith, R., and Jessie (Payne Smith) Margoliouth. A Compendious Syriac Dictionary, Founded upon the Thesaurus</p>
+<p>Briana Grenert</p>
+<p>137</p>
+<p>Syriacus of R.Payne Smith, D. D. Oxford: The Clarendon Press, 1903. https://catalog.hathitrust.org/Record/000017168.</p>
+<p>Pelikan, Jaroslav. “The Odyssey of Dionysian Spirituality.” In Pseudo-Dionysius: The Complete Works, 11–24. The Classics of Western Spirituality. New York: Paulist Press, 1987.</p>
+<p>Rorem, Paul. Biblical and Liturgical Symbols within the PseudoDionysian Synthesis. Studies and Texts 71. Toronto: Pontifical Institute of Mediaeval Studies, 1984.</p>
+<p>———. “Negative Theologies and the Cross.” The Harvard</p>
+<p>Theological Review 101, no. 3/4 (2008): 451–64.</p>
+<p>Saweros, Ibrahim. “Angels in Coptic Tradition.” Shedet 6, no. 6 https://doi.org/10.21608/ 74–91.</p>
+<p>2019):</p>
+<p>(December shedet.006.05.</p>
+<p>Schulz, Hans-Joachim. The Byzantine Liturgy: Symbolic Structure and Faith Expression. 1st ed. Translated by Matthew O’Connell. New York: Pueblo Pub. Co, 1986.</p>
+<p>Schwartz, Daniel L. Paideia and Cult: Christian Initiation in Theodore of Mopsuestia. Washington DC.: Center for Hellenic Studies, 2013.</p>
+<p>Sherwood, P. “Mîmro de Serge de Reayna Sur La Vie Spirituelle.”</p>
+<p>L’Orient Syrien 5,6 (1961 1960): 433–59; 95–115, 121–56.</p>
+<p>Suchla, Beate Regina. Dionysius Areopagita: Leben, Werk,</p>
+<p>Wirkung. Freiburg: Herder, 2008.</p>
+<p>Takahashi, Hidemi.</p>
+<p>“Bar</p>
+<p>ʿEbroyo, Grigorios.” Gorgias Encyclopedic Dictionary of the Syriac Heritage: Electronic Edition, Beth Mardutho, The Syriac Institute/Gorgias Press, 2011. https://gedsh.bethmardutho.org/Bar-Ebroyo-Grigorios.</p>
+<p>———. Barhebraeus: A Bio-Bibliography. 1st Gorgias Press ed.</p>
+<p>Piscataway, N.J: Gorgias Press, 2005.</p>
+<p>———. “Simeon Of Qal‘a Rumaita, Patriarch Philoxenus Nemrod and Bar ‘Ebroyo.” Hugoye: Journal of Syriac Studies 4,</p>
+<p>Hugoye 29.1</p>
+<p>138</p>
+<p>1 (January 2010): 45–92. https://doi.org/10.31826/</p>
+<p>no. 9781463214098-004.</p>
+<p>———. “The Reception of Ibn Sīnā in Syriac: The Case of Gregory Barhebraeus.” In Before and After Avicenna, 52:249– 81. Islamic Philosophy, Theology and Science. Texts and Studies. Leiden: Brill, 2003.</p>
+<p>2,</p>
+<p>2022.</p>
+<p>Teule, Herman G. B. “Renaissance, Syriac.” Gorgias Encyclopedic Dictionary of the Syriac Heritage: Electronic Edition, Beth Mardutho, The Syriac Institute/Gorgias Press, 2011. Accessed December https://gedsh.bethmardutho.org/ Renaissance-Syriac.</p>
+<p>Torbey, Antoine.</p>
+<p>“Introduction.”</p>
+<p>In Le Candélabre Du Sanctuaire de Grégoire Aboulfaradj Dit Barhebraeus Cinquième Base: Des Anges, edited by François Graffin, 30:5– 10. Patrologia Orientalis. Paris: Fermin-Didot, 1963.</p>
+<p>Varghese, Baby. The Early History of the Syriac Liturgy: Growth, Adaptation and Inculturation. Göttinger Orientforschungen, Band 62. Wiesbaden: Harrassowitz Verlag, 2021.</p>
+<p>———. West Syrian Liturgical Theology. Liturgy, Worship and Society. Aldershot, Hants, England ; Burlington, VT: Ashgate, 2004.</p>
+<p>———. “Studies in the West Syrian Liturgy of the Consecration</p>
+<p>of Holy Myron.” The Harp 6 (1993): 72–73.</p>
+</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            
+<div class="PDFviewer text-center" style="width:100%; margin-top:1rem;">
+  <object data="HV29N1Grenert.pdf" type="application/pdf" width="100%" height="800">
+    <a href="HV29N1Grenert.pdf">Open the PDF</a>
+  </object>
+</div>
+          </div>
+
+          <!-- RIGHT MENU (as in your example) -->
+          <div class="col-md-3 col-lg-3 right-menu">
+            <div id="rightCol" class="noprint">
+              <div id="sedraDisplay" class="sedra panel panel-default">
+                <div class="panel-body">
+                  <span style="display:block;text-align:center;margin:.5em;"><a href=" http://sedra.bethmardutho.org" title="SEDRA IV">SEDRA IV</a></span>
+                  <img src="/resources/img/sedra-logo.png" title="Sedra logo" width="100%" />
+                  <h3>Syriac Lexeme</h3>
+                  <div id="sedraContent"><div class="content"></div></div>
+                </div>
+              </div>
+            </div>
+
+            <div class="panel panel-default">
+              <div class="panel-heading"><a href="#" data-toggle="collapse" data-target="#aboutDigitalText">About This Digital Text</a></div>
+              <div class="panel-body collapse in" id="aboutDigitalText">
+                <div><h5>Record ID:</h5><span>https://hugoye.bethmardutho.org/article/hv29n1grenert</span></div>
+                <div style="margin-top:1em;"><span class="h5-inline">Status: </span><span>PDF</span>
+                  &nbsp;<a href="https://github.com/Beth-Mardutho/hugoye-data/wiki/Status-of-Contents-in-Hugoye"><span class="glyphicon glyphicon-question-sign text-info moreInfo"></span></a>
+                </div>
+                <div style="margin-top:1em;"><span class="h5-inline">Publication Date: </span>2026</div>
+              </div>
+            </div>
+
+            <div class="panel panel-default">
+              <div class="panel-heading"><a href="#" data-toggle="collapse" data-target="#citationText">How to Cite this Article</a></div>
+              <div class="panel-body collapse in" id="citationText">
+                <div>
+                  <span class="tei-sourceDesc">
+                    <span class="section indent">
+                      Briana Grenert,  "<span class="title-analytic">Angelic and Earthly Priesthoods</span>."
+                      <span class="title-journal">Hugoye: Journal of Syriac Studies</span> (<span class="publisher">Beth Mardutho: The Syriac Institute</span>,  <span class="date">2026</span>).
+                    </span>
+                  </span>
+                </div>
+              </div>
+            </div>
+
+            <span class="badge access-pills"><a href="/open-access.html" style="color:#555">open access <i class="fas fa-unlock-alt"></i></a></span>
+            <span class="badge access-pills"><a href="https://github.com/Beth-Mardutho/hugoye-data/wiki/Peer-Review-Policy" style="color:#555">peer reviewed <i class="fas fa-check"></i></a></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

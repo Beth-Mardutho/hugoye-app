@@ -1,82 +1,124 @@
-name: Deploy to S3
+name: Build and Deploy to S3
 
 on:
   push:
     branches:
-      - 'staticSite'  # Trigger the workflow on push to the branch
+      - 'staticSite'
+  workflow_dispatch:
+    inputs:
+      full_rebuild:
+        description: 'Run full XML→HTML/JSON rebuild from hugoye-data'
+        required: false
+        default: 'true'
+        type: choice
+        options:
+          - 'true'
+          - 'false'
 
 permissions:
   id-token: write
   contents: read
 
 jobs:
-  deploy:
+  build-and-deploy:
     runs-on: ubuntu-latest
     steps:
-    
-      # Step 1: Check out the repository code
-      - name: Checkout repository
-        uses: actions/checkout@v3
-        with:
-          fetch-depth: 0  # Fetch the full history for accurate diff comparisons
-      
-      # Explicitly check out the 'staticSite' branch
-      - name: Ensure the correct branch is checked out
-        run: |
-          git checkout staticSite
-          git branch --show-current  # Verify the checked-out branch
 
-      # Step 2: Configure AWS credentials
-      - name: Configure AWS credentials from AWS account
-        uses: aws-actions/configure-aws-credentials@v2
+      # ─── Checkout repos ───────────────────────────────────────────────
+      - name: Checkout hugoye-app
+        uses: actions/checkout@v4
+        with:
+          ref: staticSite
+          path: hugoye-app
+          fetch-depth: 0
+
+      - name: Checkout hugoye-data
+        uses: actions/checkout@v4
+        with:
+          repository: Beth-Mardutho/hugoye-data
+          path: hugoye-data
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      # ─── Setup Python ─────────────────────────────────────────────────
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install Python dependencies
+        run: pip install pdfminer.six PyPDF2 requests
+
+      # ─── Transform XML → HTML and JSON ────────────────────────────────
+      - name: Convert TEI XML to HTML article pages
+        working-directory: hugoye-app
+        run: |
+          echo "Converting TEI XML → HTML..."
+          for xml in ../hugoye-data/data/tei/*.xml; do
+            stem=$(basename "$xml" .xml)
+            slug=$(echo "$stem" | tr '[:upper:]' '[:lower:]')
+            # Find matching PDF (check volume dirs)
+            pdf_flag=""
+            for voldir in ../hugoye-data/pdf/vol*/; do
+              if [ -f "${voldir}${stem}.pdf" ]; then
+                pdf_flag="--pdf ${voldir}${stem}.pdf"
+                break
+              fi
+            done
+            python3 xml_to_html.py "$xml" "article/${slug}.html" $pdf_flag || echo "[WARN] Failed: $xml"
+          done
+          echo "HTML conversion complete. Files in article/:"
+          ls article/ | wc -l
+
+      - name: Convert TEI XML to JSON for OpenSearch
+        working-directory: hugoye-app
+        run: |
+          echo "Converting TEI XML → JSON..."
+          python3 xml_to_json.py --output-dir ./json ../hugoye-data/data/tei/*.xml
+          echo "JSON conversion complete. Files in json/:"
+          ls json/ | wc -l
+
+      - name: Generate NDJSON bulk file for OpenSearch
+        working-directory: hugoye-app
+        run: |
+          mkdir -p load
+          python3 json_for_opensearch.py \
+            --input-dir ./json \
+            --index hugoye-index \
+            --out load/index.ndjson
+          echo "NDJSON lines:"
+          wc -l load/index.ndjson
+
+      # ─── Configure AWS ────────────────────────────────────────────────
+      - name: Configure AWS credentials
+        uses: aws-actions/configure-aws-credentials@v4
         with:
           role-to-assume: ${{ secrets.AWS_HUGOYE_ROLE_ARN }}
           aws-region: ${{ secrets.AWS_REGION }}
           role-session-name: GitHub-OIDC-frontend
-          
-      # Step 3: Files to S3
 
-      # # Option 1: Upload only changed files to S3
-      # - name: Get list of changed files
-      #   id: changes
-      #   run: |
-      #     git fetch origin staticSite
-      #     git diff --name-only HEAD^ HEAD > changed_files.txt
-      #     cat changed_files.txt
-      # # This will not delete files in S3 not in the repo, to preserve data files from data repo in s3
-      # - name: Sync changed files in S3
-      #   if: success()
-      #   run: |
-      #     while read file; do
-      #       echo "Attempting to upload $file..."
-      #       if ! aws s3 cp "$file" "s3://gaddel-hugoye-site/$file" ; then
-      #         echo "File $file not found. Falling back to sync for deletion handling."
-      #         aws s3 sync ./ s3://gaddel-hugoye-site --exact-timestamps
-      #         break  # Stop further uploads and rely on sync
-      #       fi
-      #     done < changed_files.txt
-      #   env:
-      #     AWS_REGION: ${{ secrets.AWS_REGION }}
-      #     AWS_ACCOUNT_ID: ${{ secrets.AWS_ACCOUNT_ID }} 
-      
-      # Option 2: Full redeployment
-
-      - name: Debug
-        run: aws s3 sync ./ s3://gaddel-hugoye-site --delete --exact-timestamps --dryrun
-      - name: Sync all files to S3
+      # ─── Deploy to S3 ────────────────────────────────────────────────
+      - name: Sync site files to S3
+        working-directory: hugoye-app
         run: |
-          aws s3 sync ./ s3://gaddel-hugoye-site --exact-timestamps --exclude "opensearch/*" --exclude "siteGenerator/*" --exclude ".github/*"
-        env:
-          AWS_REGION: ${{ secrets.AWS_REGION }}
-          AWS_ACCOUNT_ID: ${{ secrets.AWS_ACCOUNT_ID }}
+          aws s3 sync ./ s3://gaddel-hugoye-site \
+            --exact-timestamps \
+            --exclude ".git/*" \
+            --exclude ".git/**" \
+            --exclude ".venv/*" \
+            --exclude ".venv/**" \
+            --exclude ".github/*" \
+            --exclude ".github/**" \
+            --exclude "load/*" \
+            --exclude "*.xml" \
+            --exclude "*.py"
+
+      - name: Sync PDF files to S3
+        run: |
+          aws s3 sync hugoye-data/pdf/ s3://gaddel-hugoye-site/pdf/ \
+            --exact-timestamps
 
       - name: Invalidate CloudFront Cache
         run: |
           aws cloudfront create-invalidation \
-            --distribution-id ${{ secrets.HUGOYE_CLOUDFRONT_DISTRIBUTION_ID}} \
+            --distribution-id ${{ secrets.HUGOYE_CLOUDFRONT_DISTRIBUTION_ID }} \
             --paths "/*"
-        env:
-          AWS_REGION: ${{ secrets.AWS_REGION }}
-          AWS_ACCOUNT_ID: ${{ secrets.AWS_ACCOUNT_ID }} 
-          
-

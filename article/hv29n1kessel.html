@@ -1,0 +1,765 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:srophe="https://srophe.app">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>A Concordance to the Manuscript Collection of the Chaldean Patriarchate</title>
+    <link rel="schema.DC" href="http://purl.org/dc/elements/1.1/" />
+    <link rel="schema.DCTERMS" href="http://purl.org/dc/terms/" />
+    <meta name="DC.type" property="dc.type" content="Text" />
+    <meta name="DC.isPartOf" property="dc.ispartof" content="Syriaca.org" />
+    <link data-template="app:metadata" />
+    <link rel="shortcut icon" href="/resources/img/favicon.ico" />
+    <link rel="stylesheet" type="text/css" href="/resources/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="/resources/css/sm-core-css.css" />
+    <link rel="stylesheet" href="/resources/css/syr-icon-fonts.css" />
+    <link rel="stylesheet" type="text/css" href="/resources/css/main.css" />
+    <link rel="stylesheet" type="text/css" media="print" href="/resources/css/print.css" />
+    <link href="/resources/jquery-ui/jquery-ui.min.css" rel="stylesheet" /><script type="text/javascript" src="/resources/js/jquery.min.js"></script><script type="text/javascript" src="/resources/jquery-ui/jquery-ui.min.js"></script><script type="text/javascript" src="/resources/js/jquery.smartmenus.min.js"></script><script type="text/javascript" src="/resources/js/clipboard.min.js"></script><script type="text/javascript" src="/resources/js/bootstrap.min.js"></script><script src="https://www.google.com/recaptcha/api.js"></script><link href="/resources/keyboard/css/keyboard.min.css" rel="stylesheet" />
+    <link href="/resources/keyboard/css/keyboard-previewkeyset.min.css" rel="stylesheet" />
+    <link href="/resources/keyboard/syr/syr.css" rel="stylesheet" /><script type="text/javascript" src="/resources/keyboard/syr/jquery.keyboard.js"></script><script type="text/javascript" src="/resources/keyboard/js/jquery.keyboard.extension-mobile.min.js"></script><script type="text/javascript" src="/resources/keyboard/js/jquery.keyboard.extension-navigation.min.js"></script><script type="text/javascript" src="/resources/keyboard/syr/jquery.keyboard.extension-autocomplete.js"></script><script type="text/javascript" src="/resources/keyboard/syr/keyboardSupport.js"></script><script type="text/javascript" src="/resources/keyboard/syr/syr.js"></script><script type="text/javascript" src="/resources/js/keyboard.js"></script>
+  </head>
+  <body id="body">
+    <div class="navbar navbar-default navbar-fixed-top" role="navigation" data-template="app:fix-links">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand banner-container" href="/index.html">
+            <!--<img property="logo" class="img-responsive" alt="Syriac.org" src="/resources/img/syriaca-logo.png"/> Draft-->
+            <span class="banner-icon"></span>
+            <span class="banner-text">Hugoye: Journal of Syriac Studies</span>
+          </a>
+        </div>
+
+        <div class="navbar-collapse collapse pull-right">
+          <ul class="nav navbar-nav sm sm-vertical" id="main-menu">
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                About Hugoye  <b class="caret"></b>
+              </a>
+              <ul class="dropdown-menu">
+                <li><a href="/editorial-board.html">Editorial Board</a></li>
+                <li><a href="/submissions.html">Submissions</a></li>
+                <li><a href="/open-access.html">Open Access</a></li>
+                <li><a href="https://www.gorgiaspress.com/hugoye-journal-of-syriac-studies" target="_blank">Printed Edition Subscription</a></li>
+              </ul>
+            </li>
+
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                Indexes  <b class="caret"></b>
+              </a>
+              <ul class="dropdown-menu">
+                <li><a href="/current-issue.html">Current Issue</a></li>
+                <li><a href="/volumes.html">Volume Index</a></li>
+                <li><a href="/authors.html">Author Index</a></li>
+              </ul>
+            </li>
+          </ul>
+
+          <ul class="nav navbar-nav navbar-right keboard-btn">
+            <li>
+              <div class="btn-nav">
+                <a class="btn btn-default navbar-btn dropdown-toggle" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" title="Select Keyboard">
+                  <span class="syriaca-icon syriaca-keyboard"></span>
+                  <span class="caret"></span>
+                </a>
+                <ul data-template="app:keyboard-select-menu" data-template-input-id="q"></ul>
+              </div>
+            </li>
+
+            <li>
+              <div class="btn-nav">
+                <a href="#" class="btn btn-default navbar-btn dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" title="Search Tools">
+                  <span class="glyphicon glyphicon-search"></span> <span class="caret"></span>
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a href="/search.html">Advanced Search</a></li>
+                </ul>
+              </div>
+            </li>
+
+            <li>
+              <div class="btn-nav">
+                <a href="#" class="btn btn-default navbar-btn dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" title="Select Font">
+                  Font <span class="caret"></span>
+                </a>
+                <ul class="dropdown-menu" id="swap-font">
+                  <li><a href="#" class="swap-font" id="DefaultSelect" data-font-id="EstrangeloEdessa">Default</a></li>
+                  <li><a href="#" class="swap-font" id="EstrangeloEdessaSelect" data-font-id="EstrangeloEdessa">Estrangelo Edessa</a></li>
+                  <li><a href="#" class="swap-font" id="EastSyriacAdiabeneSelect" data-font-id="EastSyriacAdiabene">East Syriac Adiabene</a></li>
+                  <li><a href="#" class="swap-font" id="SertoJerusalemSelect" data-font-id="SertoJerusalem">Serto Jerusalem</a></li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+
+          <form class="navbar-form navbar-right navbar-input-group" role="search" action="/search.html" method="get">
+            <div class="input-group">
+              <input type="text" class="form-control keyboard" placeholder="search" name="q" id="q" />
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <div class="main-content-block">
+      <div class="interior-content">
+        <div class="container otherFormats">
+          <a href="HV29N1Kessel.xml" class="btn btn-default btn-xs" id="teiBtn" data-toggle="tooltip" title="Click to view the TEI XML data for this record."><span class="glyphicon glyphicon-download-alt" aria-hidden="true"></span> TEI/XML</a>
+        </div>
+
+        <div class="row">
+          <!-- MAIN CONTENT (use 9/3 split like your example) -->
+          <div class="col-sm-9 col-md-9 col-lg-9 mssBody">
+            <div class="article-header text-center">
+              <h1>A Concordance to the Manuscript Collection of the Chaldean Patriarchate</h1>
+              <h2></h2>
+              <span class="tei-author">
+                <span class="tei-name">Grigory <span class="tei-surname">Kessel</span></span>
+                <span class="tei-affiliation"><span class="tei-orgName">Austrian Academy of Sciences</span></span>
+              </span>
+            </div>
+
+            <div class="section tei-text">
+              <div class="body">
+                <div class="section" style="display:block;">
+                  <div class="tei-div tei-title" lang="en">
+                    <span class="tei-ab tei-review-title"></span>
+                  </div>
+
+                  <div class="tei-div tei-body" lang="en">
+                    <div class="pdf-transcript">
+<h3 class="h4">Full text (from PDF)</h3>
+<p>Hugoye: Journal of Syriac Studies, Vol. 29.1, 139-169 © 2026 by Beth Mardutho: The Syriac Institute and Gorgias Press</p>
+<p>A CONCORDANCE TO THE MANUSCRIPT COLLECTION OF THE CHALDEAN PATRIARCHATE</p>
+<p>GRIGORY KESSEL</p>
+<p>AUSTRIAN ACADEMY OF SCIENCES</p>
+<p>ABSTRACT</p>
+<p>This study presents a concordance to Addai Scher’s 1907 catalogue of the manuscript collection of the Chaldean Patriarchate in Mosul and the same collection, digitized in recent years by the Centre numérique des manuscrits orientaux (CNMO) and the Hill Museum &amp; Manuscript Library (HMML). The concordance also incorporates the class marks introduced by William Macomber, based on Raphael Bidawid’s revised numbering system, and indicates available microfilm copies.</p>
+<p>The library of the Chaldean Patriarchate is one of the most significant repositories of Christian manuscripts in the Middle East. Yet its history—particularly the circumstances of its formation and subsequent development—remains unwritten.1</p>
+<p>*This study grew out of my participation in the cataloguing of the collection of the Chaldean Patriarchate. Several other scholars were involved in this effort—Adam Bursi, David Calabro, Josh Mugler, Salam Rassi, James E.</p>
+<p>139</p>
+<p>Hugoye 29.1</p>
+<p>140</p>
+<p>The present study seeks to provide a concordance between Addai Scher’s catalogue and the manuscripts digitized by the Centre numérique des manuscrits orientaux (CNMO) in collaboration with the Hill Museum &amp; Manuscript Library (HMML).2 In the absence of primary archival sources, the introductory section is intended as no more than a preliminary survey, drawing on extant publications concerning the collection and manuscripts themselves.3</p>
+<p>Insofar as the evidence allows, the history of the collection appears to be relatively brief, beginning with the establishment of the Chaldean Patriarchate in Mosul in 1830.4 The decisive role in its initial formation, however, is generally attributed to</p>
+<p>Walters—and their contributions deserve special acknowledgment. Research was supported by the Nicky B. Carpenter Fellowship, which enabled consultation of the Arthur Vööbus microfilm archive (before it was digitized and made available online) and the William Macomber archive, both preserved today at the Hill Museum &amp; Manuscript Library in Collegeville, Minnesota. I am especially indebted to Columba Stewart and the staff of HMML for their generous assistance during my visit. A previous instalment covered the Chaldean collections catalogued by Scher in Diyarbakır and Mardin (G. Kessel, “A Concordance to Addai Scher’s Catalogues of Chaldean Collections of Manuscripts in Diyarbakır and Mardin and the Holdings of the Joint Collection in Mardin Digitized by HMML in Collaboration with CNMO,” Hugoye: Journal of Syriac Studies 26:1 (2023), 97–142).</p>
+<p>1 For a recent survey of the history of the Chaldean Church during the 20th century, see K. Girling, The Chaldean Catholic Church: Modern History, Ecclesiology and Church–State Relations (Routledge, 2018).</p>
+<p>2 Available at https://www.vhmml.org/ (HMML project code CPB). 3 One of the most important studies in this respect remains I. ʿĪskō, “Almaktaba al-kaldāniyya al-baṭrīarkiyya bi-l-Mawṣil,” Al-Naǧm 11 (1950), 217*–221*, 399*–402*, 601*–607*.</p>
+<p>4 The collection of the Chaldean patriarchs of Diyarbakır remained in place and is now preserved in Mardin (HMML project code CCM; cf. Kessel, “A Concordance to Addai Scher’s Catalogues of Chaldean Collections of Manuscripts in Diyarbakır and Mardin”).</p>
+<p>Grigory Kessel</p>
+<p>141</p>
+<p>for</p>
+<p>safekeeping—first</p>
+<p>patriarch Joseph Audo (r. 1847–1878).5 There can be no doubt that manuscripts were already present in the collection before the time of patriarch Audo, and it is even reported that European visitors purchased some of them there.6 The two most significant developments in the collection’s twentiethcentury history were the transfer of the Patriarchate from Mosul to Baghdad in 1960 and, later, the relocation of the to Qaraqosh and manuscripts subsequently to Erbil/Ankawa, where they are now preserved under the care of the CNMO.</p>
+<p>The first published description of the Patriarchal manuscript collection was produced by Addai Scher, the distinguished Chaldean archbishop of Siirt and a noted scholar of Syriac and Arabic Christian literature.7 As Scher records in the foreword to his work, he prepared his survey of the manuscripts during a visit to the patriarchal library in 1902. His description, though shaped by the cataloguing practices of his time, provides invaluable evidence for the composition of the collection at the beginning of the twentieth century. It offers not only an inventory of titles but also occasional observations on the content, history, and condition of manuscripts, thereby furnishing an invaluable snapshot of the collection before the displacements and losses of the modern era.</p>
+<p>Although Scher’s catalogue remains the only published description of the collection, several subsequent attempts have been made to document its growth. Information about these</p>
+<p>5 ʿĪskō, “Al-maktaba al-kaldāniyya al-baṭrīarkiyya bi-l-Mawṣil,” 217. 6 For example, the manuscript Berlin, Staatsbibliothek Or. fol. 354 was purchased from the patriarch in Mosul in 1838 (E. Sachau, Verzeichniss der syrischen Handschriften der Königlichen Bibliothek zu Berlin, vol. 1 (Berlin, 1899), 133–135).</p>
+<p>7 A. Scher, “Notice sur les manuscrits syriaques conservés dans la bibliothèque du Patriarcat chaldéen de Mossoul,” Revue des bibliothèques 17 (1907), 227–260.</p>
+<p>Hugoye 29.1</p>
+<p>142</p>
+<p>efforts comes chiefly from the accounts of ʿĪskō, Ḥaddād, and Ḥabbī.8 Scher’s description was first rendered into Arabic by Professor Isḥaq ʿĪskō and Yūsuf Bābānā,9 and this translation appears to have provided the basis for later additions and enrichments, likewise composed in Arabic. In 1932, priest Tūmā Ḥannūnā described twenty-two manuscripts that had come from Diyarbakır; later on, Sulaymān al-Ṣāʾiġ10 offered more detailed descriptions of several important manuscripts. A first comprehensive checklist, running to number 257, was prepared by Isṭifān Kātšū,11 an auxiliary bishop of the patriarch, who was in charge of the library before its transfer to Baghdad. While the collection was still in Mosul, the bishop of Amadiya, Raphael Bidawid (later Chaldean patriarch), undertook in 1949, in collaboration with Isḥaq ʿĪskō and Isṭifān Bābakā,12 to compile a comprehensive catalogue.13 This work, however, was never published, and the catalogue itself was destroyed in Amadiya in 1961, when the entire library perished at the beginning of the</p>
+<p>8 ʿĪskō, “Al-maktaba al-kaldāniyya al-baṭrīarkiyya bi-l-Mawṣil,” 217*–221*; B. Ḥaddād, “Mawāṭin al-makhṭūṭāt al-suryāniyya fī al-ʿIrāq,” Majallat almajmaʿ al-ʿilmī al-ʿIrāqī, Hayʾat al-lugha as-suryāniyya 5 (1979/80), 163*– 190*, here 171*–173*; J. Habbi [Y. Ḥabbī], “Manuscrits arabes chrétiens en Iraq,” Parole de l’Orient 22 (1997), 361–380, here 365–366 [Ḥabbī’s account merely reproduces that of Ḥaddād]. See also W.F. Macomber, “Further Precisions Concerning the Mosul Manuscript of the Chronicle of Seʿert,” Oriens Christianus 55 (1971), 210–213, here 213 and A. Desreumaux, Répertoire des bibliothèques et des catalogues de manuscrits syriaques (Paris, 1991), 94, 193–195.</p>
+<p>9 Joseph Babana, bishop of Zakho (1968–1973). 10 Souleyman Sayegh, auxiliary Bishop of Mosul (1953–1961). 11 Étienne Katcho, auxiliary bishop of Babylon (1947–1953). 12 Stéphane Babaca (d. 2007), archbishop of Erbil (1969–1994). 13 On one occasion, Bidawid acknowledged only the participation of Isḥaq ʿĪskō (R.J. Bidawid (ed.), Les lettres du patriarche nestorien Timothée I, Studi e testi 187 (Città del Vaticano, 1956), 15 n. 3).</p>
+<p>Grigory Kessel</p>
+<p>143</p>
+<p>Kurdish uprising.14 We know that Fiey consulted the catalogue and may have had a copy.15</p>
+<p>When the collection was transferred to Baghdad around 1960, some manuscripts remained in Mosul, while many additional ones appear to have been acquired in the following years. The next attempt to catalogue the holdings was undertaken by William Macomber, S.J., during his stay from 1964 to 1966. Although Macomber himself referred to his catalogue as a work in progress and even planned its eventual publication, he seems to have done no more than compile an extensive set of notes on the manuscripts.16 In addition to these notes, he prepared a checklist that is particularly important for correlating the older manuscript numbers—used by Scher and later continuators of his catalogue—with the new numbering introduced by Bidawid during his cataloguing system</p>
+<p>14 J.M. Fiey, Assyrie Chrétienne. Contribution à l’étude de l’histoire et de la géographie ecclésiastiques et monastiques du nord de l’Iraq, vol. 1, Recherches publiées sous la direction de l’Institut de Lettres Orientales de Beyrouth; Série III: Orient Chrétien, vol. 22 (Beyrouth, 1965), 31 n. 1; W.F. Macomber, “The Oldest Known Text of the Anaphora of the Apostles Addai and Mari,” Orientalia Christiana Periodica 32 (1966), 335–371, here 339 n. 1.</p>
+<p>15 Fiey, Assyrie Chrétienne, vol. I, 289; J.M. Fiey, Nisibe, métropole syriaque orientale et ses suffragants des origines à nos jours, CSCO 388 / Subs. 54 (Louvain, 1977), 198 n. 232.</p>
+<p>16 W.F. Macomber, “New Finds of Syriac Manuscripts in the Middle East,” in XVII. Deutscher Orientalistentag vom 21. bis 27. Juli 1968 in Würzburg: Vorträge, Zeitschrift der Deutschen Morgenländischen Gesellschaft, Supplement 1.2, ed. W. Voigt (Wiesbaden: Franz Steiner, 1969), 473–482, here 475; Macomber, “Further Precisions Concerning the Mosul Manuscript of the Chronicle of Seʿert,” 213. See also his letters to Juan Mateos dated May 21, 1964 and February 25, 1965 (“I am now decided on a full catalogue of more or less the same detail as that of Addai Scher”).</p>
+<p>Hugoye 29.1</p>
+<p>144</p>
+<p>initiative.17 Both the notes and the checklist are now preserved in Macomber’s archive at the Hill Museum &amp; Manuscript Library.18</p>
+<p>What became of the collection in the following decades is not entirely clear. In the mid-1990s, Ḥaddād reports that there was “une grande perte à cause d’une mauvaise conservation des manuscrits dans l’ancien bâtiment du patriarcat à Senak.”19 Ḥabbī similarly describes the condition: “L’une des plus importantes bibliothèque en Iraq, considérée autrefois comme une bibliothèque très riche, fut trouvée dans un état misérable quand elle fut récemment ré-ouverte.”20 According to Ḥaddād, approximately 250 manuscripts remained, and he prepared a catalogue intended for publication in the series Syriac Manuscripts of Iraq. This project, however, was never brought to press.21</p>
+<p>It appears that,</p>
+<p>irrespective of Ḥaddād’s cataloguing initiative, the condition of the manuscripts did not improve, and the collection gradually receded from public and scholarly attention. According to newspaper reports, in 2013, the collection was “uncovered” under circumstances suggesting</p>
+<p>17 W.F. Macomber, A Checklist of the Manuscripts of the Chaldean Patriarchate, ca. 1965, 1 [unpublished manuscript deposited at the Hill Museum &amp; Manuscript Library].</p>
+<p>18 The archive preserves extensive correspondence with scholars, chiefly concerning manuscripts in the Middle East and often providing valuable details about individual codices. Particularly informative in this regard are the letters addressed to Juan Mateos, S.J.</p>
+<p>19 Reported in Habbi, “Manuscrits arabes chrétiens en Iraq,” 366 (cf. A.M. Butts, K.S. Heal, and S.P. Brock, Clavis to the Metrical Homilies of Narsai, CSCO 690 / Subs. 142 (Leuven, 2021), 83). Examples of perished codices – literally reduced to dust – include CPB 470, 472, 473, 474, 475, and 476.</p>
+<p>20 Habbi, “Manuscrits arabes chrétiens en Iraq,” 365–366. 21 It seems that the catalogue had been prepared for publication by the late 1990s, though its subsequent fate remains unclear (cf. Bulletin d’arabe chrétien / Newsletter Christian Arabic Studies 3 (1993), 3).</p>
+<p>Grigory Kessel</p>
+<p>145</p>
+<p>longstanding shortcomings in its custodial care. The report notes: “Originally, the documents had been placed in plastic bags and left in a crypt inside the old Patriarchal See in Sinak (central Baghdad). When the See was moved to its current location in Mansoor, north of the capital, the manuscripts were moved as well. However, water leaks, moths, and termites have compromised the books’ integrity. At the same time, they were not accessible to either the general public or experts and scholars.”22 Following this “rediscovery”, the Chaldean Patriarch entrusted Fr. Najeeb Michaeel, O.P. with conservation of the collection.</p>
+<p>One possible explanation for the apparent neglect of the collection, and the consequent damage it sustained, comes from a 2012 statement by Chaldean bishop Jacques Ishak, who recalled that the manuscripts had been deliberately hidden during the regime of Saddam Hussein.23 A similar concern arises from an earlier interview with patriarch Raphael Bidawid, who even considered moving the entire collection abroad—to the care of the Mormons in Utah (the same report also noted the collection’s poor condition).24</p>
+<p>The manuscripts were entrusted to the Dominican priest Najeeb Michaeel, O.P. (today Chaldean archbishop of Mosul), who had already been safeguarding and digitizing manuscripts as an archivist at the Dominican convent in Mosul and who</p>
+<p>22https://www.asianews.it/news-en/Chaldean-Patriarchate-to-restore ancient-manuscripts,-rebuild-Christian-future-28397.html.</p>
+<p>23 S. al-Malih, Books and Documents Heritage of Iraqi Minorities (Roma: Un ponte per, 2013), 39. It is reported that the collection suffered no damage during the 2003 U.S. invasion (N. al-Tikriti, “‘Stuff Happens’: A Brief Overview of the 2003 Destruction of Iraqi Manuscript Collections, Archives, and Libraries,” Library Trends 55 (2007), 730–745, here 740). 24 Unpublished conference presentation by S. Ipert and N. al-Tikriti, “Iraqi 1980-2014,” 4 (available at:</p>
+<p>Manuscript Libraries and Archives: https://www.academia.edu/8213794/Iraqi_Manuscript_Libraries_and_arc hives_1980_2014).</p>
+<p>Hugoye 29.1</p>
+<p>146</p>
+<p>founded the Centre numérique des manuscrits orientaux (CNMO). Soon after, in 2013, in the wake of the rise of ISIS, he undertook the perilous task of moving the collection from Baghdad to Qaraqosh.25 A year later, once again under dire conditions as ISIS advanced across the Nineveh Plain, he transported it—along with many other collections of manuscripts—to Erbil/Ankawa in Iraqi Kurdistan.26 There, the manuscripts were digitized by the CNMO, in collaboration with the Hill Museum &amp; Manuscript Library.27</p>
+<p>The digitization carried out by the CNMO—which made the collection accessible to researchers for the first time—is an achievement whose value can hardly be overstated. Yet for the historical record, it should be recalled that this was not the first occasion on which manuscripts from the collection were copied. To begin with, we know that at the start of the 20th century, handwritten copies were produced for European scholars. Later, in the mid-20th century, the Dominicans in Mosul operated a microfilm reproduction station. Individual visitors likewise made reproductions. The indefatigable Arthur Vööbus appears to have visited the collection on several occasions, photographing selected manuscripts, often only in part. William Macomber also photographed several manuscripts during his work on the collection.28</p>
+<p>25 For his personal description of the event, see M. Najeeb, Sauver les livres et</p>
+<p>les hommes (Paris: Grasset, 2017), 33–35.</p>
+<p>26 C. Stewart, “HMML in Iraq: The Crisis of Summer 2014,” Illuminations:</p>
+<p>Newsletter of the Hill Museum &amp; Manuscript Library (Fall 2014), 4–7.</p>
+<p>27 E. Reisinger, “Where We’re Working: Chaldean Patriarch of Babylon, Iraq,” Illuminations: Newsletter of the Hill Museum &amp; Manuscript Library (Spring 2017), 4–7.</p>
+<p>28 See Macomber’s letters to Juan Mateos dated February 10, 1965 and April 16, 1965. Apparently, Macomber photographed some manuscripts of Narsai’s Mēmrē, though the present whereabouts of the microfilms are unknown. From Macomber’s correspondence, it seems that he shared his microfilms with F.G. McLeod, who later drew on them for his edition: F.G.</p>
+<p>Grigory Kessel</p>
+<p>147</p>
+<p>In terms of numbers, when Addai Scher visited the library, he catalogued 116 manuscripts, predominantly in Syriac but also in Arabic and Neo-Aramaic. However, as Macomber later suggested, the actual number was likely higher and Scher included only the most significant manuscripts.29 By the mid20th century, the collection had grown to approximately 274 manuscripts: while the checklist of Isṭifān Kātšū covered 257 manuscripts,30 somewhat later, during the cataloguing by Bidawid and his collaborators the number grew to 274.31 By the mid-1960s, when Macomber examined the holdings, the number had risen to 336.32 More additions were made in the following decades.33 However, towards the end of the century,</p>
+<p>McLeod (ed.), Narsai’s Metrical Homilies on the Nativity, Epiphany, Passion, Resurrection, and Ascension, Patrologia Orientalis 40:1 (Turnhout, 1979). 29 Macomber, A Checklist of the Manuscripts of the Chaldean Patriarchate, ca.</p>
+<p>1965, 1.</p>
+<p>30</p>
+<p>ʿĪskō, “Al-maktaba al-kaldāniyya al-baṭrīarkiyya bi-l-Mawṣil,” 220*; Ḥaddād, “Mawāṭin al-makhṭūṭāt al-suryāniyya fī al-ʿIrāq,” 172*; Habbi, “Manuscrits arabes chrétiens en Iraq,” 366.</p>
+<p>31</p>
+<p>from Baghdad</p>
+<p>(ʿĪskō,</p>
+<p>ʿĪskō, “Al-maktaba al-kaldāniyya al-baṭrīarkiyya bi-l-Mawṣil,” 274*; Macomber, A Checklist of the Manuscripts of the Chaldean Patriarchate, ca. 1965, 1. The group of twenty-two manuscripts from Diyarbakır was kept separately as the “library of Amid” (cf. Kessel, “A Concordance to Addai Scher’s Catalogues of Chaldean Collections of Manuscripts in Diyarbakır and Mardin,” 105–106). Towards the close of his survey, ʿĪskō notes the forthcoming cataloguing of the additional manuscripts that had been transferred “Al-maktaba al-kaldāniyya albaṭrīarkiyya bi-l-Mawṣil,” 402*).</p>
+<p>32 Macomber, “New Finds of Syriac Manuscripts in the Middle East,” 475; Macomber, A Checklist of the Manuscripts of the Chaldean Patriarchate, ca. 1965; see also W.F. Macomber, “The Cathedral Lectionary System of the Cathedral Church of Kokhe,&quot; Orientalia Christiana Periodica 33 (1967), 485–516, here 488 n. 2.</p>
+<p>33 For example, Macomber reports that upon his visit in 1974 he discovered “that the library had been greatly expanded by the accession of manuscripts from other libraries, presumably from Mosul and the villages</p>
+<p>Hugoye 29.1</p>
+<p>148</p>
+<p>when Ḥaddād undertook his cataloguing work, the collection had declined to around 250 manuscripts—the number also attested in other accounts from the period. When the CNMO digitized the collection, it had expanded to as many as 512 manuscripts. In addition, the holdings included substantial private collections belonging to Buṭrus Ḥaddād34 and Yūsuf Gūgī.</p>
+<p>We must now turn to the thorny issue of class marks. The numbers used by Scher in his catalogue corresponded to the actual class marks of the manuscripts, and it is possible that they were assigned by Scher himself. This sequential numbering was subsequently continued and applied to all new acquisitions. During the cataloguing project undertaken by Bidawid, however, a new system, following the subject-based Dewey decimal classification, was introduced: a decimal classification based on subject, divided into twenty classes:35</p>
+<p>11 – Old Testament 12 – New Testament 21 – OT commentaries 22 – NT commentaries 31 – Books of the office for priests, deacons and the choir 32 – Missals 33 – Priests’ rituals 34 – Bishops’ rituals</p>
+<p>of northern Iraq” (Macomber, A Checklist of the Manuscripts of the Chaldean Patriarchate, ca. 1965, 25).</p>
+<p>34 Ḥaddād, “Mawāṭin al-makhṭūṭāt al-suryāniyya fī al-ʿIrāq,” 175*; Habbi, “Manuscrits arabes chrétiens en Iraq,” 372. HMML project codes CPB BH and CPB YG.</p>
+<p>35 See on that ʿĪskō, “Al-maktaba al-kaldāniyya al-baṭrīarkiyya bi-l-Mawṣil,” 399*–402*. Macomber was not sure who was actually in charge of the reorganization (Macomber, A Checklist of the Manuscripts of the Chaldean Patriarchate, ca. 1965, 1); Macomber, “Further Precisions Concerning the Mosul Manuscript of the Chronicle of Seʿert,” 213.</p>
+<p>Grigory Kessel</p>
+<p>149</p>
+<p>35 – Funeral rituals 36 – Psalters and books of hours 40 – Canon law 51 – Theology 52 – Philosophy 53 – Islamic works 60 – Homilies, hymns and poetry 70 – Ascetical works and books of devotion 80 – Lives of saints and biographies 90 – Grammars 91 – Dictionaries 100 – Historical works, documents, letters and other</p>
+<p>miscellanea</p>
+<p>To clarify the system, it is best to let Macomber speak for himself: “Msgr. Bidawid renumbered all these manuscripts according to the following system. All biblical manuscripts were given a number headed by 1, 11 for the Old Testament, and 12 for the New Testament. This number was followed by a digit or digits that indicated the order of the manuscript within the classification. Thus 111 was the shelf number of the first Old Testament manuscript and 112 the number of the second. This series would proceed regularly to 119 for the ninth manuscript. The tenth manuscript would be numbered 1110 and the eleventh 1111. I suspect that at the time of the renumbering there may only have been 9 Old Testament manuscripts, but at least that was the nature of the system. [...]</p>
+<p>These were the two series of shelf numbers that had been used for the Chaldean Patriarchate manuscripts when I arrived on the scene in 1964. Unfortunately, the shelf numbers were written on labels pasted on the spines of the manuscripts, many of which had become separated from their manuscripts. In those cases it was sometimes possible to identify the manuscript from the description given by Msgr. Scher.</p>
+<p>Hugoye 29.1</p>
+<p>150</p>
+<p>However, there seem to have been some instances in which manuscripts of the Scher checklist were assigned new numbers in the same series, because the shelf number label had been lost and the identification not made. At any rate, there were a considerable number of manuscripts missing from the Scher series. Some of these were the manuscripts that had been left behind in Mosul, some had lost their labels, but could be identified, others had lost labels and had been renumbered, and others were simply missing. There were other manuscripts that lacked a number in the Scher system, but had one in the Bidawid system, and there were others that had no shelf number at all.</p>
+<p>It was soon clear to me that the numbering of the manuscripts of the library needed to be reorganized. I decided to maintain both systems of shelf numbers, the Scher system because it had been published and was well known to scholars, and the Bidawid system because of its great convenience. In the latter system, however, I made one modification. I introduced a decimal point between the number of the category and the number within the category. For example, the Old Testament manuscripts, which had now increased to 16, were numbered 11.1 to 11.16. Beyond that, my endeavor was to fill up the gaps in the two systems as far as possible. Not trusting spine labels, that could so easily become separated from their manuscripts, I wrote the Scher and Bidawid numbers in pencil on the inside of the manuscript covers, where possible, and on the first folio of those manuscripts that lacked a cover altogether. Accordingly, I extended the Scher numbers to 364, filling up all gaps. As for the Bidawid shelf numbers, I did not fill the gaps made because of the division of the manuscripts between Mosul and Baghdad,</p>
+<p>Grigory Kessel</p>
+<p>151</p>
+<p>but other gaps I did fill. I also added two new categories, 53 for Islamic theology and law and 91 for dictionaries.”36</p>
+<p>It becomes evident, then, that Macomber played a decisive role in bringing order to the collection.37 Single-handedly, he supplied numbers for all the manuscripts, adapting Bidawid’s system and extending it to items that had previously lacked any designation. His pencil annotations, still visible in the manuscripts, remain a tangible witness to this effort. In later years, Macomber applied the same adapted system to the joint Chaldean collections of Diyarbakır and Mardin.38</p>
+<p>The entire collection was assigned new class marks when it was digitized by the CNMO in Erbil/Ankawa. These class marks should now be regarded as the definitive reference system for the collection.</p>
+<p>Throughout the twentieth century, the collection remained in flux, with manuscripts continually being added and others removed. A notable example is the group of twenty-two valuable manuscripts brought from Diyarbakır, which was set apart in honor as the “Library of Amid.” When the Patriarchal library was transferred to Baghdad, fourteen manuscripts were</p>
+<p>36 Macomber, A Checklist of the Manuscripts of the Chaldean Patriarchate,</p>
+<p>ca. 1965, 2–4.</p>
+<p>37 For Macomber’s involvement in assigning class marks, see W.F. Macomber, “Newly Discovered Fragments of the Gospel Commentaries of Theodore of Mopsuestia,” Le Muséon 81 (1968): 441–47, here 443 n. 11 and Macomber, “Further Precisions Concerning the Mosul Manuscript of the Chronicle of Seʿert,” 213. As far as the system of Bidawid is concerned, the scholars indeed occasionally misinterpreted its meaning and considered that the collection consisted of thousands of manuscripts (cf. D. Wilmshurst, The Ecclesiastical Organisation of the Church of the East, 1318– 1913, CSCO 582 / Subs. 104 (Louvain, 2000), 375).</p>
+<p>38 Kessel, “A Concordance to Addai Scher’s Catalogues of Chaldean</p>
+<p>Collections of Manuscripts in Diyarbakır and Mardin.”</p>
+<p>Hugoye 29.1</p>
+<p>152</p>
+<p>left behind in Mosul.39 Among the new acquisitions, at least one volume originated from the collection of Siirt (Mosul/Scher 58).40 At least two manuscripts came into possession of Alphonse Mingana (Mosul/Scher 26 and 27)41 and the illustrations from Scher 15 came through Addai Scher to the National Library of France. A substantial part of the present holdings derives from the library of the Chaldean Patriarchal Seminary, which was moved from Mosul to Baghdad together with the Patriarchate.42 These are only a few instances of the many movements that have shaped the collection over the century.</p>
+<p>A word must be said regarding the question of how many manuscripts have survived. When Macomber examined the collection in the mid-1960s, he noted that—besides the</p>
+<p>39 Macomber, “New Finds of Syriac Manuscripts in the Middle East,” 475; cf.</p>
+<p>Fiey, Assyrie Chrétienne, vol. I, 51 n. 1.</p>
+<p>40 Macomber, “The Oldest Known Text of the Anaphora of the Apostles Addai and Mari,” 335–336 n. 2; Macomber, “New Finds of Syriac Manuscripts in the Middle East,” 475.</p>
+<p>41 Macomber records one further manuscript in the Mingana collection (Mingana Syr. 512), which forms a pair with a manuscript in the Chaldean Patriarchate. The latter, however, is not included in Scher’s catalogue (Macomber, “The Oldest Known Text of the Anaphora of the Apostles Addai and Mari,” 339 and n. 2).</p>
+<p>42 Ḥaddād, “Mawāṭin al-makhṭūṭāt al-suryāniyya fī al-ʿIrāq,” 174; Habbi, “Manuscrits arabes chrétiens en Iraq,” 368. Interestingly, Macomber notes (Macomber, “New Finds of Syriac Manuscripts in the Middle East,” 477) that some manuscripts in this collection once belonged to the episcopal library of Akre (cf. Desreumaux, Répertoire des bibliothèques et des catalogues de manuscrits syriaques, 90–91). For a catalogue of the collection, comprising 139 manuscripts before it was merged with the Patriarchal library, see Š. Wardūnī and Ḥ. Hirmiz an-Nawfalī, Fahāris almaḫṭūṭāt al-suryāniyya wa-l-ʿarabiyya fī ḫizānat maʿhad Šamʿūn al-Ṣafā alkahanūtī, Baġdād (Baghdad, 1998).</p>
+<p>Grigory Kessel</p>
+<p>153</p>
+<p>left behind</p>
+<p>in Mosul43—fifteen fourteen manuscripts manuscripts listed by Scher could not be located. He conceded, however, that at least some of these might in fact still have been present, though rendered unidentifiable by the brief and occasionally imprecise descriptions in Scher’s catalogue.44 In his Checklist, Macomber added yet another loss to this tally, namely Mosul/Scher 26.45</p>
+<p>Of the fourteen manuscripts left behind in Mosul, twelve can now be securely identified among the holdings of the Chaldean Archdiocese of Mosul.46 As for those deemed missing, Macomber himself proposed that one of them (Mosul/Scher 96) should be identified with Vat. sir. 629. Since then, the present location of an additional five manuscripts has come to light.47 Moreover, one of the missing manuscripts has, in fact, remained within the collection (Mosul/Scher 108), and an</p>
+<p>43 Macomber, “New Finds of Syriac Manuscripts in the Middle East,” 475 n.</p>
+<p>11.</p>
+<p>44 Macomber, “New Finds of Syriac Manuscripts in the Middle East,” 475 n.</p>
+<p>12.</p>
+<p>45 This supports the assumption of Kaufhold (H. Kaufhold, “Anmerkungen zur Textüberlieferung der Chronik des Johannes Bar Penkāyē,” Oriens Christianus 87 (2003), 65–79, here 70).</p>
+<p>46 The collection was digitized by CNMO in collaboration with HMML and is available at https://www.vhmml.org/ (HMML project code CAM). The two missing manuscripts are Mosul/Scher 57 and Scher 106. A description of the collection can be found in M. Maqdasī, “Makhṭūṭāt maktabat muṭrāniyyat al-kaldān fī al-Mawṣil,” in Maktabāt al-Mawṣil wa-ʾaṭrāfuhā, Fahāris al-makhṭūṭāt al-suryāniyya fī al-ʿIrāq I (Baghdad, 1977), 7*–19* ; for a concordance between the catalogues of Scher and Maqdasī, see Wilmshurst, The Ecclesiastical Organisation of the Church of the East, 1318– 1913, 375–376 (although it should be noted that the present author does not agree with all the identifications).</p>
+<p>47 Mosul/Scher 26, 27, 64, 76, 97. Some missing manuscripts were identified “Anmerkungen zur</p>
+<p>(Kaufhold,</p>
+<p>earlier, especially by Kaufhold Textüberlieferung der Chronik des Johannes Bar Penkāyē,” 70–71).</p>
+<p>Hugoye 29.1</p>
+<p>154</p>
+<p>additional section of Mosul/Scher 96 has only recently been identified.</p>
+<p>In sum, out of the 116 manuscripts listed in Scher’s catalogue, only 47 can today be identified with reasonable certainty (with several additional folios from one further codex). At the same time, four more may be tentatively associated despite insufficient data or minor content discrepancies.</p>
+<p>A total of eighteen manuscripts—together with the miniatures from one additional codex—are today dispersed across eight or nine collections in Europe and the Middle East:</p>
+<p>Berlin, Staatsbibliothek: Mosul/Scher 76 Birmingham, University Library, Mingana Collection:</p>
+<p>Mosul/Scher 27</p>
+<p>Erbil/Ankawa, Chaldean Antonian Order of St. Hormizd</p>
+<p>(O.A.O.C.): Mosul/Scher 64</p>
+<p>Mosul, Chaldean Archdiocese: Mosul/Scher 13, 16, 17, 18, 28,</p>
+<p>41, 48, 49, 51, 56, 87, 90</p>
+<p>Institute</p>
+<p>of Oriental Manuscripts:</p>
+<p>Mosul, Dominican Friars of Mosul: Mosul/Scher 97 Paris, Bibliothèque nationale de France: Mosul/Scher 15 St.Petersburg, Mosul/Scher 26</p>
+<p>One manuscript—Mosul/Scher 96—is divided between the Biblioteca apostolica vaticana and the Chaldean Antonian Order of St. Hormizd in Erbil/Ankawa.</p>
+<p>Among the most significant losses I note only a few: the oldest known copy of Narsai’s Mēmrē (Mosul/Scher 71);48 the unique copy of the first part of the Chronicle of Siirt (Mosul/Scher 113);49 a New Testament in the Harklean version (Mosul/Scher 9); and an East Syriac Pontifical (Mosul/Scher 55).</p>
+<p>48 Butts/Heal/Brock, Clavis to the Metrical Homilies of Narsai, 81–83. 49 The second part of the codex, which was in Siirt, survives as BnF ar. 6653.</p>
+<p>Grigory Kessel</p>
+<p>155</p>
+<p>Fortunately, some of the lost manuscripts survive in microfilm form within the collections of Arthur Vööbus and René Draguet. Only recently has it come to light that the latter important collection preserves complete copies of two monastic manuscripts, Mosul/Scher 92 and 95.50</p>
+<p>The wide dispersion of the library’s holdings suggests that some of the missing manuscripts may yet be identified. For example, the private collection of Buṭrus Ḥaddād, which became available only recently, includes manuscripts that originally formed part of the Patriarchal library.51</p>
+<p>in greater detail. Scher’s catalogue,</p>
+<p>identification problematic;</p>
+<p>Before concluding this introduction, it must be stressed that the concordance presented here is necessarily provisional and will require further refinement as the manuscripts are though examined invaluable, is often too brief and occasionally inaccurate, which renders likewise, the CNMO metadata, despite the team’s careful efforts, is not entirely free from errors;52 nor are Macomber’s checklist or the later HMML catalogue entries (including my own). Such shortcomings are intrinsic to large-scale cataloguing enterprises, and readers are therefore encouraged to approach the data with due caution and not to lay undue blame on the cataloguers for such shortcomings.</p>
+<p>50 N. Atas, C.E. Biuzzi, G. Gomiero, and A.B. Schmidt, “Le Paradis retrouvé à Louvain-la-Neuve: inventaire préliminaire des microfilms de manuscrits du Fonds René Draguet-CSCO, suivi d’un Appendice sur les manuscrits syriaques du Centre d’Études sur Grégoire de Nazianze,” Bulletin de l’Académie Belge pour l’Étude des Langues Anciennes et Orientales 13 (2024), 127–151, here 140.</p>
+<p>51 HMML project code CPB PH. For example, Bidawid 31.8 = CPB PH 143,</p>
+<p>Bidawid 33.22 = CPB PH 156, Bidawid 21.3 = CPB PH 5.</p>
+<p>52 See, for example CPB 410 that is described in the metadata sheet as “Codex 31.16; AS 336”, whereas the manuscript carries a different class mark (f. 2r) “Codex 40.1; AS 65” that helps to identify it with Mosul/Scher 65.</p>
+<p>Hugoye 29.1</p>
+<p>156</p>
+<p>Several Explanatory Remarks for the Table</p>
+<p>The first column provides the sequential number of the manuscripts in Addai Scher’s catalogue.53 The second column gives the HMML project numbers assigned to the manuscripts of the Chaldean Patriarchate now held in Erbil/Ankawa (project code CPB). In the case of manuscripts that have been relocated, the column instead indicates their current shelf marks or, where applicable, the HMML project numbers.54 Given the brevity (and, occasionally, inaccuracy) of some manuscript descriptions in Scher’s catalogue, precise identification is not always possible. The third column lists the class marks assigned to the manuscripts by William Macomber. These class marks appear both in his checklist (kept at HMML)55 and, in most cases, on the first page of the manuscripts themselves, where Macomber added them in pencil. Macomber marked a manuscript as missing in case he could not find it. The fourth column signals the availability of a microfilm copy, primarily in the collections of the Peshitta Institute (Amsterdam)56 and in the microfilm archive of Arthur Vööbus (kept today at the HMML).57 It should be borne in mind that Vööbus frequently photographed only selected folios and at times assigned them improvised designations, indicated by paper labels attached to the leaves. Since he visited the collection on several occasions and at times introduced different designations, these inconsistencies—now carried</p>
+<p>53 A. Scher, “Notice sur les manuscrits syriaques conservés dans la bibliothèque du Patriarcat chaldéen de Mossoul,” Revue des bibliothèques 17 (1907), 227–260.</p>
+<p>54 At the time of writing, a few CPB manuscripts remain uncatalogued. 55 Macomber, A Checklist of the Manuscripts of the Chaldean Patriarchate,</p>
+<p>ca. 1965.</p>
+<p>56 Available at https://www.vhmml.org/ (HMML project code PI). 57 Available at https://hmmlvoobus.org/.</p>
+<p>Grigory Kessel</p>
+<p>157</p>
+<p>over into the digitization—require particular caution.58 To assist the reader in locating the corresponding digitized microfilms, I indicate the precise call numbers (in quotation marks) used in the online Vööbus Syriac Manuscript Collection. A precise identification of the folios captured by Vööbus has not been undertaken. The footnotes serve different purposes: they provide the sigla used in the Peshitta Institute’s editions of the Old Testament; references to Maqdasī’s catalogue for the manuscripts left in Mosul; and citations of studies relevant to the history of the collection, particularly those of Fiey and Vööbus, though it is not always certain that these authors had firsthand knowledge of every manuscript they mention. The references are not intended as an exhaustive bibliography but rather as a selective guide.</p>
+<p>Additions to the Concordance of the Joint Collection in Mardin59</p>
+<p>HMML has recently digitized a collection of manuscripts belonging to the Chaldean Church in Istanbul.60 Although previously unknown,61 part of this collection originated in Mardin, following the merging of the two Chaldean collections of Diyarbakır and Mardin, which were assigned class marks by Macomber in the 1960s. Among these are four manuscripts that can be identified.</p>
+<p>58 Some details regarding the organisation of the collection can be found in</p>
+<p>https://hmmlvoobus.org/background/.</p>
+<p>59 Kessel, “A Concordance to Addai Scher’s Catalogues of Chaldean</p>
+<p>Collections of Manuscripts in Diyarbakır and Mardin.”</p>
+<p>60 HMML project code CCI. 61 Desreumaux, Répertoire des bibliothèques et des catalogues de</p>
+<p>manuscrits syriaques, 149.</p>
+<p>Hugoye 29.1</p>
+<p>158</p>
+<p>Scher’s</p>
+<p>catalogue</p>
+<p>HMML</p>
+<p>project</p>
+<p>Macomber’s</p>
+<p>class</p>
+<p>number</p>
+<p>number</p>
+<p>marks</p>
+<p>Diyarbakır 68</p>
+<p>CCI 28</p>
+<p>Mardin-Diyarbakır</p>
+<p>51.19</p>
+<p>Diyarbakır 93</p>
+<p>CCI 30</p>
+<p>Mardin-Diyarbakır</p>
+<p>100.8</p>
+<p>Mardin 45</p>
+<p>CCI 53</p>
+<p>Mardin-Diyarbakır</p>
+<p>60.12</p>
+<p>Mardin 47</p>
+<p>CCI 1</p>
+<p>Mardin-Diyarbakır</p>
+<p>52.10</p>
+<p>Abbreviations</p>
+<p>Atas et al. 2024 : Atas, N., Biuzzi, C.E., Gomiero, G., and Schmidt, A.B. “Le Paradis retrouvé à Louvain-la-Neuve: inventaire préliminaire des microfilms de manuscrits du Fonds René Draguet-CSCO, suivi d’un Appendice sur les manuscrits syriaques du Centre d’Études sur Grégoire de Nazianze.” Bulletin de l’Académie Belge pour l’Étude des Langues Anciennes et Orientales 13 (2024): 127–151.</p>
+<p>Barsoum 2003 : Barsoum, Ignatius Aphram I. The Scattered Pearls. A History of Syriac Literature and Sciences / trans. by Matti Moosa. Piscataway, NJ: Gorgias Press, 2003.</p>
+<p>Desreumaux</p>
+<p>1991</p>
+<p>: Desreumaux, Alain. Répertoire des bibliothèques et des catalogues de manuscrits syriaques. Paris, 1991.</p>
+<p>Fiey 1959 : Fiey, J.M. Mossoul chrétien. Essai sur l’histoire, l’archéologie et l’état actuel des monuments chrétiens de la ville de Mossoul, Recherches publiées sous la direction de</p>
+<p>Grigory Kessel</p>
+<p>159</p>
+<p>l’Institut de Lettres Orientales de Beyrouth 12. Beyrouth, 1959.</p>
+<p>Fiey 1965 : Fiey, J.M. Assyrie Chrétienne. Contribution à l’étude de l’histoire et de la géographie ecclésiastiques et monastiques du nord de l’Iraq, vols. 1–2, Recherches publiées sous la direction de l’Institut de Lettres Orientales de Beyrouth; Série III: Orient Chrétien, vol. 22, 34. Beyrouth, 1965.</p>
+<p>Fiey 1973 : Fiey, J.M. “Āḏarbāyğān Chrétien.” Le Muséon 86:3-4</p>
+<p>(1973): 397–435.</p>
+<p>Fiey 1977 : Fiey, J.M. Nisibe, métropole syriaque orientale et ses suffragants des origines à nos jours, CSCO 388 / Subs. 54. Louvain, 1977.</p>
+<p>Gomiero 2024a : Gomiero, G. “Évagre, Marc le Moine, Ps.Macaire, Sergius de Rešʿayna, Ps.-Denys l’Aréopagite: le manuscrit ascétique retrouvé Mossoul 708 (olim Mossoul Scher 92).” Bulletin de l’Académie Belge pour l’Étude des Langues Anciennes et Orientales 13 (2024): 95–126.</p>
+<p>Gomiero 2024b : Gomiero, G. “The Most Ancient Manuscript Witness to the Paradise of the Fathers (CPB 464, olim Mosul 810 and Mosul Scher 94): A New Description and Some Preliminary Remarks.” Hugoye: Journal of Syriac Studies 27:1 (2024): 101–164.</p>
+<p>Gomiero</p>
+<p>(forthcoming)</p>
+<p>: Gomiero, G.</p>
+<p>“La</p>
+<p>tradizione manoscritta siriaca delle opere ascetiche di Gregorio di Cipro (floruit 700 ca.): repertorio preliminare e presentazione di corpus letterario inesplorato.” Sacris Erudiri (forthcoming).</p>
+<p>Hugoye 29.1</p>
+<p>160</p>
+<p>ʿĪskō 1950 : ʿĪskō, I. “Al-maktaba al-kaldāniyya al-baṭrīarkiyya bil-Mawṣil.” Al-Naǧm 11 (1950): 217*–221*, 399*–402*, 601*– 607*.</p>
+<p>Kaufhold</p>
+<p>2003</p>
+<p>: Kaufhold, H.</p>
+<p>“Anmerkungen</p>
+<p>zur Textüberlieferung der Chronik des Johannes Bar Penkāyē.” Oriens Christianus 87 (2003): 65–79.</p>
+<p>Kessel/Bamballi 2018 : Kessel, G. and N. Bamballi. “Field Notes on Syriac Manuscripts II: A Philosophical Manuscript olim Mosul 35 Rediscovered.” Hugoye: Journal of Syriac Studies 21:1 (2018): 21–42.</p>
+<p>Leroy 1964 : Leroy, J. Les manuscrits syriaques à peintures, conservés dans les bibliothèques d’Europe et d’Orient. Contribution à l’étude de l’iconographie des églises de langue syriaque, Bibliothèque archéologique et historique 77. Paris, 1964.</p>
+<p>Macomber 1966 : Macomber, W.F. “The Oldest Known Text of the Anaphora of the Apostles Addai and Mari.” Orientalia Christiana Periodica 32 (1966): 335–371.</p>
+<p>Macomber 1969 : Macomber, W.F. “New Finds of Syriac in the Middle East.” In XVII. Deutscher Manuscripts Orientalistentag vom 21. bis 27. Juli 1968 in Würzburg: Vorträge, Zeitschrift der Deutschen Morgenländischen Gesellschaft, Supplement 1.2, ed. W. Voigt, 473–482. Wiesbaden, 1969.</p>
+<p>Grigory Kessel</p>
+<p>161</p>
+<p>Macomber</p>
+<p>1971</p>
+<p>: Macomber, W.F.</p>
+<p>“Further Precisions Concerning the Mosul Manuscript of the Chronicle of Seʿert.” Oriens Christianus 55 (1971): 210–213.</p>
+<p>Macomber 1977 : Macomber, W.F. “Two Unusual Liturgical Ceremonies of the Chaldean Rite.” In A Tribute to Arthur in Early Christian Literature and Its Vööbus: Studies Environment, Primarily in the Syrian East, edited by Robert H. Fischer, 329–336. Chicago, 1977.</p>
+<p>Maqdasī 1977 : Maqdasī, M. “Makhṭūṭāt maktabat muṭrāniyyat al-kaldān fī al-Mawṣil.” In Maktabāt al-Mawṣil wa-ʾaṭrāfuhā, Fahāris al-makhṭūṭāt al-suryāniyya fī al-ʿIrāq I, 7*–19*. Baghdad, 1977.</p>
+<p>Vööbus 1971 : Vööbus, A. The Hexapla and the Syro-Hexapla: Very Important Discoveries for Septuagint Research, Papers of the Estonian Theological Society in Exile 22. Stockholm, 1971.</p>
+<p>Vööbus 1987 : Vööbus, A. Studies in the History of the Gospel Text in Syriac II: New Contributions to the Sources Elucidating the History of the Traditions, CSCO 496 / Subs. 79. Louvain, 1987.</p>
+<p>Vööbus 1988 : Vööbus, A. History of Asceticism in the Syrian Orient: A Contribution to the History of Culture in the Near East, vol. 3, CSCO 500 / Subs. 81. Louvain, 1988.</p>
+<p>Vosté 1941 : Vosté, J.M. “L’ère de l’Ascension de Notre-Seigneur les manuscrits nestoriens.” Orientalia Christiana</p>
+<p>dans Periodica 7:1-2 (1941): 233–250.</p>
+<p>Hugoye 29.1</p>
+<p>162</p>
+<p>Wilmshurst 2000</p>
+<p>: Wilmshurst, D. The Ecclesiastical Organisation of the Church of the East, 1318–1913, CSCO 582 / Subs. 104. Louvain, 2000.</p>
+<p>Concordance</p>
+<p>MICROFILM COPIES</p>
+<p>SCHER’S CATALOGUE NUMBER</p>
+<p>HMML PROJECT NUMBER OR (IN OF CASE</p>
+<p>BIDAWID’S CLASS MARKS, MODIFIED BY MACOMBER</p>
+<p>CURRENT</p>
+<p>RELOCATED MANUSCRIPTS) A SHELF MARK CPB 445</p>
+<p>Bidawid 11.1</p>
+<p>PI 26</p>
+<p>Bidawid 11.2</p>
+<p>“Baghdad 112” / PI 27</p>
+<p>Bidawid 11.3</p>
+<p>“Baghdad 113” / PI 28</p>
+<p>Bidawid 21.1</p>
+<p>“Mosul Chald Scher 4”</p>
+<p>Bidawid 11.4</p>
+<p>PI 29</p>
+<p>CPB 436</p>
+<p>Bidawid 11.6</p>
+<p>PI 30</p>
+<p>Mosul 162 Mosul 263 Mosul 364 Mosul 465 Mosul 566 Mosul 667 Mosul 768</p>
+<p>Bidawid 12.1</p>
+<p>“Baghdad</p>
+<p>“Mosul 77”, Scher 7”</p>
+<p>62 17b2; Fiey 1965, vol. I, p. 316 n. 3. 63 17c1; Fiey 1965, vol. I, p. 316 n. 7. 64 18d2; Fiey 1959, p. 113 n. 1; Fiey 1965, vol. I, p. 316 n. 9. 65 12t3; apograph: Vat. Borg. sir. 113; Barsoum 2003, p. 20–21; Fiey 1965, vol. II,</p>
+<p>p. 583 n. 2; Vööbus 1971, p. 58.</p>
+<p>66 17e2. 67 19e2; apograph: Mingana Syr. 152; Fiey 1965, vol. II, p. 689 n. 2; Maqdasī –. 68 The manuscript was reported as lost by Leroy, who visited the library in</p>
+<p>Mosul (Leroy 1964, p. 389 n. 2).</p>
+<p>Grigory Kessel</p>
+<p>163</p>
+<p>Bidawid 12.2</p>
+<p>“Mosul Syr 8”</p>
+<p>Mosul 8 Mosul 969</p>
+<p>missing</p>
+<p>Mosul 10</p>
+<p>Bidawid 12.18</p>
+<p>“Baghdad 127” , “Baghdad Chaldean Patriarchate 127” “Baghdad 1N”</p>
+<p>Bidawid 12.12</p>
+<p>“Baghdad Scher 11”</p>
+<p>Bidawid 12.3</p>
+<p>Mosul 11 Mosul 1270 Mosul 1371</p>
+<p>CAM 45</p>
+<p>“Mosul Syr 13”</p>
+<p>CPB 435</p>
+<p>Mosul/ Bidawid 12.4 Bidawid 12.5</p>
+<p>Mosul 1472 Mosul 1573</p>
+<p>Bidawid 12.8</p>
+<p>(miniatures) BnF syr. 344 CAM 43</p>
+<p>Mosul / Bidawid 12.10</p>
+<p>CAM 39</p>
+<p>Mosul / Bidawid 12.13</p>
+<p>Mosul 1674 Mosul 1775 Mosul 1876</p>
+<p>CAM 44</p>
+<p>Mosul / Bidawid 12.15</p>
+<p>69 Kaufhold 2003, p. 70 (tentatively identifies with BnF syr. 362, although it differs from the manuscript photographed by Vööbus). The manuscript photographed by Vööbus, although identified by him as “Scher 9,” in fact represents the Peshitta version. Class mark “Bidawid 12.7”, likewise indicated by Vööbus, corresponds to Diyarbakır/Scher 13, yet the two are not identical. Macomber suggested that Mosul/Scher 9 corresponds to manuscript no. 264 (= Bidawid 12.4), which nonetheless represents the Peshitta version (Macomber 1969, p. 475 n. 13).</p>
+<p>70 Leroy reported the manuscript as lost during his visit to the library in Mosul (Leroy 1964, p. 389–390 n. 2, p. 430); Fiey 1977, p. 16 n. 1, p. 102 n. 542, p. 136 n. 15; Vööbus 1987, 140–141.</p>
+<p>71 Fiey 1959, p. 121 n. 2; Fiey 1965, vol. I, p. 51 n. 1, p. 75 n. 3; vol. II, p. 344, 346, 349; Macomber 1966, p. 353 n. 4; Fiey 1977, p. 193 n. 207; Vööbus 1987, p. 141; Maqdasī MS 1.</p>
+<p>72 Fiey 1965, vol. I, p. 51 n. 1; p. 271 n. 6; vol. II, p. 344, 537 n. 5; Fiey 1977, p. 214</p>
+<p>n. 318.</p>
+<p>73 Leroy 1964, p. 417–418; Fiey 1977, p. 229 n. 414. 74 Fiey 1965, vol. II, p. 654 n. 1, Fiey 1977, p. 265 n. 651; Maqdasī MS 4. 75 Maqdasī –. 76 Maqdasī MS 15.</p>
+<p>Hugoye 29.1</p>
+<p>164</p>
+<p>Mosul 19</p>
+<p>CPB 122</p>
+<p>Bidawid 22.4</p>
+<p>Mosul 20</p>
+<p>CPB 405</p>
+<p>Bidawid 21.5</p>
+<p>Bidawid 21.2</p>
+<p>Mosul 21 Mosul 2277</p>
+<p>CPB 123</p>
+<p>Bidawid 21.4</p>
+<p>“Baghdad Gannat Buss”</p>
+<p>Mosul 23</p>
+<p>Bidawid 22.2</p>
+<p>“Mosul Syr 23”</p>
+<p>Mosul 24</p>
+<p>CPB 4</p>
+<p>Bidawid 22.1</p>
+<p>“Mosul Syr 24”</p>
+<p>CPB 124</p>
+<p>Bidawid 21.6</p>
+<p>Mosul 25 Mosul 2678</p>
+<p>missing</p>
+<p>Mosul 2779</p>
+<p>missing</p>
+<p>Mosul 2880</p>
+<p>St.Petersburg, Syr. 41 Mingana Syr. 567 CAM 9</p>
+<p>Mosul / Bidawid 22.5</p>
+<p>CPB 290</p>
+<p>Bidawid 80.7</p>
+<p>? CPB 460</p>
+<p>Bidawid 51.25</p>
+<p>Mosul 29 Mosul 3081 Mosul 3182</p>
+<p>CPB 128</p>
+<p>Bidawid 51.6</p>
+<p>Mosul 32</p>
+<p>Bidawid 51.31</p>
+<p>Mosul 33</p>
+<p>CPB 133</p>
+<p>Bidawid 51.12</p>
+<p>Bidawid 51.7</p>
+<p>Mosul 34 Mosul 3583</p>
+<p>CPB 223</p>
+<p>Bidawid 52.2</p>
+<p>“Mosul Chald 35”</p>
+<p>77 Fiey 1965, vol. I, p. 194 n. 1; Fiey 1959, p. 111 n. 4. 78 Apograph: Erbil/Ankawa, Chaldean Antonian Order of St. Hormizd, Syriac 535 (olim Alqosh, Notre-Dame des Semences / Vosté 180). A section of the colophon is reproduced in Vosté 1941, p. 242; Kaufhold 2003.</p>
+<p>79 Desreumaux 1991, p. 106; Kaufhold 2003, p. 70. 80 Maqdasī MS 21. 81 Apograph: Erbil/Ankawa, Chaldean Antonian Order of St. Hormizd, Syriac</p>
+<p>487 (olim Alqosh, Notre-Dame des Semences / Vosté 156).</p>
+<p>82 Kaufhold (Kaufhold 2003, p. 70–71) suggests that Mingana Syr. 595, a single folio containing a colophon, once formed part of the codex, although the manuscript itself is complete.</p>
+<p>83 Barsoum 2003, p. 326 n. 3; Kessel-Bamballi 2018.</p>
+<p>Grigory Kessel</p>
+<p>165</p>
+<p>Mosul 3684</p>
+<p>Bidawid 34.11 Macomber MS 6 (+ a</p>
+<p>copy of one more ms)</p>
+<p>Mosul 3785</p>
+<p>Bidawid 33.7</p>
+<p>Mosul 38</p>
+<p>Bidawid 33.2</p>
+<p>CPB 93</p>
+<p>Bidawid 33.6</p>
+<p>Bidawid 33.1</p>
+<p>CAM 2</p>
+<p>Mosul / Bidawid 33.2</p>
+<p>Mosul 39 Mosul 4086 Mosul 4187 Mosul 4288</p>
+<p>Bidawid 33.9</p>
+<p>Mosul 43</p>
+<p>CPB 64</p>
+<p>Bidawid 36.3</p>
+<p>Mosul 44</p>
+<p>Bidawid 36.10</p>
+<p>? CPB 452</p>
+<p>Bidawid 31.1</p>
+<p>Mosul 45 Mosul 4689</p>
+<p>missing</p>
+<p>Bidawid 31.11</p>
+<p>Mosul 47 Mosul 4890</p>
+<p>CAM 41</p>
+<p>CAM 15</p>
+<p>Mosul (class mark unknown) + Bidawid 31.13 Mosul / Bidawid 31.7</p>
+<p>Bidawid 31.20</p>
+<p>Mosul 4991 Mosul 5092 Mosul 5193</p>
+<p>CAM 4</p>
+<p>Mosul (class mark unknown)</p>
+<p>84 Macomber 1966, p. 346–347. 85 Macomber 1977. 86 Fiey 1965, vol. II, p. 785 n. 2. 87 Fiey 1959, p. 114 n. 3; Maqdasī MS 8. 88 Fiey 1959, p. 128–129 n. 5; Fiey 1965, vol. I, p. 31. 89 Fiey 1959, p. 114–115 (reports that the manuscript was purchased in Mosul in 1924 by the priest of Araden (Amadiya), in whose possession it remained).</p>
+<p>90 Fiey 1965, vol. II, p. 655 n. 1; Maqdasī MS 7. The manuscript was divided into two parts: the first remained in Mosul, while the second was transferred to Baghdad and has not yet been identified.</p>
+<p>91 Maqdasī MS 17. 92 Fiey 1959, p. 121 n. 3. 93 Maqdasī MS 11.</p>
+<p>Hugoye 29.1</p>
+<p>166</p>
+<p>Mosul 5294</p>
+<p>Bidawid 31.17</p>
+<p>missing</p>
+<p>Bidawid 31.24</p>
+<p>Bidawid 34.1</p>
+<p>Mosul 53 Mosul 5495 Mosul 5596 Mosul 5697</p>
+<p>CAM 74</p>
+<p>Mosul / Bidawid 60.25</p>
+<p>Mosul 57</p>
+<p>Mosul / Bidawid 60.14</p>
+<p>Bidawid 51.1</p>
+<p>Mosul 58 Mosul 5998</p>
+<p>Bidawid 51.4</p>
+<p>Mosul 60</p>
+<p>Bidawid 51.16</p>
+<p>Mosul 61</p>
+<p>Bidawid 40.3</p>
+<p>missing</p>
+<p>Bidawid 40.2</p>
+<p>Mosul 62 Mosul 6399 Mosul 64100</p>
+<p>missing</p>
+<p>Syriac Mar</p>
+<p>“Alqosh Giwargi #1”</p>
+<p>Mosul 65101</p>
+<p>Erbil/Ankawa, O.A.O.C., Syriac 514 CPB 410</p>
+<p>Bidawid 40.1</p>
+<p>“Baghdad D 401”</p>
+<p>Mosul 66</p>
+<p>CPB 130</p>
+<p>Bidawid 40.6</p>
+<p>“Baghdad D 406”</p>
+<p>Bidawid 60.4</p>
+<p>Mosul 67 Mosul 68102</p>
+<p>? DCA 60</p>
+<p>missing</p>
+<p>94 Fiey 1965, vol. II, p. 527 n. 5; Maqdasī –. 95 Fiey 1977, p. 243 n. 515; Maqdasī –. 96 A section of the colophon is reproduced by Vosté (Vosté 1941, p. 236) who possessed a copy, today Vat. sir. 624; ʿĪskō 1950, p. 601*–607*; Fiey 1965, vol. II, p. 392 n. 2; III, p. 127 n. 5, Fiey 1977, p. 98 n. 521, p. 109, p. 236 n. 458, p. 265 n. 650.</p>
+<p>97 Maqdasī MS 12. 98 Fiey 1965, vol. I, p. 316 n. 6. 99 Fiey 1977, p. 234 n. 445. 100 Kaufhold 2003, p. 71. 101 Fiey 1959, p. 124 n. 3. 102 Alqosh, Chaldean Diocese (DCA) 60 appears to be of very similar content.</p>
+<p>Grigory Kessel</p>
+<p>167</p>
+<p>Mosul 69</p>
+<p>Bidawid 60.5</p>
+<p>Mosul 70</p>
+<p>Bidawid 60.3</p>
+<p>“Baghdad Chaldean Patriarchate 605” “Baghdad Chaldean Patriarchate 603”</p>
+<p>Mosul 71</p>
+<p>Bidawid 60.1</p>
+<p>Mosul 72</p>
+<p>CPB 105</p>
+<p>Bidawid 60.2</p>
+<p>“Baghdad D 406 &amp; 602” , “Baghdad Chaldean Patriarchate 602”</p>
+<p>Bidawid 60.27</p>
+<p>Mosul 73103 Mosul 74104</p>
+<p>Bidawid 60.19</p>
+<p>Bidawid 60.20</p>
+<p>Mosul 75 Mosul 76105</p>
+<p>missing</p>
+<p>Mosul 77</p>
+<p>Berlin, Staatsbibliothek, Or. fol. 3121 CPB 103</p>
+<p>Bidawid 60.17</p>
+<p>“Mosul 77”</p>
+<p>Mosul 78</p>
+<p>Bidawid 60.13</p>
+<p>Mosul 79</p>
+<p>Bidawid 60.29</p>
+<p>Bidawid 60.28</p>
+<p>Mosul 80 Mosul 81106</p>
+<p>CPB 100</p>
+<p>Bidawid 60.31</p>
+<p>Mosul 82</p>
+<p>Bidawid 60.9</p>
+<p>Mosul 83</p>
+<p>CPB 454</p>
+<p>Bidawid 60.10</p>
+<p>Mosul 84</p>
+<p>CPB 104</p>
+<p>Bidawid 60.37</p>
+<p>Mosul 85</p>
+<p>Bidawid 60.32</p>
+<p>Mosul 86107</p>
+<p>CPB 199</p>
+<p>Bidawid 80.3</p>
+<p>partial copy in “Fonds Draguet”</p>
+<p>103 Fiey 1965, vol. II, p. 368 n. 4. 104 Fiey 1977, p. 230 n. 416; Maqdasī –. 105 Kaufhold 2003, p. 71. 106 Fiey 1977, p. 217 n. 335; Maqdasī –. 107 Atas et al. 2024, p. 140.</p>
+<p>Hugoye 29.1</p>
+<p>168</p>
+<p>Mosul 87108</p>
+<p>CAM 17</p>
+<p>“Mosul 87”</p>
+<p>Mosul 88109</p>
+<p>Mosul/ Bidawid 80.6 Bidawid 60.24</p>
+<p>missing</p>
+<p>Mosul 89 Mosul 90110</p>
+<p>CAM 32</p>
+<p>“Mosul 90”</p>
+<p>Mosul/ Bidawid 100.3 missing</p>
+<p>Mosul 91 Mosul 92111</p>
+<p>Bidawid 70.8 microfilm copy in “Fonds Draguet” “Mosul 93”</p>
+<p>Bidawid 70.2</p>
+<p>Mosul 93 Mosul 94112</p>
+<p>CPB 464</p>
+<p>Bidawid 80.1 microfilm copy in “Fonds Draguet”</p>
+<p>Bidawid 80.8</p>
+<p>Mosul 95113 Mosul 96114</p>
+<p>missing (? = Vat. Syr. 629)</p>
+<p>Vat. sir. 629 + Erbil/Ankawa, O.A.O.C., frag. syr. 601 DFM 907</p>
+<p>missing</p>
+<p>Mosul 97 Mosul 98115</p>
+<p>CPB 421</p>
+<p>Bidawid 60.16</p>
+<p>108 Maqdasī –. 109 Fiey 1965, vol. I, p. 316 n. 8. 110 Maqdasī –. 111 Vööbus 1988, p. 147 n. 25; Atas et al. 2024, p. 140; Gomiero 2024a. 112 Atas et al. 2024, p. 140; Gomiero 2024b. 113 Atas et al. 2024, p. 140 [the photographed manuscript carries the label</p>
+<p>“Mossoul 809”].</p>
+<p>St.</p>
+<p>Hormizd</p>
+<p>in</p>
+<p>114 Barsoum 2003, p. 138 n. 6; Macomber 1969, p. 475 n. 96. The second part was recently discovered in the collection of the Chaldean Antonian Order of Erbil/Ankawa (https://theo.kuleuven.be/apps/press/theologyresearchnews/2024/04/08 /fieldwork-in-manuscript-studies-uncovering-syriac-and-arabicmanuscripts-in-erbil-iraq/); on the manuscript see also Gomiero (forthcoming), who identified its apograph in Manchester, John Rylands Collection, Syr. 42.</p>
+<p>115 Fiey 1965, vol. II, p. 528 n. 3; Maqdasī –.</p>
+<p>Grigory Kessel</p>
+<p>169</p>
+<p>CPB 502</p>
+<p>Bidawid 52.1</p>
+<p>Bidawid 60.33</p>
+<p>“Baghdad 6033”</p>
+<p>Bidawid 60.23</p>
+<p>“Baghdad D 101”</p>
+<p>Mosul 99116 Mosul 100117 Mosul 101118 Mosul 102119</p>
+<p>Bidawid 60.21</p>
+<p>“Baghdad 6021”</p>
+<p>Mosul 103</p>
+<p>Bidawid 51.27</p>
+<p>“Mosul Chald Syr 103” , “Baghdad 5127”</p>
+<p>Mosul 104</p>
+<p>missing</p>
+<p>Bidawid 90.3</p>
+<p>Mosul 105 Mosul 106120</p>
+<p>Mosul 107</p>
+<p>CPB 210</p>
+<p>Mosul/ Bidawid 90.1 Bidawid 90.4</p>
+<p>Mosul 108</p>
+<p>CPB 212</p>
+<p>missing</p>
+<p>Mosul 109</p>
+<p>Bidawid 90.2</p>
+<p>Bidawid 90.7</p>
+<p>missing</p>
+<p>Bidawid 100.4</p>
+<p>Mosul 110 Mosul 111121 Mosul 112122 Mosul 113123</p>
+<p>Bidawid 100.1</p>
+<p>Mosul 114</p>
+<p>CPB 459</p>
+<p>Bidawid 100.5</p>
+<p>Mosul 115</p>
+<p>CPB 309</p>
+<p>Bidawid 70.15</p>
+<p>Mosul 116</p>
+<p>? CPB 322</p>
+<p>Bidawid 70.20</p>
+<p>116 Apographs: Mingana Syr. 156 and British Library, Or. 9354; Barsoum 2003,</p>
+<p>p. 141 n. 2, p. 473 n. 4; Fiey 1973, p. 409 n. 87.</p>
+<p>117 Vööbus 1988, p. 89 n. 7, 90 n. 19. 118 Vööbus 1988, p. 94 n. 8. 119 Fiey 1965, vol. II, p. 668 n. 2. 120 Maqdasī (Maqdasī 1977, p. 11*) and Wilmshurst (Wilmshurst 2000, p. 376) identify this manuscript with Bidawid 901 (= Maqdasī MS 3 (now CAM 75)), albeit its date and content is different.</p>
+<p>121 Barsoum 2003, p. 18 n. 1. 122 Apographs: BnF syr. 336, syr. 411. 123 Macomber 1971.</p>
+</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            
+<div class="PDFviewer text-center" style="width:100%; margin-top:1rem;">
+  <object data="HV29N1Kessel.pdf" type="application/pdf" width="100%" height="800">
+    <a href="HV29N1Kessel.pdf">Open the PDF</a>
+  </object>
+</div>
+          </div>
+
+          <!-- RIGHT MENU (as in your example) -->
+          <div class="col-md-3 col-lg-3 right-menu">
+            <div id="rightCol" class="noprint">
+              <div id="sedraDisplay" class="sedra panel panel-default">
+                <div class="panel-body">
+                  <span style="display:block;text-align:center;margin:.5em;"><a href=" http://sedra.bethmardutho.org" title="SEDRA IV">SEDRA IV</a></span>
+                  <img src="/resources/img/sedra-logo.png" title="Sedra logo" width="100%" />
+                  <h3>Syriac Lexeme</h3>
+                  <div id="sedraContent"><div class="content"></div></div>
+                </div>
+              </div>
+            </div>
+
+            <div class="panel panel-default">
+              <div class="panel-heading"><a href="#" data-toggle="collapse" data-target="#aboutDigitalText">About This Digital Text</a></div>
+              <div class="panel-body collapse in" id="aboutDigitalText">
+                <div><h5>Record ID:</h5><span>https://hugoye.bethmardutho.org/article/hv29n1kessel</span></div>
+                <div style="margin-top:1em;"><span class="h5-inline">Status: </span><span>PDF</span>
+                  &nbsp;<a href="https://github.com/Beth-Mardutho/hugoye-data/wiki/Status-of-Contents-in-Hugoye"><span class="glyphicon glyphicon-question-sign text-info moreInfo"></span></a>
+                </div>
+                <div style="margin-top:1em;"><span class="h5-inline">Publication Date: </span>2026</div>
+              </div>
+            </div>
+
+            <div class="panel panel-default">
+              <div class="panel-heading"><a href="#" data-toggle="collapse" data-target="#citationText">How to Cite this Article</a></div>
+              <div class="panel-body collapse in" id="citationText">
+                <div>
+                  <span class="tei-sourceDesc">
+                    <span class="section indent">
+                      Grigory Kessel,  "<span class="title-analytic">A Concordance to the Manuscript Collection of the Chaldean Patriarchate</span>."
+                      <span class="title-journal">Hugoye: Journal of Syriac Studies</span> (<span class="publisher">Beth Mardutho: The Syriac Institute</span>,  <span class="date">2026</span>).
+                    </span>
+                  </span>
+                </div>
+              </div>
+            </div>
+
+            <span class="badge access-pills"><a href="/open-access.html" style="color:#555">open access <i class="fas fa-unlock-alt"></i></a></span>
+            <span class="badge access-pills"><a href="https://github.com/Beth-Mardutho/hugoye-data/wiki/Peer-Review-Policy" style="color:#555">peer reviewed <i class="fas fa-check"></i></a></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

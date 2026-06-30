@@ -1,0 +1,522 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:srophe="https://srophe.app">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>The Sahidic Version of Jacob of Serugh&#x27;s</title>
+    <link rel="schema.DC" href="http://purl.org/dc/elements/1.1/" />
+    <link rel="schema.DCTERMS" href="http://purl.org/dc/terms/" />
+    <meta name="DC.type" property="dc.type" content="Text" />
+    <meta name="DC.isPartOf" property="dc.ispartof" content="Syriaca.org" />
+    <link data-template="app:metadata" />
+    <link rel="shortcut icon" href="/resources/img/favicon.ico" />
+    <link rel="stylesheet" type="text/css" href="/resources/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="/resources/css/sm-core-css.css" />
+    <link rel="stylesheet" href="/resources/css/syr-icon-fonts.css" />
+    <link rel="stylesheet" type="text/css" href="/resources/css/main.css" />
+    <link rel="stylesheet" type="text/css" media="print" href="/resources/css/print.css" />
+    <link href="/resources/jquery-ui/jquery-ui.min.css" rel="stylesheet" /><script type="text/javascript" src="/resources/js/jquery.min.js"></script><script type="text/javascript" src="/resources/jquery-ui/jquery-ui.min.js"></script><script type="text/javascript" src="/resources/js/jquery.smartmenus.min.js"></script><script type="text/javascript" src="/resources/js/clipboard.min.js"></script><script type="text/javascript" src="/resources/js/bootstrap.min.js"></script><script src="https://www.google.com/recaptcha/api.js"></script><link href="/resources/keyboard/css/keyboard.min.css" rel="stylesheet" />
+    <link href="/resources/keyboard/css/keyboard-previewkeyset.min.css" rel="stylesheet" />
+    <link href="/resources/keyboard/syr/syr.css" rel="stylesheet" /><script type="text/javascript" src="/resources/keyboard/syr/jquery.keyboard.js"></script><script type="text/javascript" src="/resources/keyboard/js/jquery.keyboard.extension-mobile.min.js"></script><script type="text/javascript" src="/resources/keyboard/js/jquery.keyboard.extension-navigation.min.js"></script><script type="text/javascript" src="/resources/keyboard/syr/jquery.keyboard.extension-autocomplete.js"></script><script type="text/javascript" src="/resources/keyboard/syr/keyboardSupport.js"></script><script type="text/javascript" src="/resources/keyboard/syr/syr.js"></script><script type="text/javascript" src="/resources/js/keyboard.js"></script>
+  </head>
+  <body id="body">
+    <div class="navbar navbar-default navbar-fixed-top" role="navigation" data-template="app:fix-links">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand banner-container" href="/index.html">
+            <!--<img property="logo" class="img-responsive" alt="Syriac.org" src="/resources/img/syriaca-logo.png"/> Draft-->
+            <span class="banner-icon"></span>
+            <span class="banner-text">Hugoye: Journal of Syriac Studies</span>
+          </a>
+        </div>
+
+        <div class="navbar-collapse collapse pull-right">
+          <ul class="nav navbar-nav sm sm-vertical" id="main-menu">
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                About Hugoye  <b class="caret"></b>
+              </a>
+              <ul class="dropdown-menu">
+                <li><a href="/editorial-board.html">Editorial Board</a></li>
+                <li><a href="/submissions.html">Submissions</a></li>
+                <li><a href="/open-access.html">Open Access</a></li>
+                <li><a href="https://www.gorgiaspress.com/hugoye-journal-of-syriac-studies" target="_blank">Printed Edition Subscription</a></li>
+              </ul>
+            </li>
+
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                Indexes  <b class="caret"></b>
+              </a>
+              <ul class="dropdown-menu">
+                <li><a href="/current-issue.html">Current Issue</a></li>
+                <li><a href="/volumes.html">Volume Index</a></li>
+                <li><a href="/authors.html">Author Index</a></li>
+              </ul>
+            </li>
+          </ul>
+
+          <ul class="nav navbar-nav navbar-right keboard-btn">
+            <li>
+              <div class="btn-nav">
+                <a class="btn btn-default navbar-btn dropdown-toggle" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" title="Select Keyboard">
+                  <span class="syriaca-icon syriaca-keyboard"></span>
+                  <span class="caret"></span>
+                </a>
+                <ul data-template="app:keyboard-select-menu" data-template-input-id="q"></ul>
+              </div>
+            </li>
+
+            <li>
+              <div class="btn-nav">
+                <a href="#" class="btn btn-default navbar-btn dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" title="Search Tools">
+                  <span class="glyphicon glyphicon-search"></span> <span class="caret"></span>
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a href="/search.html">Advanced Search</a></li>
+                </ul>
+              </div>
+            </li>
+
+            <li>
+              <div class="btn-nav">
+                <a href="#" class="btn btn-default navbar-btn dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" title="Select Font">
+                  Font <span class="caret"></span>
+                </a>
+                <ul class="dropdown-menu" id="swap-font">
+                  <li><a href="#" class="swap-font" id="DefaultSelect" data-font-id="EstrangeloEdessa">Default</a></li>
+                  <li><a href="#" class="swap-font" id="EstrangeloEdessaSelect" data-font-id="EstrangeloEdessa">Estrangelo Edessa</a></li>
+                  <li><a href="#" class="swap-font" id="EastSyriacAdiabeneSelect" data-font-id="EastSyriacAdiabene">East Syriac Adiabene</a></li>
+                  <li><a href="#" class="swap-font" id="SertoJerusalemSelect" data-font-id="SertoJerusalem">Serto Jerusalem</a></li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+
+          <form class="navbar-form navbar-right navbar-input-group" role="search" action="/search.html" method="get">
+            <div class="input-group">
+              <input type="text" class="form-control keyboard" placeholder="search" name="q" id="q" />
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <div class="main-content-block">
+      <div class="interior-content">
+        <div class="container otherFormats">
+          <a href="HV29N1Suciu.xml" class="btn btn-default btn-xs" id="teiBtn" data-toggle="tooltip" title="Click to view the TEI XML data for this record."><span class="glyphicon glyphicon-download-alt" aria-hidden="true"></span> TEI/XML</a>
+        </div>
+
+        <div class="row">
+          <!-- MAIN CONTENT (use 9/3 split like your example) -->
+          <div class="col-sm-9 col-md-9 col-lg-9 mssBody">
+            <div class="article-header text-center">
+              <h1>The Sahidic Version of Jacob of Serugh&#x27;s</h1>
+              <h2></h2>
+              <span class="tei-author">
+                <span class="tei-name">Alin <span class="tei-surname">Suciu</span></span>
+                <span class="tei-affiliation"><span class="tei-orgName">Göttingen Academy</span></span>
+              </span>
+            </div>
+
+            <div class="section tei-text">
+              <div class="body">
+                <div class="section" style="display:block;">
+                  <div class="tei-div tei-title" lang="en">
+                    <span class="tei-ab tei-review-title"></span>
+                  </div>
+
+                  <div class="tei-div tei-body" lang="en">
+                    <div class="pdf-transcript">
+<h3 class="h4">Full text (from PDF)</h3>
+<p>Hugoye: Journal of Syriac Studies, Vol. 29.1, 345-363 © 2026 by Beth Mardutho: The Syriac Institute and Gorgias Press</p>
+<p>THE SAHIDIC VERSION OF JACOB OF SERUGH’S MĒMRĀ ON THE ASCENSION: NEW FRAGMENTS1</p>
+<p>ALIN SUCIU</p>
+<p>GÖTTINGEN ACADEMY DIGITALE GESAMTEDITION UND ÜBERSETZUNG DES KOPTISCHSAHIDISCHEN ALTEN TESTAMENTES</p>
+<p>ABSTRACT</p>
+<p>This article presents two newly identified Sahidic fragments of Jacob of Serugh’s mēmrā on the Ascension, originating from a tenth-century White Monastery codex. These fragments expand the previously known Coptic witnesses to the homily, first reported in 2015, and provide additional evidence for the early reception of Syriac literature in Egypt, challenging the assumption that Coptic translations depended exclusively on Greek sources. After surveying the transmission of the homily on the Ascension in Syriac, Coptic, Arabic, Ethiopic, and Armenian, the study offers an edition of the new fragments and compares them with Bedjan’s Syriac text</p>
+<p>1 I am grateful to David Taylor (University of Oxford) and to the anonymous reviewer of this article for their helpful comments and suggestions. Any remaining shortcomings or errors are, of course, my own.</p>
+<p>345</p>
+<p>Hugoye 29.1</p>
+<p>346</p>
+<p>and other versions. The analysis shows significant textual divergences and translation techniques.</p>
+<p>In 2015, I announced the first attestation of a work by Jacob of Serugh (ca. 451–521 CE) in Coptic: a Sahidic version of his mēmrā on the Ascension of Christ, preserved in two tenthcentury codices from the White Monastery in Upper Egypt.2 This discovery not only provides the earliest evidence for Jacob’s reception in Egypt, but it also challenges the long-held assumption that Coptic literature translated texts exclusively from Greek, showing that it could also incorporate Syriac works. In this article, I would like to draw attention to two newly identified fragments which belonged to one of the codices I described in 2015. These fragments preserve additional verses of the Sahidic version of Jacob’s mēmrā on the Ascension, offering a fuller picture of its reception in Coptic. I will begin by presenting the transmission of the mēmrā on the Ascension by Jacob of Serugh in various languages and then I will introduce the new Sahidic fragments of the text.</p>
+<p>THE MĒMRĀ ON THE ASCENSION AND ITS VERSIONS</p>
+<p>In addition to the original Syriac text, versions of the mēmrā on the Ascension has survived in Coptic, Arabic, Ethiopic (Gǝʽǝz), and Armenian, making it the only text of Jacob attested in the five languages of the anti-Chalcedonian churches. The Syriac</p>
+<p>2 Alin Suciu, “The Sahidic Version of Jacob of Serugh’s Memrā on the Ascension of Christ,” Le Muséon 128 (2015): 49–83. A revised and improved version of this article I published in Romanian, see “Versiunea coptă a memrei lui Iacov de Sarug despre Înălțarea lui Hristos,” in Alin Suciu, Monahul și scribul. Creștinismul egiptean între idealul monahal și cultura scrisă (Studii și documente de istorie a religiilor, 6; Bucharest: Spandugino, 2022) 81–111.</p>
+<p>Alin Suciu</p>
+<p>347</p>
+<p>text is abundantly represented in the manuscript tradition.3 Nevertheless, the only available edition, prepared by Paul Bedjan, is based on just two codices: Paris, BnF Syriaque 196 (14th century CE), and London, British Library Add. 12165 (1015 CE).4 A new edition based on a larger number of manuscripts, which would better reflect the textual diversity in Syriac, remains a</p>
+<p>3 A comprehensive inventory of the Syriac manuscripts containing Jacob of Serugh’s homily on the Ascension can be found in Arthur Vööbus, Handschriftliche Überlieferung der Mēmrē-Dichtung des Ja‘qōb von Serūg, vol. 2: Sammlungen – Der Bestand (Corpus Scriptorum Christianorum Orientalium, 345. Subsidia, 40; Louvain: Secrétariat du CorpusSCO, 1973) 16–17, 34–35, 48–49, 52, 53, 68–69, 70–71, 78–79, 86–87, 90–91, 96–97, 102– 103, 108–109, 118–119, 128–129, 138–139, 154–155, 160–161, 176–177, 182–183, 196–197; and Idem, Handschriftliche Überlieferung der Mēmrē-Dichtung des Ja‘qōb von Serūg, vol. 4: Die Zerstreuten Mēmrē – Der Bestand (Corpus Scriptorum Christianorum Orientalium, 422. Subsidia, 61; Louvain: Secrétariat du CorpusSCO, 1980) 14–15, 30–31, 60–61, 80–81, 84–85. Vööbus identified over twenty-five witnesses to this homily, though additional manuscripts of Jacob’s works have come to light since the publication of his survey, so that the total number is certainly higher. Of particular importance are three comparatively early manuscripts from Dayr alSuryan catalogued by Sebastian P. Brock and Lucas Van Rompay, Catalogue of the Syriac Manuscripts and Fragments in the Library of Deir alSurian, Wadi al-Natrun (Egypt) (Orientalia Lovaniensia Analecta, 227; Leuven: Peeters, 2014) 240, 280, 304.</p>
+<p>4 Paul Bedjan, S. Martyrii, qui et Sahdona quæ supersunt Omnia (Paris/Leipzig: Otto Harrassowitz, 1902) 808–832. The Syriac text edited by Bedjan was reprinted and into English by Thomas translated Kollamparampil, Jacob of Sarug’s Homily on the Ascension of Our Lord (Texts from Christian Late Antiquity, 24. The Metrical Homilies of Mar Jacob of Sarug, 21; Piscataway, NJ: Gorgias Press, 2010). For a description of the Paris manuscript used by Bedjan, see Hermann Zotenberg, Manuscrits orientaux: Catalogues des manuscrits syriaques et sabéens (mandaïtes) de la Bibliothèque Nationale (Paris: Imprimerie nationale, 1874) 140–144 (= no. 196); for the London manuscript, see William Wright, Catalogue of Syriac Manuscripts in the British Museum, vol. 2 (London: British Library, 1871) 840–851 (= no. 824), and Joseph-Marie Sauget, “Pour une interprétation de la structure de l’homéliaire syriaque ms. British Library Add. 12165,” Ecclesia Orans 3 (1986): 121–146.</p>
+<p>Hugoye 29.1</p>
+<p>348</p>
+<p>desideratum for any proper comparison with its surviving versions in other languages.</p>
+<p>According to a recent survey, the Arabic version of the mēmrā on the Ascension is attested in at least seventeen manuscripts, none of which is older than the 17th century CE.5 Significantly, only a single version of the Arabic text has been identified, and this appears to be preserved exclusively in Egyptian manuscripts of Jacob’s works.6 The Arabic text is accessible in a Coptic devotional book printed in Cairo at the beginning of the 20th century, although the source on which it relies is not specified.7 The monks of the Monastery of Saint Macarius in Wādī Naṭrūn also prepared a handwritten Arabic transcription of the homily. This transcription is of some interest, as it is partially based on two Arabic manuscripts of Jacob’s homilies held in the monastery’s library.8 Nevertheless, it must be used with caution, for it appears to combine the text of the original manuscripts with a modern Arabic translation prepared from the Syriac edition published by Bedjan, without indicating when such contaminations occur.</p>
+<p>An Ethiopic (Gǝʽǝz) translation has survived in at least two codices: a manuscript from Lake Tana (Dāgā ʽEsṭifānos 66 =</p>
+<p>(Series Syro-Arabica,</p>
+<p>5 Aaron Michael Butts, “The Christian Arabic Transmission of Jacob of Serugh (d. 521): The Sammlungen,” Journal of the Canadian Society for Syriac Studies 16 (2016): 39–59, at 43–44 (counts ten manuscripts); Khalil Alwan, Les œuvres de Jacques de Saroug dans la tradition arabe: Inventaire des manuscrits arabes 10; Cordoba/Beirut: CNERU/CEDRAC, 2019) 389–390 (counts seventeen manuscripts).</p>
+<p>�وﴪﻟا ﻆﻋاﻮﻣ</p>
+<p>ئأ</p>
+<p>ﺮﻣﺎيﻣ بﺎﺘﻛ</p>
+<p>6 See Alwan, Les œuvres de Jacques de Saroug, 389. 7 Mikhāʼīl Atanāsiyūs,</p>
+<p>[The Book of Homilies, that is, Sermons of (Jacob) of Sarugh] (Cairo: The Egyptian Printing Press of alFajjālah, 1905) 635–645 (with Arabic numerals).</p>
+<p>8 These are manuscripts nos. 333 and 334 of the Monastery of St. Macarius, copied in 1870 and 1773 CE respectively. Their description can be found in Ugo Zanetti, Les manuscrits de Dair Abû Maqâr: Inventaire (Cahiers d’Orientalisme, 11, Geneva: Patrick Cramer, 1986) 47–48.</p>
+<p>Alin Suciu</p>
+<p>349</p>
+<p>Ṭānāsee 177, ff. 29r–43v; 15th century CE) and another from ʽUrā Qirqos (Ethio-SPaRe ms. UM-046, ff. 14v–25v; 14th century CE).9 It is likely that this version was made from Arabic, since no Ethiopic translations directly from Syriac are known. Indeed, beginning with the Solomonic dynasty, which ascended the Ethiopian throne in 1270 CE, numerous Syriac texts were translated into Ethiopic exclusively through intermediary Arabic versions.10 Yet, the Gǝʽǝz text of the homily on the Ascension often differs significantly both from the Arabic recension and from the Syriac original. For instance, the Ethiopic version opens with a slightly different incipit:</p>
+<p>Ethiopic</p>
+<p>Rise and</p>
+<p>stand, O</p>
+<p>ትንሥኡ፡ ወቁሙ፡ ኦጉባኤ፡ ነገሥት፡ ለስብሐተ፡ ፍቁር፡</p>
+<p>assembly of kings, for</p>
+<p>the praise of</p>
+<p>the</p>
+<p>Beloved.</p>
+<p>9 The existence of the Ethiopian version was kindly brought to my attention by Ted Erho (Universität Hamburg/Ludwig-Maximilians-Universität München), to whom I am grateful. For a description of the Lake Tana codex, see Veronica Six, Äthiopische Handschriften von Ṭānāsee, vol. 3 (Verzeichnis der orientalischen Handschriften in Deutschland, 20/3; Stuttgart: F. Steiner, 1999) 234–235.</p>
+<p>10 Aaron M. Butts, “Syriac Contacts with Ethiopic Christianity,” in Sebastian P. Brock et al. (eds.), The Gorgias Encyclopedic Dictionary of the Syriac Heritage (Piscataway, NJ: Gorgias Press, 2011) 148–153, at 149–153; Idem, “From Syriac to Arabic to Ethiopic: Loci of Change in Transmission,” in Rosa Bianca Finazzi, Francesca Forte, Claudia Milani, and Marco Moriggi (eds.), Circulation of Texts and the Overcoming of Linguistic and Cultural Barriers in Eastern Traditions (Orientalia Ambrosiana, 7; Milan: Biblioteca Ambrosiana/Centro Ambrosiano, 2020) 21–57.</p>
+<p>Hugoye 29.1</p>
+<p>350</p>
+<p>ܗܬܚܘܒܫܬ ܠܥ ܝܪܢܟ ܪܝܥܬܬܐ</p>
+<p>Syriac</p>
+<p>Awake, my harp, for</p>
+<p>ܐܝܕܝܚܝܕ</p>
+<p>the praise of the Only Begotten.</p>
+<p>Arabic</p>
+<p>ﺪﻴﺣﻮﻟا ﺪﻴﺠﲤ ﻰﻠﻋ يرﺎﺘﻴﻛ � ﻆﻘﻴﺘﺳإ Awake, O my harp, for</p>
+<p>the glorification of the</p>
+<p>Only-Begotten.</p>
+<p>A careful analysis is required to determine whether the Ethiopic text represents a free adaptation of the Arabic model or, rather, was produced on the basis of a still unidentified Arabic recension.</p>
+<p>An Armenian translation of the mēmrā on the Ascension is also known.11 The earliest manuscript transmitting this version is Paris, BnF Arménien 116, a massive paper codex containing various homilies for the feasts of the liturgical year, copied in 1307 CE.12 The Armenian translation was made directly from Syriac. In this version, lines 131–154 and 161–168 of Jacob’s homily are missing. The first omission can probably be explained as the result of an aberratio oculi on the part of the</p>
+<p>11 The Armenian text was published from an otherwise unknown manuscript in Գիրք և ճառ հոգեշահ [Books and Sermons of Spiritual Interest] (Constantinople: Sargis Dpri, 1722) 345–370.</p>
+<p>12 BnF Arménien 116, ff. 319r–322v. For a description, see Raymond H. Kévorkian and Armèn Ter-Stépanian, Manuscrits arméniens de la Bibliothèque nationale de France: Catalogue (Paris: Bibliothèque nationale de France/Fondation Calouste Gulbenkian, 1998) 401. A survey of the Armenian manuscripts of this mēmrā can be found in Andy Hilkens, “The Armenian Reception of the Homilies of Jacob of Serugh: New Findings,” in Dan Batovici and Mădălina Țoca (eds.), Caught in Translation: Studies on Versions of Late Antique Christian Literature (Texts and Studies in Eastern Christianity, 17; Leiden/Boston, MA: Brill, 2020) 64–84, at 21–23; Andy Hilkens, “The Manuscripts of the Armenian Homilies of Jacob of Serugh: Preliminary Observations and Checklist,” Manuscripta 64 (2020): 1–71, at 23.</p>
+<p>Alin Suciu</p>
+<p>351</p>
+<p>Armenian translator, since in the Syriac original lines 130 and 154 both end with the same words (a case of homeoteleuton): ܠܥ ܗܡܚܘܢ (“for his resurrection”).13</p>
+<p>The translation of the text into Armenian is difficult to date with precision. As noted above, the earliest Armenian manuscript containing the mēmrā on the Ascension, BnF Arménien 116, was transcribed in 1307 CE, but the translation itself must be older. It is possible that this version was produced during the period of the Armenian Kingdom of Cilicia (12th– 13th centuries). As Edward G. Mathews Jr. has shown, following the destruction of the Bagratid principalities by the Seljuk Turks in 1064 CE and the establishment of the Kingdom of Cilicia, there ensued a flourishing of Armenian culture which marked the Golden Age of patristic translations from Syriac into Armenian.14</p>
+<p>The attestation of the mēmrā on the Ascension in Syriac, Coptic, Arabic, Ethiopic, and Armenian demonstrates not only the wide circulation of this homily but also the intricate transmission networks connecting the anti-Chalcedonian churches. Comparative study of these versions can provide insight into the processes of translation, adaptation, and reception in different cultural contexts.</p>
+<p>THE NEW FRAGMENTS</p>
+<p>two new Coptic</p>
+<p>fragments are housed</p>
+<p>in</p>
+<p>the The Papyrussammlung of the Austrian National Library in Vienna under the inventory number K 9813a–b. Paleographical and codicological comparison shows that they can be assigned to Codex A (= MONB.OX), from which four leaves have survived. The first (K 9813a) attaches to the fragment Paris, BnF Copte</p>
+<p>13 Bedjan, S. Martyrii, 814, 816. 14 Edward G. Mathews Jr., “Syriac into Armenian: The Translations and Their Translators,” Journal of the Canadian Society for Syriac Studies 10 (2010): 20–44.</p>
+<p>Hugoye 29.1</p>
+<p>352</p>
+<p>1315, f. 33, completing its upper inner part. The second fragment (K 9813b) joins directly with Cairo, IFAO Inv. No. 205, restoring the missing part of this leaf. All known fragments of Codex A belong to the same quire, which can be conveniently represented as follows:</p>
+<p>1</p>
+<p>2 Paris, BnF Copte 1305, f. 35</p>
+<p>3 Paris, BnF Copte 1315, f. 33 + Vienna, ÖNB K 9813a</p>
+<p>4</p>
+<p>5</p>
+<p>6 Cairo, IFAO Inv. No. 205 + Vienna, ÖNB K 9813b</p>
+<p>7 Paris, BnF Copte 1305, f. 36</p>
+<p>8</p>
+<p>The two new fragments substantially restore portions of the missing text from my previous edition. Thus, the surviving fragments of the Sahidic version of Jacob’s mēmrā on the Ascension now preserve the following verses:</p>
+<p>Paris, BnF Copte 1305, f. 35 = On the Ascension, verses 35–</p>
+<p>67;</p>
+<p>Paris, BnF Copte 1315, f. 33 + Vienna, ÖNB K 9813a = On the</p>
+<p>Ascension, verses 68–100;</p>
+<p>Alin Suciu</p>
+<p>353</p>
+<p>Cairo, IFAO Inv. No. 205 + Vienna, ÖNB K 9813b = On the</p>
+<p>Ascension, verses 170–207a;</p>
+<p>Paris, BnF Copte 1305, f. 36 = On the Ascension, verses</p>
+<p>207b–246.</p>
+<p>Below I provide an edition of the newly identified Sahidic fragments, accompanied by commentaries on the most significant differences between the Syriac and Coptic texts. However, since the Syriac original has not yet been critically edited based on a sufficient number of manuscripts, the comparison must remain somewhat provisional. For the Syriac text, I relied on Bedjan’s edition; for occasional references to the Arabic version, I have quoted my unpublished edition, which is based on eight manuscripts. The Sahidic text is presented in a semi-diplomatic transcription according to the Leiden system for editing papyrological texts: letters lost in lacunae are supplied in square brackets, while doubtful readings are marked by a dot placed beneath the letter.</p>
+<p>Vienna, K 9813ar + Paris, BnF Copte 1315, f. 33r (Column A) =</p>
+<p>Bedjan 811,18–812,2</p>
+<p>5</p>
+<p>ⲁ̣ⲩ̣[ⲱ]</p>
+<p>68 (ⲁⲩⲱ ⲛ̇ⲑⲉ ⲛ̇ⲛⲓ̈ⲅⲁⲣⲡⲟⲥ) ϥ̇ⲡⲱⲣϣ̇ ⲉⲃⲟⲗ ⲙⲡⲉϥⲟⲩϫⲁⲓ ⲉϫⲛ̇ ⲟⲩⲟⲛ ⲛⲓⲙ ⲉⲧϣⲱ ⲛⲉ· 69 ⲁϥⲉⲓ ⲉⲡⲉⲥⲏⲧ ⲛ̇ⲑⲉ ⲛ̇ⲟⲩⲙⲟⲩⲛϩⲱ̣[ⲟⲩ] ⲁϥⲧⲣⲉⲛⲉⲧⲙⲟⲟⲩ̣[ⲧ] ϯⲟⲩⲱ ⲉϩⲣⲁⲓ ⲛ̇ⲑ̣ⲉ̣ ⲛϩⲉⲛⲛⲟⲩⲛⲉ̣· 70</p>
+<p>Hugoye 29.1</p>
+<p>354</p>
+<p>10</p>
+<p>15</p>
+<p>ⲁϥⲉⲓⲛ̣ⲉ̣ ⲉϩⲣⲁ[ⲓ ⲙⲙⲟⲟⲩ] ϩ︤ⲛ ⲛⲙ̇ϩⲁⲁⲩ [ϩⲛ ⲟⲩ] ⲛⲟϭ ⲛ̇ϩⲟⲧⲉ ⲙ̣̇[ⲡⲉϥ] ⲙ̇ⲧⲱ ⲉⲃⲟⲗ· 71 ⲁ̣[ⲩⲱ] ⲁϥⲙⲟⲟϣⲉ ϩⲙ̣̇ ⲡ̣[ⲙⲁ] ⲙ̇ⲙ̇ⲟⲟϣⲉ ⲙ̇ⲡϩ̣[ⲟϥ] ⲉⲧⲙⲉϩ ⲛ̇ⲥⲏϣⲉ·</p>
+<p>72</p>
+<p>ⲁⲩⲱ ⲁϥϫⲟ̣ⲥ̣ ⲛ̇ⲧⲙⲁ̣</p>
+<p>ⲧⲟⲩ ⲉⲃⲟⲗ ⲛ̇ϩⲏⲧϥ̇ ⲁⲩⲱ ⲁϥⲙⲁϩⲥ̇ ⲛ̇ⲉ ⲃⲓⲱ ⲉⲧϩⲟⲗ̇ϭ ϩⲙ̇</p>
+<p>20 ⲡⲉ̣ⲇⲣⲟⲙⲟⲥ·</p>
+<p>6 MS reads ⲁϥⲧⲣⲉⲡⲉϥⲙⲟⲟⲩ̣[ⲧ]</p>
+<p>68 And like a fruit, he spread his remedy over all who were</p>
+<p>sick.</p>
+<p>69 He came down like rain and caused the dead to sprout</p>
+<p>like roots.</p>
+<p>70 And he raised [them] up from the tombs with great fear</p>
+<p>before him.</p>
+<p>71 And he walked the path of the serpent, which was filled</p>
+<p>with wounds.</p>
+<p>72 And he sent the poison out from it and filled it with sweet</p>
+<p>honey on the footsteps.</p>
+<p>ܐ̈ܝܚܡܡܠ</p>
+<p>ܐܢܡܠ ̈ܘܚ</p>
+<p>ܐܒ ̈ܒܗ</p>
+<p>ܟܝܐܘ</p>
+<p>ܪܕܣ</p>
+<p>68 The Syriac reads</p>
+<p>, “And like flowers, he set forth remedies (ḥulmanē) to those who are</p>
+<p>Alin Suciu</p>
+<p>355</p>
+<p>sick.” It is noteworthy that the Coptic translator chose to render ܐܒܒܗ (“flower, blossom”) as καρπός (“fruit”). One may also consider the possibility that the translator sought to make sense of what seems an odd image and mistakenly read ܐܒܐ (“fruit,” pl. ܐܢܒ ̈ܒܐ) instead. Finally, while the Syriac specifies that Christ brought healing “to those who are sick” (la-mmaḥḥayā), the Sahidic broadens the scope by adding “over everyone who is sick” (ⲉϫⲛ̇ ⲟⲩⲟⲛ ⲛⲓⲙ ⲉⲧϣⲱⲛⲉ), which may be the result of an explanatory translation or of a different textual tradition in the Syriac Vorlage.</p>
+<p>ܟܝܐ</p>
+<p>69 While the Coptic translation from the Syriac</p>
+<p>ܐܬ̈ܝܡ</p>
+<p>ܘܬܦܪܘ</p>
+<p>ܐܪܛܡ</p>
+<p>ܟܝܐ</p>
+<p>ܬܚܢ ܐ�ܩܥ is technically accurate, the translator chose to render ܐ�ܩܥ according to its primary meaning, “root” (ⲛⲟⲩⲛⲉ in Coptic), rather than the broader “plant.” Thus, the Coptic preserves the botanical metaphor, although at the expense of its accuracy. Moreover, a nuance is introduced in the verbal aspect: in Coptic the verb is causative, “and he caused the dead to sprout like roots,” whereas in Syriac it is not, “and the dead stirred like plants.”</p>
+<p>ܐܥܪ�</p>
+<p>70 The Syriac text printed by Bedjan reads</p>
+<p>ܐܒܪ</p>
+<p>ܐܥܘܙܒ</p>
+<p>ܢܡ</p>
+<p>ܘܩܠܣܘ ܢܘܗܝ�ܒܩ , “And they went up to the earth with great trembling from their graves.” However, the edition notes that manuscript P differs at this point, having ܗܥܪܘ�, “to meet him,” instead of ܐܥܪ�, “to the earth.” The Coptic translator appears to have used a manuscript with this variant, as demonstrated by the rendering “in front of him” or “before him” (ⲙ̇[ⲡⲉϥ]ⲙ̇ⲧⲱ [sic!] ⲉⲃⲟⲗ). The Arabic version similarly aligns with this reading, ﻢﻴﻈﻋ ﺐﻋﺮﺑ ﻩﺎﻘﺘﻠﳌ ﻢﻫرﻮﺒﻗ ﻦﻣ اوﺪﻌﺻو, “And they went up from their graves to meet him with great terror.” The Syriac term ܐܥܘܙ (“movement, motion, terror”) is here rendered both in Coptic and Arabic as “fear” (ϩⲟⲧⲉ/ﺐﻋر), conveying the dread of the dead before the frightful Judge.</p>
+<p>71 The Syriac reads here</p>
+<p>ܐܪܝܪܡ ܕ ܐܝܘܚܕ ܗܚܪܘܐܒ ܐܬܐܘ ܟܠܗ ܬܘܗ, “He walked and came upon the path of the serpent, which</p>
+<p>Hugoye 29.1</p>
+<p>356</p>
+<p>was bitter.” The primary difference between the Syriac and Sahidic lies in the description of the serpent’s path. While in the Syriac this is bitter, marrirā, the Sahidic characterizes it as “filled with wounds” (ⲙⲉϩ ⲛ̇ⲥⲏϣⲉ). This variation may represent an the Coptic internal development within transmission of the text, possibly influenced by the graphic and phonetic proximity between “wound, stroke, sore” (ⲥⲏϣⲉ) and “bitterness” (ⲥⲓϣⲉ).</p>
+<p>ܗܬܥܣ̈ܦܒ</p>
+<p>ܐܝܠܚ</p>
+<p>ܐܫܒܕ</p>
+<p>̇ܗܠܡܘ</p>
+<p>ܟܣܢܘ</p>
+<p>72 The Syriac reads</p>
+<p>, “And he poured out and filled it with sweet honey in his footsteps.” The Coptic provides an interpretative translation; as Jesus walks along the path of the serpent, he clears away the poison (ⲙⲁⲧⲟⲩ) that fills it, replacing it with sweet honey.</p>
+<p>Vienna, K 9813av + Paris, BnF Copte 1315, f. 33v (Column B) =</p>
+<p>Bedjan 813,3–7</p>
+<p>93</p>
+<p>ⲁⲩⲱ ⲁϥϣⲱⲡ ⲉⲣ[ⲟ]ϥ̣</p>
+<p>5</p>
+<p>ⲛⲧⲉⲥϣ ⲛⲗⲟⲛ̇ⲭⲏ ϩⲙ̇ ⲡⲉϥⲥⲡⲓⲣ ϩⲓⲧⲙ̇ ⲡⲙⲁⲧⲟⲓ· 94 ⲁϥⲧⲣⲉⲩ ⲟⲩⲉ ⲉⲃⲟⲗ ⲉⲧⲙ̇ϩⲓ ⲟⲩⲉ ⲛϭⲓ ⲡⲧⲙ̇ⲛⲟⲩ ϫⲉ ⲉⲃⲟⲗ ⲙ̇ⲡⲅⲉ ⲛⲟⲥ ⲛⲁⲇⲁⲙ· 95 [ⲁⲩ]ⲱ ϩⲓⲧⲛ̇ ⲛⲓϥⲧ̇</p>
+<p>10 ⲁϥⲡⲱϩ ⲛ̇ⲛⲉⲥϩⲁⲓ ⲛ̇ⲧⲁⲡⲓⲗⲏ· ϩⲓϫⲛ̇ ⲉⲩϩⲁ ⲧⲛ̇ⲙⲁⲁⲩ·</p>
+<p>96</p>
+<p>ⲁⲩⲱ ⲁⲥⲙⲟⲩϩ ⲉⲃⲟⲗ</p>
+<p>Alin Suciu</p>
+<p>357</p>
+<p>ⲛ̇ⲭⲣⲉⲟⲥ· ⲁⲩⲱ ⲁⲥ 15 ϫⲓⲥⲉ ⲉϩⲣⲁⲓ ⲛ̇ⲧⲉⲥ ⲁⲡⲉ ⲉⲧⲕⲟⲗ̇ϫ ⲉⲡⲉⲥⲏⲧ· 97 ⲁⲩⲱ ϩⲙ̇ ⲡⲉϥⲙⲟⲩ· ⲁϥⲃⲱⲕ ⲉⲡⲙⲁ ⲉⲧⲥⲁⲡⲉⲥⲏⲧ</p>
+<p>20 ⲛⲛⲉⲧⲙⲟⲟⲩⲧ· ⲡⲉⲛⲧⲁϥⲱⲙⲕ̇ ⲛⲁⲇⲁⲙ·</p>
+<p>93 And he received the wound of the lance on his side from</p>
+<p>the soldier.</p>
+<p>94 In order not to throw out the race of Adam, he made them</p>
+<p>go away, not to strike.</p>
+<p>95 And with the nails he tore apart the menacing writs</p>
+<p>beneath which stood Eve, our mother.</p>
+<p>96 And she paid the debt and lifted her head that was bowed. 97 And through his death, he descended to the nether realm</p>
+<p>of the dead, the one that had swallowed Adam.</p>
+<p>ܗܚܡܘܪܕ</p>
+<p>ܐܒܪܚܠ</p>
+<p>ܗܢܦܕܒ</p>
+<p>ܕ ̇ܗ ܘ</p>
+<p>93 In Syriac, this verse reads</p>
+<p>̇ܗܠܒܩ ܐܪܘܛܢ, “He received on his side the blade of the lance of that guard.” The Coptic version generally provides a faithful rendering of this verse, but it replaces the Syriac phrase “the blade of the lance” (ܗܚܡܘܪܕ ܐܒܪܚ) with “the wound of the lance” (ⲧⲉⲥϣ ⲛⲗⲟⲛ̇ⲭⲏ). This difference likely results from a misreading of the Syriac word ܐܒܪܚ (ḥarbā), “blade,” as ܐܪܒܚ (ḥabrā), “wound.” However, given how close these words are phonetically and visually in Syriac, it is possible that the</p>
+<p>Hugoye 29.1</p>
+<p>358</p>
+<p>mistake has already occurred in the Syriac manuscript tradition, which the Coptic translator then followed.</p>
+<p>ܕܘܪܛܢ</p>
+<p>ܬܝܒܕܠܕ</p>
+<p>ܩܚܪܢ</p>
+<p>�</p>
+<p>ܡܕܐ</p>
+<p>94 This verse says in Syriac,</p>
+<p>4F</p>
+<p>ܝܗܝܪܫܘ ܐܘܗ, “And he released him (i.e. the guard) to take it (i.e. the lance) far away, so that it would not drive away those of the house of Adam.” Jacob here draws a typological parallel between the soldier’s lance that pierced Christ on the cross (John 19:34) and the flaming blade of the Cherub guarding Paradise (Genesis 3:24): whereas the latter barred the way to Eden, the former opens it. From the time of Aphrahat and Ephrem, both weapons were described in Syriac literature with the same term, rūmḥā (“lance”), although the word does not occur in any known Syriac version of the New Testament.1</p>
+<p>15</p>
+<p>the syntax of</p>
+<p>However, the Coptic translator does not seem to have grasped the typological imagery. At this point, the Sahidic translation becomes aberrant, and the text is likely corrupt. The main difficulty lies in the nominalized infinitive ⲡⲧⲙ̇ⲛⲟⲩϫⲉ ⲉⲃⲟⲗ, which functions as a postponed subject introduced by the particle ⲛϭⲓ. Not only does this construction lack a parallel in the Syriac, but it also unnecessarily the phrase. No complicates straightforward solution suggest itself that would restore the sense or yield a coherent rendering. One possible emendation though is to read ⲁϥⲧⲣⲉϥⲟⲩⲉ ⲉⲃⲟⲗ ⲉⲧⲙ̇ϩⲓⲟⲩⲉ {ⲛϭⲓⲡ} &lt;ⲉ&gt;ⲧⲙ̇ⲛⲟⲩϫⲉ ⲉⲃⲟⲗ ⲙ̇ⲡⲅⲉⲛⲟⲥ ⲛⲁⲇⲁⲙ, “He drew him away (ⲁϥⲧⲣⲉϥ- rather than ⲁϥⲧⲣⲉⲩ-, i.e. the soldier), so as not to strike (and) expel the race of Adam.”</p>
+<p>ܢܡܐ</p>
+<p>ܐܪܛܫܐ</p>
+<p>ܝܗ ̈ܘܨܨܒ</p>
+<p>ܚܠܬ ̇ܗ ܘ</p>
+<p>95 The Syriac text gives, “With his nails he tore apart the ). ܐܘܚܕ bond of Eve, our mother” ( Jacob here refers to the legal record of indebtedness binding Eve, which Christ symbolically cancelled, by using the term</p>
+<p>15 Robert Murray, “The Lance which Re-opened Paradise: A Mysterious Reading in the Early Syriac Fathers,” Orientalia Christiana Periodica 39 (1973): 224–234.</p>
+<p>Alin Suciu</p>
+<p>359</p>
+<p>̇ܗܠ</p>
+<p>̇ܗܫܝܪ</p>
+<p>ܡܝܪܐܘ</p>
+<p>̇ܗܬܒܘܚ</p>
+<p>ܥܪܦܘ</p>
+<p>ešṭārā (“official document, contract, bond”). This clearly alludes to Colossians 2:14, where the same word occurs in the Peshitta. While the Sahidic version of Colossians uses the Greek-Coptic term ⲭⲉⲓⲣⲟⲅⲣⲁⲫⲟⲛ, the Coptic translator instead ⲛⲉⲥϩⲁⲓ ⲛ̇ⲧⲁⲡⲓⲗⲏ of Jacob’s homily chose (“menacing documents, hostile decrees”), which probably is a technical borrowing from Greek juridic language (ἀπειλητικὰ γράμματα) that sharpens the emphasis on the condemning character of the legal bond between Eve and Satan, symbolized by the serpent.16 Such “threatening letters” are also attested in the documentary record on papyri from Egypt: for example, SB XXVI 16358 (644 CE) and P.Apoll. 38 (second half of the 7th century) refer to official correspondence sent by Arab authorities, characterized by severe threats against Christian subordinates. These administrative exchanges are explicitly named ἀπειλητικὰ γράμματα. ܐܘܗ</p>
+<p>96 The Syriac has</p>
+<p>ܢܟܪܡܕ , “And he paid her debt and lifted up her head, which had been bowed down by it.” While in the Syriac it is Christ who pays Eve’s debt and lifts her head, the Sahidic renders the verse as Eve herself performs both actions.</p>
+<p>Vienna, K 9813br + Cairo, IFAO Inv. No. 205r (Column A) =</p>
+<p>Bedjan 816,18–817,2</p>
+<p>([ⲡⲙⲁ])</p>
+<p>170</p>
+<p>ⲉⲧϫⲟⲥⲉ 172</p>
+<p>ⲁϥⲉⲓ</p>
+<p>ⲁϥⲃⲱⲕ·</p>
+<p>ⲉⲃⲟⲗ ϫⲉⲕⲁⲥ ⲉϥⲉϫⲟⲟⲩ</p>
+<p>16 On the “threatening letters,” see Lajos Berkes, “Introduction: A Papyrological Perspective on Christians and Muslims in Early Islamic Egypt,” in Idem (ed.), Christians and Muslims in Early Islamic Egypt (American Studies in Papyrology, 56; Ann Arbor, MI: University of Michigan Press, 2022) 1–9, at 5.</p>
+<p>Hugoye 29.1</p>
+<p>360</p>
+<p>5</p>
+<p>ⲛⲧⲙⲛ̇ⲧⲣⲙ̇ⲙⲁⲟ ⲛⲧϣⲉⲗⲗⲉⲉⲧ ⲛⲧⲁϥϫⲓⲧⲥ̇·</p>
+<p>173</p>
+<p>ⲁϥϫⲓ ⲛⲟⲩⲙⲛ̇ⲧϩⲏⲕⲉ</p>
+<p>ⲛϭⲱⲃ ⲉⲧϩⲛ̇ϩⲉⲛ ϩⲓⲥⲉ· 174</p>
+<p>ⲁⲩⲱ ⲁϥⲥⲙⲛ̇</p>
+<p>15</p>
+<p>10 ⲗⲟⲅⲓⲥⲙⲟⲥ ⲛⲙ̇ⲙⲁⲥ· ⲉⲧⲣⲉϥϫⲟⲟⲩ ϣⲁⲣⲟⲥ ⲛⲟⲩⲛⲟϭ ⲙ̇ⲙⲛ̇ⲧ ⲣⲙⲙⲁⲟ· ⲉⲃⲟⲗ ϩⲛ ⲧⲁⲩⲗⲏ ⲙ̇ⲡϥ̇ ⲓⲱⲧ· 175 ⲁⲩⲱ ⲁϥ ⲁⲓⲭⲙⲁⲗⲟⲧⲉⲩⲉ ⲛⲟⲩⲁⲓⲭⲙⲁⲗⲟⲥⲓⲁ· ⲁⲩⲱ ⲁϥⲥⲱⲕ ⲙⲙⲟⲥ ⲁϥⲛⲧⲥ̇ 20 ⲉⲃⲟⲗ ϩⲛ ⲛⲉⲥⲕⲁⲛ</p>
+<p>ⲇⲁⲗⲟⲛ·</p>
+<p>170 […] [the] exalted [place]. 172 He set off and went in order to send the riches to the bride</p>
+<p>whom he had taken.</p>
+<p>173 He took a weak poverty that is in sufferings, 174 and he settled a plan with her that he would send her great</p>
+<p>riches from his Father’s court.</p>
+<p>175 And he took captive a captivity, led it, and brought it out</p>
+<p>from the stumbling blocks.</p>
+<p>Alin Suciu</p>
+<p>361</p>
+<p>Based on the only preserved word from verse 170, which immediately precedes verse 172, one can infer that verse 171 was omitted in the Sahidic version of Jacob’s homily.</p>
+<p>ܝܬܝܐܕ</p>
+<p>ܐܬܠܟܠ</p>
+<p>ܐܪܬܘܥ</p>
+<p>ܪܕܫܢ</p>
+<p>ܩܦܢܘ</p>
+<p>172 The Coptic generally provides a faithful translation of the ܠܙܐܢܕ Syriac , “And he set off to go in order to send riches to the bride whom he brought.” The relative clause ܝܬܝܐܕ is rendered into Sahidic as ⲛⲧⲁϥϫⲓⲧⲥ̇, which can be understood either as the bride “whom he brought (there)” or “whom he took.”</p>
+<p>ܐܬܦܪܛܡܘ</p>
+<p>ܐܬܝܙܓܡܘ</p>
+<p>ܐܬܢܟܣܡ</p>
+<p>ܠܩܫ</p>
+<p>173 The Syriac reads</p>
+<p>, “He lifted up the poor, barren, and smitten one (fem.).” The Sahidic, however, interprets the verse in a more figurative sense, “He took a weak poverty that is in sufferings.” Moreover, while ܠܩܫ in Syriac can mean “to lift up” or “to take,” depending on the context, the Coptic translator rendered it as ⲁϥϫⲓ, which is more restricted, “he took.”</p>
+<p>ܪܕܫܡܕ</p>
+<p>ܐܙ ̈ܓ</p>
+<p>̇ܗܠ</p>
+<p>ܝܘܢܬ</p>
+<p>̇ܗܠ</p>
+<p>174 This verse appears in Syriac as</p>
+<p>ܝܘܢܬ</p>
+<p>̇ܗܠ</p>
+<p>ܡܣ</p>
+<p>ܡܣܘ ܝܗܘܒܐܕ, “And he established a contract for her, that he would send her the treasures of his Father.” The Coptic captures the sense of the verse naturally, although it allows some idiomatic phrasing, like ⲁϥⲥⲙⲛ̇ ⲗⲟⲅⲓⲥⲙⲟⲥ ⲛⲙ̇ⲙⲁⲥ “he settled a plan with her,” for . Finally, the court (αὐλή) of the Father, mentioned in the Sahidic, is absent in the edition of the text prepared by Bedjan.</p>
+<p>Vienna, K 9813bv + Cairo, IFAO Inv. No. 205v (Column B) =</p>
+<p>Bedjan 818,3–9</p>
+<p>197 ϫⲉ ϯϣⲟⲟⲡ ⲛⲙ̇ⲙⲏ ⲧⲛ̇ ⲛⲛⲉϩⲟⲟⲩ ⲧⲏⲣⲟⲩ· ϣⲁ ⲡϫⲱⲕ ⲉⲃⲟⲗ ⲛⲛⲓⲉⲛⲉϩ· ⲧⲏⲣⲟⲩ</p>
+<p>Hugoye 29.1</p>
+<p>362</p>
+<p>5</p>
+<p>10 ⲛⲙ̇ⲙⲁⲩ· 200</p>
+<p>15</p>
+<p>198 ϫⲉⲕⲁⲥ ⲛ̇ⲛⲉⲩⲣ̇ϩⲏⲃⲉ· ⲁⲩⲱ ⲁϥⲃⲱⲕ ⲉϩⲣⲁⲓ ϩⲁⲣⲟⲟⲩ· 199 ⲁⲩⲱ ⲉϥ ⲛⲙ̇ⲙⲁⲩ ⲟⲛ ⲁⲩⲱ ⲡⲣⲁⲛ ⲙ̇ⲡⲉϥⲓⲱⲧ ⲁⲩⲱ ⲡⲉⲡ︤ ⲛ︦ ⲁ︥ ⲉⲧⲟⲩⲁⲁⲃ· ϥⲛⲁⲧⲛ̇ⲛⲟⲟⲩϥ ⲛⲁⲩ· ϫⲉⲕⲁⲥ ⲛ̇ⲛⲉⲩϣⲱ ⲡⲉ ⲛⲟⲣⲫⲁⲛⲟⲥ· 201 ⲧⲉϥ ⲓⲣⲏⲛⲏ ⲅⲁⲣ ⲛⲙ̇ⲙⲁⲩ· ⲁⲩⲱ ⲡⲣⲁⲛ ⲙⲡϥ̇ⲓⲱⲧ ⲣⲟⲉⲓⲥ ⲉⲣⲟⲟⲩ· 202 ⲁⲩⲱ ⲡⲡⲁⲣⲁⲕⲗⲩⲧⲟⲥ ϥⲉⲓⲛⲉ ⲛ̇ⲧⲙⲛ̇ⲧⲣⲙ̇</p>
+<p>20 ⲙⲁⲟ ϣⲁⲣⲟⲟⲩ·</p>
+<p>203</p>
+<p>ⲡⲓⲱⲧ ⲙⲉⲛ ⲣⲟⲉⲓⲥ ⲉⲣⲟⲟⲩ ϩⲙ̇ ⲡⲉϥⲣⲁⲛ ϫⲉ ⲟⲩⲛⲟϭ ⲡⲉ ⲡϥ̇ⲣⲁⲛ·</p>
+<p>197 “I am with you for all the days, to the completion of all the</p>
+<p>ages,”</p>
+<p>198 so that they will not grieve. And he ascended from them, 199 Yet he remained with them, and the name of his Father</p>
+<p>is with them.</p>
+<p>200 He will send them the Holy Spirit, so that they shall not</p>
+<p>be left as orphans.</p>
+<p>Alin Suciu</p>
+<p>363</p>
+<p>201 For his peace is with them, and the name of his Father</p>
+<p>protects them.</p>
+<p>202 And the Paraclete carries riches to them. 203 Indeed, the Father guards them by his name, for great is</p>
+<p>his name.</p>
+<p>ܝܬܝܐ</p>
+<p>ܢܘܟܡܥ</p>
+<p>197 The Syriac text edited by Bedjan preserves only the beginning of Christ’s promise to the disciples from Matthew 28:20, , “I am with you.” However, the Sahidic version is longer at this point, ϯϣⲟⲟⲡ ⲛⲙ̇ⲙⲏⲧⲛ̇ ⲛⲛⲉϩⲟⲟⲩ ⲧⲏⲣⲟⲩ· ϣⲁ ⲡϫⲱⲕ ⲉⲃⲟⲗ ⲛⲛⲓⲉⲛⲉϩ· ⲧⲏⲣⲟⲩ, “I am with you for all the days, to the completion of all the ages.” It is worth noting that the variant “all the ages” (ⲛⲓⲉⲛⲉϩ ⲧⲏⲣⲟⲩ) has no direct parallel in the available Greek, Syriac or Sahidic versions of the Matthean passage.</p>
+<p>ܝܠܥܬܐܕ</p>
+<p>ܢܘܗܠ</p>
+<p>ܐܪܟܬ</p>
+<p>ܢܡ</p>
+<p>ܐܡ</p>
+<p>198 While in the Syriac the clause concerning the Ascension remains subordinate, “so that they might not grieve when he �ܕ had been taken up from them” ( ܢܘܗܝܕܐܨ), the Sahidic renders it as a sequence of two independent clauses, connecting the second one to the verses that follow. Thus, in Sahidic the Ascension becomes an independent narrative step, since the Syriac perfect passive ܝܠܥ ݂ܬܐ, “was taken up,” is translated with a perfect active verb (ⲁϥⲃⲱⲕ ⲉϩⲣⲁⲓ, “he went up”).</p>
+<p>202 In the Syriac, the Paraclete ( ܐܛܝܠܩܪܦ) carries the riches to</p>
+<p>the discipleship ( ܐܬܘܕܝܡܠܬ).</p>
+<p>ܘܗ</p>
+<p>ܢܘܢܐ</p>
+<p>203 Verses 203–204 in Syriac read ܟܡܫܕ ܦܩܢ</p>
+<p>ܒܪ ܐܚܝܠܫܠ</p>
+<p>ܟܠܝܕ ܐܪܒܕ</p>
+<p>ܟܡܫܒ ܗܬܠܡܒ</p>
+<p>ܪܛ ܐܒܐܕ</p>
+<p>ܐܒܐ ܗܡܫܘ</p>
+<p>“Father, keep them in your name, for your name is great,”</p>
+<p>Hugoye 29.1</p>
+<p>364</p>
+<p>And the name of the Father, through the word of the Son,</p>
+<p>accompanies the apostles.</p>
+<p>In Sahidic, the two verses are syntactically coordinated using</p>
+<p>μέν … δέ clauses,</p>
+<p>ⲡⲓⲱⲧ ⲙⲉⲛ ⲣⲟⲉⲓⲥ ⲉⲣⲟⲟⲩ ϩⲙ̇ ⲡⲉϥⲣⲁⲛ ϫⲉ ⲟⲩⲛⲟϭ ⲡⲉ</p>
+<p>ⲡϥ̇ⲣⲁⲛ·</p>
+<p>ⲁⲩⲱ ⲡⲣⲁⲛ ⲙ̇ⲡⲉϥⲓⲱⲧ ϩⲙ̇ ⲡϣⲁϫⲉ· ⲉϥϯ̣ⲙⲁ ⲇⲉ</p>
+<p>ⲛⲛⲉϥⲙⲁⲑⲏⲧⲏⲥ·</p>
+<p>Indeed (μέν), the Father guards them by his name, for great</p>
+<p>is his name,</p>
+<p>But (δέ) it is by the Word that the name of the Father</p>
+<p>accompanies his disciples.</p>
+<p>This construction structures the narrative contrastively, thus emphasizing that the name of the Father is mediated through the Son.</p>
+</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            
+<div class="PDFviewer text-center" style="width:100%; margin-top:1rem;">
+  <object data="HV29N1Suciu.pdf" type="application/pdf" width="100%" height="800">
+    <a href="HV29N1Suciu.pdf">Open the PDF</a>
+  </object>
+</div>
+          </div>
+
+          <!-- RIGHT MENU (as in your example) -->
+          <div class="col-md-3 col-lg-3 right-menu">
+            <div id="rightCol" class="noprint">
+              <div id="sedraDisplay" class="sedra panel panel-default">
+                <div class="panel-body">
+                  <span style="display:block;text-align:center;margin:.5em;"><a href=" http://sedra.bethmardutho.org" title="SEDRA IV">SEDRA IV</a></span>
+                  <img src="/resources/img/sedra-logo.png" title="Sedra logo" width="100%" />
+                  <h3>Syriac Lexeme</h3>
+                  <div id="sedraContent"><div class="content"></div></div>
+                </div>
+              </div>
+            </div>
+
+            <div class="panel panel-default">
+              <div class="panel-heading"><a href="#" data-toggle="collapse" data-target="#aboutDigitalText">About This Digital Text</a></div>
+              <div class="panel-body collapse in" id="aboutDigitalText">
+                <div><h5>Record ID:</h5><span>https://hugoye.bethmardutho.org/article/hv29n1suciu</span></div>
+                <div style="margin-top:1em;"><span class="h5-inline">Status: </span><span>PDF</span>
+                  &nbsp;<a href="https://github.com/Beth-Mardutho/hugoye-data/wiki/Status-of-Contents-in-Hugoye"><span class="glyphicon glyphicon-question-sign text-info moreInfo"></span></a>
+                </div>
+                <div style="margin-top:1em;"><span class="h5-inline">Publication Date: </span>2026</div>
+              </div>
+            </div>
+
+            <div class="panel panel-default">
+              <div class="panel-heading"><a href="#" data-toggle="collapse" data-target="#citationText">How to Cite this Article</a></div>
+              <div class="panel-body collapse in" id="citationText">
+                <div>
+                  <span class="tei-sourceDesc">
+                    <span class="section indent">
+                      Alin Suciu,  "<span class="title-analytic">The Sahidic Version of Jacob of Serugh&#x27;s</span>."
+                      <span class="title-journal">Hugoye: Journal of Syriac Studies</span> (<span class="publisher">Beth Mardutho: The Syriac Institute</span>,  <span class="date">2026</span>).
+                    </span>
+                  </span>
+                </div>
+              </div>
+            </div>
+
+            <span class="badge access-pills"><a href="/open-access.html" style="color:#555">open access <i class="fas fa-unlock-alt"></i></a></span>
+            <span class="badge access-pills"><a href="https://github.com/Beth-Mardutho/hugoye-data/wiki/Peer-Review-Policy" style="color:#555">peer reviewed <i class="fas fa-check"></i></a></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
