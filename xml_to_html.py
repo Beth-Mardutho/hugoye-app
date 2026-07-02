@@ -313,7 +313,7 @@ HTML_TEMPLATE = """<?xml version="1.0" encoding="UTF-8"?>
           <!-- MAIN CONTENT (use 9/3 split like your example) -->
           <div class="col-sm-9 col-md-9 col-lg-9 mssBody">
             <div class="article-header text-center">
-              <h1>${doc_title}</h1>
+              <h1>${doc_title_html}</h1>
               <h2></h2>
               <span class="tei-author">
                 <span class="tei-name">${author_forename} <span class="tei-surname">${author_surname}</span></span>
@@ -368,7 +368,7 @@ HTML_TEMPLATE = """<?xml version="1.0" encoding="UTF-8"?>
                 <div>
                   <span class="tei-sourceDesc">
                     <span class="section indent">
-                      ${author_full},  "<span class="title-analytic">${doc_title}</span>."
+                      ${author_full},  "<span class="title-analytic">${doc_title_html}</span>."
                       <span class="title-journal">${journal_title}</span> (<span class="publisher">${publisher}</span>,  <span class="date">${pub_year}</span>).
                     </span>
                   </span>
@@ -389,9 +389,44 @@ HTML_TEMPLATE = """<?xml version="1.0" encoding="UTF-8"?>
 # ---------- helpers ----------
 def t(x): return html.escape(x.strip()) if x else ""
 
+def render_inline(el) -> str:
+    """
+    Render an element's text content preserving inline markup.
+    Converts TEI <hi rend="italic"> to <em>, <hi rend="bold"> to <strong>,
+    and escapes everything else.
+    """
+    if el is None:
+        return ""
+    parts = []
+    if el.text:
+        parts.append(html.escape(el.text))
+    for child in el:
+        tag = child.tag.split('}')[-1] if '}' in child.tag else child.tag
+        if tag == 'hi':
+            rend = child.get('rend', '')
+            inner = html.escape("".join(child.itertext()))
+            if 'italic' in rend:
+                parts.append(f'<em>{inner}</em>')
+            elif 'bold' in rend:
+                parts.append(f'<strong>{inner}</strong>')
+            else:
+                parts.append(inner)
+        else:
+            # Generic inline element — just get text
+            parts.append(html.escape("".join(child.itertext())))
+        if child.tail:
+            parts.append(html.escape(child.tail))
+    return " ".join("".join(parts).split()).strip()
+
+def get_plain_text(el) -> str:
+    """Get all text from an element, stripping markup, normalizing whitespace."""
+    if el is None:
+        return ""
+    return " ".join("".join(el.itertext()).split()).strip()
+
 def find_text(root, path):
     el = root.find(path, TEI_NS)
-    return el.text.strip() if (el is not None and el.text) else ""
+    return get_plain_text(el)
 
 def find_attr(root, path, attr):
     el = root.find(path, TEI_NS)
@@ -431,8 +466,22 @@ def parse_bibliography(root) -> str:
 def main(infile: str, outfile: str | None, pdf_override: str | None):
     root = ET.parse(infile).getroot()
 
-    # metadata
-    title_main = find_text(root, ".//tei:teiHeader/tei:fileDesc/tei:titleStmt/tei:title[@type='main']")
+    # metadata — title (combine main + sub, preserve inline markup like <hi rend="italic">)
+    title_main_el = root.find(".//tei:teiHeader/tei:fileDesc/tei:titleStmt/tei:title[@type='main']", TEI_NS)
+    title_sub_el = root.find(".//tei:teiHeader/tei:fileDesc/tei:titleStmt/tei:title[@type='sub']", TEI_NS)
+
+    title_main_html = render_inline(title_main_el)
+    title_sub_html = render_inline(title_sub_el)
+
+    if title_main_html and title_sub_html:
+        doc_title_html = f"{title_main_html} {title_sub_html}"
+    else:
+        doc_title_html = title_main_html or ""
+
+    # Plain text version for <title> tag and metadata
+    title_main_plain = get_plain_text(title_main_el)
+    title_sub_plain = get_plain_text(title_sub_el)
+    doc_title_plain = f"{title_main_plain} {title_sub_plain}".strip() if title_sub_plain else title_main_plain
     forename   = find_text(root, ".//tei:teiHeader/tei:fileDesc/tei:titleStmt/tei:author/tei:name/tei:forename")
     surname    = find_text(root, ".//tei:teiHeader/tei:fileDesc/tei:titleStmt/tei:author/tei:name/tei:surname")
     affiliation= find_text(root, ".//tei:teiHeader/tei:fileDesc/tei:titleStmt/tei:author/tei:affiliation/tei:orgName")
@@ -488,7 +537,8 @@ def main(infile: str, outfile: str | None, pdf_override: str | None):
     author_full = html.escape(f"{forename} {surname}".strip())
 
     data = {
-        "doc_title": t(title_main),
+        "doc_title": doc_title_plain,
+        "doc_title_html": doc_title_html,
         "author_forename": t(forename),
         "author_surname": t(surname),
         "author_affiliation": t(affiliation),
