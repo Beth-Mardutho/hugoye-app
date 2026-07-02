@@ -87,26 +87,34 @@ def extract_pdf_html(pdf_path: Path) -> str:
   
 def build_pdf_embed(pdf_url: str, local_pdf: Path | None) -> str:
     """
-    Returns an <embed>/<object> block that works for local files and remote URLs.
-    Google Viewer only works for remote http(s) URLs; for local use <object>.
+    Returns a PDF viewer embed using the canonical PDF URL from the TEI metadata.
+    Uses <iframe> for reliable in-browser PDF rendering.
+    Falls back to a direct link if no URL is available.
     """
-    # Prefer local file for local testing
-    if local_pdf and local_pdf.exists():
-        src = html.escape(local_pdf.name)  # relative path next to the HTML
+    # Prefer the remote URL (the canonical path on the site)
+    if pdf_url and (pdf_url.startswith("http://") or pdf_url.startswith("https://")):
+        # Convert absolute URL to site-relative path for same-origin embedding
+        # e.g., https://hugoye.bethmardutho.org/pdf/vol29/HV29N1Butts.pdf → /pdf/vol29/HV29N1Butts.pdf
+        from urllib.parse import urlparse
+        parsed = urlparse(pdf_url)
+        relative_path = parsed.path  # e.g., /pdf/vol29/HV29N1Butts.pdf
+        escaped = html.escape(relative_path)
         return f"""
 <div class="PDFviewer text-center" style="width:100%; margin-top:1rem;">
-  <object data="{src}" type="application/pdf" width="100%" height="800">
-    <a href="{src}">Open the PDF</a>
-  </object>
+  <iframe src="{escaped}" width="100%" height="800" style="border:none;">
+    <p>Your browser does not support embedded PDFs. <a href="{escaped}">Download the PDF</a>.</p>
+  </iframe>
 </div>"""
 
-    # Else, use remote URL if present
-    if pdf_url and (pdf_url.startswith("http://") or pdf_url.startswith("https://")):
-        quoted = pdf_url.replace("&", "&amp;")
-        viewer = f"https://drive.google.com/viewerng/viewer?embedded=true&amp;url={quoted}"
+    # Fallback: if only a local pdf path is known but no URL, use the filename
+    # (this shouldn't happen in normal workflow since TEI always has the PDF URL)
+    if local_pdf and local_pdf.exists():
+        src = html.escape(local_pdf.name)
         return f"""
 <div class="PDFviewer text-center" style="width:100%; margin-top:1rem;">
-  <embed src="{viewer}" width="100%" height="800" />
+  <iframe src="{src}" width="100%" height="800" style="border:none;">
+    <p>Your browser does not support embedded PDFs. <a href="{src}">Download the PDF</a>.</p>
+  </iframe>
 </div>"""
 
     return ""  # nothing to embed
@@ -433,7 +441,7 @@ def main(infile: str, outfile: str | None, pdf_override: str | None):
     pub_year   = find_text(root, ".//tei:teiHeader/tei:fileDesc/tei:publicationStmt/tei:date")
     record_uri = find_text(root, ".//tei:teiHeader/tei:fileDesc/tei:publicationStmt/tei:idno[@type='URI']")
     status     = find_attr(root, ".//tei:teiHeader/tei:revisionDesc", "status")
-    pdf_url    = find_text(root, ".//tei:teiHeader/tei:sourceDesc//tei:idno[@type='PDF']")
+    pdf_url    = find_text(root, ".//tei:teiHeader/tei:fileDesc/tei:sourceDesc//tei:idno[@type='PDF']")
     journal    = find_text(root, ".//tei:teiHeader/tei:sourceDesc//tei:monogr/tei:title[@level='j']")
     vol_num    = find_text(root, ".//tei:teiHeader/tei:sourceDesc//tei:biblScope[@type='vol']")
     lang       = find_attr(root, ".//tei:text", "{http://www.w3.org/XML/1998/namespace}lang") or \
