@@ -463,11 +463,10 @@ def main(infile: str, outfile: str | None, pdf_override: str | None):
     print(f"[pdf] placeholder_hit={placeholder_hit}, pdf_url={'yes' if pdf_url else 'no'}, pdf_path={pdf_path}", file=sys.stderr)
     pdf_embed_html = build_pdf_embed(pdf_url, pdf_path)
 
-    pdf_text_block = extract_pdf_html(pdf_path) if pdf_path else ""
-
-    # injection policy: replace placeholder if found; otherwise append
-    if pdf_text_block:
-        body_list.append(pdf_text_block)
+    # Only show the PDF embed viewer — do NOT extract text from PDFs.
+    # Text extraction produces ugly plain-text dumps on the site.
+    # When articles are ready for full text display, they should be
+    # properly encoded in TEI XML instead.
 
     # buttons/sidebar bits
     tei_filename = Path(infile).name
@@ -502,7 +501,6 @@ def main(infile: str, outfile: str | None, pdf_override: str | None):
         "author_full": author_full,
         "lang_attr": lang_attr or "",
         "pdf_embed_html": pdf_embed_html,
-        "pdf_text_block": "",  # already appended inside body_paragraphs
         
     }
 

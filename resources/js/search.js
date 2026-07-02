@@ -25,6 +25,120 @@ const state = {
 // Base API URL
 const apiUrl = "https://50fnejdk87.execute-api.us-east-1.amazonaws.com/opensearch-api-test/hugoye";
 
+// ─── Fuse.js Client-Side Fallback ──────────────────────────────────────────
+let _fuseInstance = null;
+let _fuseIndex = null;
+let _fuseReady = false;
+let _fuseLoading = false;
+
+function loadFuseIndex() {
+    if (_fuseReady || _fuseLoading) return Promise.resolve(_fuseInstance);
+    _fuseLoading = true;
+
+    return fetch('/search-index.json')
+        .then(r => r.json())
+        .then(data => {
+            _fuseIndex = data;
+            _fuseInstance = new Fuse(data, {
+                keys: [
+                    { name: 'displayTitleEnglish', weight: 3 },
+                    { name: 'title', weight: 2 },
+                    { name: 'author', weight: 2 },
+                    { name: 'type', weight: 1 }
+                ],
+                threshold: 0.35,
+                ignoreLocation: true,
+                includeScore: true,
+            });
+            _fuseReady = true;
+            _fuseLoading = false;
+            console.log('[search] Fuse.js fallback index loaded:', data.length, 'records');
+            return _fuseInstance;
+        })
+        .catch(err => {
+            _fuseLoading = false;
+            console.error('[search] Failed to load fallback search index:', err);
+            return null;
+        });
+}
+
+function fuseSearch(params) {
+    if (!_fuseInstance || !_fuseIndex) return { hits: { total: { value: 0 }, hits: [] } };
+
+    // Build a combined query string from available params
+    let queryParts = [];
+    if (params.q) queryParts.push(params.q);
+    if (params.keyword) queryParts.push(params.keyword);
+    if (params.author) queryParts.push(params.author);
+    if (params.title) queryParts.push(params.title);
+    if (params.fullText) queryParts.push(params.fullText);
+
+    let results;
+    if (queryParts.length > 0) {
+        const query = queryParts.join(' ');
+        results = _fuseInstance.search(query);
+    } else {
+        // No query — return all, optionally filtered by type
+        results = _fuseIndex.map((item, i) => ({ item: item, score: 0, refIndex: i }));
+    }
+
+    // Filter by type if specified
+    const typeFilter = params.type ? params.type.split(',').filter(t => t.trim()) : [];
+    if (typeFilter.length > 0) {
+        results = results.filter(r => {
+            const item = r.item;
+            return typeFilter.includes(item.type);
+        });
+    }
+
+    // Paginate
+    const from = parseInt(params.from) || 0;
+    const size = parseInt(params.size) || 25;
+    const paginated = results.slice(from, from + size);
+
+    // Format like OpenSearch response
+    return {
+        hits: {
+            total: { value: results.length },
+            hits: paginated.map(r => ({
+                _source: r.item,
+                _score: r.score !== undefined ? (1 - r.score) : 1
+            }))
+        }
+    };
+}
+
+function fallbackSearch() {
+    const params = buildQueryParams();
+    loadFuseIndex().then(fuse => {
+        if (!fuse) {
+            handleError('search-results', 'Search is temporarily unavailable. Please try again later.');
+            return;
+        }
+
+        const data = fuseSearch(params);
+        clearSearchResults();
+        state.totalResults = data.hits.total.value;
+        displayResultsInfo(state.totalResults);
+        displayResults(data);
+
+        if (state.totalResults > state.size) {
+            renderPagination(state.totalResults, state.size, state.currentPage, changePage);
+        }
+
+        // Show fallback notice
+        const info = document.getElementById('search-info');
+        if (info && !info.querySelector('.fallback-notice')) {
+            const notice = document.createElement('small');
+            notice.className = 'fallback-notice text-muted';
+            notice.textContent = '(results from local index — full-text search unavailable)';
+            info.appendChild(notice);
+        }
+
+        state.isLoading = false;
+    });
+}
+
 function fetchAndRenderAdvancedSearchResults() {
     if (state.isLoading) return;
     state.isLoading = true;
@@ -34,7 +148,10 @@ function fetchAndRenderAdvancedSearchResults() {
     countQueryParams.set("searchType", "count");
 
     fetch(`${apiUrl}?${queryParams.toString()}`, { method: 'GET' })
-        .then(response => response.json())
+        .then(response => {
+            if (!response.ok) throw new Error(`HTTP ${response.status}`);
+            return response.json();
+        })
         .then(data => {
             clearSearchResults();
 
@@ -67,8 +184,8 @@ function fetchAndRenderAdvancedSearchResults() {
             }
         })
         .catch(error => {
-            handleError('search-results', 'Error fetching search results.');
-            console.error(error);
+            console.warn('[search] OpenSearch unavailable, falling back to client-side search:', error.message);
+            fallbackSearch();
         })
         .finally(() => {
         state.isLoading = false; 
