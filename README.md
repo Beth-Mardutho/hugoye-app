@@ -7,6 +7,8 @@ All publications of Hugoye are made available online in a free and open format u
 #### TEI data 
 TEI data for publications is available: [https://github.com/Beth-Mardutho/hugoye-data]
 The data must be upoladed to your s3 bucket instance with the file structure that maps to the desired urls in order to use the app. 
+Data is transformed using XSLT stylesheets.
 #### Additional dependancies 
+
 
 
